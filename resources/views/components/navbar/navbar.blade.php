@@ -7,8 +7,8 @@
             <img src="img/logo.jpg" class="h-32">
         </div>
         <div class="flex justify-end w-full">
-            <x-navbar.button href="https://www.google.pt" ligado="true">Homepage</x-navbar.button>
-            <x-navbar.button href="/quem_somos">Quem somos</x-navbar.button>
+            <x-navbar.button href="/" ligado="true">Homepage</x-navbar.button>
+            <x-navbar.button href="/users">Quem somos</x-navbar.button>
             <x-navbar.button href="/projetos">Projetos</x-navbar.button>
         </div>
     </div>
