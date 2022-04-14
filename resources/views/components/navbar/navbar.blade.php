@@ -15,7 +15,7 @@
             <x-navbar.button href="/partiner">Parceiros</x-navbar.button>
             <x-navbar.button href="/contac_us">Contactos</x-navbar.button>
             <x-navbar.button href="/projects">
-                <button class="bg-[#4ca747] rounded-full p-4 uppercase text-sm text-white">Teke Action</button>
+                <button class="bg-[#4ca747] rounded-full p-4 uppercase text-sm text-white">Envolve-te</button>
             </x-navbar.button>
         </ul>
     </nav>
