@@ -20,7 +20,7 @@
         @livewireStyles
     </head>
     <body class="font-body">
-        <div class="text-red-800 antialiased">
+        <div class="text-gray-800 antialiased">
             <x-navbar.navbar/>
             {{ $slot }}
             <x-footer/>
