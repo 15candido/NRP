@@ -10,12 +10,12 @@
         </span>
         </div>
         <!-- NAVAGATION LINKS-->
-        <ul class="text-sm sm:flex sm:items-center">
+        <ul class="sm:flex sm:items-center z-1 sm:z-auto md:static absolute">
             <x-navbar.button href="volunters" ligado="true">Voluntários</x-navbar.button>
             <x-navbar.button href="/partiner">Parceiros</x-navbar.button>
             <x-navbar.button href="/contac_us">Contactos</x-navbar.button>
             <x-navbar.button href="/projects">
-                <button class="bg-[#4ca747]  text-white text-sm  uppercase duration-500 px-6 py-2 rounded-lg   hover:bg-cyan-500">Envolve-te</button>
+                <button class="bg-[#4ca747] text-white text-sm  uppercase duration-500 px-6 py-2 rounded-lg   hover:bg-cyan-500">Envolve-te</button>
             </x-navbar.button>
         </ul>
     </nav>
