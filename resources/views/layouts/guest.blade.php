@@ -16,6 +16,7 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        @livewireStyles
     </head>
     <body>
         <div class="font-sans text-gray-800 antialiased">
@@ -23,5 +24,6 @@
             {{ $slot }}
             <x-footer/>
         </div>
+        @livewireScripts
     </body>
 </html>
