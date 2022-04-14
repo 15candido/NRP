@@ -15,7 +15,7 @@
             <x-navbar.button href="/partiner">Parceiros</x-navbar.button>
             <x-navbar.button href="/contac_us">Contactos</x-navbar.button>
             <x-navbar.button href="/projects">
-                <button class="bg-[#4ca747] rounded-full p-4 uppercase text-sm text-white">Envolve-te</button>
+                <button class="bg-[#4ca747]  text-white text-sm  uppercase duration-500 px-6 py-2 rounded-lg   hover:bg-cyan-500">Envolve-te</button>
             </x-navbar.button>
         </ul>
     </nav>
