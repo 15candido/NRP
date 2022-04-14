@@ -11,7 +11,9 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                header: ['Oswald', ...defaultTheme.fontFamily.sans],
+                body: ['Oswald', ...defaultTheme.fontFamily.serif],
+                
             },
         },
     },
