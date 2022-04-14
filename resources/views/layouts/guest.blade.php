@@ -19,8 +19,8 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
         @livewireStyles
     </head>
-    <body class="bg-blue-800">
-        <div class="font-body text-gray-800 antialiased">
+    <body class="font-body">
+        <div class="text-gray-800 antialiased">
             <x-navbar.navbar/>
             {{ $slot }}
             <x-footer/>
