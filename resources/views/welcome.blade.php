@@ -1,7 +1,13 @@
 <x-guestLayout>
-    <x-hero/>
-    
-    <div class="max-w-4xl m-auto">
+    <!-- <x-hero/> -->
+
+    <div class="max-w-4xl m-auto mt-8">
+        <div class="grid grid-cols-3 gap-3">
+            @foreach ($stories as $story)
+                <x-story :story="$story"/>
+            @endforeach
+        </div>
+
         <div class="font-bold">Casa da Mamé</div>
         <div class="flex">
             <div class="w-1/4">
@@ -13,7 +19,6 @@
                 Para continuarmos a dar a mão às nossas crianças e caminharmos com elas rumo a um futuro melhor, é essencial a vossa ajuda.
             </div>
         </div>
-
     </div>
 
     <div class="max-w-4xl m-auto">

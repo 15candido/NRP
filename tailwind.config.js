@@ -12,7 +12,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 header: ['Oswald', ...defaultTheme.fontFamily.sans],
-                body: ['Oswald', ...defaultTheme.fontFamily.serif],
+                body: ['Nunito', ...defaultTheme.fontFamily.serif],
                 
             },
         },

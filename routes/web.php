@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Models\Story;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $stories = Story::all();
+
+    return view('welcome', compact(['stories']));
 });
 
 Route::get('/teste', function () {
