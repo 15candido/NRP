@@ -23,11 +23,12 @@
     </head>
     <!-- body content -->
     <body class="font-body over">
+        <x-navbar.navbar/>
+        <x-hero/>
         <div class="text-gray-800 antialiased">
-            <x-navbar.navbar/>
             {{ $slot }}
-            <x-footer/>
         </div>
+        <x-footer/>
         <!-- livewirescripts code  -->
         @livewireScripts
         <script>
