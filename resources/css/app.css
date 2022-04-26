@@ -1,3 +1,26 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer components{
+    .header{ 
+        @apply flex w-full bg-white shadow font-header;
+    }
+    .navbar{
+        @apply container flex items-center justify-between flex-wrap bg-white p-6
+        md:max-w-6xl md:m-auto;
+    }
+    .logo{
+        @apply flex items-center flex-shrink-0
+        text-white uppercase cursor-pointer;
+    }
+    .searchbar{
+        @apply  relative flex items-center text-gray-400 focus-within:text-cyan-500
+        rounded-2xl border-none;
+    }
+    .inputsearch{
+        @apply w-full  md:w-48 pr-1 pl-10 py-1.5 font-body placeholder-gray-500 
+         text-black rounded-2xl border-none 
+         ring-2 ring-gray-300 focus:ring-cyan-500 focus:ring-2;
+     }
+}

@@ -18,13 +18,24 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
         @livewireStyles
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
-    <body class="font-body">
+    <!-- body content -->
+    <body class="font-body over">
         <div class="text-gray-800 antialiased">
             <x-navbar.navbar/>
             {{ $slot }}
             <x-footer/>
         </div>
+        <!-- livewirescripts code  -->
         @livewireScripts
+        <script>
+            function Menu(e){
+                let list = document.querySelector('ul');
+                e.name === 'menu' ? (e.name = "close",list.classList.add('opacity-100')) 
+                : (e.name = "menu",list.classList.remove('opacity-100'))
+            }
+        </script>
     </body>
 </html>
