@@ -17,15 +17,14 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        
         @livewireStyles
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
     <!-- body content -->
     <body class="font-body">
         <x-navbar.navbar/>
-        <x-hero/>
-        <div class="menu bg-cyan-400">
+        
+        <div>
             {{ $slot }}
         </div>
         <x-footer/>

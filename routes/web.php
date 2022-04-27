@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Models\Hero;
 use App\Models\Story;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -18,7 +19,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $stories = Story::all();
-    return view('welcome', compact(['stories']));
+    $heroes = Hero::all();
+
+    return view('welcome', [
+        'stories' => $stories,
+        'heroes' => $heroes
+    ]); 
 });
 
 Route::get('/teste', function () {

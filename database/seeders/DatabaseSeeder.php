@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UserSeeder::class,
-            StorySeeder::class
+            StorySeeder::class,
+            HeroSeeder::class
         ]);
         \App\Models\User::factory(100)->create();
         \App\Models\Story::factory(20)->create();

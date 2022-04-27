@@ -1,6 +1,8 @@
 <x-guestLayout>
-    <!-- <x-hero/> -->
-
+    <div class="w-full">
+        <x-hero :heroes="$heroes"/>
+    </div>
+{{--
     <div class="max-w-4xl m-auto mt-8">
         <div class="grid grid-cols-3 gap-3">
             @foreach ($stories as $story)
@@ -33,4 +35,5 @@
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste commodi voluptatum accusamus, reiciendis optio animi veritatis, sit nemo repellat, quis sunt? Fugiat officiis porro ratione in ullam quisquam beatae esse.</div>
         @endfor
     </div>
+    --}}
 </x-guestLayout>
