@@ -1,5 +1,5 @@
 <header class="header">
-    <nav class="navbar md:grid md:grid-rows-1 md:grid-flow-col md:gap-x-4">
+    <nav class="menu md:grid md:grid-rows-1 md:grid-flow-col md:gap-x-4">
         <!-- logo -->
         <div class="logo">
             <a href="" class="bg-green-400 mr-2 rounded-full p-1">

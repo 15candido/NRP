@@ -22,10 +22,10 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
     <!-- body content -->
-    <body class="font-body over">
+    <body class="font-body">
         <x-navbar.navbar/>
         <x-hero/>
-        <div class="text-gray-800 antialiased">
+        <div class="menu bg-cyan-400">
             {{ $slot }}
         </div>
         <x-footer/>

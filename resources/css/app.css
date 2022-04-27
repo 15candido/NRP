@@ -6,7 +6,7 @@
     .header{ 
         @apply flex w-full bg-white shadow font-header;
     }
-    .navbar{
+    .menu{
         @apply container flex items-center justify-between flex-wrap bg-white p-6
         md:max-w-6xl md:m-auto;
     }
