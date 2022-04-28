@@ -1,5 +1,5 @@
-<header class="flex w-full bg-white shadow font-header">
-    <nav class="md:container flex items-center justify-between flex-wrap bg-white p-6
+<header class="flex flex-grow w-full bg-white shadow-2xl py-4 border-b  font-header">
+    <nav class="md:container flex items-center justify-between flex-wrap bg-white px-6
         md:max-w-6xl md:m-auto md:grid md:grid-rows-1 md:grid-flow-col md:gap-x-4">
         <!-- logo -->
         <div class="flex  flex-shrink-0 flex-wrap items-center  text-white uppercase cursor-pointer">
