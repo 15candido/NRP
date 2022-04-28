@@ -6,15 +6,12 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto:wght@100&display=swap" rel="stylesheet">
-
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
         
@@ -22,11 +19,13 @@
     </head>
     <!-- body content -->
     <body class="font-body">
+        <!-- header  -->
         <x-navbar.navbar/>
-        
-        <div>
+        <!-- Main container to wrap all the components to be delivered to the guestLayout -->
+        <div class="main-container">
             {{ $slot }}
         </div>
+        <!-- Footer  -->
         <x-footer/>
         <!-- livewirescripts code  -->
         @livewireScripts

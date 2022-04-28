@@ -1,104 +1,66 @@
+@props(['heroes'])
 
-<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
-  <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="0"
-      class="active"
-      aria-current="true"
-      aria-label="Slide 1"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="1"
-      aria-label="Slide 2"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleCaptions"
-      data-bs-slide-to="2"
-      aria-label="Slide 3"
-    ></button>
-  </div>
-  <div class="carousel-inner relative w-full overflow-hidden">
-    <div class="carousel-item active relative float-left w-full">
-      <img
-        src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
-        class="block w-full"
-        alt="..."
-      />
-      <div class="carousel-caption hidden md:block absolute text-center">
-        <h5 class="text-xl">First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+
+<div class="w-full relative">
+    <div onclick="change_image(1)" class="absolute left-8 z-10 h-[600px] flex items-center hover:scale-105 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="border-4 border-white p-4 h-24 w-24 rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
     </div>
-    <div class="carousel-item relative float-left w-full">
-      <img
-        src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
-        class="block w-full"
-        alt="..."
-      />
-      <div class="carousel-caption hidden md:block absolute text-center">
-        <h5 class="text-xl">Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
+    <div onclick="change_image(-1)" class="absolute right-8 z-10 h-[600px] flex items-center hover:scale-105 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="border-4 border-white p-4 h-24 w-24 rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
     </div>
-    <div class="carousel-item relative float-left w-full">
-      <img
-        src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
-        class="block w-full"
-        alt="..."
-      />
-      <div class="carousel-caption hidden md:block absolute text-center">
-        <h5 class="text-xl">Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button
-    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-    type="button"
-    data-bs-target="#carouselExampleCaptions"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-    type="button"
-    data-bs-target="#carouselExampleCaptions"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    @foreach ($heroes as $hero)
+        <div class="invisible absolute inset-0" id="hero{{ $loop->index }}">
+            <img class="absolute w-full h-[600px] object-cover" src="img/heroes/{{ $hero->image }}">
+        </div>
+    @endforeach
 </div>
 
+<script>
+    let hero_position = 0;
+    let hero_max = {{ $heroes->count() }};
+    document.getElementById("hero" + hero_position).style.visibility = "visible";        
 
-<div class="carousel relative m-auto w-full h-[600px] bg-red-400 py-10">
-    <button class="carousel_botton-right ml-52">
+    function change_image(diferencial) {
+        document.getElementById("hero" + hero_position).style.visibility = "hidden";        
+        hero_position = hero_position + diferencial;
+        if (hero_position < 0)
+            hero_position = hero_max - 1;
+        else if (hero_position == hero_max)
+            hero_position = 0;
+        document.getElementById("hero" + hero_position).style.visibility = "visible";
+    }
+
+</script>
+
+    
+
+
+{{--
+<div class="carousel relative m-auto w-full h-[600px] bg-red-400">
+    <button class="carousel_botton-right ml-52 absolute">
         <ion-icon class="btn-right bg-white" name="chevron-back-outline"></ion-icon>
     </button>
-    <div class="carousel_track-container relative bg-white w-full h-full py-10">
-        <ul class="carousel_track relative list-none p-0 m-0 h-full bg-yellow-300 flex-wrap">
-            <li class="carousel_slide w-full h-full bg-cyan-300 absolute">
-                <img src="img/contentor.jpg" alt="" class="carousel_image w-full h-full
-                object-cover object-center">
+    <div class="carousel_track-container relative w-full h-full overflow-hidden">
+        <ul class="carousel_track relative list-none p-0 m-0 h-full bg-yellow-300">
+            <li class="carousel_slide active w-full h-full absolute">
+                <img class="carousel_image w-full h-full
+                object-cover object-center"src="img/contentor.jpg" alt="">
             </li>
-            <li class="carousel_slide w-full h-full bg-cyan-300 absolute">
-                <img src="img/contentor.jpg" alt="" class="carousel_image w-full h-full
-                object-cover object-center">
+            <li class="carousel_slide w-full h-full absolute">
+                <img class="carousel_image w-full h-full
+                object-cover object-center"src="img/contentor.jpg" alt="">
             </li>
-            <li class="carousel_slide w-full h-full bg-cyan-300 absolute">
-                <img src="img/contentor.jpg" alt="" class="carousel_image w-full h-full
-                object-cover object-center">
+            <li class="carousel_slide w-full h-full absolute">
+                <img class="carousel_image w-full h-full
+                object-cover object-center" src="img/contentor.jpg" alt="">
             </li>
         </ul>
     </div>
-    <button class="carousel_botton-left ml-[1050px] items-center">
+    <button class="carousel_botton-left ml-[1050px] absolute">
         <ion-icon class="btn-left0 bg-white" name="chevron-forward-outline"></ion-icon>
     </button>
     <div class="carousel-nav">
@@ -107,3 +69,4 @@
         <button class="carousel_indicator"></button>
     </div>
 </div>
+--}}
