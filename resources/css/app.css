@@ -8,4 +8,27 @@
         @apply container flex items-center justify-between flex-wrap bg-white p-6
         md:max-w-6xl md:m-auto;
     }
+    .bg-greenlogo{
+       @apply bg-[#4ca747];
+    }
+    .greentextFromLogo{
+        @apply text-[#4ca747];
+    }
+    .bg-bluelogo{
+        @apply bg-cyan-600;
+    }
+    .bluetextFromLogo{
+        @apply text-cyan-600;
+    }
+
+    .greenborderFromLogo{
+        @apply border-[#4ca747];
+    }
+    .blueborderFromLogo{
+        @apply border-cyan-600;
+    }
+
+    .blueringFromLogo{
+        @apply ring-cyan-600;
+    }
 }
