@@ -1,4 +1,5 @@
 <x-guestLayout>
+    <livewire:forms.contacts/>
     <div class="w-full">
         <x-hero :heroes="$heroes"/>
     </div>
