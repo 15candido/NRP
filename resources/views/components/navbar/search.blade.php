@@ -1,4 +1,4 @@
-<div class="relative flex items-center text-gray-400 focus-within:text-cyan-500
+<div class="relative flex items-center text-gray-400 focus-within:bluetextFromLogo
         rounded-2xl border-none">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute ml-2 pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
         <path d="M9 9a2 2 0 114 0 2 2 0 01-4 0z" />
@@ -9,6 +9,6 @@
         autocomplete="off" aria-label="Search" 
         class="w-full  md:w-48 pr-1 pl-10 py-1.5 font-body placeholder-gray-500 
          text-black rounded-2xl border-none 
-         ring-2 ring-gray-300 focus:ring-cyan-500 focus:ring-2 text-sm">
+         ring-2 ring-gray-300 focus:blueringFromLogo focus:ring-2 text-sm">
     </form>
 </div>
