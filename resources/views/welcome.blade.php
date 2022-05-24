@@ -1,7 +1,10 @@
 <x-guestLayout>
-    <livewire:forms.contacts/>
+    <!-- {{--<livewire:forms.contacts/>--}} -->
     <div class="w-full">
-        <x-hero :heroes="$heroes"/>
+        <x-homepage.hero :heroes="$heroes"/>
+    </div>
+    <div class="flex flex-col justify-center items-center mt-0 bg-white">
+        <x-homepage.content/>
     </div>
 {{--
     <div class="max-w-4xl m-auto mt-8">
@@ -23,7 +26,6 @@
             </div>
         </div>
     </div>
-
     <div class="max-w-4xl m-auto">
         Na Rota dos Povos
         @php

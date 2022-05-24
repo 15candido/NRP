@@ -49,26 +49,22 @@
                     </div>
                 </div>
                 <div class=" md:flex md:space-x-5 md:items-center md:justify-between">
-                <x-navbar.button href="/Causes">Parceiros</x-navbar.button>
-                <x-navbar.button href="/Causes">Voluntários</x-navbar.button>
+                <x-navbar.menu href="/Causes">Parceiros</x-navbar.menu>
+                <x-navbar.menu href="/Causes">Voluntários</x-navbar.menu>
                 <x-navbar.search/> 
                 </div>
             </div>
             <!-- Primary navegation-menu -->
             <ul class="w-full md:justify-end md:flex md:items-center 
             md:opacity-100 opacity-0 transition-all ease-in duration-100 uppercase">
-                <x-navbar.button href="#abutUs" ligado="true">Quem somos</x-navbar.button>
-                <x-navbar.button href="/Causes">O que fazemos</x-navbar.button>
-                <x-navbar.button href="/HowTohelp">Como Ajudar</x-navbar.button>
-                <x-navbar.button href="/Projects">Portifólios</x-navbar.button>
-                <x-navbar.button href="/Report">Relatórios</x-navbar.button>
-                <x-navbar.button href="/VolunteerDiary ">Diário de Voluntários</x-navbar.button>
-                <x-navbar.button href="/VolunteerDiary ">Contacto</x-navbar.button>
-                <button class=" bg-white text-sm text-greentextFromLogo flex-shrink-0 border-none md:bg-greenlogo md:text-white
-                uppercase duration-500 px-6 py-2 ml-4 mb-4 shadow-lg hover:shadow-2xl 
-                rounded-2xl hover:bg-bluelogo">
-                    <a href="">Envolve-te</a>
-                </button>
+                <x-navbar.menu href="#abutUs" ligado="true">Quem somos</x-navbar.menu>
+                <x-navbar.menu href="/Causes">O que fazemos</x-navbar.menu>
+                <x-navbar.menu href="/HowTohelp">Como Ajudar</x-navbar.menu>
+                <x-navbar.menu href="/Projects">Portifólios</x-navbar.menu>
+                <x-navbar.menu href="/Report">Relatórios</x-navbar.menu>
+                <x-navbar.menu href="/VolunteerDiary ">Diário de Voluntários</x-navbar.menu>
+                <x-navbar.menu href="/VolunteerDiary ">Contacto</x-navbar.menu>
+                <x-button.call-To-Action>Envolve-te</x-button.call-to-action>
             </ul>
             <!-- End primary navegation menu -->
         </div>
