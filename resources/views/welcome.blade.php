@@ -3,7 +3,7 @@
     <div class="w-full">
         <x-homepage.hero :heroes="$heroes"/>
     </div>
-    <div class="flex flex-col justify-center items-center mt-0 bg-white">
+    <div class="flex flex-col justify-center items-center mt-0">
         <x-homepage.content/>
     </div>
 {{--
