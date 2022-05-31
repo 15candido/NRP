@@ -18,7 +18,7 @@
         @livewireStyles
     </head>
     <!-- body content -->
-    <body class="font-body bg-gray-100">
+    <body class="font-body bg-white/25">
         <!-- header  -->
         <x-navbar.navbar/>
         <!-- Main container to wrap all the components to be delivered to the guestLayout -->
