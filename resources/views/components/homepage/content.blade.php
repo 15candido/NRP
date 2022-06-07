@@ -28,7 +28,7 @@
 <!-- The impact achieved over the years  -->
 <div class="grid grid-flow-row justify-items-center relative w-full resize-h overflow-hidden my-10 bg-gradient-to-r from-[#4ca747] via-[#019393] to-[#0082b3]">
   <img src="img/Impact/impact_1.jpg" alt="A Educação é o Único Caminho" class="absolute w-full h-full 
-  object-cover object-center mix-blend-multiply opacity-5 "> <!-- Background-image for impact container -->
+  object-cover object-center mix-blend-multiply opacity-10 "> <!-- Background-image for impact container -->
   <x-cards.impact/> 
 </div>
 <div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 bg-green-400 p-2">
