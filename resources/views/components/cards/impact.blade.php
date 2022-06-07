@@ -1,4 +1,4 @@
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 resize-w h-full absolute p-2">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 resize-w h-full absolute px-2 py-8">
   <div class="overflow-hidden">
     <p>Tailwind lets you conditionally apply utility classes in different states using variant modifiers.
       For example, use hover:grid-cols-6 to only apply the grid-cols-6 utility on hover.
