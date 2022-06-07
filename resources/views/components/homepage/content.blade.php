@@ -28,7 +28,7 @@
 <!-- The impact achieved over the years  -->
 <div class="grid grid-flow-row justify-items-center relative w-full resize-h overflow-hidden my-10 bg-gradient-to-r from-[#4ca747] via-[#019393] to-[#0082b3]">
   <img src="img/Impact/impact_1.jpg" alt="A Educação é o Único Caminho" class="absolute w-full h-full 
-  object-cover object-center mix-blend-multiply opacity-5 "> <!-- Background-image for impact container -->
+  object-cover object-center mix-blend-overlay opacity-5 "> <!-- Background-image for impact container -->
   <x-cards.impact/> 
 </div>
 <div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 bg-green-400 p-2">
@@ -38,23 +38,23 @@
   <div class="bg-white md:col-span-3 lg:col-span-1 p-2">grid-template-columns:</div>
 </div>
   <!-- The ONGD's purpose/who we're, our goal and mission  -->
-<!-- <div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 bg-yellow-400 p-2">
+<div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 bg-yellow-400 p-2">
   <div class="bg-white p-2">grid-template-columns:</div>
   <div class="bg-white p-2">grid-template-columns: repeat(1, minmax(0, 1fr));</div>
   <div class="bg-white p-2">grid-template-columns:</div>
   <div class="bg-white md:col-span-3 lg:col-span-1 p-2">grid-template-columns:</div>
-</div> -->
+</div>
   <!-- What We Are Doing-->
-  <!-- <div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 bg-gray-300 p-2">
-    <div class="bg-white p-2">grid-template-columns:</div>
-    <div class="bg-white p-2">grid-template-columns: repeat(1, minmax(0, 1fr));</div>
-    <div class="bg-white p-2">grid-template-columns:</div>
-    <div class="bg-white md:col-span-3 lg:col-span-1 p-2">grid-template-columns:</div>
-  </div> -->
+<div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 bg-gray-300 p-2">
+  <div class="bg-white p-2">grid-template-columns:</div>
+  <div class="bg-white p-2">grid-template-columns: repeat(1, minmax(0, 1fr));</div>
+  <div class="bg-white p-2">grid-template-columns:</div>
+  <div class="bg-white md:col-span-3 lg:col-span-1 p-2">grid-template-columns:</div>
+</div> 
   <!-- Our partners -->
-  <!-- <div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 bg-green-400 p-2">
-    <div class="bg-white p-2">grid-template-columns:</div>
-    <div class="bg-white p-2">grid-template-columns: repeat(1, minmax(0, 1fr));</div>
-    <div class="bg-white p-2">grid-template-columns:</div>
-    <div class="bg-white md:col-span-3 lg:col-span-1 p-2">grid-template-columns:</div>
-  </div> -->
+<div class="grid grid-cols-1 overflow-hidden sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 bg-green-400 p-2">
+  <div class="bg-white p-2">grid-template-columns:</div>
+  <div class="bg-white p-2">grid-template-columns: repeat(1, minmax(0, 1fr));</div>
+  <div class="bg-white p-2">grid-template-columns:</div>
+  <div class="bg-white md:col-span-3 lg:col-span-1 p-2">grid-template-columns:</div>
+</div>
