@@ -2,7 +2,7 @@
  <div class="space-y-4 grid grid-cols-1 rounded-lg shadow-md bg-white overflow-hidden 2xl:grid-cols-3 2xl:gap-4
  2xl:space-y-0 lg:gap-2 ">
   <!-- image container -->
- <div class="relative h-0 pb-2/3 2xl:h-full 2xl:pb-0">
+  <div class="relative h-0 pb-2/3 2xl:h-full 2xl:pb-0">
     <img src="img/ProjectImg/mame.jpeg" alt="A Educação é o Único Caminho" 
     class="absolute inset-0 w-full h-full object-cover">
   </div>

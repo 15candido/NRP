@@ -1,4 +1,4 @@
-<div class="carousel relative m-auto overflow-hidden h-[300px] sm:h-[350px] xl:h-[414px] 2xl:h-[500px] ">
+<div class="carousel relative m-auto overflow-hidden h-[383px] sm:h-[433px] xl:h-[497px] 2xl:h-[583px]">
   <!-- My slide control button Left -->
   <button class="btn_left absolute top-1/2 left-0 md:left-28 z-30 justify-center items-center px-2 -translate-y-1/2 
       cursor-pointer group focus:outline-none">

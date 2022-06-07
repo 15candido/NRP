@@ -31,4 +31,10 @@
     .blueringFromLogo{
         @apply ring-cyan-600;
     }
+    .resize-w{
+        @apply grid-flow-row w-11/12 lg:w-10/12 h-auto;
+    } 
+    .resize-h{
+        @apply h-[240px] sm:h-[290px] xl:h-[355px] 2xl:h-[440px];
+    }
 }
