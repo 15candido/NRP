@@ -30,4 +30,3 @@
 <!-- The impact achieved over the years  -->
 <x-cards.impact/>
 <!-- The ONGD's purpose/who we're, our goal and mission  -->
-<x-cards.mission/>
