@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 resize-w h-full absolute px-2 py-8 justify-items-center">
-  <div class="overflow-hidden justify-items-center text-gray-600"> <!-- Results over the years -->
-    <x-cards.result/>
-=======
+
 <div class="relative grid grid-flow-row justify-items-center w-full h-auto lg:resize-h  overflow-hidden
 my-10 bg-gradient-to-r from-[#4ca747] via-[#019393] to-[#0082b3]">
   <img src="img/Impact/impact_1.jpg" alt="A Educação é o Único Caminho" class="absolute w-full h-full 
@@ -80,6 +76,5 @@ my-10 bg-gradient-to-r from-[#4ca747] via-[#019393] to-[#0082b3]">
     </div>
     <video class="object-cover object-center w-full h-full md:w-1/2 rounded-lg md:rounded-tr-lg md:rounded-r-lg md:rounded-none" 
     autoplay loop muted src="video/ResumoAtividadeVoluntários.mp4" alt=""></video>
->>>>>>> Impact
   </div>
 </div>
