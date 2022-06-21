@@ -32,9 +32,9 @@
         @apply ring-cyan-600;
     }
     .resize-w{
-        @apply grid-flow-row w-11/12 lg:w-10/12 h-auto;
+        @apply grid grid-flow-row w-11/12 lg:w-10/12 h-auto justify-items-center;
     } 
     .resize-h{
-        @apply h-[240px] sm:h-[290px] xl:h-[355px] 2xl:h-[440px];
+        @apply h-[500px] xl:h-[415px] 2xl:h-[500px];
     }
 }
