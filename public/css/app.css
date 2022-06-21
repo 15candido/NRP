@@ -1257,6 +1257,9 @@ select {
 .h-full {
   height: 100%;
 }
+.h-96 {
+  height: 24rem;
+}
 .h-auto {
   height: auto;
 }
@@ -1663,6 +1666,10 @@ select {
 }
 .bg-white\/25 {
   background-color: rgb(255 255 255 / 0.25);
+}
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 .bg-white\/10 {
   background-color: rgb(255 255 255 / 0.1);
