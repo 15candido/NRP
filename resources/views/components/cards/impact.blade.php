@@ -54,7 +54,7 @@ my-10 bg-gradient-to-r from-[#4ca747] via-[#019393] to-[#0082b3]">
           <span class="flex flex-col basis-[75%] sm:basis-[66.666667%] justify-center items-center 
           border-l-[1px] border-l-white/75 text-sm font-extrabold text-white/90">
             <p class=" flex flex-grow-1 justify-center w-ful text-base md:text-lg xl:text-xl">25</p>
-            <h3 class=" flex flex-row-1 justify-center w-full text-sm md:text-base xl:text-lg ">Crianças Orfãos</h3>
+            <h3 class=" flex flex-row-1 justify-center w-full text-sm md:text-base xl:text-lg ">Crianças Orfãs</h3>
           </span>
         </div>
         <div class="flex items-center basis-1/2 md:shadow-md md:rounded-lg gap-1 sm:gap-2">
