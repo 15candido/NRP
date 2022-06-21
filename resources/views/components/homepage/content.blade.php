@@ -18,7 +18,7 @@
     <!-- How do we act to solve this problem -->
     <div class="col-span-full md:col-span-6 md:shadow-md 2xl:shadow-none bg-white/75">
       <div class="flex-col">
-        <div class="space-y-4 md:flex md:flex-grow-1 md:gap-4">
+        <div class="space-y-4 md:flex md:flex-grow-1 md:space-y-0 md:gap-4 ">
           <x-cards.causes/>      
           <x-cards.causes/>
           <x-cards.causes/>

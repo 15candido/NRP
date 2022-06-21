@@ -1,5 +1,5 @@
 
-<div class="grid grid-cols-1 ga-4 lg:gap-2 2xl:grid-cols-3  2xl:gap-4 2xl:space-y-0 
+<div class="grid grid-cols-1 ga-4lg:gap-2 2xl:grid-cols-3  2xl:gap-4 2xl:space-y-0 
 rounded-lg shadow-md bg-white overflow-hidden 
  ">
   <!-- image container -->
