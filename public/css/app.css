@@ -1484,9 +1484,6 @@ select {
 .gap-3 {
   gap: 0.75rem;
 }
-.gap-y-4 {
-  row-gap: 1rem;
-}
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -2863,12 +2860,6 @@ select {
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
-
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -2956,9 +2947,6 @@ select {
   } 
     .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  } 
-    .lg\:gap-2 {
-    gap: 0.5rem;
   } 
     .lg\:px-8 {
     padding-left: 2rem;
