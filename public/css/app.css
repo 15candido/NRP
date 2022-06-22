@@ -1257,9 +1257,6 @@ select {
 .h-full {
   height: 100%;
 }
-.h-96 {
-  height: 24rem;
-}
 .h-auto {
   height: auto;
 }
@@ -1456,6 +1453,9 @@ select {
 }
 .flex-wrap {
   flex-wrap: wrap;
+}
+.items-start {
+  align-items: flex-start;
 }
 .items-center {
   align-items: center;
@@ -1666,10 +1666,6 @@ select {
 }
 .bg-white\/25 {
   background-color: rgb(255 255 255 / 0.25);
-}
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 .bg-white\/10 {
   background-color: rgb(255 255 255 / 0.1);
@@ -1960,6 +1956,9 @@ select {
 .leading-6 {
   line-height: 1.5rem;
 }
+.leading-normal {
+  line-height: 1.5;
+}
 .tracking-widest {
   letter-spacing: 0.1em;
 }
@@ -2040,12 +2039,12 @@ select {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
-.text-white\/90 {
-  color: rgb(255 255 255 / 0.9);
-}
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-white\/90 {
+  color: rgb(255 255 255 / 0.9);
 }
 .text-blue-400 {
   --tw-text-opacity: 1;
@@ -2780,6 +2779,10 @@ select {
     display: none;
   }
 
+  .md\:h-64 {
+    height: 16rem;
+  }
+
   .md\:h-7 {
     height: 1.75rem;
   }
@@ -2873,6 +2876,10 @@ select {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:overflow-scroll {
+    overflow: scroll;
+  }
+
   .md\:break-words {
     overflow-wrap: break-word;
   }
@@ -2907,14 +2914,14 @@ select {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .md\:opacity-100 {
@@ -2955,6 +2962,9 @@ select {
     .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   } 
+    .lg\:overflow-hidden {
+    overflow: hidden;
+  } 
     .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2974,13 +2984,13 @@ select {
     width: 2.5rem;
   }
 
-  .xl\:text-xl {
-    font-size: 1.25rem;
+  .xl\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .xl\:text-lg {
-    font-size: 1.125rem;
+  .xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -2992,6 +3002,10 @@ select {
 
   .\32xl\:h-full {
     height: 100%;
+  }
+
+  .\32xl\:h-auto {
+    height: auto;
   }
 
   .\32xl\:h-\[583px\] {
