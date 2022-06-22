@@ -1461,9 +1461,11 @@ select {
 .items-start {
   align-items: flex-start;
 }
+
 .items-end {
   align-items: flex-end;
 }
+
 .items-center {
   align-items: center;
 }
@@ -2806,6 +2808,10 @@ select {
     display: none;
   }
 
+  .md\:h-64 {
+    height: 16rem;
+  }
+
   .md\:h-7 {
     height: 1.75rem;
   }
@@ -3029,6 +3035,10 @@ select {
 
   .\32xl\:h-full {
     height: 100%;
+  }
+
+  .\32xl\:h-auto {
+    height: auto;
   }
 
   .\32xl\:h-\[583px\] {
