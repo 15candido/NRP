@@ -4,7 +4,7 @@
     <!-- What are the problems/causes -->
     <div class="col-span-full md:col-span-2 overflow-hidden">
       <div class="flex flex-wrap h-full items-center px-2">
-        <p class="text-base text-gray-600 bg-white">
+        <p class="text-base text-gray-600">
           663 million people drink dirty water. Learn how access to clean water can improve health, 
           boost local economies, empower women, and give kids more time in school. edit.
           663 million people drink dirty water. Learn how access to clean water can improve health, 
@@ -16,7 +16,7 @@
       </div>
     </div>
     <!-- How do we act to solve this problem -->
-    <div class="col-span-full md:col-span-6 md:shadow-md 2xl:shadow-none bg-white/75">
+    <div class="col-span-full md:col-span-6">
       <div class="flex-col">
         <div class="space-y-4 md:flex md:flex-grow-1 md:space-y-0 md:gap-4 ">
           <x-cards.causes/>      
