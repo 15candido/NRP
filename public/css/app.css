@@ -1941,6 +1941,9 @@ select {
 .font-extralight {
   font-weight: 200;
 }
+.font-bold {
+  font-weight: 700;
+}
 .uppercase {
   text-transform: uppercase;
 }
