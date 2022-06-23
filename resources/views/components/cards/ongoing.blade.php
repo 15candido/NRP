@@ -17,7 +17,7 @@ my-10 bg-gradient-to-r from-[#4ca747] via-[#019393] to-[#0082b3]">
                 </div>
             </div>
             <div class="col-span-3 w-full h-full">
-               <div class="flex flex-col w-full h-full justify-center md:flex-row gap-2">
+               <div class="flex flex-col w-full h-full justify-center md:flex-row gap-2 opacit">
                     <div class="flex flex-wrap w-full h-full md:w-1/4 shadow-xl">
                         <div class="w-full h-2/3">
                             <img class="object-cover w-full h-full" src="img/ProjectImg/educacao.jpg" alt="Shoes" />
