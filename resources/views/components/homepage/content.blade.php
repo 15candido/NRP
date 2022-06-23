@@ -31,3 +31,5 @@
 <x-cards.impact/>
 <!-- The ONGD's purpose/who we're, our goal and mission  -->
 <x-cards.mission/>
+<!-- What We Are Doing -->
+<x-cards.ongoing/>
