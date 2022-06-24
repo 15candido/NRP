@@ -1,7 +1,6 @@
 
-<div class="grid grid-cols-1 ga-4lg:gap-2 2xl:grid-cols-3  2xl:gap-4 2xl:space-y-0 
-rounded-lg shadow-md bg-white overflow-hidden 
- ">
+<div class="grid grid-cols-1 2xl:grid-cols-3 ga-4 lg:gap-2 2xl:gap-4
+rounded-lg shadow-md overflow-hidden">
   <!-- image container -->
   <div class="relative h-0 pb-2/3 2xl:h-full 2xl:pb-0">
     <img src="img/ProjectImg/mame.jpeg" alt="A Educação é o Único Caminho" 
@@ -17,8 +16,7 @@ rounded-lg shadow-md bg-white overflow-hidden
       </div>
       <div class="text-base pb-2">
         <p class="text-gray-600">
-          A educação é um factor essencial para o desenvolvimento dos povos e a Guiné Bissau 
-          é um caso grave neste campo.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </p>
         <x-button.read-more>Saber <strong class="font-extrabold">+</strong></x-button.read-more>
       </div>

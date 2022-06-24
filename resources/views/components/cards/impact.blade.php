@@ -1,6 +1,6 @@
 
 <div class="relative grid grid-flow-row justify-items-center w-full h-auto lg:resize-h  overflow-hidden
-my-10 bg-gradient-to-r from-[#4ca747] via-[#019393] to-[#0082b3]">
+mb-10 bg-gradient-to-r from-[#4ca747] via-[#019393] to-[#0082b3]">
   <img src="img/Impact/impact_1.jpg" alt="A Educação é o Único Caminho" class="absolute w-full h-full 
   object-cover object-center mix-blend-overlay opacity-5"> <!-- Background-image for impact container -->
   <div class="flex flex-col justify-center items-center md:flex-row w-full h-auto max-w-[91.666667%] lg:max-w-[83.333333%] gap-2">
