@@ -1097,6 +1097,9 @@ select {
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -1199,6 +1202,9 @@ select {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 .mb-5 {
   margin-bottom: 1.25rem;
@@ -2009,15 +2015,15 @@ select {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
 }
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
 .text-white\/90 {
   color: rgb(255 255 255 / 0.9);
 }
 .text-white\/70 {
   color: rgb(255 255 255 / 0.7);
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .text-blue-400 {
   --tw-text-opacity: 1;
@@ -2743,12 +2749,16 @@ select {
     display: none;
   }
 
-  .md\:h-64 {
-    height: 16rem;
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:h-7 {
     height: 1.75rem;
+  }
+
+  .md\:max-h-96 {
+    max-height: 24rem;
   }
 
   .md\:w-7 {
@@ -2848,10 +2858,6 @@ select {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:overflow-scroll {
-    overflow: scroll;
-  }
-
   .md\:break-words {
     overflow-wrap: break-word;
   }
@@ -2886,14 +2892,14 @@ select {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:opacity-100 {
@@ -2934,8 +2940,8 @@ select {
     .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   } 
-    .lg\:overflow-hidden {
-    overflow: hidden;
+    .lg\:gap-2 {
+    gap: 0.5rem;
   } 
     .lg\:px-8 {
     padding-left: 2rem;
@@ -2956,13 +2962,13 @@ select {
     width: 2.5rem;
   }
 
-  .xl\:text-lg {
-    font-size: 1.125rem;
+  .xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
-  .xl\:text-xl {
-    font-size: 1.25rem;
+  .xl\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
@@ -2974,10 +2980,6 @@ select {
 
   .\32xl\:h-full {
     height: 100%;
-  }
-
-  .\32xl\:h-auto {
-    height: auto;
   }
 
   .\32xl\:h-\[583px\] {
@@ -2994,12 +2996,6 @@ select {
 
   .\32xl\:gap-4 {
     gap: 1rem;
-  }
-
-  .\32xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .\32xl\:pb-0 {

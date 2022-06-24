@@ -1,15 +1,13 @@
-<div class="relative resize-w mt-10">
+<div class="relative resize-w my-10">
   <!-- Our causes -->
   <div class="grid grid-cols-1 md:grid-cols-8 gap-4">
     <!-- What are the problems/causes -->
     <div class="col-span-full md:col-span-2 overflow-hidden">
       <div class="flex flex-wrap h-full items-center px-2">
         <p class="text-base text-gray-600">
-          663 million people drink dirty water. Learn how access to clean water can improve health, 
-          boost local economies, empower women, and give kids more time in school. edit.
-          663 million people drink dirty water. Learn how access to clean water can improve health, 
-          boost local economies, empower women, and give kids more time in school. edit.
-        </p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aut! Id, tempora
+          earum eum optio consequuntur fugiat harum facere, doloribus illo beatae rerum dolore 
+          accusantium distinctio nisi. Quisquam, natus consectetur. Lorem ipsum dolor sit amet.
         <div class="overflow-hidden">
           <x-button.read-more>Saber <strong class="font-bold">+</strong></x-button.read-more>
         </div>
@@ -33,3 +31,5 @@
 <x-cards.mission/>
 <!-- What We Are Doing -->
 <x-cards.ongoing/>
+<!-- How to help-->
+<x-cards.help/>
