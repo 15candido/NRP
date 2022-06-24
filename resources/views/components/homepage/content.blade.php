@@ -33,3 +33,4 @@
 <x-cards.ongoing/>
 <!-- How to help-->
 <x-cards.help/>
+<x-cards.partner/>
