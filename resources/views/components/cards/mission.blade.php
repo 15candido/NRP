@@ -15,7 +15,7 @@
         <div class="grid col-span-1 justify-items-center rounded-lg shadow-md overflow-hidden">
             <div class="flex flex-wrap items-center">
                 <span class="text-center leading-normal">
-                    <h2 class="card-title text-lg font-extrabold mb-2 text-gray-700">Missão</h2>
+                    <h2 class="card-title text-lg font-extrabold mb-2 text-gray-800">Missão</h2>
                     <p class="card-text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde, 
                         quas totam asperiores amet id iste ut, non nam maiores ab eveniet optio obcaecati.   
@@ -26,7 +26,7 @@
         <div class="grid col-span-1 justify-items-center rounded-lg shadow-md overflow-hidden">
             <div class="flex flex-wrap items-center">
                 <span class="text-center leading-normal">
-                    <h2 class="card-title text-lg font-extrabold mb-2 text-gray-700">Objetivos</h2>
+                    <h2 class="card-title text-lg font-extrabold mb-2 text-gray-800">Objetivos</h2>
                     <p class="card-text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde, 
                         quas totam asperiores amet id iste ut, non nam maiores ab eveniet optio obcaecati.   
@@ -37,7 +37,7 @@
         <div class="grid col-span-1 justify-items-center rounded-lg shadow-md overflow-hidden">
             <div class="flex flex-wrap items-center">
                 <span class="text-center leading-normal">
-                    <h2 class="card-title text-lg font-extrabold mb-2 text-gray-700">Onde Atuamos</h2>
+                    <h2 class="card-title text-lg font-extrabold mb-2 text-gray-800">Onde Atuamos</h2>
                     <p class="card-text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde, 
                         quas totam asperiores amet id iste ut, non nam maiores ab eveniet optio obcaecati.   
