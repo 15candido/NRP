@@ -1,4 +1,4 @@
-<div class="relative resize-w my-10">
+<div class="relative resize-w my-10 py-10">
   <!-- Our causes -->
   <div class="grid grid-cols-1 md:grid-cols-8 gap-4">
     <!-- What are the problems/causes -->

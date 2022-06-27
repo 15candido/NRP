@@ -1,4 +1,5 @@
-<div class="flex flex-col w-full h-auto md:max-h-96 mb-10 py-10 gap-4 max-w-[91.666667%] lg:max-w-[83.333333%] justify-center items-center">
+<div class="flex flex-col w-full h-auto md:max-h-96 mb-10 py-10 gap-4 max-w-[91.666667%] lg:max-w-[83.333333%] 
+justify-center items-center">
     <h1 class="card-title text-2xl font-extrabold">Como Ajudar</h1>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 h-full md:h-96 text-gray-600">
         <div class="grid col-span-1 justify-items-center rounded-lg shadow-md overflow-hidden">
