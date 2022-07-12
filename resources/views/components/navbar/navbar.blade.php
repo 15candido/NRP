@@ -1,72 +1,129 @@
-<header class="flex flex-grow w-full bg-white shadow-2xl py-4 border-b  font-header">
-    <nav class="md:container flex items-center justify-between flex-wrap bg-white px-6
-        md:max-w-6xl md:m-auto md:grid md:grid-rows-1 md:grid-flow-col md:gap-x-4">
-        <!-- logo -->
-        <div class="flex  flex-shrink-0 flex-wrap items-center  text-white uppercase cursor-pointer">
-            <a href="" class="bg-greenlogo mr-2 rounded-full p-1">
-                <img class=" flex flex-shrink-0 h-20 w-20 bg-white  rounded-full p-2"
-                src="/img/LogoROTA.png" alt="Logótipo da Na Rota dos Povos">
-            </a>
-            <span class="font-semibold text-xl break-words md:hidden">
-                <strong class="bluetextFromLogo font-semibold tracking-[3px]">Na Rota</strong>
-                <p class="greentextFromLogo">dos Povos</p>
-            </span>
-        </div>
-        <!--Menu toggle responsive button -->
-        <div class="block md:hidden text-3xl cursor-pointer"> 
-            <button class="flex items-center px-3 py-2 border rounded greentextFromLogo
-            greenborderFromLogo hover:text-green-700 hover:border-green-700" name="menu" onclick="Menu(this)">
-                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+<nav class="navbar px-5 lg:px-10 pt-6 shadow-2xl">
+    <div class="navbar-container container flex flex-row lg:flex-col max-w-6xl justify-center items-center mx-auto gap-4">
+        <!-- menu secundary -->
+        <div class="flex flex-wrap w-full lg:flex-row justify-end items-center space-y-1 lg:gap-1 
+            lg:space-y-0 border-b-2 border-gray-50 order-last lg:order-first">
+            <a href="#" class="searchbar w-8 h-8 p-2 rounded-full fill-current hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-[#395692]" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>
-        </button>           
+            </a> 
+            <a href="#" class="youtube flex lg:flex w-8 h-8 p-2 rounded-full fill-current hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-[#C71F1E]" viewBox="0 0 24 24">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                </svg>
+            </a>
+            <a href="#" class="instagram hidden lg:flex w-7 h-7 p-2 rounded-full fill-current hover:bg-gray-200">
+               <img src="img/media/instagram.png" alt="">
+            </a>
+            <a href="#" class="facebook hidden lg:flex w-7 h-7 p-2 rounded-full fill-current hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-[#395692]"  viewBox="0 0 24 24" >
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                </svg>
+            </a>
         </div>
-        <!-- End logo wrapper -->
-        <!-- navegation menu -->
-        <div class="w-full block flex-grow flex-wrap md:row-span-1 md:col-span-1 md:flex md:items-center
-        md:w-auto px-2 md:ml-6 bg-greenlogo md:bg-white">
-            <!-- Secundary navegation-menu -->
-            <div class="w-full hidden text-xs text-gray-500 flex-grow md:auto md:flex
-            md:justify-end md:items-center pb-4">
-                <div class="flex-grow md:flex md:items-center md:justify-between md:mr-32">
-                    <div class="leadingcontact md:flex md:flex-grow md:items-center">
-                        <!-- <ion-icon class="text-blue-400 mr-4 text-2xl" name="call-outline"></ion-icon> -->
-                        <span class= "md:break-words">
-                            <p class="greentextFromLogo font-semibold">Rua Gonçalves Zarco, 2644</p>
-                            <p class="">Sta Cruz do Bispo - Matosinhos</p>
-                        </span>
+        <!-- primary menu -->
+        <div class="w-full flex flex-row gap-2 lg:justify-between items-center order-first lg:order-last">
+            <!--Menu toggle responsive button -->
+            <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center px-2 ml-3 text-sm text-gray-500 
+            rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
+               <span class="sr-only">Abrir o menu Principal</span>
+               <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+               <svg class="hidden w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+            <!-- Our Logo -->
+            <a href="#" class="flex flex-shrink-0 lg:items-center">
+                <img src="img/LogoRota.png" class="w-8 h-8 sm:w-14 sm:h-14 lg:w-20 lg:h-20 mr-6 p-1 bject-cover object-center  rounded-full
+                bg-white border-2 border-green-400 " alt="Logótipo da Na Rota dos Povos">
+                <span class="hidden self-center font-black uppercase md:block md:text-xl lg:hidden ">Na Rota dos <br><p class="tracking-normal">Povos</p></span>
+            </a>
+            <div class="w-full flex lg:flex lg:w-auto">
+               <div class="list-none flex flex-col text-xs font-black lg:flex-row justify-center lg:items-center mt-4 space-y-2
+               lg:gap-2 lg:space-y-0 lg:mt-0 text-[#264653] lg:text-sm lg:font-bold uppercase">
+                    <div class="relative flex justify-center items-center">
+                        <a href="#" class="menu-btn flex flex-wrap gap-2 p-2 rounded-t-xl hover:bg-bluelogo hover:text-white 
+                        duration-200">
+                            Quem Somos
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                        <div class="absolute flex z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                            <ul class="dropdown list-none py-2 text-white text-left text-xs border-t">
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Sobre Nós</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Orgãos Sociais</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-none"><a href="#" class="py-1">Estatutos</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="HeaderContact">
-                        <p class="greentextFromLogo text-base flex flex-grow justify-center px-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-8 mr-2"
-                         viewBox="0 0 20 20" fill="currentColor" name="call-outline">
-                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 
-                            1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 
-                            0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                        </svg>
-                         932412050
-                        </p>
+                    <div class="relative flex justify-center items-center">
+                        <a href="#" class="flex flex-wrap gap-2 p-2 rounded-t-xl hover:bg-bluelogo hover:text-white duration-200">
+                            Áreas de Intervenção
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                        <div class="absolute flex z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                            <ul class="list-none py-2 text-white text-left text-[10px] border-t">
+                                <h2 class=" text-xs px-4 py-2 mb-3 border-b-2 border-white/60">Projetos</h2>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1"> A Educação é o Único Caminho</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Casa da Mamé</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Tabanca dos Pequenitos</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-none"><a href="#" class="py-1">Apoio à Saúde</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class=" md:flex md:space-x-5 md:items-center md:justify-between">
-                <x-navbar.menu href="/Causes">Parceiros</x-navbar.menu>
-                <x-navbar.menu href="/Causes">Voluntários</x-navbar.menu>
-                <x-navbar.search/> 
+                    <div class="relative flex justify-center items-center">
+                        <a href="#" class="flex flex-wrap gap-2 p-2 rounded-t-xl hover:bg-bluelogo hover:text-white duration-200">
+                            Como Ajudar
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                        <div class="absolute flex z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                            <ul class="list-none py-2 text-white text-left text-xs border-t">
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Ser Firquidja</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Donativos</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Volutário (a)</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-none"><a href="#" class="py-1">Partilhar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="relative flex justify-center items-center">
+                        <a href="#" class="flex flex-wrap gap-2 p-2 rounded-t-xl hover:bg-bluelogo hover:text-white duration-200">
+                            Relatório
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </a>
+                        <div class="absolute flex z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                            <ul class="list-none py-2 text-white text-left text-xs border-t">
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">2021</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">2020</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">2019</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">2018</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">2017</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-none"><a href="#" class="py-1">2016</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <a href="#" class="p-2 rounded-xl hover:bg-bluelogo hover:text-white duration-200">Contacto</a>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <x-button.call-to-action>Fazer Parte</x-button.call-to-action>   
+                    </div>
                 </div>
             </div>
-            <!-- Primary navegation-menu -->
-            <ul class="w-full md:justify-end md:flex md:items-center 
-            md:opacity-100 opacity-0 transition-all ease-in duration-100 uppercase">
-                <x-navbar.menu href="#abutUs" ligado="true">Quem somos</x-navbar.menu>
-                <x-navbar.menu href="/Causes">O que fazemos</x-navbar.menu>
-                <x-navbar.menu href="/HowTohelp">Como Ajudar</x-navbar.menu>
-                <x-navbar.menu href="/Projects">Portifólios</x-navbar.menu>
-                <x-navbar.menu href="/Report">Relatórios</x-navbar.menu>
-                <x-navbar.menu href="/VolunteerDiary ">Diário de Voluntários</x-navbar.menu>
-                <x-navbar.menu href="/VolunteerDiary ">Contacto</x-navbar.menu>
-                <x-button.call-To-Action>Envolve-te</x-button.call-to-action>
-            </ul>
-            <!-- End primary navegation menu -->
         </div>
-    </nav>
-</header>
+    </div>
+    <script>
+        console.log('test');
+       
+       
+        // When I hover in to the menu, got to the dropdown menu
+        // When I unhover remove the dorpdown menu
+    </script>
+</nav>
+
+                        
