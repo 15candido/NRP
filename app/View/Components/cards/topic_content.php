@@ -4,7 +4,7 @@ namespace App\View\Components\cards;
 
 use Illuminate\View\Component;
 
-class aboutUs extends Component
+class topic_content extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class aboutUs extends Component
      */
     public function render()
     {
-        return view('components.cards.about-us');
+        return view('components.cards.topic_content');
     }
 }

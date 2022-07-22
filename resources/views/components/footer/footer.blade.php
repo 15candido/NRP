@@ -1,5 +1,5 @@
 <footer class="grid grid-flow-row justify-items-center bg-gradient-to-r from-[#25caca] via-[#059a8a] to-[#0082b3]">
-    <div class="w-full max-w-6xl justify-center items-center my-10 px-5 lg:px-10
+    <div class="w-full max-w-7xl justify-center items-center my-10 px-5 lg:px-10
      text-white/90 ">
         <div class="grid grid-cols-1 space-y-6 text-sm font-bold md:grid-cols-5 md:gap-4  md:space-y-0">
             <div class="address col-span-full mt-6 order-3 lg:col-span-3 lg:order-1 md:mt-0">
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="link col-span-full hidden order-1 md:col-span-2 lg:flex lg:flex-col lg:col-span-1 lg:order-2">
-                <h1 class="link-title text-2xl font-extrabold mb-4 text-white">Navegação</h1>
+                <h1 class="link-title text-2xl font-extrabold mb-4 text-white">Links</h1>
                 <div class="flex flex-col justify-center space-y-2">
                     <a href="#" class=""><span class=" hover:text-[#264653]">Quem Somos</span></a>
                     <a href="#" class=""><span class=" hover:text-[#264653]">O que fazemos</span></a>

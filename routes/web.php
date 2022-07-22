@@ -26,6 +26,19 @@ Route::get('/', function () {
         'heroes' => $heroes
     ]); 
 });
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/intervention-areas', function () {
+    return view('intervention-areas');
+});
+Route::get('/help', function () {
+    return view('help');
+});
+Route::get('/about', function () {
+    return view('about');
+});
 
 Route::get('/teste', function () {
     return view('teste');

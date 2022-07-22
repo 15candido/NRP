@@ -14,7 +14,7 @@ rounded-lg shadow-md overflow-hidden">
           A Educação é o <span class="greentextFromLogo">único Caminho</span>
         </h3>
       </div>
-      <div class="text-base pb-2">
+      <div class="text-base pb-2 bg-yellow-200">
         <p class="text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </p>

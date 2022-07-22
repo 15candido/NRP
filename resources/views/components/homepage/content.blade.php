@@ -2,44 +2,49 @@
 <div class="content-container relative flex flex-col w-full justify-center items-center mx-auto my-10 text-base
  text-gray-600">
  <!-- Who we're and where we're working -->
-  <div class="abuotUs-container grid md:grid-cols-2 lg:grid-cols-4 max-w-6xl justify-center  my-10 gap-4  px-5 py-10
+  <div class="abuotUs-container grid md:grid-cols-2 lg:grid-cols-4 max-w-7xl justify-center  my-10 gap-4  px-5 py-10
     lg:px-10">
-    <x-cards.about-us>
-      <h1 class="title text-lg font-extrabold mb-2 text-[#264653]">Quem Somos</h1>
-      <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
+    <x-cards.topic_content>
+      <h1 class="title text-2xl md:text-3xl font-extrabold text-[#264653]">Quem Somos</h1>
+      <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
         error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
         et nemo dolores consequatur quidem doloribus?
       </p>
-    </x-cards.about-us>
-    <x-cards.about-us>
-        <h1 class="title text-lg font-extrabold mb-2 text-[#264653]">Missão</h1>
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
+    </x-cards.topic_content>
+    <x-cards.topic_content>
+        <h1 class="title text-2xl md:text-3xl font-extrabold mb-2 text-[#264653]">Missão</h1>
+        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
           error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
           et nemo dolores consequatur quidem doloribus?
         </p>
-      </x-cards.about-us>
-      <x-cards.about-us>
-        <h1 class="title text-lg font-extrabold mb-2 text-[#264653]">Visão</h1>
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
+      </x-cards.topic_content>
+      <x-cards.topic_content>
+        <h1 class="title text-xl md:text-3xl font-extrabold mb-2 text-[#264653]">Visão</h1>
+        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
           error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
           et nemo dolores consequatur quidem doloribus?
         </p>
-      </x-cards.about-us>
-      <x-cards.about-us>
-        <h1 class="title text-lg font-extrabold mb-2 text-[#264653]">Onde Atuamos</h1>
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
+      </x-cards.topic_content>
+      <x-cards.topic_content>
+        <h1 class="title text-2xl md:text-3xl font-extrabold mb-2 text-[#264653]">Onde Atuamos</h1>
+        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
           error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
           et nemo dolores consequatur quidem doloribus?
         </p>
-      </x-cards.about-us>
+      </x-cards.topic_content>
   </div>
   <!-- Ongoing project -->
   <div class="relative flex flex-col w-full h-auto lg:max-h-[500px] py-10 justify-center items-center bg-gradient-to-r
    from-[#4ca747] via-[#019393] to-[#0082b3]">
     <img src="img/Impact/impact_1.jpg" alt="A Educação é o Único Caminho" class="background-img absolute w-full h-full 
     object-cover object-center mix-blend-overlay opacity-5"> <!-- Background-image for Ongoing Project -->
-    <div class="relative ongingproject-container w-full flex flex-col max-w-6xl space-y-4 justify-center px-5 my-10 py-10 lg:px-10">
-      <h1 class="title text-2xl font-extrabold text-white text-left pb-4">Projectos em curso</h1>
+    <div class="relative ongingproject-container w-full flex flex-col max-w-7xl space-y-4 justify-center px-5 my-10 py-10 lg:px-10">
+      <span class="flex flex-col space-y-4 text-base leading-normal text-white ">
+        <h1 class="title text-2xl md:text-3xl font-extrabold text-left">Projetos em Curso</h1>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae
+        </p>
+      </span>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center overflow-hidden">
         <x-cards.ongoing>
           <div class="relative h-0 pb-2/3 2xl:h-full 2xl:pb-0"> <!-- image container -->
@@ -48,8 +53,8 @@
           </div>
           <div class="relative 2xl:col-span-2 px-2"> <!-- text container -->
               <div class="space-y-4 md:space-y-0">
-                <div class="text-lg leading-6">
-                    <h3 class="font-extrabold truncate hover:text-clip">A Educação é o <span class="greentextFromLogo">único Caminho</span></h3>
+                <div class="text-lg font-extrabold leading-6">
+                    <h2 class="truncate hover:text-clip">A Educação é o <span class="greentextFromLogo">Único Caminho</span></h2>
                 </div>
                 <div class="text-base pb-2">
                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
@@ -66,8 +71,8 @@
           </div>
           <div class="relative 2xl:col-span-2 px-2"> <!-- text container -->
               <div class="space-y-4 md:space-y-0">
-                <div class="text-lg leading-6">
-                    <h3 class="font-extrabold truncate hover:text-clip">Casa da <span class="greentextFromLogo">Mamé</span></h3>
+                <div class="text-lg font-extrabold leading-6">
+                    <h2 class="truncate hover:text-clip">Casa da <span class="greentextFromLogo">Mamé</span></h2>
                 </div>
                 <div class="text-base pb-2">
                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
@@ -84,8 +89,8 @@
           </div>
           <div class="relative 2xl:col-span-2 px-2"> <!-- text container -->
               <div class="space-y-4 md:space-y-0">
-                <div class="text-lg leading-6">
-                    <h3 class="font-extrabold truncate hover:text-clip">Tabanca dos <span class="greentextFromLogo">Pequenitos</span></h3>
+                <div class="text-lg font-extrabold leading-6">
+                    <h2 class="truncate hover:text-clip">Tabanca dos <span class="greentextFromLogo">Pequenitos</span></h2>
                 </div>
                 <div class="text-base pb-2">
                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
@@ -102,8 +107,8 @@
           </div>
           <div class="relative 2xl:col-span-2 px-2"> <!-- text container -->
               <div class="space-y-4 md:space-y-0">
-                <div class="text-lg leading-6">
-                    <h3 class="font-extrabold truncate hover:text-clip">Apoio à  <span class="greentextFromLogo">Saúde</span></h3>
+                <div class="text-lg font-extrabold leading-6">
+                    <h2 class="truncate hover:text-clip">Apoio à  <span class="greentextFromLogo">Saúde</span></h2>
                 </div>
                 <div class="text-base pb-2">
                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
@@ -117,21 +122,26 @@
     </div>
   </div>
   <!-- Some of the impacts achieved over the years  -->
-  <div class="impact-container grid grid-flow-row max-w-6xl space-y-4 gap-4 md:space-y-0 justify-center px-5 my-10
-  py-10 lg:px-10">
-    <h2 class="impact-title text-2xl font-extrabold text-[#264653] text-left pb-4">Alguns dos nossos números</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-4 md:space-y-0">
+  <div class="impact-container grid grid-flow-row max-w-7xl gap-4 justify-center px-5 my-10
+    py-10 lg:px-10">
+    <span class="flex flex-col space-y-4 text-base leading-normal">
+      <h1 class="title text-2xl md:text-3xl font-extrabold text-[#264653] text-left">Alguns dos Nossos Números</h1>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae
+        </p>
+    </span>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-4">
       <x-cards.impact>
         <h2 class="text-3xl font-extrabold bluetextFromLogo">31</h2>
-        <p class="font-bold">Contentores de 40 Pés</p>
+        <p class="font-bold">Contentores de 40 pés</p>
       </x-cards.impact>
       <x-cards.impact>
         <h2 class="text-3xl font-extrabold bluetextFromLogo">210</h2>
-        <p class="font-bold">Salas de Aulas Equipadas</p>
+        <p class="font-bold">Salas de aulas equipadas</p>
       </x-cards.impact>
       <x-cards.impact>
         <h2 class="text-3xl font-extrabold bluetextFromLogo">10,000</h2>
-        <p class="font-bold">Alunos Apoiados</p>
+        <p class="font-bold">Alunos apoiados</p>
       </x-cards.impact>
       <x-cards.impact>
         <h2 class="text-3xl font-extrabold bluetextFromLogo">5</h2>
@@ -156,9 +166,14 @@
    from-[#4ca747] via-[#019393] to-[#0082b3]">
     <img src="img/Impact/impact_1.jpg" alt="A Educação é o Único Caminho" class="background-img absolute w-full h-full 
     object-cover object-center mix-blend-overlay opacity-5"> <!-- Background-image for Ongoing Project -->
-    <div class="help-container grid grid-flow-row max-w-6xl space-y-4 gap-4 md:space-y-0 justify-center px-5 my-10
-    py-5 lg:px-10">
-      <h1 class="help-title text-2xl font-extrabold text-white text-left pb-4">Como ajudar</h1>
+    <div class="help-container grid grid-flow-row max-w-7xl space-y-4 gap-4 md:space-y-0 justify-center px-5 my-10
+      py-5 lg:px-10">
+      <span class="flex flex-col space-y-4 text-base leading-normal text-white">
+        <h1 class="title text-2xl md:text-3xl font-extrabold text-left">Como Posso Ajudar?</h1>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae
+          </p>
+      </span>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center overflow-hidden">
         <x-cards.help>
           <h2 class="title text-lg font-extrabold mb-2 text-[#264653]">Ser Firquidja</h2>
@@ -175,7 +190,7 @@
           </p>
         </x-cards.help>
         <x-cards.help>
-          <h2 class="card-title text-lg font-extrabold mb-2 text-[#264653]">Volutário</h2>
+          <h2 class="card-title text-lg font-extrabold mb-2 text-[#264653]">Volutário (a)</h2>
           <p class="text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
             error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
             et nemo dolores consequatur quidem doloribus?
@@ -192,10 +207,10 @@
     </div>
   </div>
   <!-- Our partners over the years -->
-  <div class="partner-container grid grid-flow-row w-full max-w-6xl space-y-4 gap-4 md:space-y-0 items-center px-5 my-10
-  py-5 lg:px-10">
-    <span class="title flex flex-col space-y-4 text-base leading-normal">
-        <h2 class="Card-title text-2xl font-extrabold">Os nossos parceiros</h2>
+  <div class="partner-container grid grid-flow-row w-full max-w-7xl space-y-4 gap-4 md:space-y-0 items-center px-5 my-10
+    py-5 lg:px-10">
+    <span class="flex flex-col space-y-4 text-base leading-normal">
+        <h1 class="title text-2xl md:text-3xl font-extrabold">Os Nossos Parceiros</h1>
         <p class="description">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae
         </p>
