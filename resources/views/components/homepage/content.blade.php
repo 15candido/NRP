@@ -1,8 +1,8 @@
 
-<div class="content-container relative flex flex-col w-full justify-center items-center mx-auto my-10 text-base
- text-gray-600">
+<div class="content-container relative flex flex-col w-full mx-auto my-20 gap-20 text-base
+ text-gray-600 justify-center items-center">
  <!-- Who we're and where we're working -->
-  <div class="abuotUs-container grid md:grid-cols-2 lg:grid-cols-4 max-w-7xl justify-center  my-10 gap-4  px-5 py-10
+  <div class="abuotUs-container grid md:grid-cols-2 lg:grid-cols-4 max-w-7xl justify-center gap-4  px-5
     lg:px-10">
     <x-cards.topic_content>
       <h1 class="title text-2xl md:text-3xl font-extrabold text-[#264653]">Quem Somos</h1>
@@ -34,11 +34,11 @@
       </x-cards.topic_content>
   </div>
   <!-- Ongoing project -->
-  <div class="relative flex flex-col w-full h-auto lg:max-h-[500px] py-10 justify-center items-center bg-gradient-to-r
+  <div class="relative flex flex-col w-full h-auto py-10 lg:max-h-[500px] justify-center items-center bg-gradient-to-r
    from-[#4ca747] via-[#019393] to-[#0082b3]">
     <img src="img/Impact/impact_1.jpg" alt="A Educação é o Único Caminho" class="background-img absolute w-full h-full 
     object-cover object-center mix-blend-overlay opacity-5"> <!-- Background-image for Ongoing Project -->
-    <div class="relative ongingproject-container w-full flex flex-col max-w-7xl space-y-4 justify-center px-5 my-10 py-10 lg:px-10">
+    <div class="relative ongingproject-container w-full flex flex-col max-w-7xl space-y-4 justify-center px-5 lg:px-10">
       <span class="flex flex-col space-y-4 text-base leading-normal text-white ">
         <h1 class="title text-2xl md:text-3xl font-extrabold text-left">Projetos em Curso</h1>
         <p class="description">
@@ -122,15 +122,14 @@
     </div>
   </div>
   <!-- Some of the impacts achieved over the years  -->
-  <div class="impact-container grid grid-flow-row max-w-7xl gap-4 justify-center px-5 my-10
-    py-10 lg:px-10">
+  <div class="impact-container grid grid-flow-row max-w-7xl gap-6 justify-center px-5 lg:px-10">
     <span class="flex flex-col space-y-4 text-base leading-normal">
       <h1 class="title text-2xl md:text-3xl font-extrabold text-[#264653] text-left">Alguns dos Nossos Números</h1>
         <p class="description">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae
         </p>
     </span>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-4">
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
       <x-cards.impact>
         <h2 class="text-3xl font-extrabold bluetextFromLogo">31</h2>
         <p class="font-bold">Contentores de 40 pés</p>
@@ -162,12 +161,11 @@
     </div>
   </div>
   <!-- How to contribute/help in our causes  -->
-  <div class="relative grid grid-flow-row w-full h-auto lg:max-h-[500px] py-10 justify-center items-center bg-gradient-to-r
+  <div class="relative grid grid-flow-row w-full h-auto lg:max-h-[500px] justify-center items-center bg-gradient-to-r
    from-[#4ca747] via-[#019393] to-[#0082b3]">
     <img src="img/Impact/impact_1.jpg" alt="A Educação é o Único Caminho" class="background-img absolute w-full h-full 
     object-cover object-center mix-blend-overlay opacity-5"> <!-- Background-image for Ongoing Project -->
-    <div class="help-container grid grid-flow-row max-w-7xl space-y-4 gap-4 md:space-y-0 justify-center px-5 my-10
-      py-5 lg:px-10">
+    <div class="help-container grid grid-flow-row max-w-7xl gap-6 justify-center px-5 py-10 lg:px-10">
       <span class="flex flex-col space-y-4 text-base leading-normal text-white">
         <h1 class="title text-2xl md:text-3xl font-extrabold text-left">Como Posso Ajudar?</h1>
           <p class="description">
@@ -208,15 +206,14 @@
     </div>
   </div>
   <!-- Our partners over the years -->
-  <div class="partner-container grid grid-flow-row w-full max-w-7xl space-y-4 gap-4 md:space-y-0 items-center px-5 my-10
-    py-5 lg:px-10">
+  <div class="partner-container grid grid-flow-row w-full max-w-7xl gap-6 px-5 items-center  lg:px-10">
     <span class="flex flex-col space-y-4 text-base leading-normal">
-        <h1 class="title text-2xl md:text-3xl font-extrabold">Os Nossos Parceiros</h1>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae
-        </p>
+      <h1 class="title text-2xl md:text-3xl font-extrabold">Os Nossos Parceiros</h1>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae
+      </p>
     </span>
-    <div class="partner-logo grid grid-cols-4 grid-rows-3 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 gap-4 justify-center
+    <div class="partner-logo grid grid-cols-4 gap-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 justify-center
     items-center">
       <x-cards.partner>
         <img src="img/partner/black_shop.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
