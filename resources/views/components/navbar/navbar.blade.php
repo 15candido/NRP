@@ -58,17 +58,19 @@
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                             </svg>
                         </a>
-                        <div class="absolute hidden z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                        <div class="absolute hidden  z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
                             <ul class="dropdown list-none py-2 text-base font-medium text-white text-left normal-case border-t">
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Sobre Nós</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">História</a></li>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Órgão Social</a>
-                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">documentos</a>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Equipa de Gestão</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Voluntários</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400"><a href="#" class="py-1">documentos</a>
                                     <ul class="block list-none bg-green-300">
                                         <li class="text-sm px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Relatório</a>
                                         <li class="text-sm px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Estatutos</a>
                                     </ul>
                                 </li>
-                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
@@ -79,7 +81,7 @@
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                             </svg>
                         </a>
-                        <div class="absolute hidden z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                        <div class="absolute hidden  z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
                             <ul class="list-none py-2 text-base font-medium text-white text-left normal-case border-t">
                                 <h2 class="text-lg font-extrabold px-4 py-2 mb-3 border-b-2 border-white/60">Projetos</h2>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1"> A Educação é o Único Caminho</a></li>
@@ -96,7 +98,7 @@
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                             </svg>
                         </a>
-                        <div class="absolute hidden z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                        <div class="absolute hidden  z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
                             <ul class="list-none py-2 text-base font-medium text-white text-left normal-case border-t">
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Ser Firquidja</a></li>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Donativos</a></li>
@@ -104,6 +106,9 @@
                                 <li class="px-4 py-2 hover:bg-blue-400 border-none"><a href="#" class="py-1">Partilhar</a></li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 p-2 rounded-t-2xl hover:bg-bluelogo hover:text-white duration-200">
+                        <li class=""><a href="contact" class="py-1">Contacto</a></li>
                     </div>
                     <div class="flex justify-center items-center">
                         <x-button.call-to-action>Fazer Parte</x-button.call-to-action>   
