@@ -42,7 +42,7 @@
                 </svg>
             </button>
             <!-- Our Logo -->
-            <a href="home" class="flex flex-shrink-0 lg:items-center">
+            <a href="/" class="flex flex-shrink-0 lg:items-center">
                 <img src="img/LogoRota.png" class="w-10 h-10 sm:w-16 sm:h-16 lg:w-24 lg:h-24 mr-4 p-1 bject-cover object-center
                 rounded-full bg-white border-2 border-green-400 " alt="Logótipo da Na Rota dos Povos">
                 <span class="hidden self-center font-black uppercase md:block md:text-xl lg:hidden ">Na Rota dos <br><p class="tracking-normal">Povos</p></span>

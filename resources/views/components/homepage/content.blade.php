@@ -198,7 +198,8 @@
         </x-cards.help>
         <x-cards.help>
           <h2 class="card-title text-lg font-extrabold mb-2 text-[#264653]">Partilhar</h2>
-          <p class="text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
+          <p class="tContextualization-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
             error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
             et nemo dolores consequatur quidem doloribus?
           </p>
