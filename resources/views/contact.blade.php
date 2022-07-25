@@ -1,17 +1,17 @@
 <x-guestLayout>
-    <div class="flex min-h-screen justify-center items-center">
-        <div class="flex flex-col md:flex-row w-full max-w-6xl md:space-x-16 space-y-8 md:space-y-0 px-5 py-10 lg:px-10
+    <div class="flex min-h-screen justify-center my-20 items-center">
+        <div class="flex flex-col md:flex-row w-full max-w-7xl px-5 py-6 space-y-20 md:space-x-20 md:space-y-0 lg:px-10
             text-gray-600 rounded-lg overflow-hidden">
-            <div class="contact-container space-y-5">
-                <div class="flex flex-col justify-center">
+            <div class="contact-container space-y-6">
+                <div class="flex flex-col space-y-4 justify-center">
                     <h1 class="title text-2xl md:text-3xl font-extrabold tracking-wide text-[#264653]">Contacto</h1>
-                    <p class="pt-2">
+                    <p class="">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, temporibus cupiditate ratione impedit
                         voluptatum dicta.
                     </p>
                 </div>
-                <div class="flex flex-col space-y-4">
-                    <div class="portugal-address flex flex-col pb-4 space-y-5">
+                <div class="flex flex-col space-y-6">
+                    <div class="portugal-address flex flex-col pb-4 space-y-4">
                         <h2 class="text-xl font-extrabold text-gray-600 tracking-wider">Portugal</h2>
                         <div class="address inline-flex space-x-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
@@ -40,7 +40,7 @@
                             <span class="email text-base">ongd@narotadospovos.org</span>
                         </div>
                     </div>
-                    <div class="Guiné-Bissau-address flex flex-col pb-4 space-y-5">
+                    <div class="Guiné-Bissau-address flex flex-col pb-4 space-y-4">
                         <h2 class="text-xl font-extrabold text-gray-600 tracking-wider">Guiné-Bissau</h2>
                         <div class="address inline-flex space-x-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
@@ -72,10 +72,12 @@
                 </div>
             </div>
             <div class="form-container relative md:w-[700px] min-h-full">
-                <div class="absolute z-0 w-40 h-40  bg-gradient-to-r from-[#25caca] to-[#0082b3] rounded-full 
-                    -right-36 -top-16 md:-right-28 md:-top-28"></div>
-                <div class="absolute z-0 w-40 h-40  bg-gradient-to-r from-[#0082b3] to-[#25caca] rounded-full 
-                    -left-32 -bottom-32 md:-left-28 md:-bottom-48"></div>
+                <div class="up-shape absolute z-0 w-40 h-40  bg-gradient-to-r from-[#25caca] to-[#0082b3] rounded-full 
+                    -right-36 -top-16 md:-right-28 md:-top-28">
+                </div>
+                <div class="down-shape absolute z-0 w-40 h-40  bg-gradient-to-r from-[#0082b3] to-[#25caca] rounded-full 
+                    -left-32 -bottom-32 md:-left-32 md:-bottom-32">
+                </div>
                 <div class="relative z-10 bg-white rounded-xl shadow-lg p-4 hover:shadow-xl">
                     <form action="" class="flex flex-col space-y-4 h-full text-gray-600">
                         <div class="flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0 ">
