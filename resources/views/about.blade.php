@@ -1,5 +1,5 @@
 <x-guestLayout>
-    <div class="grid grid-flow-row min-h-screen mt-20 justify-items-center">
+    <div class="grid grid-flow-row min-h-screen my-20 justify-items-center">
         <div class="grid grid-flow-row w-full max-w-7xl justify-items-center gap-20 px-5 lg:px-10">
             <!-- about us section -->
             <div class="aboutUs-container grid grid-flow-row md:grid-flow-col gap-8  text-gray-600 justify-center">
@@ -15,7 +15,7 @@
                 <div class="order-first md:order-last space-y-4">
                     <h1 class="title text-2xl font-extrabold text-left md:text-3xl text-[#264653]">Sobre Nós</h1>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center">
-                        <div class="flex flex-col gap-6 justify-center items-center order-last lg:order-first ">
+                        <div class="flex flex-col gap-4 justify-center items-center order-last lg:order-first ">
                             <p class="description">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ad animi architecto fugiat
                                 deleniti totam quod iusto recusandae non incidunt, unde velit delectus hic ipsa eligendi natus
@@ -111,61 +111,62 @@
            <!-- our impact over the year in guinea-bissau -->
             <div class="grid grid-flow-row gap-6 w-full text-gray-600 justify-center items-center">
                 <span class="flex flex-col space-y-4 text-base leading-normal">
-                    <h2 class="title text-2xl md:text-3xl font-extrabold text-[#264653] text-left">O Nosso Impacto na Região</h1>
+                    <h2 class="title text-2xl md:text-3xl font-extrabold text-[#264653] text-left">O Nosso Impacto</h1>
                     <p class="text-lg font-bold">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic dolorem sapiente. Sequi, rerum pariatur.
                         Quidem veritatis porro rem corporis? Natus, sed consequatur porro odit magni exercitationem nihil quod
                         libero.
                     </p>
                 </span>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-center">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-center">
                     <x-cards.impact>
-                        <h2 class="text-3xl font-extrabold bluetextFromLogo">31</h2>
-                        <p class="font-bold">Contentores de 40 pés</p>
+                        <h2 class="text-3xl font-extrabold bluetextFromLogo">49</h2>
+                        <p class="font-bold">Apoiamos cerca de 49 escolas na região de Tombali</p>
                     </x-cards.impact>
                     <x-cards.impact>
                         <h2 class="text-3xl font-extrabold bluetextFromLogo">210</h2>
-                        <p class="font-bold">Salas de aulas equipadas</p>
+                        <p class="font-bold">Equipamos cerca de 210 salas de aulas</p>
                     </x-cards.impact>
                     <x-cards.impact>
                         <h2 class="text-3xl font-extrabold bluetextFromLogo">10,000</h2>
-                        <p class="font-bold">Alunos apoiados</p>
+                        <p class="font-bold">Todos os anos, apoiamos cerca de 10,000 alunos.
+                        </p>
                     </x-cards.impact>
                     <x-cards.impact>
                         <h2 class="text-3xl font-extrabold bluetextFromLogo">5</h2>
-                        <p class="font-bold">Biblioticas equipadas com cerca de 10, 000 Livros</p>
+                        <p class="font-bold">Montamos 5 biblioticas com cerca de 10, 000 Livros</p>
                     </x-cards.impact>
                     <x-cards.impact>
                         <h2 class="text-3xl font-extrabold bluetextFromLogo">25</h2>
-                        <p class="font-bold">Crianças, orfãs de mãe</p>
+                        <p class="font-bold">Uma casa de acolhimento de crianças, orfãs de mãe</p>
                     </x-cards.impact>
                     <x-cards.impact>
                         <h2 class="text-3xl font-extrabold bluetextFromLogo">15</h2>
-                        <p class="font-bold">Bolsas de estudos</p>
+                        <p class="font-bold">Demos bolsa de estudo para 15 Jovens de Catió</p>
                     </x-cards.impact>
                     <x-cards.impact>
                         <h2 class="text-3xl font-extrabold bluetextFromLogo">60</h2>
-                        <p class="font-bold">Computadores</p>
+                        <p class="font-bold">Sala de informática equipada, com 60 computadores</p>
                     </x-cards.impact>
                 </div>
             </div>
         </div>
         <!-- How to contribute/help in our causes  -->
-        <div class="relative call-to-action grid grid-flow-row w-full my-20 justify-items-center bg-gradient-to-r from-[#4ca747] via-[#019393]
+        <div class="relative call-to-action grid grid-flow-row w-full text-white/90 my-20 justify-items-center bg-gradient-to-r from-[#4ca747] via-[#019393]
             to-[#0082b3]">
             <img src="img/Impact/impact_1.jpg" alt="A Educação é o Único Caminho" class="background-img absolute w-full h-full 
                 object-cover object-center mix-blend-overlay opacity-5"> <!-- Background-image for Ongoing Project -->
-            <div class="grid grid-flow-row w-full max-w-7xl justify-items-center px-5 py-12 lg:px-10 text-white/90">
+            <div class="grid grid-flow-row w-full max-w-7xl justify-items-center px-5 py-12 lg:px-10">
                 <div class="grid grid-flow-row space-y-6 justify-items-center">
-                    <span class="Contextualization-text flex flex-col space-y-4 text-base text-white/90 leading-normal">
-                        <h2 class="title text-2xl md:text-3xl font-extrabold text-left">Apoie ou Participe</h1>
-                        <p class="text-lg font-bold">
+                    <span class="Contextualization-text flex flex-col space-y-4 text-base leading-normal">
+                        <h2 class="title text-2xl md:text-3xl font-extrabold text-white text-left">Apoie ou Participe</h1>
+                        <p class="text-lg font-bold text-white/90">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic dolorem sapiente. Sequi, rerum
                             pariatur. Quidem veritatis porro rem corporis? Natus, sed consequatur porro odit magni 
                             exercitationem nihil quod libero.
                         </p>
                     </span>
-                    <div class="relative grid grid-cols-3 gap-6 justify-center items-center">
+                    <div class="relative grid grid-cols-3 gap-4 justify-center items-center">
                         <div class="flex flex-col h-full p-4 space-y-4 justify-center rounded-lg shadow-md">
                             <p class="">Apoie as nossas crianças tornando-se numa das firquidjas da Casa da Mamé!</p>
                             <span class="self-start">
@@ -175,7 +176,7 @@
                         <div class="flex flex-col h-full p-4 space-y-4 justify-center rounded-lg shadow-md">
                             <p class="">Se der um pouco, vai faltar menos!</p>
                             <span class="self-start">
-                                    <x-button.call-to-action>Doar</x-button.call-to-action>
+                                    <x-button.call-to-action>Doar agora</x-button.call-to-action>
                             </span>
                         </div>
                         <div class="flex flex-col h-full p-4 space-y-4 justify-center rounded-lg shadow-md">
@@ -189,7 +190,7 @@
             </div>
         </div>
         <!-- Our partners over the years -->
-        <div class="our-partners grid grid-flow-row w-full max-w-7xl justify-items-center mb-20 gap-6 px-5 lg:px-10">
+        <div class="our-partners grid grid-flow-row w-full max-w-7xl text-gray-600 justify-items-center gap-6 px-5 lg:px-10">
             <span class="Contextualization-text flex flex-col space-y-4 text-base leading-normal">
                 <h2 class="title text-2xl md:text-3xl font-extrabold text-[#264653] text-left">Os Nossos Parceiros</h1>
                 <p class="text-lg font-bold">
@@ -310,6 +311,5 @@
                 </x-cards.partner> 
             </div>
         </div>
-       
     </div>
 </x-guestLayout>
