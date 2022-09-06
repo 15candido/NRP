@@ -6,10 +6,7 @@
     lg:px-10">
     <x-cards.topic_content>
       <h1 class="title text-2xl md:text-3xl font-extrabold text-[#264653]">Quem Somos</h1>
-      <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
-        error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
-        et nemo dolores consequatur quidem doloribus?
-      </p>
+      <p class="pt-2">{{ config('information.quem_somos') }}</p>
     </x-cards.topic_content>
     <x-cards.topic_content>
         <h1 class="title text-2xl md:text-3xl font-extrabold mb-2 text-[#264653]">Missão</h1>

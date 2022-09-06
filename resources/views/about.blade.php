@@ -16,7 +16,8 @@
                     <h1 class="title text-2xl font-extrabold text-left md:text-3xl text-[#264653]">Sobre Nós</h1>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center">
                         <div class="flex flex-col gap-4 justify-center items-center order-last lg:order-first ">
-                            <p class="description">
+                            <p class="description">                                
+                                {{ config('information.quem_somos') }}                                
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ad animi architecto fugiat
                                 deleniti totam quod iusto recusandae non incidunt, unde velit delectus hic ipsa eligendi natus
                                 aut eum at.

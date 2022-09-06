@@ -3,6 +3,9 @@
     <div class="w-full">
         <x-homepage.hero :heroes="$heroes"/>
     </div>
+    <div class="m-auto">
+        <x-styles.title>A Educação é o Único Caminho</x-styles.title>
+    </div>
     <div class="flex flex-col justify-center items-center mt-0">
         <x-homepage.content/>
     </div>

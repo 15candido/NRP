@@ -1,3 +1,10 @@
+{{--<div class="bg-red-400 w-full flex">
+    <div class="w-1/3 bg-blue-400">
+        <img class="max-h-24 m-auto" src="img/logo_rota.png" alt="Logótipo da Na Rota dos Povos">
+    </div>    
+    <div class="w-2/3 bg-green-400">XXX
+    </div>
+</div>--}}
 <nav class="navbar py-6 shadow-2xl">
     <div class="navbar-container container flex flex-row lg:flex-col max-w-7xl  px-5 lg:px-10 justify-center items-center mx-auto gap-4">
         <!-- menu secundary -->
@@ -43,9 +50,8 @@
             </button>
             <!-- Our Logo -->
             <a href="/" class="flex flex-shrink-0 lg:items-center">
-                <img src="img/LogoRota.png" class="w-10 h-10 sm:w-16 sm:h-16 lg:w-24 lg:h-24 mr-4 p-1 bject-cover object-center
-                rounded-full bg-white border-2 border-green-400 " alt="Logótipo da Na Rota dos Povos">
-                <span class="hidden self-center font-black uppercase md:block md:text-xl lg:hidden ">Na Rota dos <br><p class="tracking-normal">Povos</p></span>
+                <img src="img/logo_rota.png" class="max-h-24 mr-4 p-1 bject-cover object-center rounded-full bg-white" alt="Logótipo da Na Rota dos Povos">
+                <span class="self-center font-black uppercase sm:hidden md:text-xl">Na Rota dos <br><p class="tracking-normal">Povos</p></span>
             </a>
             <div class="w-full hidden lg:flex lg:w-auto">
                <div class="list-none flex flex-col text-sm font-black lg:flex-row justify-center lg:items-center mt-4 space-y-2
@@ -81,7 +87,7 @@
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                             </svg>
                         </a>
-                        <div class="absolute hidden  z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                        <div class="absolute z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
                             <ul class="list-none py-2 text-base font-medium text-white text-left normal-case border-t">
                                 <h2 class="text-lg font-extrabold px-4 py-2 mb-3 border-b-2 border-white/60">Projetos</h2>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1"> A Educação é o Único Caminho</a></li>
@@ -98,7 +104,7 @@
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                             </svg>
                         </a>
-                        <div class="absolute hidden  z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                        <div class="absolute z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
                             <ul class="list-none py-2 text-base font-medium text-white text-left normal-case border-t">
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Ser Firquidja</a></li>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Donativos</a></li>
@@ -123,5 +129,3 @@
         // When I unhover remove the dorpdown menu
     </script>
 </nav>
-
-                        

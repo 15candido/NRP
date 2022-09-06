@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\ContabilityController;
 use App\Http\Controllers\UserController;
 use App\Models\Hero;
 use App\Models\Story;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::loginUsingId(1);
+
 Route::get('/', function () {
     $stories = Story::all();
     $heroes = Hero::all();
@@ -26,6 +30,7 @@ Route::get('/', function () {
         'heroes' => $heroes
     ]); 
 });
+
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -36,6 +41,7 @@ Route::get('/intervention-areas', function () {
 Route::get('/help', function () {
     return view('help');
 });
+
 Route::get('/about', function () {
     return view('about');
 });
@@ -56,3 +62,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/contas', [ContabilityController::class, 'index'])->middleware('auth');
+Route::get('/contas/create', [ContabilityController::class, 'create'])->middleware('auth');
