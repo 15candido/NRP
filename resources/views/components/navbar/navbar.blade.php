@@ -1,15 +1,8 @@
-{{--<div class="bg-red-400 w-full flex">
-    <div class="w-1/3 bg-blue-400">
-        <img class="max-h-24 m-auto" src="img/logo_rota.png" alt="Logótipo da Na Rota dos Povos">
-    </div>    
-    <div class="w-2/3 bg-green-400">XXX
-    </div>
-</div>--}}
 <nav class="navbar py-6 shadow-2xl">
     <div class="navbar-container container flex flex-row lg:flex-col max-w-7xl  px-5 lg:px-10 justify-center items-center mx-auto gap-4">
         <!-- menu secundary -->
-        <div class="flex flex-wrap w-full lg:flex-row justify-end items-center space-y-1 lg:gap-1 
-            lg:space-y-0 lg:border-b-2 lg:border-gray-50 order-last lg:order-first">
+        <div class="flex flex-wrap w-full lg:flex-row justify-end items-center space-y-1 lg:gap-1 lg:space-y-0 lg:border-b-2 lg:border-gray-50
+            order-last lg:order-first">
             <a href="#" class="searchbar w-11 h-11 p-2 lg:w-8 lg:h-8 rounded-full fill-current hover:bg-gray-200">
                 <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-[#395692]" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -27,6 +20,13 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-[#395692]"  viewBox="0 0 24 24" >
                     <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
                 </svg>
+            </a>
+            <a href="contact" class="contact hidden lg:flex flex-wrap justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 p-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+                <span class="text-xs font-bold text-gray-600 uppercase">Contacto</span>
+                
             </a>
         </div>
         <!-- primary menu -->
@@ -64,10 +64,10 @@
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                             </svg>
                         </a>
-                        <div class="absolute hidden  z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
+                        <div class="absolute z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
                             <ul class="dropdown list-none py-2 text-base font-medium text-white text-left normal-case border-t">
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Sobre Nós</a></li>
-                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">História</a></li>
+                                <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">A Nossa História</a></li>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Órgão Social</a>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Equipa de Gestão</a></li>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Voluntários</a></li>
@@ -89,7 +89,7 @@
                         </a>
                         <div class="absolute z-10 top-full min-w-full w-max bg-bluelogo shadow-md rounded-b-xl">
                             <ul class="list-none py-2 text-base font-medium text-white text-left normal-case border-t">
-                                <h2 class="text-lg font-extrabold px-4 py-2 mb-3 border-b-2 border-white/60">Projetos</h2>
+                                <!-- <h2 class="text-lg font-extrabold px-4 py-2 mb-3 border-b-2 border-white/60">Projetos</h2> -->
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1"> A Educação é o Único Caminho</a></li>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Casa da Mamé</a></li>
                                 <li class="px-4 py-2 hover:bg-blue-400 border-b"><a href="#" class="py-1">Tabanca dos Pequenitos</a></li>
@@ -112,12 +112,6 @@
                                 <li class="px-4 py-2 hover:bg-blue-400 border-none"><a href="#" class="py-1">Partilhar</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="flex flex-wrap gap-2 p-2 rounded-t-2xl hover:bg-bluelogo hover:text-white duration-200">
-                        <li class=""><a href="contact" class="py-1">Contacto</a></li>
-                    </div>
-                    <div class="flex justify-center items-center">
-                        <x-button.call-to-action>Fazer Parte</x-button.call-to-action>   
                     </div>
                 </div>
             </div>
