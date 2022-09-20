@@ -7,7 +7,7 @@
         <x-styles.title>A Educação é o Único Caminho</x-styles.title>
     </div> -->
     <div class="flex flex-col justify-center items-center mt-0">
-        <x-homepage.content/>
+        <x-homepage.content :information="$information"/>
     </div>
 {{--
     <div class="max-w-4xl m-auto mt-8">

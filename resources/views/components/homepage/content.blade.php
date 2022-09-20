@@ -153,6 +153,11 @@
       </x-cards.impact>
     </div>
   </div>
+
+  <x-homepage.information :information="$information"/>
+
+
+
   <!-- How to contribute/help in our causes  -->
   <div class="relative grid grid-flow-row w-full h-auto lg:max-h-[500px] justify-center items-center bg-gradient-to-r
    from-[#4ca747] via-[#019393] to-[#0082b3]">
