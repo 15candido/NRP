@@ -2,28 +2,29 @@
 <div class="content-container relative flex flex-col w-full mx-auto my-20 gap-20 text-base
  text-gray-600 justify-center items-center">
  <!-- Who we're and where we're working -->
-  <div class="abuotUs-container grid md:grid-cols-2 lg:grid-cols-2 max-w-7xl justify-center gap-4  px-5
-    lg:px-10">
-    <div class="text-5xl md:text-6xl lg:text-8xl text-[#264653] font-extrabold p-2 leading-normal overflow-hidden">
+ <div class="flex flex-row w-full max-w-7xl justify-center px-5 lg:px-10">
+    <div class="flex flex-wrap w-full items-center text-5xl md:text-6xl lg:text-7xl text-[#264653] font-extrabold 
+    leading-normal overflow-hidden">
       A Educação é o Único Caminho
     </div>
-    <div class="flex flex-col lg:flex-row p-2">
-      <x-cards.topic_content>
-        <h1 class="title text-2xl md:text-3xl font-extrabold text-[#264653]">Quem Somos</h1>
-        <!-- <p class="pt-2">{{ config('information.quem_somos') }}</p> -->
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
-          error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
-          et nemo dolores consequatur quidem doloribus?
-        </p>
-      </x-cards.topic_content>
-      <x-cards.topic_content>
-        <h1 class="title text-2xl md:text-3xl font-extrabold mb-2 text-[#264653]">Missão</h1>
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
-          error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
-          et nemo dolores consequatur quidem doloribus?
-        </p>
-      </x-cards.topic_content>
-    </div>
+  </div>
+  <div class="abuotUs-container grid md:grid-cols-2 lg:grid-cols-2 max-w-7xl justify-center gap-4  px-5
+    lg:px-10">
+    <x-cards.topic_content>
+      <h1 class="title text-2xl md:text-3xl font-extrabold text-[#264653]">Quem Somos</h1>
+      <!-- <p class="pt-2">{{ config('information.quem_somos') }}</p> -->
+      <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
+        error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
+        et nemo dolores consequatur quidem doloribus?
+      </p>
+    </x-cards.topic_content>
+    <x-cards.topic_content>
+      <h1 class="title text-2xl md:text-3xl font-extrabold mb-2 text-[#264653]">Missão</h1>
+      <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ullam? Sapiente 
+        error voluptates dolorum? Ea illum sunt explicabo, numquam deserunt veniam iure maxime culpa
+        et nemo dolores consequatur quidem doloribus?
+      </p>
+    </x-cards.topic_content>
   </div>
   <!-- Ongoing project -->
   <div class="relative flex flex-col w-full h-auto py-10 lg:max-h-[500px] justify-center items-center bg-gradient-to-r
