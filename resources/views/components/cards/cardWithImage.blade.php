@@ -1,7 +1,6 @@
 
 <!-- card for ongoing project -->
 <div class="main-card-container">
-  <x-cards.cardStructure>
     <div class="card">
       <a href="#" class="card-image">
         <img src="img/ProjectImg/education.jpg" alt="A Educação é o Único Caminho">
@@ -15,5 +14,4 @@
         <x-button.button>Saber +</x-button.button>
       </div>
     </div>
-  </x-cards.cardStructure>
 </div>

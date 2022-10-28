@@ -18,7 +18,6 @@ body.hidden-scrolling{
     box-sizing: border-box;
 }
 
-/*////////// html tag  //////////*/
 ul{
     @apply list-none m-0 p-0;
 }
@@ -41,7 +40,7 @@ a{
     @apply w-full h-auto pt-6;
 }
 
-/*///////////////////////////////////// menu secundary /////////////////////////////////////*/
+/*//////// menu secundary ////////*/
 
 .header-secundary{
     @apply  w-full h-auto hidden flex-row px-5 mb-2 justify-center items-center
@@ -72,8 +71,7 @@ header .menu-icons > .icons a{
     @apply opacity-100;
 }
 
-
-/*///////////////////////////////////// primary menu ///////////////////////////////////// */
+/*///////// primary men////////// */
 
 .header-main{
     @apply flex flex-row w-full h-auto max-w-7xl mx-auto justify-between 
@@ -245,10 +243,6 @@ header .close-nav-menu > img{
 
 @media(max-width: 1023px){
 
-    /* .header .logo > a span{
-        @apply flex -z-0 -translate-x-0 opacity-100;
-    } */
-    
     .header .nav-menu{
         @apply fixed z-50 -right-full invisible w-1/2 h-full top-0 px-5 pt-4 
         overflow-y-auto bg-[#1d3557] transition-all duration-500 ease-in-out;
@@ -373,8 +367,6 @@ header .close-nav-menu > img{
     @apply invisible;
 }
  
-/* ///// hero section container end///// */
-
 /* /////////////////////////////////////////////////////////////////////n/////////////////////////////// */
         /* Component css code start */
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -385,8 +377,6 @@ header .close-nav-menu > img{
     uppercase rounded-lg shadow-md pointer-events-auto focus:bg-[#4ca747] focus:shadow-lg 
     focus:outline-none focus:ring-0 active:bg-[#c86148] active:shadow-lg transition-all 
     duration-500 ease-in-out;
-
-    /* bg-[#f08f77] hover:bg-[#E76F51] focus:bg-[#E76F51] */
 }
 .read-me:hover{
     @apply bg-white text-gray-600 ring-1  ring-[#4ca747] shadow-lg;
@@ -509,40 +499,40 @@ header .close-nav-menu > img{
     lg:px-10;
 }
 
-.main-section-withbg{
-    @apply  relative flex flex-col w-full h-auto py-10 justify-center
-    items-center bg-gradient-to-r from-[#4ca747] via-[#019393] to-[#0082b3]; 
-}
-
-.main-section-withbg .section-brief{
+.section-brief-with-image{
     @apply container z-10 grid grid-flow-row max-w-7xl gap-6 justify-center px-5 py-10 lg:px-10;
 }
 
-.main-section-withbg .section-brief span{
+.section-brief-with-image span{
     @apply flex flex-col space-y-4 text-base leading-normal text-white;
 }
 
-.main-section-withbg .section-brief span h2{
+.section-brief-with-image span h2{
     @apply text-2xl md:text-3xl font-extrabold text-left;
 }
-.main-section-withbg .section-brief .items-section{
+.section-brief-with-image .items-section-project{
     @apply grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center overflow-hidden;
 }
 
-.main-section-withoutbg{
-    @apply grid grid-flow-row max-w-7xl gap-6 justify-center px-5 lg:px-10;
-}
-
-.main-section-withoutbg span{
+.briefing-section-impact{
     @apply flex flex-col space-y-4 text-base leading-normal;
 }
 
-.main-section-withoutbg span h2{
+.briefing-section-impact h2{
     @apply text-2xl md:text-3xl font-extrabold text-[#264653] text-left;
 }
 
-.main-section-withoutbg .items-section{
+.items-section{
     @apply grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 justify-items-center;
+}
+
+.items-section-with-out-image{
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center overflow-hidden;
+}
+
+.cardPartnerStructure{
+    @apply logo grid grid-cols-4 gap-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 justify-center
+    items-center;
 }
 /* /////card with image component start ///// */
 
@@ -568,8 +558,8 @@ header .close-nav-menu > img{
 .card .card-description p{
     @apply text-base text-gray-600 break-all;
 }
+/* /////impact card component ///// */
 
-/* impact card component */
 .card-impact{
     @apply w-full flex flex-col space-y-4 p-6 justify-center items-center text-center rounded-lg shadow-md;
 }
@@ -580,42 +570,15 @@ header .close-nav-menu > img{
 .card-impact p{
     @apply font-bold;
 }
+/* ///// card partner component ///// */
+.cardPartner{
+    @apply col-span-1 p-1 rounded-lg shadow-md;
+}
 
-/* /////component end ///// */
+.cardPartner a img{
+    @apply object-contain object-center w-[100px] h-[56px] ;
+}
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
         /* Component css code end */
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@layer components{
-    
-    .bg-greenlogo{
-       @apply bg-[#4ca747];
-    }
-    .greentextFromLogo{
-        @apply text-[#4ca747];
-    }
-    .bg-bluelogo{
-        @apply bg-cyan-600;
-    }
-    .bluetextFromLogo{
-        @apply text-cyan-600;
-    }
-
-    .greenborderFromLogo{
-        @apply border-[#4ca747];
-    }
-    .blueborderFromLogo{
-        @apply border-cyan-600;
-    }
-
-    .blueringFromLogo{
-        @apply ring-cyan-600;
-    }
-    .resize-w{
-        @apply grid grid-flow-row w-11/12 lg:w-10/12 h-auto justify-items-center;
-    } 
-    .resize-h{
-        @apply h-[500px] xl:h-[415px] 2xl:h-[500px];
-    }
-}
