@@ -4,6 +4,7 @@ use App\Http\Controllers\ContabilityController;
 use App\Http\Controllers\UserController;
 use App\Models\Hero;
 use App\Models\Information;
+use App\Models\Partner;
 use App\Models\Story;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -26,11 +27,13 @@ Route::get('/', function () {
     $stories = Story::all();
     $heroes = Hero::all();
     $information = Information::where('visible', true)->get();
+    $partners = Partner::all();
 
     return view('welcome', [
         'stories' => $stories,
         'heroes' => $heroes,
-        'information' => $information
+        'information' => $information,
+        'partners' => $partners
     ]); 
 });
 

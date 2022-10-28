@@ -64,114 +64,112 @@
     </span>
     <div class="partner-logo grid grid-cols-4 gap-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 justify-center
     items-center">
+      @foreach($partners as $partner)
+        <x-cards.cardPartner src="{{ $partner->img }}" alt="{{ $partner->alt }}"/>
+      @endforeach
+{{--
+    
+      
       <x-cards.cardPartner>
-        <img src="img/partner/black_shop.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/bgp.png">
       </x-cards.partiner> 
       <x-cards.cardPartner>
-        <img src="img/partner/airoh.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/casa_macau.png">
       </x-cards.partiner>
       <x-cards.cardPartner>
-        <img src="img/partner/ami.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
-      </x-cards.partiner> 
-      <x-cards.cardPartner>
-        <img src="img/partner/bgp.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
-      </x-cards.partiner> 
-      <x-cards.cardPartner>
-        <img src="img/partner/casa_macau.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/camara_municipal _porto.png">
       </x-cards.partiner>
       <x-cards.cardPartner>
-        <img src="img/partner/camara_municipal _porto.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/contemporanea_editora.png">
+      </x-cards.partiner> 
+      <x-cards.cardPartner>
+        <img src="img/partner/dainese.png">
+      </x-cards.partiner> 
+      <x-cards.cardPartner>
+        <img src="img/partner/f_rego.png">
+      </x-cards.partiner> 
+      <x-cards.cardPartner>
+        <img src="img/partner/escola_prof_campanha.jpg">
+      </x-cards.partiner> 
+      <x-cards.cardPartner>
+        <img src="img/partner/arvore.png">
       </x-cards.partiner>
       <x-cards.cardPartner>
-        <img src="img/partner/contemporanea_editora.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
-      </x-cards.partiner> 
-      <x-cards.cardPartner>
-        <img src="img/partner/dainese.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
-      </x-cards.partiner> 
-      <x-cards.cardPartner>
-        <img src="img/partner/f_rego.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
-      </x-cards.partiner> 
-      <x-cards.cardPartner>
-        <img src="img/partner/escola_prof_campanha.jpg" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
-      </x-cards.partiner> 
-      <x-cards.cardPartner>
-        <img src="img/partner/arvore.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/baviera_sa.jpg">
       </x-cards.partiner>
       <x-cards.cardPartner>
-        <img src="img/partner/baviera_sa.jpg" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
-      </x-cards.partiner>
-      <x-cards.cardPartner>
-        <img src="img/partner/black_shop.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/black_shop.png">
       </x-cards.partiner> 
       <x-cards.cardPartner>
-        <img src="img/partner/airoh.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/airoh.png">
       </x-cards.partiner> 
       <x-cards.cardPartner>
-        <img src="img/partner/ami.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/ami.png">
       </x-cards.partiner>    
       <x-cards.cardPartner>
-        <img src="img/partner/bgp.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/bgp.png">
       </x-cards.cardPartner>
       <x-cards.cardPartner>
-        <img src="img/partner/casa_macau.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/casa_macau.png">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-        <img src="img/partner/camara_municipal _porto.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/camara_municipal _porto.png">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-        <img src="img/partner/contemporanea_editora.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/contemporanea_editora.png">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-        <img src="img/partner/dainese.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/dainese.png">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-        <img src="img/partner/f_rego.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/f_rego.png">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-        <img src="img/partner/escola_prof_campanha.jpg" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/escola_prof_campanha.jpg">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-        <img src="img/partner/arvore.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+        <img src="img/partner/arvore.png">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/baviera_sa.jpg" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/baviera_sa.jpg">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/black_shop.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/black_shop.png">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/airoh.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/airoh.png">
        </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/ami.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
-       </x-cards.cardPartner> 
-       <x-cards.cardPartner> 
-            <img src="img/partner/bgp.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/ami.png">
        </x-cards.cardPartner> 
        <x-cards.cardPartner> 
-            <img src="img/partner/casa_macau.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/bgp.png">
+       </x-cards.cardPartner> 
+       <x-cards.cardPartner> 
+            <img src="img/partner/casa_macau.png">
        </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/camara_municipal _porto.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/camara_municipal _porto.png">
        </x-cards.cardPartner> 
       <x-cards.cardPartner> 
             <img src="img/partner/contemporanea_editora.png" class="object-contain object-cente w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
        </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/dainese.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/dainese.png">
        </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/f_rego.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/f_rego.png">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/escola_prof_campanha.jpg" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/escola_prof_campanha.jpg">
        </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/arvore.png" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/arvore.png">
       </x-cards.cardPartner> 
       <x-cards.cardPartner> 
-            <img src="img/partner/baviera_sa.jpg" class="object-contain object-center w-[100px] h-[56px]" alt="Logotipo da empresa Black Shop">
+            <img src="img/partner/baviera_sa.jpg">
       </x-cards.cardPartner> 
+      --}}
     </div>
   </div>
 </div>
