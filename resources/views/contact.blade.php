@@ -1,3 +1,5 @@
+
+<!-- Contact form -->
 <x-guestLayout>
     <div class="flex min-h-screen justify-center my-20 items-center">
         <div class="flex flex-col md:flex-row w-full max-w-7xl px-5 py-6 space-y-20 md:space-x-20 md:space-y-0 lg:px-10

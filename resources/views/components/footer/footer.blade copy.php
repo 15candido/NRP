@@ -88,17 +88,12 @@
                 </div>
             </div>
             <div class="link col-span-full hidden order-1 md:col-span-2 lg:flex lg:flex-col lg:col-span-1 lg:order-2">
-                <h1 class="link-title text-2xl font-extrabold mb-4 text-white">Links</h1>
+                <h1 class="link-title text-2xl font-extrabold mb-4 text-white">Links Principais</h1>
                 <div class="flex flex-col justify-center space-y-2">
                     <a href="#" class=""><span class=" hover:text-[#264653]">Quem Somos</span></a>
-                    <a href="#" class=""><span class=" hover:text-[#264653]">O que fazemos</span></a>
+                    <a href="#" class=""><span class=" hover:text-[#264653]">Área de Intervenção</span></a>
                     <a href="#" class=""><span class=" hover:text-[#264653]">Como Ajudar</span></a>
-                    <a href="#" class=""><span class=" hover:text-[#264653]">Portifólios</span></a>
-                    <a href="#" class=""><span class=" hover:text-[#264653]">Relatórios</span></a>
-                    <a href="#" class=""><span class=" hover:text-[#264653]">Diário dos Voluntários</span></a>
                     <a href="#" class=""><span class=" hover:text-[#264653]">Contacto</span></a>
-                    <a href="#" class=""><span class=" hover:text-[#264653]">Voluntários</span></a>
-                    <a href="#" class=""><span class=" hover:text-[#264653]">Parceiros</span></a>
                 </div>
             </div>
             <div class="our-project col-span-full hidden order-2 md:col-span-3 lg:flex lg:flex-col lg:col-span-1 lg:order-3">

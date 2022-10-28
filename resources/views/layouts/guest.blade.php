@@ -4,37 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <title>{{ config('app.name', 'Laravel') }}</title>
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto:wght@100&display=swap" rel="stylesheet">
         <!-- Styles -->
          <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        <!-- <script src="{{ mix('js/app.js') }}" defer></script> -->
         
         @livewireStyles
     </head>
-    <!-- body content -->
-    <body class="font-body bg-white/25">
-        <!-- header  -->
+    <body class="font-body">
+        <!-- header start  -->
         <x-navbar.navbar/>
-        <!-- Main container to wrap all the components to be delivered to the guestLayout -->
-        <div class="main-container">
+        <!-- header start  -->
+
+        <!-- main container secttion start -->
+        <section class="main-container">
             {{ $slot }}
-        </div>
-        <!-- Footer  -->
+        </section>
+        <!-- main container secttion end -->
+
+        <!-- footer section start  -->
         <x-footer.footer/>
-        <!-- livewirescripts code  -->
-        @livewireScripts
-        <script>
-            function Menu(e){
-                let list = document.querySelector('ul');
-                e.name === 'menu' ? (e.name = "close",list.classList.add('opacity-100')) 
-                : (e.name = "menu",list.classList.remove('opacity-100'))
-            }
-        </script>
+         <!-- footer section end  -->
+         
+        <!-- javascript start  -->
+        <script src="js/index.js"></script>
     </body>
 </html>
