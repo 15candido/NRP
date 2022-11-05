@@ -3,7 +3,10 @@
 use App\Http\Controllers\ContabilityController;
 use App\Http\Controllers\UserController;
 use App\Models\Hero;
-use App\Models\Information;
+use App\Models\About;
+use App\Models\Project;
+use App\Models\Impact;
+use App\Models\HowToHelp;
 use App\Models\Partner;
 use App\Models\Story;
 use App\Models\User;
@@ -26,15 +29,30 @@ Auth::loginUsingId(1);
 Route::get('/', function () {
     $stories = Story::all();
     $heroes = Hero::all();
-    $information = Information::where('visible', true)->get();
+    $abouts = About::all();
+    $projects = Project::where('visible', true)->get(); 
+    $impacts = Impact::where('visible', true)->get();
+    $howToHelp = HowToHelp::all();
     $partners = Partner::all();
+   
 
     return view('welcome', [
         'stories' => $stories,
         'heroes' => $heroes,
-        'information' => $information,
+        'abouts' => $abouts,
+        'projects' => $projects,
+        'impacts' => $impacts,
+        'howToHelp' => $howToHelp,
         'partners' => $partners
     ]); 
+});
+
+Route::get('/projects', function () {
+    $projects = Project::all();
+
+    return view('projects',[
+        'projects' => $projects
+    ]);
 });
 
 Route::get('/contact', function () {
@@ -44,6 +62,7 @@ Route::get('/contact', function () {
 Route::get('/intervention-areas', function () {
     return view('intervention-areas');
 });
+
 Route::get('/help', function () {
     return view('help');
 });

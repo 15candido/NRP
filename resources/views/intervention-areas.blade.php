@@ -73,7 +73,7 @@
                                 <div class="text-base pb-2">
                                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
                                     neque.</p>
-                                    <x-button.read-more>Saber +</strong></x-button.read-more>
+                                    <x-button.button>Saber +</strong></x-button.button>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                                 <div class="text-base pb-2">
                                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
                                     neque.</p>
-                                    <x-button.read-more>Saber +</strong></x-button.read-more>
+                                    <x-button.button>Saber +</strong></x-button.button>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                                 <div class="text-base pb-2">
                                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
                                     neque.</p>
-                                    <x-button.read-more>Saber +</strong></x-button.read-more>
+                                    <x-button.button>Saber +</strong></x-button.button>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                                 <div class="text-base pb-2">
                                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
                                     neque.</p>
-                                    <x-button.read-more>Saber +</strong></x-button.read-more>
+                                    <x-button.button>Saber +</strong></x-button.button>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                                 <div class="text-base pb-2">
                                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
                                     neque.</p>
-                                    <x-button.read-more>Saber +</strong></x-button.read-more>
+                                    <x-button.button>Saber +</strong></x-button.button>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                                 <div class="text-base pb-2">
                                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
                                     neque.</p>
-                                    <x-button.read-more>Saber +</strong></x-button.read-more>
+                                    <x-button.button>Saber +</strong></x-button.button>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +181,7 @@
                                 <div class="text-base pb-2">
                                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
                                     neque.</p>
-                                    <x-button.read-more>Saber +</strong></x-button.read-more>
+                                    <x-button.button>Saber +</strong></x-button.button>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +199,7 @@
                                 <div class="text-base pb-2">
                                     <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit Necessitatibus rem
                                     neque.</p>
-                                    <x-button.read-more>Saber +</strong></x-button.read-more>
+                                    <x-button.button>Saber +</strong></x-button.button>
                                 </div>
                             </div>
                         </div>

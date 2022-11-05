@@ -1,7 +1,7 @@
 
 <!-- header component -->
 <header class="header">
-    <div class="container">
+    <div class="container-header">
         <div class="header-secundary">
             <ul class="menu-icons">
                 <li class="icons">

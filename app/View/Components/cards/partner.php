@@ -6,14 +6,10 @@ use Illuminate\View\Component;
 
 class partner extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $partners;
+    public function __construct($partners)
     {
-        //
+        $this->partners = $partners;
     }
 
     /**

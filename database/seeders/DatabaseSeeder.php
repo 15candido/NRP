@@ -18,8 +18,11 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             StorySeeder::class,
             HeroSeeder::class,
-            InformationSeeder::class,
+            ImpactSeeder::class,
             PartnerSeeder::class,
+            AboutSeeder::class,
+            ProjectSeeder::class,
+            HowToHelpSeeder::class,
         ]);
         \App\Models\User::factory(100)->create();
         \App\Models\Story::factory(20)->create();

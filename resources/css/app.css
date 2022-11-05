@@ -36,8 +36,8 @@ a{
     shadow-2xl;
 }
 
-.container{
-    @apply w-full h-auto pt-6;
+.container-header{
+    @apply w-full h-auto px-5 pt-6 lg:px-10;
 }
 
 /*//////// menu secundary ////////*/
@@ -382,19 +382,6 @@ header .close-nav-menu > img{
     @apply bg-white text-gray-600 ring-1  ring-[#4ca747] shadow-lg;
 }
 
-/*///// about us lead component css code  /////*/
-.card-AbouUs-lead{
-    @apply flex flex-col justify-center items-center;
-}
-
-.card-AbouUs-lead span{
-    @apply flex flex-col gap-2 p-2 justify-center text-justify leading-normal overflow-hidden;
-}
-
-.card-AbouUs-lead span h2{
-    @apply text-2xl md:text-3xl font-extrabold text-[#264653];
-} 
-
 /*///// newslatter component css code  /////*/
 .newsletter{
     @apply flex flex-col gap-2 w-full h-auto justify-center items-center;
@@ -483,100 +470,6 @@ header .close-nav-menu > img{
 .main-content-container{
     @apply relative flex flex-col w-full mx-auto my-20 gap-20 text-base
     text-gray-600 justify-center items-center;
-}
-
-.main-content-container .slogan-container{
-    @apply flex flex-row w-full max-w-7xl justify-center px-5 lg:px-10;
-}
-
-.main-content-container .slogan-container .slogan{
-    @apply flex flex-wrap w-full items-center text-5xl md:text-6xl lg:text-7xl text-[#264653] 
-    font-extrabold leading-normal overflow-hidden;
-}
-
-.main-content-container .abuotUs-container{
-    @apply grid md:grid-cols-2 max-w-7xl justify-center gap-4  px-5
-    lg:px-10;
-}
-
-.section-brief-with-image{
-    @apply container z-10 grid grid-flow-row max-w-7xl gap-6 justify-center px-5 py-10 lg:px-10;
-}
-
-.section-brief-with-image span{
-    @apply flex flex-col space-y-4 text-base leading-normal text-white;
-}
-
-.section-brief-with-image span h2{
-    @apply text-2xl md:text-3xl font-extrabold text-left;
-}
-.section-brief-with-image .items-section-project{
-    @apply grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center overflow-hidden;
-}
-
-.briefing-section-impact{
-    @apply flex flex-col space-y-4 text-base leading-normal;
-}
-
-.briefing-section-impact h2{
-    @apply text-2xl md:text-3xl font-extrabold text-[#264653] text-left;
-}
-
-.items-section{
-    @apply grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 justify-items-center;
-}
-
-.items-section-with-out-image{
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center overflow-hidden;
-}
-
-.cardPartnerStructure{
-    @apply logo grid grid-cols-4 gap-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 justify-center
-    items-center;
-}
-/* /////card with image component start ///// */
-
-.main-card-container{
-    @apply flex justify-center;
-}
-
-.card{
-    @apply flex flex-col bg-white rounded-lg shadow-lg justify-center 
-    md:max-w-md overflow-hidden ;
-}
- .card .card-image img{
-    @apply rounded-t-lg;
-}
-.card > .card-description{
-    @apply space-y-4 p-6;
-}
-
-.card .card-description h5{
-    @apply text-lg font-extrabold leading-normal break-words;
-}
-
-.card .card-description p{
-    @apply text-base text-gray-600 break-all;
-}
-/* /////impact card component ///// */
-
-.card-impact{
-    @apply w-full flex flex-col space-y-4 p-6 justify-center items-center text-center rounded-lg shadow-md;
-}
-.card-impact h2{
-    @apply text-3xl font-extrabold text-cyan-600;
-}
-
-.card-impact p{
-    @apply font-bold;
-}
-/* ///// card partner component ///// */
-.cardPartner{
-    @apply col-span-1 p-1 rounded-lg shadow-md;
-}
-
-.cardPartner a img{
-    @apply object-contain object-center w-[100px] h-[56px] ;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */

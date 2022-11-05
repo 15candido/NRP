@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('alt');
-            $table->string('img');
+            $table->string('logo');
             $table->boolean('visible')->default(true);
             $table->timestamps();
         });
