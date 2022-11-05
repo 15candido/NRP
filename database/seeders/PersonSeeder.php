@@ -17,6 +17,7 @@ class PersonSeeder extends Seeder
     public function run()
     {
         DB::table('people')->insert([    
+            'id' => 1,
             'name' => 'David',
             'slug' => 'davidfreitas',
             'email' => 'dvdfreitas@gmail.com',
@@ -26,6 +27,7 @@ class PersonSeeder extends Seeder
 
 
         DB::table('people')->insert([    
+            'id' => 2,
             'name' => 'Cândido',
             'slug' => 'candidosilva',
             'email' => 'candido@gmail.com',

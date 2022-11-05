@@ -55,6 +55,11 @@ Route::get('/projects', function () {
     ]);
 });
 
+Route::get('/orgaos_sociais', function () {
+    return view('governing_bodies');
+});
+
+
 Route::get('/contact', function () {
     return view('contact');
 });

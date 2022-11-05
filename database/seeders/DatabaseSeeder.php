@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             AboutSeeder::class,
             ProjectSeeder::class,
             HowToHelpSeeder::class,
+            PersonSeeder::class,
         ]);
         \App\Models\User::factory(100)->create();
         \App\Models\Story::factory(20)->create();
