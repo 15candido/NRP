@@ -1357,6 +1357,9 @@ select {
 .grid-flow-row {
   grid-auto-flow: row;
 }
+.grid-flow-col {
+  grid-auto-flow: column;
+}
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -1381,8 +1384,14 @@ select {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.items-start {
+  align-items: flex-start;
+}
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-end {
   justify-content: flex-end;

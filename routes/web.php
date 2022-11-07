@@ -24,7 +24,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Auth::loginUsingId(1);
 
 Route::get('/', function () {
@@ -33,7 +32,7 @@ Route::get('/', function () {
     $abouts = About::all();
     $projects = Project::where('visible', true)->get(); 
     $impacts = Impact::where('visible', true)->get();
-    $howToHelp = HowToHelp::all();
+    $howToHelp = HowToHelp::where('first_option', true)->get();
     $partners = Partner::all();
    
     return view('welcome', [
@@ -54,6 +53,14 @@ Route::get('/projetos', function () {
     return view('projects',[
         'projects' => $projects,
         'areas' => $areas
+    ]);
+});
+
+Route::get('/como_ajudar', function () {
+    $help = HowToHelp::all();
+ 
+    return view('help',[
+        'help' => $help
     ]);
 });
 

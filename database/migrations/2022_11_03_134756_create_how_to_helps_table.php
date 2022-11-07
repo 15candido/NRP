@@ -16,9 +16,13 @@ return new class extends Migration
         Schema::create('how_to_helps', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('description');
+            $table->text('description')->nullable();
+            $table->boolean('first_option')->default(true);
+            $table->string('icon')->nullable();
+            $table->string('alt')->nullable();
             $table->timestamps();
         });
+
     }
 
     /**
