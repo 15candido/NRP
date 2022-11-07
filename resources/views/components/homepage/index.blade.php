@@ -17,7 +17,7 @@
       <h2 class="text-2xl md:text-3xl font-extrabold text-left">Projetos em Curso</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae</p>
     </span>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center overflow-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center overflow-hidden">
       <x-projects.ongoing :ongoingProjects="$projects"/>
     </div>
   </x-cards.structureWithBg>

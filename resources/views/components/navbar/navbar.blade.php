@@ -34,7 +34,7 @@
         </div>
         <div class="header-main">
             <div class="logo">
-                <a href="#">
+                <a href="/">
                     <img src="img/logo_rota.png" class="logo-rota" alt="Logótipo da Na Rota dos Povos">
                     <span>Na Rota dos <br><p>Povos</p></span>
                 </a>
@@ -69,7 +69,7 @@
                         </ul>
                     </li>
                     <li class="menu-item menu-dropdown">
-                        <a href="#" data-toggle="sub-menu">
+                        <a href="projetos" data-toggle="sub-menu">
                            Projetos
                             <svg xmlns="http://www.w3.org/2000/svg" class="arrow-chevron-icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />

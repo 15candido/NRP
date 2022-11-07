@@ -1,8 +1,8 @@
 <!-- card for ongoing project -->
 @foreach($ongoingProjects as $project)
     <div class="flex w-full justify-center items-center">
-        <div class="flex flex-col w-full bg-white rounded-lg shadow-lg justify-center md:max-w-md hover:bg-gray-200
-            ">
+        <div class="flex flex-col w-full h-full bg-white rounded-lg shadow-md justify-center md:max-w-md
+         hover:bg-gray-200">
             <a href="#">
                 <img src="{{$project->image}}" class="rounded-t-lg" alt="{{$project->alt}}">
             </a>
@@ -14,3 +14,4 @@
         </div>
     </div>
 @endforeach
+

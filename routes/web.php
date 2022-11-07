@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Models\Hero;
 use App\Models\About;
 use App\Models\Project;
+use App\Models\Area;
 use App\Models\Impact;
 use App\Models\HowToHelp;
 use App\Models\Partner;
@@ -35,7 +36,6 @@ Route::get('/', function () {
     $howToHelp = HowToHelp::all();
     $partners = Partner::all();
    
-
     return view('welcome', [
         'stories' => $stories,
         'heroes' => $heroes,
@@ -47,11 +47,13 @@ Route::get('/', function () {
     ]); 
 });
 
-Route::get('/projects', function () {
+Route::get('/projetos', function () {
     $projects = Project::all();
+    $areas = Area::all();
 
     return view('projects',[
-        'projects' => $projects
+        'projects' => $projects,
+        'areas' => $areas
     ]);
 });
 

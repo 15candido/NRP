@@ -1,15 +1,15 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\projects;
 
 use Illuminate\View\Component;
 
-class PageHeader extends Component
+class Area extends Component
 {
-//    public $pageHeader;
-    public function __construct()
-    {      
-        // $this-> pageHeader = $pageHeader;  
+    public $areas;
+    public function __construct($areas)
+    {
+        $this->areas = $areas;
     }
 
     /**
@@ -19,6 +19,6 @@ class PageHeader extends Component
      */
     public function render()
     {
-        return view('components.page-header');
+        return view('components.projects.area');
     }
 }

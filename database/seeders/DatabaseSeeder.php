@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             ProjectSeeder::class,
             HowToHelpSeeder::class,
             PersonSeeder::class,
+            AreaSeeder::class,
         ]);
         \App\Models\User::factory(100)->create();
         \App\Models\Story::factory(20)->create();
