@@ -46,6 +46,16 @@ Route::get('/', function () {
     ]); 
 });
 
+Route::get('/quem_somos', function () {
+    $impacts = Impact::all();
+    $partners = Partner::all();
+    
+    return view('about', [
+        'impacts' => $impacts,
+        'partners' => $partners
+    ]);
+});
+
 Route::get('/projetos', function () {
     $projects = Project::all();
     $areas = Area::all();
@@ -68,21 +78,8 @@ Route::get('/orgaos_sociais', function () {
     return view('governing_bodies');
 });
 
-
 Route::get('/contact', function () {
     return view('contact');
-});
-
-Route::get('/intervention-areas', function () {
-    return view('intervention-areas');
-});
-
-Route::get('/help', function () {
-    return view('help');
-});
-
-Route::get('/about', function () {
-    return view('about');
 });
 
 Route::get('/teste', function () {

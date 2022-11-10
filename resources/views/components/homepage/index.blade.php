@@ -13,10 +13,12 @@
   </div>
   <!-- Ongoing project -->
   <x-cards.structureWithBg>
-    <span class="flex flex-col space-y-4 text-base leading-normal text-white">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-left">Projetos em Curso</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae</p>
-    </span>
+    <x-cards.info-default-card 
+      title="Projetos em curso"
+      description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dignissimos fugit iusto?
+        Soluta laboriosam impedit veritatis asperiores animi accusantium qui, quia quam id provident rem modi 
+        ipsum sunt quisquam ex."
+    />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center overflow-hidden">
       <x-projects.ongoing :ongoingProjects="$projects"/>
     </div>
@@ -24,10 +26,12 @@
 
   <!-- Some of the impacts achieved over the years  -->
   <x-cards.structureWhitOutBg>
-    <span class="flex flex-col space-y-4 text-base leading-normal">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-[#264653] text-left">O que já alcançamos</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae</p>
-    </span>
+    <x-cards.info-default-card 
+      title="O que já alcançamos"
+      description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dignissimos fugit iusto?
+        Soluta laboriosam impedit veritatis asperiores animi accusantium qui, quia quam id provident rem modi 
+        ipsum sunt quisquam ex."
+    />
     <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
       <x-cards.impact :impacts="$impacts"/>
     </div>
@@ -35,10 +39,12 @@
 
   <!-- How to contribute/help in our causes  -->
   <x-cards.structureWithBg>
-    <span class="flex flex-col space-y-4 text-base leading-normal text-white">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-left">Como Ajudar?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae</p>
-    </span>
+    <x-cards.info-default-card 
+      title="Como ajudar?"
+      description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dignissimos fugit iusto?
+        Soluta laboriosam impedit veritatis asperiores animi accusantium qui, quia quam id provident rem modi 
+        ipsum sunt quisquam ex."
+    />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center overflow-hidden">
       <x-help.how-to-help :howToHelp="$howToHelp"/>
     </div>
@@ -46,10 +52,12 @@
 
   <!-- Our partners over the years -->
    <x-cards.structureWhitOutBg>
-    <span class="flex flex-col space-y-4 text-base leading-normal">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-[#264653] text-left">Os Nossos Parceiros</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dolorum hic ut beatae </p>
-    </span>
+    <x-cards.info-default-card 
+      title="Os nossos parceiros"
+      description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique dignissimos fugit iusto?
+        Soluta laboriosam impedit veritatis asperiores animi accusantium qui, quia quam id provident rem modi 
+        ipsum sunt quisquam ex."
+    />
     <div class="grid grid-cols-4 gap-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 justify-center
       items-center">
       <x-cards.partner :partners="$partners"/>

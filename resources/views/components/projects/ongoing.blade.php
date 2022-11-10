@@ -1,6 +1,6 @@
 <!-- card for ongoing project -->
 @foreach($ongoingProjects as $project)
-    <div class="flex w-full justify-center items-center">
+    <div class="flex w-full h-full justify-start items-center">
         <div class="flex flex-col w-full h-full bg-white rounded-lg shadow-md justify-center md:max-w-md
          hover:bg-gray-100">
             <a href="#">

@@ -48,17 +48,18 @@
                 </div>
                 <ul class="menu">
                     <li class="menu-item menu-dropdown">
-                        <a href="#" data-toggle="sub-menu">
+                        <a href="quem_somos" data-toggle="sub-menu">
                             Quem Somos
                             <svg xmlns="http://www.w3.org/2000/svg" class="arrow-chevron-icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
                         </a>
                         <ul class="sub-menu">
-                            <li class="menu-item"><a href="#" class="">Sobre Nós</a></li>
-                            <li class="menu-item"><a href="#" class="">Órgão Sociais</a></li>
-                            <li class="menu-item"><a href="#" class="">Equipa de Gestão</a></li>
-                            <li class="menu-item"><a href="#" class="">Voluntários</a></li>
+                            <li class="menu-item"><a href="#" class="">Sobre nós</a></li>
+                            <li class="menu-item"><a href="#" class="">A nossa história</a></li>
+                            <li class="menu-item"><a href="#" class="">Órgão sociais</a></li>
+                            <li class="menu-item"><a href="#" class="">Equipa de gestão</a></li>
+                            <li class="menu-item"><a href="#" class="">A nossa comunidade</a></li>
                             <li class="menu-item menu-dropdown-children">
                                 <a href="#" data-toggle="sub-menu"> Documentos <i class="plus"></i></a>
                                 <ul class="sub-menu-children ">
@@ -90,9 +91,9 @@
                             </svg>
                         </a>
                         <ul class="sub-menu">
+                            <li class="menu-item"><a href="#" class="">Doar</a></li>
                             <li class="menu-item"><a href="#" class="">Ser Firquidja</a></li>
-                            <li class="menu-item"><a href="#" class="">Donativos</a></li>
-                            <li class="menu-item"><a href="#" class="">Volutário (a)</a></li>
+                            <li class="menu-item"><a href="#" class="">Ser volutário (a)</a></li>
                             <li class="menu-item"><a href="#" class="">Partilhar</a></li>
                         </ul>
                     </li>
