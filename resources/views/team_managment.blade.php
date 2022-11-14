@@ -1,7 +1,7 @@
 <x-guestLayout>
    <div class="flex flex-col min-h-screen justify-center items-center">
         <x-page-header 
-                src="img/ProjectImg/carouselUs.jpg"
+                src="img/ProjectImg/carouselManagment.jpg"
                 title="Equipa de gestão" fromPage="Quem somos" toPage="Equipa de gestão"
                 alt="Imagem da Na Rota dos Povos"
             /> <!--about us hero image -->
