@@ -59,7 +59,7 @@
                             <li class="menu-item"><a href="#" class="">A nossa história</a></li>
                             <li class="menu-item"><a href="orgaos_sociais" class="">Órgãos sociais</a></li>
                             <li class="menu-item"><a href="equipa_gestão" class="">Equipa de gestão</a></li>
-                            <li class="menu-item"><a href="comunidade_rota" class="">A nossa comunidade</a></li>
+                            <li class="menu-item"><a href="a_nossa_comunidade" class="">A nossa comunidade</a></li>
                             <li class="menu-item menu-dropdown-children">
                                 <a href="#" data-toggle="sub-menu"> Documentos <i class="plus"></i></a>
                                 <ul class="sub-menu-children ">

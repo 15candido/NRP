@@ -85,14 +85,15 @@ Route::get('/orgaos_sociais', function () {
 });
 
 Route::get('/equipa_gestão', function () {
-    $profiles = Person::where('profile', 'leader')->get();
+    $profiles = Person::where('profile', 'Team Managment')->get();
+    
     return view('team_managment',[
         
         'profiles' => $profiles
     ]);
 });
 
-Route::get('/comunidade_rota', function () {
+Route::get('/a_nossa_comunidade', function () {
     $profiles = Person::where('profile', 'leader')->get();
     return view('community',[
         

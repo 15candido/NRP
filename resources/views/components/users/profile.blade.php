@@ -7,7 +7,9 @@
         <h4><a href="#" class="border-b-[1px] border-[#0082b3] border-opacity-75 hover:border-b-4 
             hover:border-opacity-100 transition-all duration-300 ease-in-out">{{$profile->name}}</a></h4>
             <div>
-                <p class="font-black">{{$profile->role}}</p>
+                @if($profile->role)
+                    <p class="font-black">{{$profile->role}}</p>
+                @endif
                 <p class="text-base text-gray-600">{{$profile->abstract}}</p>
             </div>
         </div>
