@@ -2,8 +2,7 @@
 <div class="main-content-container">
   <!-- our slogan -->
  <div class="flex flex-row w-full max-w-7xl justify-center px-5 lg:px-10">
-    <div class="flex flex-wrap w-full items-center text-5xl md:text-6xl lg:text-7xl text-[#264653] 
-    font-extrabold leading-normal overflow-hidden">
+    <div class="flex flex-wrap w-full items-center overflow-hidden">
       <h1> A Educação é o Único Caminho</h1>
     </div>
   </div>

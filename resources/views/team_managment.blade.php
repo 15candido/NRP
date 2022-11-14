@@ -2,14 +2,14 @@
    <div class="flex flex-col min-h-screen justify-center items-center">
         <x-page-header 
                 src="img/ProjectImg/carouselUs.jpg"
-                title="Orgãos sociais" fromPage="quem somos" toPage="Orgãos sociais"
+                title="Equipa de gestão" fromPage="quem somos" toPage="Equipa de gestão"
                 alt="Imagem da Na Rota dos Povos"
             /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="flex flex-col py-20 gap-6">
                 <div>
                     <x-cards.info-default-card 
-                        title="Orgãos Sociais"
+                        title="Equipa de gestão"
                         description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore nemo 
                         expedita nisi neque, facilis aperiam quod? Ipsa ipsum voluptatibus officiis cum minima ipsam 
                         maiores, tempora nostrum facere reprehenderit facilis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore nemo 

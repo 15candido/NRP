@@ -11,6 +11,7 @@ use App\Models\HowToHelp;
 use App\Models\Partner;
 use App\Models\Story;
 use App\Models\User;
+use App\Models\Person;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -68,6 +69,7 @@ Route::get('/projetos', function () {
 
 Route::get('/como_ajudar', function () {
     $help = HowToHelp::all();
+    
  
     return view('help',[
         'help' => $help
@@ -75,7 +77,27 @@ Route::get('/como_ajudar', function () {
 });
 
 Route::get('/orgaos_sociais', function () {
-    return view('governing_bodies');
+    $profiles = Person::where('profile', 'leader')->get();
+    return view('governing_bodies',[
+
+        'profiles' => $profiles
+    ]);
+});
+
+Route::get('/equipa_gestão', function () {
+    $profiles = Person::where('profile', 'leader')->get();
+    return view('team_managment',[
+        
+        'profiles' => $profiles
+    ]);
+});
+
+Route::get('/comunidade_rota', function () {
+    $profiles = Person::where('profile', 'leader')->get();
+    return view('community',[
+        
+        'profiles' => $profiles
+    ]);
 });
 
 Route::get('/contact', function () {

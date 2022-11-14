@@ -51,8 +51,8 @@
                     />
                     <div class="flex flex-col w-full h-full gap-4">
                         <x-cards.info-default-card 
-                            title="Guiné-Bissau"
-                            subtitle="Desde 2011 que focamos a nossa actividade na região mais carenciada da Guiné Bissau, a região de
+                            subtitle="Guiné-Bissau"
+                            abstract="Desde 2011 que focamos a nossa actividade na região mais carenciada da Guiné Bissau, a região de
                                 Tombali, e temos a nossa sede da Delegação local na cidade de Catió, que dista cerca de 300 km da
                                 capital Bissau."
                             description="A Guiné-Bissau é um pequeno país da África ocidental constituído por uma parte continental e 

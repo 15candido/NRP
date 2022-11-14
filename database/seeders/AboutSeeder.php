@@ -23,7 +23,7 @@ class AboutSeeder extends Seeder
         ]);
 
         DB::table('abouts')->insert([
-            'title' => 'A Nossa Motivação',
+            'title' => 'A nossa motivação',
             'description' => 'É a melhoria das condições de vida na região
              de Tombali, no sul da Guiné-Bissau e porque acreditamos que a “A Educação é o Único
              Caminho” desde 2010 que apoiamos as escolas e as crianças na região de Tombali.
