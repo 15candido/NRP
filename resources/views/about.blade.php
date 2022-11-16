@@ -6,7 +6,7 @@
             alt="Imagem da Na Rota dos Povos"
         /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
-            <div class="grid grid-flow-row py-20 gap-6 lg:gap-12">
+            <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
                 <x-cards.menu/>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div class="flex flex-col w-full h-auto gap-4">

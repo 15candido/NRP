@@ -95,13 +95,46 @@ Route::get('/equipa_gestão', function () {
 
 Route::get('/a_nossa_comunidade', function () {
     $profiles = Person::where('profile', 'leader')->get();
+
     return view('community',[
+        'profiles' => $profiles
+    ]);
+});
+
+Route::get('/educacao', function () {
+    $profiles = Person::where('profile', 'leader')->get();
+    return view('education',[
         
         'profiles' => $profiles
     ]);
 });
 
-Route::get('/contact', function () {
+Route::get('/casa_da_mame', function () {
+    $profiles = Person::where('profile', 'leader')->get();
+    return view('foster-house',[
+        
+        'profiles' => $profiles
+    ]);
+});
+
+Route::get('/center_especial_educacional', function () {
+    $profiles = Person::where('profile', 'leader')->get();
+    return view('ceet',[
+        
+        'profiles' => $profiles
+    ]);
+});
+
+Route::get('/apoio_saude', function () {
+    $profiles = Person::where('profile', 'leader')->get();
+    return view('healthcare_support',[
+        
+        'profiles' => $profiles
+    ]);
+});
+
+
+Route::get('/contacto', function () {
     return view('contact');
 });
 

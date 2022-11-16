@@ -1,7 +1,12 @@
 
 <!-- Contact form -->
 <x-guestLayout>
-    <div class="flex min-h-screen justify-center my-20 items-center">
+    <x-page-header 
+        src="img/ProjectImg/carouselContact.jpg"
+        title="Contacto" fromPage="Home" toPage="Contacte-nos"
+        alt="Centro de Educação Especial e Terapêutico"
+    /> <!--about us hero image -->
+    <div class="flex min-h-screen justify-center items-center py-20  lg:gap-20">
         <div class="flex flex-col md:flex-row w-full max-w-7xl px-5 py-6 space-y-20 md:space-x-20 md:space-y-0 lg:px-10
             text-gray-600 rounded-lg overflow-hidden">
             <div class="contact-container space-y-6">
@@ -110,11 +115,9 @@
                                 px-4 py-2 outline-none focus:ring-2 focus:ring-[#25caca]">
                             </textarea>
                         </div>
-                        <button class="inline-block self-end font-bold text-sm text-white/90 hover:text-white
-                            bg-greenlogo rounded-2xl shadow-md hover:shadow-xl px-6 py-2 uppercase hover:bg-bluelogo
-                            duration-300">
-                            <a href="#" class="">Enviar</a>
-                        </button>
+                        <div class="flex justify-end">
+                            <x-button.button> Enviar</x-button.button>
+                        </div>
                     </form>
                 </div>
             </div>

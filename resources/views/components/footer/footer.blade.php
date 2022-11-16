@@ -7,11 +7,6 @@
                     <span>Na Rota dos <br> Povos</span>
                     <p>A Educação é o <br> Único Caminho</p>
                </div>
-               <!-- <p>
-                    Somos uma ONG para o desenvolvimento, integralmente 
-                    constituída por voluntários e sustentada em donativos de 
-                    amigos e algumas empresas.
-                </p> -->
             </li>
             <li class="footer-links">
                 <h1>Quem Somos</h1>
@@ -33,15 +28,6 @@
                     <li><a href="#">Apoio à Saúde</a></li>
                 </ul>
             </li>
-            <!-- <li class="footer-links">
-                <h1>Como Ajudar</h1>
-                <ul class="links-items">
-                    <li><a href="#">Ser Firquidja</a></li>
-                    <li><a href="#">Donativos</a></li>
-                    <li><a href="#">Volutário</a></li>
-                    <li><a href="#">Partilhar</a></li>
-                </ul> -->
-            </li>
             <li class="footer-links">
                 <h1>Subscrever</h1>
                 <x-form.newslatter/>
@@ -54,10 +40,26 @@
                 <p>&copy; 2022 - Todos os direitos reservados. Política de Privacidade</p>
             </div>
             <ul class="social-media-icon">
-                <li><a href="#"><img src="img/media/facebook.png" alt="Facebok de Na Rota dos Povos"></a></li>
-                <li><a href="#"><img src="img/media/instagram.png" alt="Instagram de Na Rota dos Povos"></a></li>
-                <li><a href="#"><img src="img/media/youtube.png" alt="Canal de youtube de Na Rota dos Povos"></a></li>
-                <li><a href="#"><img src="img/media/twitter.png" alt="Twitter de Na Rota dos Povos"></a></li>   
+                <li>    
+                    <a href="https://www.facebook.com/NaRotaDosPovos/">
+                        <img src="img/media/facebook.png" alt="Facebok de Na Rota dos Povos">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/accounts/login/?next=%2Fnarotadospovos%2F&source=omni_redirect">
+                        <img src="img/media/instagram.png" alt="Instagram de Na Rota dos Povos">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/narotadospovos">
+                        <img src="img/media/youtube.png" alt="Canal de youtube de Na Rota dos Povos">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/media/twitter.png" alt="Twitter de Na Rota dos Povos">
+                    </a>
+                </li>   
             </ul>
        </div>
     </div>

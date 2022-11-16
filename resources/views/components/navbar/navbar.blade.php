@@ -10,22 +10,22 @@
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="#">  
+                    <a href="https://www.facebook.com/NaRotaDosPovos/">  
                         <img src="img/media/facebook_head.png" alt="Icon de Instagram">
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="#">  
+                    <a href="https://www.instagram.com/accounts/login/?next=%2Fnarotadospovos%2F&source=omni_redirect">  
                         <img src="img/media/instagram_head.png" alt="Icon de Instagram">
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="#">  
+                    <a href="https://www.youtube.com/narotadospovos">  
                         <img src="img/media/youtube_head.png" alt="Icon de Instagram">
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="#" class="contact">   
+                    <a href="contacto" class="contact">   
                         <img src="icons/phoneCall.png" class="phone" alt="Telefone">
                         <span>Contacto</span>
                     </a>
@@ -77,10 +77,10 @@
                             </svg>
                         </a>
                         <ul class="sub-menu">
-                            <li class="menu-item"><a href="#" class="">A Educação é o Único Caminho</a></li>
-                            <li class="menu-item"><a href="#" class="">Casa da Mamé</a></li>
-                            <li class="menu-item"><a href="#" class="">Tabanca dos Pequenitos</a></li>
-                            <li class="menu-item"><a href="#" class="">Apoio à Saúde</a></li>
+                            <li class="menu-item"><a href="educacao" class="">A Educação é o Único Caminho</a></li>
+                            <li class="menu-item"><a href="casa_da_mame" class="">Casa da Mamé</a></li>
+                            <li class="menu-item"><a href="center_especial_educacional" class="">Tabanca dos Pequenitos</a></li>
+                            <li class="menu-item"><a href="apoio_saude" class="">Apoio à Saúde</a></li>
                         </ul>
                     </li>
                     <li class="menu-item menu-dropdown">

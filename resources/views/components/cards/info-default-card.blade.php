@@ -5,8 +5,8 @@
     @else
         <h3>{{$subtitle}}</h3>
     @endif
-    <span class="flex flex-col space-y-4">
-        <p class="font-bold">{{$abstract}}</p>
+    <span class="flex flex-col space-y-4 break-words">
+        <p class="font-bold ">{{$abstract}}</p>
         <p>{{$description}}</p>
         <p>{{$ratio}}</p>
     </span>
