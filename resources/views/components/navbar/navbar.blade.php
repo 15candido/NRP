@@ -56,7 +56,7 @@
                         </a>
                         <ul class="sub-menu">
                             <li class="menu-item"><a href="quem_somos" class="">Sobre nós</a></li>
-                            <li class="menu-item"><a href="#" class="">A nossa história</a></li>
+                            <li class="menu-item"><a href="a_nossa_historia" class="">A nossa história</a></li>
                             <li class="menu-item"><a href="orgaos_sociais" class="">Órgãos sociais</a></li>
                             <li class="menu-item"><a href="equipa_gestão" class="">Equipa de gestão</a></li>
                             <li class="menu-item"><a href="a_nossa_comunidade" class="">A nossa comunidade</a></li>
@@ -91,9 +91,9 @@
                             </svg>
                         </a>
                         <ul class="sub-menu">
-                            <li class="menu-item"><a href="#" class="">Doar</a></li>
-                            <li class="menu-item"><a href="#" class="">Ser Firquidja</a></li>
-                            <li class="menu-item"><a href="#" class="">Ser volutário (a)</a></li>
+                            <li class="menu-item"><a href="#" class="">Donativos</a></li>
+                            <li class="menu-item"><a href="#" class="">Torne-se Firquidja</a></li>
+                            <li class="menu-item"><a href="voluntariado" class="">Seja Voluntário</a></li>
                             <li class="menu-item"><a href="#" class="">Partilhar</a></li>
                         </ul>
                     </li>

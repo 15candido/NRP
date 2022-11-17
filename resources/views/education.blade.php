@@ -2,7 +2,7 @@
     <div class="flex flex-col min-h-screen justify-start items-center">
         <x-page-header 
             src="img/ProjectImg/carouselUs.jpg"
-            title="A Educação é o Único Caminho" fromPage="Projetos" toPage="A Educação é o Único Caminho"
+            title="A Educação é o Único Caminho" fromPage="Projetos" toPage="A educação é o único caminho"
             alt="Imagem da Na Rota dos Povos"
         /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>

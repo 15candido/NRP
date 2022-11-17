@@ -57,6 +57,14 @@ Route::get('/quem_somos', function () {
     ]);
 });
 
+Route::get('/a_nossa_historia', function () {
+    return view('our_history');
+});
+
+Route::get('/contacto', function () {
+    return view('contact');
+});
+
 Route::get('/projetos', function () {
     $projects = Project::all();
     $areas = Area::all();
@@ -69,8 +77,7 @@ Route::get('/projetos', function () {
 
 Route::get('/como_ajudar', function () {
     $help = HowToHelp::all();
-    
- 
+     
     return view('help',[
         'help' => $help
     ]);
@@ -100,39 +107,27 @@ Route::get('/a_nossa_comunidade', function () {
         'profiles' => $profiles
     ]);
 });
-
+// projtecs root start
 Route::get('/educacao', function () {
-    $profiles = Person::where('profile', 'leader')->get();
-    return view('education',[
-        
-        'profiles' => $profiles
-    ]);
+    return view('education');
 });
 
 Route::get('/casa_da_mame', function () {
-    $profiles = Person::where('profile', 'leader')->get();
-    return view('foster-house',[
-        
-        'profiles' => $profiles
-    ]);
+    return view('foster-house');
 });
 
 Route::get('/center_especial_educacional', function () {
-    $profiles = Person::where('profile', 'leader')->get();
-    return view('ceet',[
-        
-        'profiles' => $profiles
-    ]);
+    return view('ceet');
 });
 
 Route::get('/apoio_saude', function () {
-    $profiles = Person::where('profile', 'leader')->get();
-    return view('healthcare_support',[
-        
-        'profiles' => $profiles
-    ]);
+    return view('healthcare_support');
 });
+//end projects root
 
+Route::get('/voluntariado', function () {
+    return view('become_volunteers');
+});
 
 Route::get('/contacto', function () {
     return view('contact');

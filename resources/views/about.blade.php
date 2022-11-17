@@ -2,7 +2,7 @@
     <div class="flex flex-col min-h-screen justify-start items-center">
         <x-page-header 
             src="img/ProjectImg/carouselUs.jpg"
-            title="Quem Somos" fromPage="Home" toPage="Quem Somos"
+            title="Quem Somos" fromPage="Home" toPage="Quem somos"
             alt="Imagem da Na Rota dos Povos"
         /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
