@@ -2,7 +2,7 @@
     <div class="flex flex-col min-h-screen justify-start items-center">
         <x-page-header 
             src="img/ProjectImg/carouselHistory.jpg"
-            title="A Nossa História" fromPage="Home" toPage="A nossa história"
+            title="A Nossa História" fromPage="Quem somos" toPage="A nossa história"
             alt="Viagens"
         /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
@@ -27,8 +27,12 @@
                         alt="Corredor - Centro de Educação Especial e Terapêutica"
                     />
                 </div>
+            </div>
+        </x-cards.structureWhitOutBg>
+        <x-cards.structureWithBg>
+            <div class="py-0">
                 <div class="space-y-8">
-                    <h3>Viagem no tempo</h3>
+                    <h3>Linha de tempo</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                         <x-cards.outline 
                             title="1997"
@@ -67,45 +71,39 @@
                         />
                     </div>
                 </div>
+            </div>
+        </x-cards.structureWithBg>
+        <x-cards.structureWhitOutBg>
+            <div class="py-20">
                 <div class="space-y-8">
-                    <h3>Comissão de viagens</h3>
+                    <h3>Sócios fundadores</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                         <x-cards.witness 
                             name="Tito Baião"
-                            role="Diretor"
-                            school="Gansola Porto"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/staff/tito.jpg"
                             alt="Foto de perfil"
                         />
                         <x-cards.witness 
                             name="João Pedro Pereira"
-                            role="Diretor"
-                            school="Gansola Porto"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/staff/pedro.jpg"
                             alt="Foto de perfil"
                         />
                         <x-cards.witness 
                             name="Vitor Manuel Lima"
-                            role="Professor"
-                            school="Gansola Porto"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/staff/vitor.jpg"
                             alt="Foto de perfil"
                         />
                         <x-cards.witness 
                             name="Catarina Almeida"
-                            role="Professor"
-                            school="Gansola Porto"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/staff/catarina.jpg"
                             alt="Foto de perfil"
                         />
                         <x-cards.witness 
                             name="Isabel Pires Dias"
-                            role="Diretor"
-                            school="Gansola Porto"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/staff/isabel.jpg"
                             alt="Foto de perfil"

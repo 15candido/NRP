@@ -27,6 +27,9 @@
                         alt="Imagem dos voluntários em ação"
                     />
                 </div>
+            </div>
+        </x-cards.structureWhitOutBg>
+        <x-cards.structureWithBg>
                 <div class="flex flex-col md:flex-row w-full h-full gap-6">
                     <x-cards.infocard 
                         title="Missão"
@@ -44,7 +47,9 @@
                         Debitis maiores porro excepturi recusandae unde, error commodi nam!"
                     />
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        </x-cards.structureWithBg>
+        <x-cards.structureWhitOutBg>
+                <div class="grid grid-cols-1 lg:grid-cols-2 py-20 gap-6">
                     <x-cards.mapcard 
                         src="img/maps/guinebissau.png"
                         alt="Mapa da Guiné-Bissau"
@@ -64,7 +69,7 @@
                         />                 
                     </div>
                 </div>
-            </div>
-        </x-cards.structureWhitOutBg>
+            </x-cards.structureWhitOutBg>
+
     </div>
 </x-guestLayout>

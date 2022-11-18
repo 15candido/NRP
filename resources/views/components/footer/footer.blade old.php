@@ -1,4 +1,4 @@
-<footer class="grid grid-flow-row justify-items-center bg-gradient-to-r from-[#25caca] via-[#059a8a] to-[#0082b3]">
+<footer class="grid grid-flow-row justify-items-center bg-gradient-to-r from-[#457b9d] via-[#31587a] to-[#1d3557]">
     <div class="w-full max-w-7xl justify-center items-center my-10 px-5 lg:px-10
      text-white/90 ">
         <div class="grid grid-cols-1 space-y-6 text-sm font-bold md:grid-cols-5 md:gap-4  md:space-y-0">

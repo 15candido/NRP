@@ -1,7 +1,7 @@
 <x-guestLayout> 
     <div class="flex flex-col min-h-screen justify-start items-center">
         <x-page-header 
-            src="img/ProjectImg/carouselhouse.jpg"
+            src="img/ProjectImg/carouselHouse.jpg"
             title="Casa da Mamé" fromPage="Projetos" toPage="Casa da mamé"
             alt="Imagem da Na Rota dos Povos"
         /> <!--about us hero image -->
@@ -28,11 +28,15 @@
                         alt="Imagem da escola"
                     />
                 </div>
+            </div>
+        </x-cards.structureWhitOutBg>
+        <x-cards.structureWithBg>
+            <div class="py-0">
                 <div class="space-y-8">
                     <h3>O que foi feito</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                         <x-cards.outline 
-                            title="Orfanato"
+                            title="Espaço"
                             src="img/outline/house.jpg"
                             alt="Casa da Mamé"
                             abstract="Construímos um orfanato com capacidade para acolher 15 crianças de ambos os sexos."
@@ -66,45 +70,44 @@
                         />
                     </div>
                 </div>
+            </div>
+        </x-cards.structureWithBg>
+        <x-cards.structureWhitOutBg>
+            <div class="py-20">
                 <div class="space-y-8">
-                    <h3>Diário dos voluntários ou relatos de familiares</h3>
+                    <h3>Testemunho</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                         <x-cards.witness 
-                            name="Biamsum Siga"
-                            role="Diretor"
-                            school="Gansola Porto"
+                            name="N'Simble"
+                            role="Colaboradora"
+                            witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+                            src="img/user/menprofile.jpg"
+                            alt="Foto de perfil"
+                        />
+                        <x-cards.witness 
+                            name="Manuela Néné"
+                            role="Voluntário"
+                            witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+                            src="img/user/menprofile.jpg"
+                            alt="Foto de perfil"
+                        />
+                        <x-cards.witness 
+                            name="Cadija Fal"
+                            role="Familar"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/menprofile.jpg"
                             alt="Foto de perfil"
                         />
                         <x-cards.witness 
                             name="Biamsum Siga"
-                            role="Professor"
-                            school="Gansola Porto"
+                            role="Voluntário"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/menprofile.jpg"
                             alt="Foto de perfil"
                         />
                         <x-cards.witness 
                             name="Biamsum Siga"
-                            role="Diretor"
-                            school="Gansola Porto"
-                            witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-                            src="img/user/menprofile.jpg"
-                            alt="Foto de perfil"
-                        />
-                        <x-cards.witness 
-                            name="Biamsum Siga"
-                            role="Professor"
-                            school="Gansola Porto"
-                            witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-                            src="img/user/menprofile.jpg"
-                            alt="Foto de perfil"
-                        />
-                        <x-cards.witness 
-                            name="Biamsum Siga"
-                            role="Diretor"
-                            school="Gansola Porto"
+                            role="Voluntário"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/menprofile.jpg"
                             alt="Foto de perfil"

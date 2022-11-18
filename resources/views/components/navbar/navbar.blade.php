@@ -92,8 +92,8 @@
                         </a>
                         <ul class="sub-menu">
                             <li class="menu-item"><a href="#" class="">Donativos</a></li>
-                            <li class="menu-item"><a href="#" class="">Torne-se Firquidja</a></li>
-                            <li class="menu-item"><a href="voluntariado" class="">Seja Voluntário</a></li>
+                            <li class="menu-item"><a href="ser_firquidja" class="">Ser Firquidja</a></li>
+                            <li class="menu-item"><a href="voluntariado" class="">Ser Voluntário</a></li>
                             <li class="menu-item"><a href="#" class="">Partilhar</a></li>
                         </ul>
                     </li>

@@ -6,11 +6,30 @@
             alt="Voluntários da Na Rota dos Povos"
         /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
-            <div class="flex flex-row justify-start items-center py-20">
-                <div class="flex w-full h-40 bg-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt 
-                    in alias sit laboriosam rerum, id totam dignissimos similique illum ea fugiat iste adipisci nisi et reprehenderit sint molestiae ad voluptatibus!</div>
-                <div class="flex w-full h-40 bg-blue-900">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt 
-                    in alias sit laboriosam rerum, id totam dignissimos similique illum ea fugiat iste adipisci nisi et reprehenderit sint molestiae ad voluptatibus!</div>
+            <div class="flex flex-col justify-start items-start py-20 gap-6">
+                <div class="full flex flex-col lg:flex-row gap-8">
+                    <x-cards.info-default-card
+                        title="Voluntariado"
+                        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in architecto illum exercitationem 
+                        quos iusto enim unde commodi rerum sequi nulla cumque vero aliquam voluptatum eaque blanditiis alias, animi 
+                        necessitatibus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in architecto illum exercitationem 
+                        quos iusto enim unde commodi rerum sequi nulla cumque vero aliquam voluptatum eaque blanditiis alias, animi 
+                        necessitatibus!"
+                    />
+                    <x-cards.info-default-card
+                        title="E ser o nosso voluntário?"
+                        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in architecto illum exercitationem 
+                        quos iusto enim unde commodi rerum sequi nulla cumque vero aliquam voluptatum eaque blanditiis alias, animi 
+                        necessitatibus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in architecto illum exercitationem 
+                        quos iusto enim unde commodi rerum sequi nulla cumque vero aliquam voluptatum eaque blanditiis alias, animi 
+                        necessitatibus!"
+                    />
+                </div>
+                <div class="relative w-full h-full">
+                    <x-volunteers.form/>
+                </div>
             </div>
         </x-cards.structureWhitOutBg>
     </div>

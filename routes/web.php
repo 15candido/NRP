@@ -129,6 +129,10 @@ Route::get('/voluntariado', function () {
     return view('become_volunteers');
 });
 
+Route::get('/ser_firquidja', function () {
+    return view('firquidja');
+});
+
 Route::get('/contacto', function () {
     return view('contact');
 });

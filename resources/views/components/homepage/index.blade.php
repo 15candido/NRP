@@ -18,7 +18,7 @@
         Soluta laboriosam impedit veritatis asperiores animi accusantium qui, quia quam id provident rem modi 
         ipsum sunt quisquam ex."
     />
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center overflow-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
       <x-projects.ongoing :ongoingProjects="$projects"/>
     </div>
   </x-cards.structureWithBg>
@@ -44,8 +44,19 @@
         Soluta laboriosam impedit veritatis asperiores animi accusantium qui, quia quam id provident rem modi 
         ipsum sunt quisquam ex."
     />
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center overflow-hidden">
-      <x-help.how-to-help :howToHelp="$howToHelp"/>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-40 justify-center items-center">
+      <div class="flex flex-col items-center space-y-4 text-center">
+        <p>Apoie as nossas crianças tornando-se  numa das firquidja da Casa da Mamé!</p>
+        <x-button.button>SER FIRQUIDJA</x-button.button>
+      </div>
+      <div class="flex flex-col h-full items-center space-y-4 text-center">
+        <p>Faça um donativo e seja a mudança que quere ver no mundo!</p>
+        <x-button.button>DOAR</x-button.button>
+      </div>
+      <div class="flex flex-col items-center space-y-4 text-center">
+        <p>Tem algumas horas livres que gostava de dedicar à Na Rota dos Povos?</p>
+        <x-button.button>VOLUNTARIADO</x-button.button>
+      </div>
     </div>
   </x-cards.structureWithBg>
 

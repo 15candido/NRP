@@ -1,9 +1,9 @@
 <x-guestLayout> 
     <div class="flex flex-col min-h-screen justify-start items-center">
         <x-page-header 
-            src="img/ProjectImg/carouselUs.jpg"
-            title="A Educação é o Único Caminho" fromPage="Projetos" toPage="A educação é o único caminho"
-            alt="Imagem da Na Rota dos Povos"
+            src="img/ProjectImg/carouselEducation.jpg"
+            title="A Educação é o único Caminho" fromPage="Projetos" toPage="A Educação é o Único Caminho"
+            alt="Criança está a praticar a leitura"
         /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
@@ -30,6 +30,10 @@
                         alt="Imagem da escola"
                     />
                 </div>
+            </div>
+        </x-cards.structureWhitOutBg>
+        <x-cards.structureWithBg>
+            <div class="py-0">
                 <div class="space-y-4">
                     <h3>O que foi feito</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -52,7 +56,7 @@
                             abstract="Apoiamos 50 escolas com tintas, material escolar, brinquedos, livros, onde estudam cerca de 10.000 alunos."
                         />
                         <x-cards.outline 
-                            title="Pinturas"
+                            title="Reabilitação"
                             src="img/outline/paint.jpg"
                             alt="Pinturas das escolas"
                             abstract="Pintamos e colocamos placas transparentes para melhor a claridade em quase todas as escolas apoiadas."
@@ -65,8 +69,12 @@
                         />
                     </div>
                 </div>
+            </div>
+        </x-cards.structureWithBg>
+        <x-cards.structureWhitOutBg>
+            <div class="py-20">
                 <div class="space-y-4">
-                    <h3>Diário dos voluntários ou relatos da satisfação da comunidade local</h3>
+                    <h3>Testemunho</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                         <x-cards.witness 
                             name="Biamsum Siga"

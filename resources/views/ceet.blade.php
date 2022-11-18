@@ -3,7 +3,7 @@
         <x-page-header 
             src="img/ProjectImg/carouselCeet.jpg"
             title="Centro de Educação Especial e Terapêutico" fromPage="Projetos" toPage="CEET"
-            alt="Centro de Educação Especial e Terapêutico"
+            alt="Espaço CEET"
         /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
@@ -28,11 +28,15 @@
                         alt="Corredor - Centro de Educação Especial e Terapêutica"
                     />
                 </div>
+            </div>
+        </x-cards.structureWhitOutBg>
+        <x-cards.structureWithBg>
+            <div class="py-0">
                 <div class="space-y-8">
                     <h3>O que foi feito</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                         <x-cards.outline 
-                            title="Intalação"
+                            title="Espaço"
                             src="img/outline/ceet.jpg"
                             alt="Instalação do Centro de Educação Especial e Terapêutica"
                             abstract="Construímos uma instalação com capacidade para atender 40 crianças com deficiência."
@@ -64,12 +68,30 @@
                         />
                     </div>
                 </div>
+            </div>
+        </x-cards.structureWithBg>
+        <x-cards.structureWhitOutBg>
+            <div class="py-20">
                 <div class="space-y-8">
-                    <h3>Diário dos profissionais ou relatos de familiares</h3>
+                    <h3>Testemunho</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                         <x-cards.witness 
+                            name="Carlos Costa"
+                            role="Enfermeiro"
+                            witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+                            src="img/user/menprofile.jpg"
+                            alt="Foto de perfil"
+                        />
+                        <x-cards.witness 
                             name="Biamsum Siga"
-                            role="Diretor"
+                            role="Familiar"
+                            witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+                            src="img/user/menprofile.jpg"
+                            alt="Foto de perfil"
+                        />
+                        <x-cards.witness 
+                            name="Maria Fernandess"
+                            role="Voluntária"
                             school="Gansola Porto"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/menprofile.jpg"
@@ -77,32 +99,14 @@
                         />
                         <x-cards.witness 
                             name="Biamsum Siga"
-                            role="Professor"
-                            school="Gansola Porto"
+                            role="Familiar"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/menprofile.jpg"
                             alt="Foto de perfil"
                         />
                         <x-cards.witness 
-                            name="Biamsum Siga"
-                            role="Diretor"
-                            school="Gansola Porto"
-                            witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-                            src="img/user/menprofile.jpg"
-                            alt="Foto de perfil"
-                        />
-                        <x-cards.witness 
-                            name="Biamsum Siga"
-                            role="Professor"
-                            school="Gansola Porto"
-                            witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-                            src="img/user/menprofile.jpg"
-                            alt="Foto de perfil"
-                        />
-                        <x-cards.witness 
-                            name="Biamsum Siga"
-                            role="Diretor"
-                            school="Gansola Porto"
+                            name="Carlos Djau"
+                            role="Colaborador"
                             witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                             src="img/user/menprofile.jpg"
                             alt="Foto de perfil"

@@ -10,8 +10,8 @@
         <div class="flex flex-col md:flex-row w-full max-w-7xl px-5 py-6 space-y-20 md:space-x-20 md:space-y-0 lg:px-10
             text-gray-600 rounded-lg overflow-hidden">
             <div class="contact-container space-y-6">
-                <div class="flex flex-col space-y-4 justify-center">
-                    <h1 class="title text-2xl md:text-3xl font-extrabold tracking-wide text-[#264653]">Contacto</h1>
+                <div class="flex flex-col gap-4 justify-center">
+                    <h1>Contacto</h1>
                     <p class="">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, temporibus cupiditate ratione impedit
                         voluptatum dicta.
@@ -79,10 +79,10 @@
                 </div>
             </div>
             <div class="form-container relative md:w-[700px] min-h-full">
-                <div class="up-shape absolute z-0 w-40 h-40  bg-gradient-to-r from-[#25caca] to-[#0082b3] rounded-full 
+                <div class="up-shape absolute z-0 w-40 h-40  bg-gradient-to-r from-[#287271]  to-[#264653] rounded-full 
                     -right-36 -top-16 md:-right-28 md:-top-28">
                 </div>
-                <div class="down-shape absolute z-0 w-40 h-40  bg-gradient-to-r from-[#0082b3] to-[#25caca] rounded-full 
+                <div class="down-shape absolute z-0 w-40 h-40  bg-gradient-to-r from-[#264653]  to-[#287271] rounded-full 
                     -left-32 -bottom-32 md:-left-32 md:-bottom-32">
                 </div>
                 <div class="relative z-10 bg-white rounded-xl shadow-lg p-4 hover:shadow-xl">

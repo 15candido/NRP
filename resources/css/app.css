@@ -5,7 +5,7 @@
 /*////////// body //////////*/
 body{
 
-    @apply bg-white/50 font-normal leading-normal text-gray-600;
+    @apply bg-white/80 font-normal leading-normal text-gray-600;
     font-family: Nunito, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
@@ -18,18 +18,18 @@ body.hidden-scrolling{
     box-sizing: border-box;
 }
 h1{
-    @apply text-5xl md:text-6xl lg:text-7xl text-[#264653] 
+    @apply text-5xl md:text-6xl lg:text-7xl text-gray-600
     font-black;
 }
 h2{
-    @apply text-4xl md:text-5xl lg:text-6xl font-black;
+    @apply text-2xl md:text-3xl lg:text-4xl font-black text-gray-600;
 }
 h3{
-    @apply text-lg md:text-xl lg:text-2xl text-[#264653] 
+    @apply text-lg md:text-xl lg:text-2xl text-gray-600
     font-black;
 }
 h4{
-    @apply text-base md:text-lg lg:text-xl text-[#264653] 
+    @apply text-base md:text-lg lg:text-xl text-gray-600
     font-black;;
 }
 ul{
@@ -45,7 +45,7 @@ a{
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .header{
-    @apply flex flex-wrap w-full left-0 top-0 justify-center items-center bg-white
+    @apply flex flex-wrap w-full left-0 top-0 justify-center items-center
     shadow-2xl;
 }
 
@@ -176,7 +176,7 @@ header .menu-icons > .icons a{
 }
 
 .header .open-nav-menu span{
-    @apply relative block w-12 h-2 bg-gray-400;
+    @apply relative block w-12 h-2 bg-[#264653];
 }
 
 header .close-nav-menu{
@@ -188,7 +188,7 @@ header .close-nav-menu > img{
 }
 
 .header .menu-overley{
-    @apply fixed z-40 w-full h-full top-0 left-0 bg-[#1d3557] opacity-0
+    @apply fixed z-40 w-full h-full top-0 left-0 bg-[#264653] opacity-0
         invisible transition-all duration-300 ease-in-out;
 }
 
@@ -199,7 +199,7 @@ header .close-nav-menu > img{
 .header .open-nav-menu span::before,
 .header .open-nav-menu span::after{
     content: ''; box-sizing: border-box; 
-    @apply absolute w-full h-full left-0 bg-gray-600;
+    @apply absolute w-full h-full left-0 bg-[#264653];
 }
 
 .header .open-nav-menu span::before{
@@ -258,7 +258,7 @@ header .close-nav-menu > img{
 
     .header .nav-menu{
         @apply fixed z-50 -right-full invisible w-1/2 h-full top-0 px-5 pt-4 
-        overflow-y-auto bg-[#1d3557] transition-all duration-500 ease-in-out;
+        overflow-y-auto bg-[#264653] transition-all duration-500 ease-in-out;
     }
 
     .header .menu > .menu-item > a{
@@ -411,22 +411,21 @@ header .close-nav-menu > img{
  
 /* ///// footer component start ///// */
 .footer{
-    @apply flex flex-col justify-center items-center bg-gradient-to-r from-[#25caca]
-        via-[#059a8a] to-[#0082b3] ;
+    @apply flex flex-col justify-center items-center bg-[#264653];
 }
  .footer .footer-container{
     @apply flex w-full max-w-7xl items-center my-4 px-5 lg:px-10;
  }
 
  .footer .footer-nav{
-    @apply w-full grid grid-flow-row md:grid-cols-4 justify-items-center gap-4;
+    @apply w-full grid grid-flow-row md:grid-cols-5 justify-items-center gap-4;
  }
 
  .footer .footer-nav > .footer-links.logo{
     @apply px-0;
  }
  .footer .footer-nav > .footer-links{
-    @apply relative w-full flex flex-col gap-4 pl-3 font-bold text-white/80 
+    @apply relative w-full flex flex-col gap-4 pl-3 font-bold text-white/70
         justify-start transition-all duration-300;
  }
  
@@ -453,7 +452,7 @@ header .close-nav-menu > img{
 
  .footer .social-media {
     @apply flex w-full h-auto justify-center items-center py-4 border-t
-        border-gray-300;
+        border-gray-500;
  }
  .footer .social-media > .social-media-container{
     @apply grid grid-cols-2 w-full max-w-7xl gap-4 justify-between

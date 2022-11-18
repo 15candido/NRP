@@ -11,24 +11,24 @@
             <li class="footer-links">
                 <h1>Quem Somos</h1>
                 <ul class="links-items">
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">A Nossa História</a></li>
-                    <li><a href="#">Orgão Sociais</a></li>
-                    <li><a href="#">Equipa de Gestão</a></li>
-                    <li><a href="#">Voluntários</a></li>
+                    <li><a href="quem_somos">Sobre Nós</a></li>
+                    <li><a href="a_nossa_historia">A Nossa História</a></li>
+                    <li><a href="orgaos_sociais">Orgão Sociais</a></li>
+                    <li><a href="equipa_gestão">Equipa de Gestão</a></li>
+                    <li><a href="a_nossa_comunidade">Voluntários</a></li>
                     <li><a href="#">Documentos</a></li>
                 </ul>
             </li>
             <li class="footer-links">
                 <h1>Projetos</h1>
                 <ul class="links-items">
-                    <li><a href="#">A Educação é o Único Caminho</a></li>
-                    <li><a href="#">Casa da Mamé</a></li>
-                    <li><a href="#">Tabanca dos Pequenitos</a></li>
-                    <li><a href="#">Apoio à Saúde</a></li>
+                    <li><a href="educacao">A Educação é o Único Caminho</a></li>
+                    <li><a href="casa_da_mame">Casa da Mamé</a></li>
+                    <li><a href="center_especial_educacional">Tabanca dos Pequenitos</a></li>
+                    <li><a href="apoio_saude">Apoio à Saúde</a></li>
                 </ul>
             </li>
-            <li class="footer-links">
+            <li class="footer-links lg:col-span-2">
                 <h1>Subscrever</h1>
                 <x-form.newslatter/>
             </li>

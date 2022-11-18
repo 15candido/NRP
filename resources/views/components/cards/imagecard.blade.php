@@ -1,7 +1,7 @@
 @props(['src', 'alt'])
 <div class="image relative w-full h-auto">
     <img src="{{$src}}" alt="{{$alt}}" class="w-full h-full object-cover inset-0">
-    <div class="gallery absolute flex justify-center items-center gap-4 right-0 top-0 p-1">
+    <div class="hidden gallery absolute justify-center items-center gap-4 right-0 top-0 p-1">
         <a href="#" class="photogallery">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-camera w-10 h-10 p-1 text-white
                 hover:text-[#ff6b35] hover:p-0" viewBox="0 0 16 16">

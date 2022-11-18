@@ -10,7 +10,7 @@
                     <h2 class="text-lg font-extrabold leading-normal text-[#264653] md:truncate 
                     hover:break-words">{{$project->name}}</h2>
                 </a>
-                <p class="text-base text-gray-600 break-all">{{$project->abstract}}</p>
+                <p class="text-base text-gray-600 break-words">{{$project->abstract}}</p>
                 <x-button.button>Saiba +</x-button.button>
             </div>
         </div>
