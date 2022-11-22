@@ -20,8 +20,7 @@
                         - Ter a capacidade para trabalhar em equipa respeitando as hierarquias existentes;
                         -Ter a humildade para descobrir os seus próprios preconceitos e aprender a “desmontá-las” de modo 
                         a respeitar aqueles com quem e para quem trabalhamos e contexto social e cultural onde atuamos; 
-                        - Apresentar as condições físicas e psicológicas necessárias para o tipo de voluntariado proposto; 
-"
+                        - Apresentar as condições físicas e psicológicas necessárias para o tipo de voluntariado proposto;"
                     />
                     <x-cards.info-default-card
                         title="E ser o nosso voluntário?"

@@ -6,7 +6,7 @@
         <h3>{{$subtitle}}</h3>
     @endif
     <span class="flex flex-col space-y-4 break-words">
-        <p class="font-bold ">{{$abstract}}</p>
+        <p class="font-bold">{{$abstract}}</p>
         <p>{{$description}}</p>
         <p>{{$ratio}}</p>
     </span>

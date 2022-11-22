@@ -1,6 +1,6 @@
 <form action="" class="w-full space-y-4 ">
 <!-- rounded-xl shadow-lg p-4 hover:shadow-xl -->
-    <h2>Inscrever-me</h2>
+    <!-- <h2>Inscrever-me</h2> -->
     <div class="flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0">
         <div class="w-full space-y-2">
             <label for="" class="block font-bold">Nome</label>
@@ -20,10 +20,10 @@
             focus:outline-none focus:bg-white focus:ring-1 focus:ring-[#25caca]" placeholder="Telefone">
         </div>
         <div class="w-full space-y-2">
-        <label for="" class="block font-bold">Email</label>
-        <input type="text" class="appearance-none block w-full bg-white ring-0 ring-gray-50 rounded-lg px-4 py-2 
-        focus:outline-none focus:bg-white focus:ring-1 focus:ring-[#25caca]" placeholder="Email">
-    </div>
+            <label for="" class="block font-bold">Email</label>
+            <input type="text" class="appearance-none block w-full bg-white ring-0 ring-gray-50 rounded-lg px-4 py-2 
+            focus:outline-none focus:bg-white focus:ring-1 focus:ring-[#25caca]" placeholder="Email">
+        </div>
     </div>
     <div class="w-full space-y-2">
         <label for="" class="block font-bold">Morada</label>
@@ -86,4 +86,5 @@
             </div>
         </div>
     </div>
+    <x-button.button>Submeter</x-button.button>
 </form>
