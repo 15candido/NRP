@@ -1,8 +1,8 @@
 <x-guestLayout>
     <div class="flex flex-col min-h-screen items-center">
         <x-page-header 
-            src="img/ProjectImg/carouselVolunteers.jpg"
-            title="Seja Firquidja da Na Rota dos Povos" fromPage="Como ajudar" toPage="Ser firquidja"
+            src="img/ProjectImg/carouselFirquidjas.jpg"
+            title="Ser Firquidja da Na Rota dos Povos" fromPage="Como ajudar" toPage="Ser firquidja"
             alt="Firquidjas da Na Rota dos Povos"
         /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
