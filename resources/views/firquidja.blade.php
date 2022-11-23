@@ -29,7 +29,7 @@
                     <div class="flex flex-col w-full h-auto gap-4 text-base leading-normal">
                         <h2>Junte-se a nós</h2>
                         <p class="font-semibold text-lg">
-                            Contribua para a alimentação, a saúde e a educação destas nossas e suas crianças, tornando-se um 
+                            Contribua para a alimentação, saúde e a educação destas nossas e suas crianças, tornando-se um 
                             Firquidja, doando a um valor periódico fixo, sem valor mínimo, por débito em conta.
                         </p>
                     </div>

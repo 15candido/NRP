@@ -1141,6 +1141,9 @@ select {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.ml-14 {
+  margin-left: 3.5rem;
+}
 .block {
   display: block;
 }
@@ -1161,9 +1164,6 @@ select {
 }
 .grid {
   display: grid;
-}
-.list-item {
-  display: list-item;
 }
 .hidden {
   display: none;
@@ -1398,9 +1398,6 @@ select {
 .items-start {
   align-items: flex-start;
 }
-.items-end {
-  align-items: flex-end;
-}
 .items-center {
   align-items: center;
 }
@@ -1437,14 +1434,14 @@ select {
 .gap-12 {
   gap: 3rem;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
 .gap-8 {
   gap: 2rem;
 }
 .gap-20 {
   gap: 5rem;
-}
-.gap-10 {
-  gap: 2.5rem;
 }
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1905,17 +1902,11 @@ select {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
-.pr-8 {
-  padding-right: 2rem;
-}
 .pr-1 {
   padding-right: 0.25rem;
 }
 .pl-10 {
   padding-left: 2.5rem;
-}
-.pb-8 {
-  padding-bottom: 2rem;
 }
 .text-left {
   text-align: left;
@@ -1998,9 +1989,6 @@ select {
 }
 .uppercase {
   text-transform: uppercase;
-}
-.italic {
-  font-style: italic;
 }
 .leading-5 {
   line-height: 1.25rem;
@@ -2106,14 +2094,6 @@ select {
   --tw-text-opacity: 1;
   color: rgb(8 145 178 / var(--tw-text-opacity));
 }
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.text-green-300 {
-  --tw-text-opacity: 1;
-  color: rgb(134 239 172 / var(--tw-text-opacity));
-}
 .text-\[\#4ca747\] {
   --tw-text-opacity: 1;
   color: rgb(76 167 71 / var(--tw-text-opacity));
@@ -2121,6 +2101,10 @@ select {
 .text-\[\#1368aa\] {
   --tw-text-opacity: 1;
   color: rgb(19 104 170 / var(--tw-text-opacity));
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -3712,10 +3696,6 @@ header .close-nav-menu > img {
 .focus\:border-gray-300:focus {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-.focus\:border-gray-500:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 .focus\:bg-indigo-600:focus {
   --tw-bg-opacity: 1;

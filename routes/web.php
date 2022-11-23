@@ -133,6 +133,10 @@ Route::get('/ser_firquidja', function () {
     return view('firquidja');
 });
 
+Route::get('/faca_donativo', function () {
+    return view('donate');
+});
+
 Route::get('/contacto', function () {
     return view('contact');
 });
