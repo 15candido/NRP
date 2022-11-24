@@ -16,37 +16,41 @@ class HowToHelpSeeder extends Seeder
     public function run()
     {
         DB::table('how_to_helps')->insert([
-            'name' => 'Sendo Firquidja',
-            'description' => 'Tornando-se num Firquidja, doando um valor periódico fixo, 
-            sem valor mínimo, por débito da conta.',
+            'name' => 'donativos',
+            'description' => 'O seu donativo pode ser a diferença entre ter algo e não ter nada. 
+            Saiba como fazer um donativo para apoiar as nossas causas. ',
             'first_option' => true,
+            'image' => 'img/ProjectImg/donor.jpg',
             'icon' => null,
             'alt' => null
         ]);
 
         DB::table('how_to_helps')->insert([
-            'name' => 'Por meio de donativo',
-            'description' => 'Através de donativos por MBWAY: 932 412 050 ou por IBAN: PT50 
-            0018 0000 518 97128020 88.',
+            'name' => 'Ser Firquidja',
+            'description' => 'Ser Firquidja, é assegurar que as crianças da Casa da Mamé tenham um lar, 
+            comida, acesso à educação e um abraço de amor.',
             'first_option' => true,
+            'image' => 'img/ProjectImg/firquidja.jpg',
             'icon' => null,
             'alt' => null
         ]);
 
         DB::table('how_to_helps')->insert([
-            'name' => 'Sendo voluntário/a',
-            'description' => ' Seja um dos nossos voluntários, quer em Portugal como na Guiné-Bissau, 
-            e ajude-nos a ajudar.',
+            'name' => 'Ser voluntário',
+            'description' => 'Na ONGD “Na Rota dos Povos”, os voluntários são uma parte fundamental na 
+            concretização das nossas missões em Catió.',
             'first_option' => true,
+            'image' => 'img/ProjectImg/volunteers.jpg',
             'icon' => null,
             'alt' => null
         ]);
 
         DB::table('how_to_helps')->insert([
-            'name' => 'Partilhando',
-            'description' => 'Seja um dos nossos embaixadores. Use a sua influência e partilhe com a sua 
-            comunidade a nossa missão.',
+            'name' => 'Divulgar',
+            'description' => 'Seja um dos nossos embaixadores. Use a sua influência, contribua, participe ou 
+            divulgue as nossas ações junto da sua comunidade.',
             'first_option' => true,
+            'image' => 'img/ProjectImg/ambassadors.jpg',
             'icon' => null,
             'alt' => null
         ]);

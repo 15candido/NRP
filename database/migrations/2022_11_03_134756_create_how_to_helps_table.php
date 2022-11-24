@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->boolean('first_option')->default(true);
+            $table->string('image')->nullable();
             $table->string('icon')->nullable();
             $table->string('alt')->nullable();
             $table->timestamps();

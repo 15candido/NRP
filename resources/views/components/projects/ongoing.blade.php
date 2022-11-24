@@ -5,7 +5,7 @@
             <a href="#" class="pointer-events-none">
                 <img src="{{$project->image}}" class="pointer-events-auto rounded-t-lg hover:opacity-75" alt="{{$project->alt}}">
             </a>
-            <div class="space-y-4 p-4 rounded-lg hover:bg-gray-100">
+            <div class="w-full h-full space-y-4 p-4 rounded-lg hover:bg-gray-100">
                 <a href="#">
                     <h2 class="text-lg font-extrabold leading-normal text-[#264653] md:truncate 
                     hover:break-words">{{$project->name}}</h2>
