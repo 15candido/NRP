@@ -30,20 +30,20 @@
                         /> 
                         <div class="flex mb-4 justify-between font-black text-xs text-gray-400 uppercase">
                             <span>
-                                <i>Relatório: </i> <i>projeto</i>
+                                <a>Tipo - </a> <a>projeto</a>
                             </span>
                             <span>
-                                <i>Ano: </i> <i>2022</i>
+                                <a>Ano - </a> <a>2022</a>
                             </span>
                             <span>
-                                <i>Autor: </i> <i>Na Rota dos Povos</i>
+                                <a>Autor - </a> <a>Na Rota dos Povos</a>
                             </span>
                             <span>
-                                <i>Línguas: </i> <i>Português, Inglês, Francês</i>
+                                <a>Línguas - </a> <a>Português, Inglês</a>
                             </span>
                         </div>   
                         <div>
-                            <x-button.button>Download</x-button.button>
+                            <x-button.button>Ver & Download</x-button.button>
                         </div>             
                     </div>
                     <div class="w-[700px] h-full">

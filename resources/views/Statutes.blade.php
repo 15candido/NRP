@@ -30,16 +30,16 @@
                         /> 
                         <div class="flex mb-4 justify-between font-black text-xs text-gray-400 uppercase">
                             <span>
-                                <i>Autor: </i> <i>Na Rota dos Povos</i>
+                                <a>Autor: </a> <a>Na Rota dos Povos</a>
                             </span>
                             <span>
-                                <i>Aprovação: </i> <i>26 de Março de 2022</i>
+                                <a>Aprovação: </a> <a>26 de Março de 2022</a>
                             </span>
                             <span>
-                                <i>Artigos: </i> <i>55º</i>
+                                <a>Artigos: </a> <a>55º</a>
                             </span>
                             <span>
-                                <i>Línguas: </i> <i>Português</i>
+                                <a>Línguas: </a> <a>Português</a>
                             </span>
                         </div>   
                         <div>
