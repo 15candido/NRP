@@ -107,6 +107,20 @@ Route::get('/a_nossa_comunidade', function () {
         'profiles' => $profiles
     ]);
 });
+
+Route::get('/relatorios', function () {
+    return view('reports');
+});
+
+Route::get('/relatorio', function () {
+    return view('report');
+});
+
+Route::get('/estatutos', function () {
+    return view('statutes');
+});
+
+
 // projtecs root start
 Route::get('/educacao', function () {
     return view('education');

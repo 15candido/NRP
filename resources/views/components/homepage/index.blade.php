@@ -1,9 +1,9 @@
 <!-- main container -->
 <div class="main-content-container">
   <!-- our slogan -->
- <div class="flex flex-row w-full max-w-7xl justify-center px-5 lg:px-10">
-    <div class="flex flex-wrap w-full items-center overflow-hidden">
-      <h1> A Educação é o Único Caminho</h1>
+ <div class="flex flex-row w-full max-w-7xl px-5 lg:px-10">
+    <div class="flex flex-wrap w-full pt-3 justify-center items-center">
+      <h1>A Educação é o Único Caminho</h1>
     </div>
   </div>
   <!-- a brief introduction about us  -->
@@ -50,8 +50,8 @@
         <x-button.button>SER FIRQUIDJA</x-button.button>
       </div>
       <div class="flex flex-col h-full items-center space-y-4 text-center">
-        <p>Faça um donativo e seja a mudança que quere ver no mundo!</p>
-        <x-button.button>DOAR</x-button.button>
+        <p>Faça um donativo e seja a mudança que quer ver no mundo!</p>
+        <x-button.button> DOAR </x-button.button>
       </div>
       <div class="flex flex-col items-center space-y-4 text-center">
         <p>Tem algumas horas livres que gostava de dedicar à Na Rota dos Povos?</p>

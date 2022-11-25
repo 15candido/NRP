@@ -18,15 +18,15 @@ body.hidden-scrolling{
     box-sizing: border-box;
 }
 h1{
-    @apply text-5xl md:text-6xl lg:text-7xl text-gray-600
-    font-black;
+    @apply text-5xl md:text-6xl lg:text-[68px] text-gray-600
+    font-black uppercase;
 }
 h2{
-    @apply text-2xl md:text-3xl lg:text-4xl font-black text-gray-600;
+    @apply text-2xl md:text-3xl lg:text-4xl font-black text-gray-600 uppercase;
 }
 h3{
     @apply text-lg md:text-xl lg:text-2xl text-gray-600
-    font-black;
+    font-black uppercase;
 }
 h4{
     @apply text-base md:text-lg lg:text-xl text-gray-600
@@ -98,7 +98,7 @@ header .menu-icons > .icons a{
 
 .header .logo a{
     
-    @apply flex flex-row gap-4 justify-center items-center; 
+    @apply flex flex-row gap-4 justify-center items-center py-4; 
 }
 
 .header .logo > a  .logo-rota{
@@ -122,7 +122,6 @@ header .menu-icons > .icons a{
 .header .menu > .menu-item > a{
     @apply block py-4 text-xs font-bold md:text-base md:font-black text-[#1d3557] uppercase
         transition-all duration-300 ease-in-out;
-    
 }
 
 .header .menu > .menu-dropdown > a .arrow-chevron-icon{
@@ -133,7 +132,7 @@ header .menu-icons > .icons a{
 /*////////// sub-menu dropdown 1 level //////////*/
 .header .menu > .menu-item > .sub-menu{
     @apply absolute z-10 w-56 left-0 top-16 rounded-b-lg bg-white shadow-lg shadow-black/25
-        border-t-4 border-solid border-[#1368aa] translate-y-5 transition-all duration-300 ease-in-out
+        border-t-4 border-solid border-[#0083b3] translate-y-5 transition-all duration-300 ease-in-out
         opacity-0 invisible ;
 }
 .header .menu > .menu-dropdown:hover > .sub-menu{
@@ -151,7 +150,7 @@ header .menu-icons > .icons a{
     .header .menu > .menu-item > .sub-menu > .menu-dropdown-children> .sub-menu-children > .sub-menu-item-children > a:hover,
     .header .menu > .menu-item > .sub-menu > .menu-item > a:hover,
     .header .menu > .menu-item:hover > a{
-        @apply text-[#1368aa];
+        @apply text-[#0083b3];
     }
 
     .header .menu > .menu-dropdown:hover > a .arrow-chevron-icon{
@@ -236,7 +235,7 @@ header .close-nav-menu > img{
 }
 
 .header .menu > .menu-item > .sub-menu > .menu-dropdown-children > .sub-menu-children{
-    @apply w-56 h-auto left-0 top-0 px-9 border-l-2 border-solid border-[#1368aa] -translate-y-2 
+    @apply w-56 h-auto left-0 top-0 px-9 border-l-2 border-solid border-[#0083b3] -translate-y-2 
         opacity-0 invisible transition-all duration-300 ease-in-out;
 }
 

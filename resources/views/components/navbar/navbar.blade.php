@@ -63,8 +63,8 @@
                             <li class="menu-item menu-dropdown-children">
                                 <a href="#" data-toggle="sub-menu"> Documentos <i class="plus"></i></a>
                                 <ul class="sub-menu-children ">
-                                    <li class="sub-menu-item-children"><a href="#">Relatórios</a></li>
-                                    <li class="sub-menu-item-children"><a href="#">Estatutos</a></li>
+                                    <li class="sub-menu-item-children"><a href="relatorios">Relatórios</a></li>
+                                    <li class="sub-menu-item-children"><a href="estatutos">Estatutos</a></li>
                                 </ul>
                             </li>
                         </ul>

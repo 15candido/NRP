@@ -1228,6 +1228,9 @@ select {
 .min-h-full {
   min-height: 100%;
 }
+.min-h-\[400px\] {
+  min-height: 400px;
+}
 .w-5 {
   width: 1.25rem;
 }
@@ -1275,6 +1278,9 @@ select {
 }
 .w-7 {
   width: 1.75rem;
+}
+.w-\[700px\] {
+  width: 700px;
 }
 .w-3 {
   width: 0.75rem;
@@ -1425,6 +1431,9 @@ select {
 .gap-1 {
   gap: 0.25rem;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1433,9 +1442,6 @@ select {
 }
 .gap-12 {
   gap: 3rem;
-}
-.gap-10 {
-  gap: 2.5rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -1627,6 +1633,10 @@ select {
   border-left-color: rgb(75 85 99 / var(--tw-border-opacity));
   border-right-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
+.border-b-gray-200 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
 .border-opacity-75 {
   --tw-border-opacity: 0.75;
 }
@@ -1717,6 +1727,10 @@ select {
 .bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+.bg-yellow-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
@@ -1901,6 +1915,9 @@ select {
 }
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+.pt-3 {
+  padding-top: 0.75rem;
 }
 .pr-1 {
   padding-right: 0.25rem;
@@ -2094,6 +2111,10 @@ select {
   --tw-text-opacity: 1;
   color: rgb(8 145 178 / var(--tw-text-opacity));
 }
+.text-\[\#0083b3\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 131 179 / var(--tw-text-opacity));
+}
 .text-\[\#4ca747\] {
   --tw-text-opacity: 1;
   color: rgb(76 167 71 / var(--tw-text-opacity));
@@ -2265,6 +2286,7 @@ h1 {
   font-size: 3rem;
   line-height: 1;
   font-weight: 900;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
@@ -2278,14 +2300,14 @@ h1 {
 @media (min-width: 1024px) {
 
   h1 {
-    font-size: 4.5rem;
-    line-height: 1;
+    font-size: 68px;
   }
 }
 h2 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 900;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
@@ -2307,6 +2329,7 @@ h3 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 900;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
@@ -2474,6 +2497,8 @@ header .menu-icons > .icons a {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .header .logo > a  .logo-rota {
   max-height: 6rem;
@@ -2572,7 +2597,7 @@ header .menu-icons > .icons a {
   border-top-width: 4px;
   border-style: solid;
   --tw-border-opacity: 1;
-  border-color: rgb(19 104 170 / var(--tw-border-opacity));
+  border-color: rgb(0 131 179 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   opacity: 0;
@@ -2600,7 +2625,7 @@ header .menu-icons > .icons a {
     /*////////// chance color when user on hover the dropdown menu //////////*/
     .header .menu > .menu-item > .sub-menu > .menu-dropdown-children> .sub-menu-children > .sub-menu-item-children > a:hover, .header .menu > .menu-item > .sub-menu > .menu-item > a:hover, .header .menu > .menu-item:hover > a {
     --tw-text-opacity: 1;
-    color: rgb(19 104 170 / var(--tw-text-opacity));
+    color: rgb(0 131 179 / var(--tw-text-opacity));
   }
 
     .header .menu > .menu-dropdown:hover > a .arrow-chevron-icon {
@@ -2741,7 +2766,7 @@ header .close-nav-menu > img {
   border-left-width: 2px;
   border-style: solid;
   --tw-border-opacity: 1;
-  border-color: rgb(19 104 170 / var(--tw-border-opacity));
+  border-color: rgb(0 131 179 / var(--tw-border-opacity));
   padding-left: 2.25rem;
   padding-right: 2.25rem;
   opacity: 0;
@@ -3644,6 +3669,10 @@ header .close-nav-menu > img {
 .hover\:text-\[\#264653\]:hover {
   --tw-text-opacity: 1;
   color: rgb(38 70 83 / var(--tw-text-opacity));
+}
+.hover\:text-\[\#0083b3\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 131 179 / var(--tw-text-opacity));
 }
 .hover\:text-\[\#ff6b35\]:hover {
   --tw-text-opacity: 1;
