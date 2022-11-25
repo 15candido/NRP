@@ -10,11 +10,10 @@
                 <div>
                     <x-cards.info-default-card 
                         title="Comunidade Na Rota dos Povos"
-                        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore nemo 
-                        expedita nisi neque, facilis aperiam quod? Ipsa ipsum voluptatibus officiis cum minima ipsam 
-                        maiores, tempora nostrum facere reprehenderit facilis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore nemo 
-                        expedita nisi neque, facilis aperiam quod? Ipsa ipsum voluptatibus officiis cum minima ipsam 
-                        maiores, tempora nostrum facere reprehenderit facilis."
+                        description="Contamos com colaboradores que disponibilizam os seus tempos livres para colocar 
+                        os seus talentos em benefício da comunidade a qual apoiamos. Graças ao trabalho árduo deste 
+                        grupo que é nos possível angariar mobiliário escolar, material escolar, donativos em dinheiro 
+                        e em espécie que nos permitir manter o apoio regular à alimentação na Casa da Mamé. "
                      />     
                 </div>
                 <h3>Firquidjas</h3>
