@@ -30,7 +30,7 @@
             </li>
             <li class="footer-links lg:col-span-2">
                 <h1>Subscrever</h1>
-                <x-form.newslatter/>
+                <x-form.newsletter/>
             </li>
         </ul>
     </div>

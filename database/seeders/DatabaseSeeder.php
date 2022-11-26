@@ -25,8 +25,10 @@ class DatabaseSeeder extends Seeder
             HowToHelpSeeder::class,
             PersonSeeder::class,
             AreaSeeder::class,
+            ChildrenSeeder::class,
         ]);
         \App\Models\User::factory(100)->create();
         \App\Models\Story::factory(20)->create();
+        \App\Models\Children::factory(200)->create();
     }
 }

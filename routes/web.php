@@ -6,12 +6,15 @@ use App\Models\Hero;
 use App\Models\About;
 use App\Models\Project;
 use App\Models\Area;
+use App\Models\Children;
 use App\Models\Impact;
 use App\Models\HowToHelp;
+use App\Models\Newsletter;
 use App\Models\Partner;
 use App\Models\Story;
 use App\Models\User;
 use App\Models\Person;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -61,9 +64,18 @@ Route::get('/a_nossa_historia', function () {
     return view('our_history');
 });
 
-Route::get('/contacto', function () {
-    return view('contact');
+Route::get('/children', function () {
+    $children = Children::paginate(10);
+    return view('children', ['children' => $children]);
 });
+
+Route::post('/newsletter', function (Request $request) {
+    echo "O email " . $request['email'] . " foi registado na nossa bd";
+    Newsletter::create(['email' => $request['email'], 'name' => $request['name']]);    
+    return redirect('/');
+});
+
+
 
 Route::get('/projetos', function () {
     $projects = Project::all();

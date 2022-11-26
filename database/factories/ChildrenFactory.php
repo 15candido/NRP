@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\About>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Children>
  */
-class AboutFactory extends Factory
+class ChildrenFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,7 @@ class AboutFactory extends Factory
     public function definition()
     {
         return [
-            
+            'name' => $this->faker->name(),
         ];
     }
 }

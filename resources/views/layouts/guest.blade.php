@@ -30,5 +30,6 @@
          
         <!-- javascript start  -->
         <script src="js/index.js"></script>
+        @livewireScripts
     </body>
 </html>
