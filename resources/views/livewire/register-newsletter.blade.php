@@ -16,8 +16,8 @@
         @endif
 
     </div>
-    <input class="inline-block font-black text-xs text-white/90 px-4 py-3 border-transparent bg-[#5ba057] border-2  
-    rounded-lg shadow-md pointer-events-auto cursor-pointer hover:bg-white hover:text-gray-600 hover:border-[#5ba057] 
-    transition-all duration-700 ease-in-out" type="button" wire:click="add" 
+    <input class="inline-block  font-bold text-sm text-white/90 px-4 py-3 bg-[#5ba057]
+    rounded-lg shadow-md cursor-pointer pointer-events-auto hover:bg-white hover:text-gray-600 hover:ring-1 
+    hover:ring-[#4ca747] hover:shadow-lg  transition-all duration-500 ease-in-out" type="button" wire:click="add"
     value="SUBSCREVER">
 </div>

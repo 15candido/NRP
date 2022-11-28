@@ -29,7 +29,7 @@
                 </ul>
             </li>
             <li class="footer-links lg:col-span-2">
-                <h1>Subscrever</h1>
+                <h1>Newsletter</h1>
                 <x-form.newsletter/>
             </li>
         </ul>
