@@ -27,7 +27,7 @@ class RegisterNewsletter extends Component
             'email' => $this->email
         ]);
 
-        session()->flash('message', 'Email registado com sucesso na nossa newsletter.');
+        session()->flash('message', 'A submissão foi um sucesso. Um abraço de agradecimento por estar connosco!');
 
         $this->email = null;
     }
