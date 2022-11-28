@@ -33,18 +33,19 @@
                 <div class="flex flex-col md:flex-row w-full h-full gap-6">
                     <x-cards.infocard 
                         title="Missão"
-                        description="Temos presente que só a educação pode melhorar o 
-                        desenvolvimento dos povos, daí o nosso lema “A Educação é o Único Caminho”."
+                        description="A nossa missão é apoiar os países PALOP em desenvolvimento, fora de grandes centros, 
+                        nas áreas de educação, formação, saúde, proteção infantil e do ambiente."
                     />
                     <x-cards.infocard 
                         title="Visão"
-                        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Debitis maiores porro excepturi recusandae unde, error commodi nam!"
+                        description="Temos como objetivo apoiar e desenvolver ações para a defesa, elevação e manutenção 
+                        da qualidade de vida do ser humano e do meio ambiente, através do desenvolvimento de atividades 
+                        de caráter educativo, social, cultural, ambiental e desportivo."
                     />
                     <x-cards.infocard 
-                        title="Valores"
-                        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Debitis maiores porro excepturi recusandae unde, error commodi nam!"
+                        title="valores"
+                        description="Temos presente que só a educação pode melhorar o desenvolvimento dos povos, daí o 
+                        nosso lema “A Educação é o Único Caminho”. "
                     />
                 </div>
         </x-cards.structureWithBg>
