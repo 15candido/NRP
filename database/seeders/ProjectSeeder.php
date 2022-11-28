@@ -20,6 +20,7 @@ class ProjectSeeder extends Seeder
             'abstract' => 'A educação é um fator essencial para o desenvolvimento dos povos e a 
             Guiné-Bissau é um caso grave. Faltam salas de aula, quadros, carteiras e cadeiras. 
             As crianças, que são…',
+            'url' => "educacao",
              'image' => 'img/ProjectImg/education.jpg',
              'alt' => 'A Educação é o Único Caminho',
              'visible' => true
@@ -39,6 +40,7 @@ class ProjectSeeder extends Seeder
             'abstract' => 'A Casa da Mamé é uma casa coração que acolhe crianças cuja mãe morreu 
             durante o parto. É uma casa que permite às crianças ter um lar, comida, a 
             possibilidade de brincar...',
+            'url' => "casa_da_mame",
              'image' => 'img/ProjectImg/mame.jpg',
              'alt' => 'Casa da Mamé',
              'visible' => true
@@ -49,6 +51,7 @@ class ProjectSeeder extends Seeder
             'abstract' => 'Um Centro totalmente equipado, dedicado ao diagnóstico, tratamento e 
             incremento da qualidade de vida das crianças com deficiência, complementa a sua ação 
             disponibilizando…',
+            'url' => "center_especial_educacional",
              'image' => 'img/ProjectImg/ceet.jpg',
              'alt' => 'Tabanca dos Pequenitos',
              'visible' => true
@@ -79,6 +82,7 @@ class ProjectSeeder extends Seeder
             'abstract' => 'Ajudamos o Hospital de Catió e centros de saúde com apoio médico, equipamento
              e material hospitalar, medicamentos, e na melhoria das condições de funcionamento e...
             ',
+            'url' => "apoio_saude",
              'image' => 'img/ProjectImg/health.jpg',
              'alt' => 'Apoio a saúde',
              'visible' => true

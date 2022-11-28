@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description')->nullable();
+            $table->string('url')->nullable();
             $table->boolean('first_option')->default(true);
             $table->string('image')->nullable();
             $table->string('icon')->nullable();

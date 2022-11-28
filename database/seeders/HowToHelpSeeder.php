@@ -18,7 +18,8 @@ class HowToHelpSeeder extends Seeder
         DB::table('how_to_helps')->insert([
             'name' => 'donativos',
             'description' => 'O seu donativo pode ser a diferença entre ter algo e não ter nada. 
-            Saiba como fazer um donativo para apoiar as nossas causas. ',
+            Saiba como fazer donativo para apoiar as nossas causas. ',
+            'url' => 'faca_donativo',
             'first_option' => true,
             'image' => 'img/ProjectImg/donor.jpg',
             'icon' => null,
@@ -29,6 +30,7 @@ class HowToHelpSeeder extends Seeder
             'name' => 'Ser Firquidja',
             'description' => 'Ser Firquidja, é assegurar que as crianças da Casa da Mamé tenham um lar, 
             comida, acesso à educação e um abraço de amor.',
+            'url' => 'ser_firquidja',
             'first_option' => true,
             'image' => 'img/ProjectImg/firquidja.jpg',
             'icon' => null,
@@ -39,6 +41,7 @@ class HowToHelpSeeder extends Seeder
             'name' => 'Ser voluntário',
             'description' => 'Na ONGD “Na Rota dos Povos”, os voluntários são uma parte fundamental na 
             concretização das nossas missões em Catió.',
+            'url' => 'voluntariado',
             'first_option' => true,
             'image' => 'img/ProjectImg/volunteers.jpg',
             'icon' => null,
@@ -49,6 +52,7 @@ class HowToHelpSeeder extends Seeder
             'name' => 'Divulgar',
             'description' => 'Seja um dos nossos embaixadores. Use a sua influência, contribua, participe ou 
             divulgue as nossas ações junto da sua comunidade.',
+            'url' => '',
             'first_option' => true,
             'image' => 'img/ProjectImg/ambassadors.jpg',
             'icon' => null,

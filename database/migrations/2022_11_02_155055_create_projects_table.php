@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('abstract');
+            $table->string('url')->nullable();
             $table->string('image');
             $table->string('alt');
             $table->boolean('visible')->default(true);
