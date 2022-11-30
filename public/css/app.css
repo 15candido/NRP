@@ -2599,7 +2599,7 @@ header .menu-icons > .icons a {
   display: inline-block;
   height: 1.5rem;
   width: 1.5rem;
-  --tw-rotate: 180deg;
+  --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   fill: currentColor;
   stroke: currentColor;
@@ -2654,7 +2654,7 @@ header .menu-icons > .icons a {
   }
 
     .header .menu > .menu-dropdown:hover > a .arrow-chevron-icon {
-    --tw-rotate: 0deg;
+    --tw-rotate: 180deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }

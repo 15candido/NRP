@@ -126,7 +126,7 @@ header .menu-icons > .icons a{
 
 .header .menu > .menu-dropdown > a .arrow-chevron-icon{
     @apply relative inline-block w-6 h-6 ml-1.5 stroke-current fill-current  
-        rotate-180 transition-all duration-75 ease-in-out pointer-events-none;
+        rotate-0 transition-all duration-75 ease-in-out pointer-events-none;
 }
 
 /*////////// sub-menu dropdown 1 level //////////*/
@@ -154,7 +154,7 @@ header .menu-icons > .icons a{
     }
 
     .header .menu > .menu-dropdown:hover > a .arrow-chevron-icon{
-        @apply rotate-0;
+        @apply rotate-180;
     }
 }
 
