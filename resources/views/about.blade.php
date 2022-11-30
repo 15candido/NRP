@@ -33,8 +33,9 @@
                 <div class="flex flex-col md:flex-row w-full h-full gap-6">
                     <x-cards.infocard 
                         title="Missão"
-                        description="A nossa missão é apoiar os países PALOP em desenvolvimento, fora de grandes centros, 
-                        nas áreas de educação, formação, saúde, proteção infantil e do ambiente."
+                        description="A nossa missão é apoiar o desenvolvimento dos países PALOP, fora dos grandes centros 
+                        populacionais, em zonas carenciadas ao nível da educação, formação cultural, saúde, proteção 
+                        infantil e do ambiente."
                     />
                     <x-cards.infocard 
                         title="Visão"
