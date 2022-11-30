@@ -22,32 +22,32 @@ class AreaSeeder extends Seeder
         ]);
 
         DB::table('areas')->insert([
-            'name' => 'Educação',
+            'name' => 'Educação e Formação',
             'icon' => 'img/areas/education.png',
             'alt' => 'Icon Educação'
         ]);
 
         DB::table('areas')->insert([
-            'name' => 'Saúde e Bem-Estar',
+            'name' => 'Apoio à Saúde e Nutrição',
             'icon' => 'img/areas/health.png',
             'alt' => 'Icon Saúde e Bem-Estar'
         ]);
 
         DB::table('areas')->insert([
-            'name' => 'Infância e Juventude',
-            'icon' => 'img/areas/childhood_youth.png',
+            'name' => 'Proteção e Promoção da Ética',
+            'icon' => 'img/areas/protention.png',
             'alt' => 'Icon Infância e Juventude'
         ]);
 
         DB::table('areas')->insert([
-            'name' => 'Redução das Desigualdades',
-            'icon' => 'img/areas/reduction_inequalities.png',
+            'name' => 'Integração Social',
+            'icon' => 'img/areas/integration.png',
             'alt' => 'Icon Educação'
         ]);
 
         DB::table('areas')->insert([
-            'name' => 'Eradicação de Pobreza',
-            'icon' => 'img/areas/eradicate_poverty.png',
+            'name' => 'Combate à discriminação',
+            'icon' => 'img/areas/discrimination.png',
             'alt' => 'Icon de Direitos Humanos'
         ]);
     }
