@@ -107,12 +107,12 @@ class HowToHelpSeeder extends Seeder
             'alt' => 'Icon calendário de eventos'
         ]);
 
-        DB::table('how_to_helps')->insert([
-            'name' => 'Tornar útil com coisas simples',
-            'description' => null,
-            'first_option' => false,
-            'icon' => 'img/help/giving_away.png',
-            'alt' => 'Icon hand giving away'
-        ]);
+        // DB::table('how_to_helps')->insert([
+        //     'name' => 'Tornar útil com coisas simples',
+        //     'description' => null,
+        //     'first_option' => false,
+        //     'icon' => 'img/help/giving_away.png',
+        //     'alt' => 'Icon hand giving away'
+        // ]);
     }
 }
