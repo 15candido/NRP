@@ -10,16 +10,15 @@ class RegisterNewsletter extends Component
     public $email;
 
     protected $rules = [        
-        'email' => 'required|email|unique:newsletters',
+        'email' => ['required', 'unique:newsletters,email'],
     ];
 
-
-    public function render()
+    public function update($proprietyName)
     {
-        return view('livewire.register-newsletter');
+        $this->validateOnly($proprietyName);
     }
 
-    public function add()
+    public function register()
     {
         $this->validate();
 
@@ -27,8 +26,13 @@ class RegisterNewsletter extends Component
             'email' => $this->email
         ]);
 
-        session()->flash('message', 'A submissão foi um sucesso. Um abraço de agradecimento por estar connosco!');
+        session()->flash('success', 'A submissão foi um sucesso. Um abraço de agradecimento por estar connosco!');
 
-        $this->email = null;
+        $this->reset();
+    }
+
+    public function render()
+    {
+        return view('livewire.register-newsletter');
     }
 }

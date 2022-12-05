@@ -12,7 +12,7 @@
                         hover:break-words">{{$help->name}}</h2>
                     </a>
                     <p class="text-base text-gray-600 break-words">{{$help->description}}</p>
-                    <x-button.button
+                    <x-buttons.button
                         string="Saiba +"
                         url="{{$help->url}}"
                     />

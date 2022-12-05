@@ -120,7 +120,7 @@
                             </textarea>
                         </div>
                         <div class="flex justify-end">
-                            <x-button.button> Enviar</x-button.button>
+                            <x-buttons.button> Enviar</x-buttons.button>
                         </div>
                     </form>
                 </div>

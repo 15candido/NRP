@@ -9,5 +9,5 @@
         @endif
         <p>{{$witness}}</p>
     </div>
-    <x-button.button>Saiba + </x-button.button>
+    <x-buttons.button>Saiba + </x-buttons.button>
 </div>

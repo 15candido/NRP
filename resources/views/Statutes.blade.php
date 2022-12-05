@@ -47,7 +47,7 @@
                             </span>
                         </div>   
                         <div>
-                            <x-button.button>Download</x-button.button>
+                            <x-buttons.button>Download</x-buttons.button>
                         </div>             
                     </div>
                     <div class="w-[700px] h-full">

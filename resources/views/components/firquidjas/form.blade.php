@@ -56,7 +56,7 @@
             de Na Rota dos Povos.</p>
         </div>
     </div>
-    <x-button.button>Submeter</x-button.button>
+    <x-buttons.button>Submeter</x-buttons.button>
     <div class="flex flex-col gap-4 text-sm">
        <p>Em alternativa, faça download da ficha de inscrição <a href="#" class="text-[#4ca747]"> "Ser Firquidja da Na Rota dos
         Povos" </a>, encaminhando-a depois para o nosso email <span class="text-[#1368aa]"> ongd@narotadospovos.org</span></p>

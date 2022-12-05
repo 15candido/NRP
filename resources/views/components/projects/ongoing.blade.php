@@ -11,7 +11,7 @@
                     hover:break-words">{{$project->name}}</h2>
                 </a>
                 <p class="text-base text-gray-600 break-words">{{$project->abstract}}</p>
-                <x-button.button
+                <x-buttons.button
                 string="Saiba +"
                 url="{{$project->url}}"
                 />

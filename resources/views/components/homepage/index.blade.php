@@ -51,21 +51,21 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-40 justify-center items-center">
         <div class="flex flex-col items-center space-y-4 text-center">
           <p>Apoie as nossas crianças tornando-se num firquidja da Casa da Mamé!</p>
-          <x-button.button
+          <x-buttons.button
             string="SER FIRQUIDJA"
             url="ser_firquidja"
           />
         </div>
         <div class="flex flex-col h-full items-center space-y-4 text-center">
           <p>Faça um donativo e seja a mudança que quer ver no mundo!</p>
-          <x-button.button
+          <x-buttons.button
             string="DOAR"
             url="faca_donativo"
           />
         </div>
         <div class="flex flex-col items-center space-y-4 text-center">
           <p>Tem algumas horas livres que gostava de dedicar à "Na Rota dos Povos"?</p>
-          <x-button.button
+          <x-buttons.button
             string="VOLUNTARIADO"
             url="voluntariado"
           />

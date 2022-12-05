@@ -86,5 +86,5 @@
             </div>
         </div>
     </div>
-    <x-button.button>Submeter</x-button.button>
+    <x-buttons.button>Submeter</x-buttons.button>
 </form>
