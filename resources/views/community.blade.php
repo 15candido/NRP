@@ -1,4 +1,8 @@
 <x-guestLayout>
+    {{--Page title--}}
+    <x-slot name="title">
+        {{ ('Comunidade') }}
+    </x-slot>
    <div class="flex flex-col min-h-screen justify-center items-center">
         <x-page-header 
                 src="img/ProjectImg/carouselCommunity.jpg"

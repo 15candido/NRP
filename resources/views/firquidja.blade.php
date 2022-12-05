@@ -1,4 +1,8 @@
 <x-guestLayout>
+    {{--Page title--}}
+    <x-slot name="title">
+        {{ ('Firquidja') }}
+    </x-slot>
     <div class="flex flex-col min-h-screen items-center">
         <x-page-header 
             src="img/ProjectImg/carouselFirquidjas.jpg"

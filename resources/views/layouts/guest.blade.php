@@ -1,35 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto:wght@100&display=swap" rel="stylesheet">
-        <!-- Styles -->
-         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        <!-- <script src="{{ mix('js/app.js') }}" defer></script> -->
-        
-        @livewireStyles
+        <x-partials.head :title="$title ?? ' ' "/>
     </head>
     <body class="font-body">
-        <!-- header start  -->
-        <x-navbar.navbar/>
-        <!-- header start  -->
+       
+        <x-partials.nav />
 
-        <!-- main container secttion start -->
-        <section class="main-container">
-            {{ $slot }}
-        </section>
-        <!-- main container secttion end -->
+        <main class="block w-full min-h-full">
+            {{$slot}}
+        </main>
 
-        <!-- footer section start  -->
-        <x-footer.footer/>
-         <!-- footer section end  -->
-         
+        <x-partials.footer />
+       
         <!-- javascript start  -->
         <script src="js/index.js"></script>
-        @livewireScripts
+        <livewire:scripts />
+        
     </body>
 </html>

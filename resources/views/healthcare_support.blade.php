@@ -1,4 +1,8 @@
 <x-guestLayout> 
+    {{--Page title--}}
+    <x-slot name="title">
+        {{ ('Projeto - Saúde') }}
+    </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
         <x-page-header 
             src="img/ProjectImg/carouselHealth.jpg"

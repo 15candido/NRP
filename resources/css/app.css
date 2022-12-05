@@ -318,12 +318,6 @@ header .close-nav-menu > img{
                                             /* body css code  */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-/* ///// main container/container secttion start ///// */
-
-.main-container{
-    @apply block w-full min-h-full;
-}
-
 /* ///// hero section container start ///// */
 
 .hero{

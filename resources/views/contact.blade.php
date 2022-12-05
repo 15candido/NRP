@@ -1,6 +1,10 @@
 
 <!-- Contact form -->
 <x-guestLayout>
+    {{--Page title--}}
+    <x-slot name="title">
+        {{ ('Contacto') }}
+    </x-slot>
     <x-page-header 
         src="img/ProjectImg/carouselContact.jpg"
         title="Contacto" fromPage="Home" toPage="Contacte-nos"
