@@ -20,13 +20,15 @@ class RegisterNewsletter extends Component
 
     public function register()
     {
-        $this->validate();
+        $validatedData = $this->validate();
 
-        Newsletter::create([
-            'email' => $this->email
+        Newsletter::create($validatedData);
+
+        $this->dispatchBrowserEvent('create',[
+            'title'         => 'A inscrição foi um sucesso!',
+            'icon'          => 'success',
+            'iconColor'     => 'green', 
         ]);
-
-        session()->flash('success', 'A submissão foi um sucesso. Um abraço de agradecimento por estar connosco!');
 
         $this->reset();
     }

@@ -103,3 +103,75 @@
         </div>
     </div>
 </header>
+
+@push('scripts')
+    <script>
+        // Responsive nav menu
+        (()=> {
+            //Selecting classes
+            const openNavMenu = document.querySelector(".open-nav-menu"),
+            closeNavMenu = document.querySelector(".close-nav-menu"),
+            navMenu = document.querySelector(".nav-menu"),
+            menuOverley = document.querySelector(".menu-overley"),
+            mediaSize = 991;
+
+            openNavMenu.addEventListener('click', toggleNav);
+            closeNavMenu.addEventListener('click', toggleNav);
+            //This close nav menu when user cick outside of nav menu
+            menuOverley.addEventListener("click", toggleNav);
+
+            function toggleNav(){
+                navMenu.classList.toggle("open");
+                menuOverley.classList.toggle("active");
+                document.body.classList.toggle("hidden-scrolling");
+            //    console.log(bodyScrolling);
+            }
+
+            //Whem user click in dorpdown menu, search for the target
+            navMenu.addEventListener("click", (event)=>{
+            if(event.target.hasAttribute("data-toggle") && window.innerWidth <= mediaSize){
+                    // Prevent the default behavior of link referencing, the anchor link 
+                    event.preventDefault();
+                    const menuDropdown = event.target.parentElement;
+                    // If the drop-down menu is already expanded, then collapse it. 
+                    if(menuDropdown.classList.contains("active")){
+                        collapsesubMenu();
+                    }
+                    else {
+
+                        // Before collapsing, check for collapse
+                        if(navMenu.querySelector(".menu-dropdown.active")){
+                            collapsesubMenu();
+                        }
+                        // expand new dropdown menu^
+                        menuDropdown.classList.add("active");
+                        const subMenu = menuDropdown.querySelector(".sub-menu");
+                        subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+                    } 
+                }
+            });
+
+            function collapsesubMenu(){
+                navMenu.querySelector(".menu-dropdown.active .sub-menu").removeAttribute("style");
+                navMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+            }
+
+            function fixSize(){
+                // In case nav menu is already open, close it
+                if(navMenu.classList.contains("open")){
+                    toggleNav();
+                }
+                // In case menu dropdown is already expanded, collapse it
+                if(navMenu.querySelector(".menu-dropdown.active")){
+                    collapsesubMenu();
+                }
+            }
+
+            window.addEventListener("resize", function(){
+                if(this.innerWidth > mediaSize){
+                    fixSize();
+                }
+            });
+        })();
+    </script>
+@endpush

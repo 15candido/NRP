@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 /*////////// body //////////*/
 body{
 
@@ -38,6 +39,14 @@ ul{
 
 a{
     @apply no-underline;
+}
+
+/* SweetAlert power  */
+
+@layer base{
+    .swal2-toast.swal2-icon-success{
+        @apply bg-green-300 !imporant; 
+    }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
