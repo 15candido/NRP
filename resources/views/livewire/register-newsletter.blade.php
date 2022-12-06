@@ -6,10 +6,10 @@
 
         <div class="flex flex-row gap-2">
             {{-- Email --}}
-            <x-jet-input id="email" wire:model.debounce.500ms="email" class="w-full block text-gray-600 bg-gray-200
-            placeholder-gray-600 rounded-lg shadow-md pointer-events-auto ring-[0.1px] ring-[#5ba057] border 
-            border-transparent focus:outline-none focus:ring focus:ring-[#5ba057]" type="email" name="email" 
-            :value="old('email')" required autofocus />
+            <x-jet-input wire:model.debounce.500ms="email" class="w-full block text-gray-600 bg-gray-200
+            placeholder-gray-400 rounded-lg shadow-md pointer-events-auto ring-[0.1px] ring-[#5ba057] border 
+            border-transparent focus:outline-none focus:ring focus:ring-[#5ba057]" name="email" id="email"
+            type="email" placeholder="newsletter@gmail.com" />
 
             {{-- Submit Button --}}
             <x-buttons.primary wire:target='register' wire:loading.attr='disabled' type="submit" :disabled="$disabled">
@@ -20,7 +20,7 @@
         {{-- Display warning error --}}
         <div class="w-full">
             @error('email')
-                <x-jet-input-error for='email' class="text-yellow-300" />
+                <x-jet-input-error for='email' class="text-orange-300" />
             @enderror
         </div>
         

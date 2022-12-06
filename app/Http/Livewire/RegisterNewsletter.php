@@ -10,12 +10,14 @@ class RegisterNewsletter extends Component
     public $email;
 
     protected $rules = [        
-        'email' => ['required', 'unique:newsletters,email'],
+        'email' => ['required', 'regex:/(.+)@(.+)\.(.+)/i', 'unique:newsletters,email'],
     ];
 
     public function update($proprietyName)
     {
-        $this->validateOnly($proprietyName);
+        $this->validateOnly($proprietyName,[
+            'email' => 'require'
+        ]);
     }
 
     public function register()
@@ -30,7 +32,7 @@ class RegisterNewsletter extends Component
             'iconColor'     => 'green', 
         ]);
 
-        $this->reset();
+        $this->email = "";
     }
 
     public function render()

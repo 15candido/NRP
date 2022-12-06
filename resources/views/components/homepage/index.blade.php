@@ -1,4 +1,4 @@
-<div>
+<div class="w-full">
   {{--Page title--}}
   <x-slot name="title">
       {{ ('Home') }}
