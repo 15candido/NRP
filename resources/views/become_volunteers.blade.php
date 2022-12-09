@@ -41,10 +41,12 @@
                         Voluntariado."
                     />
                 </div>
-                <div class="relative w-full h-full rounded-xl shadow-lg p-4 hover:shadow-xl">
+                <div class="relative w-full h-full">
                     <x-volunteers.form/>
                 </div>
             </div>
+            <livewire:volunteers.register />
         </x-cards.structureWhitOutBg>
     </div>
+
 </x-geustLayout>

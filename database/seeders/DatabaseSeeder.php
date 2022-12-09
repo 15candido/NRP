@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             PersonSeeder::class,
             AreaSeeder::class,
             ChildrenSeeder::class,
+            VolunteerSeeder::class,
         ]);
         \App\Models\User::factory(100)->create();
         \App\Models\Story::factory(20)->create();

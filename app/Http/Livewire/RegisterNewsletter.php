@@ -13,18 +13,16 @@ class RegisterNewsletter extends Component
         'email' => ['required', 'regex:/(.+)@(.+)\.(.+)/i', 'unique:newsletters,email'],
     ];
 
-    public function update($proprietyName)
+    public function updated($proprietyName)
     {
-        $this->validateOnly($proprietyName,[
-            'email' => 'require'
-        ]);
+        $this->validateOnly($proprietyName);
     }
 
     public function register()
     {
-        $validatedData = $this->validate();
-
-        Newsletter::create($validatedData);
+        Newsletter::create([
+            'email' => $this->email,
+        ]);
 
         $this->dispatchBrowserEvent('create',[
             'title'         => 'A inscrição foi um sucesso!',

@@ -1,4 +1,4 @@
-<form action="" class="w-full space-y-4 ">
+<form action="" class="w-full space-y-4 rounded-xl shadow-lg p-4 hover:shadow-xl ">
 <!-- rounded-xl shadow-lg p-4 hover:shadow-xl -->
     <!-- <h2>Inscrever-me</h2> -->
     <div class="flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0">
