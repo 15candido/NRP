@@ -2102,10 +2102,6 @@ select {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
-.text-orange-500 {
-  --tw-text-opacity: 1;
-  color: rgb(249 115 22 / var(--tw-text-opacity));
-}
 .text-cyan-600 {
   --tw-text-opacity: 1;
   color: rgb(8 145 178 / var(--tw-text-opacity));
@@ -3640,9 +3636,6 @@ header .close-nav-menu > img {
   --tw-border-opacity: 1;
   border-color: rgb(88 150 84 / var(--tw-border-opacity));
 }
-.focus\:border-opacity-75:focus {
-  --tw-border-opacity: 0.75;
-}
 .focus\:bg-indigo-600:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
@@ -3697,11 +3690,6 @@ header .close-nav-menu > img {
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
-.focus\:ring-4:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
 .focus\:ring-2:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -3731,19 +3719,12 @@ header .close-nav-menu > img {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(37 202 202 / var(--tw-ring-opacity));
 }
-.focus\:ring-blue-300:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
-}
 .focus\:ring-\[\#6dbb69\]:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(109 187 105 / var(--tw-ring-opacity));
 }
 .focus\:ring-opacity-50:focus {
   --tw-ring-opacity: 0.5;
-}
-.focus\:ring-opacity-25:focus {
-  --tw-ring-opacity: 0.25;
 }
 .active\:bg-gray-100:active {
   --tw-bg-opacity: 1;
