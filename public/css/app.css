@@ -1277,6 +1277,9 @@ select {
 .w-3 {
   width: 0.75rem;
 }
+.w-10\/12 {
+  width: 83.333333%;
+}
 .w-40 {
   width: 10rem;
 }
@@ -1423,11 +1426,11 @@ select {
 .gap-1 {
   gap: 0.25rem;
 }
-.gap-2 {
-  gap: 0.5rem;
-}
 .gap-10 {
   gap: 2.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-3 {
   gap: 0.75rem;
@@ -1685,6 +1688,10 @@ select {
 .bg-red-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+.bg-\[\#6cbf67\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(108 191 103 / var(--tw-bg-opacity));
 }
 .bg-gray-700 {
   --tw-bg-opacity: 1;
@@ -3526,6 +3533,10 @@ header .close-nav-menu > img {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.hover\:bg-\[\#5ba057\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(91 160 87 / var(--tw-bg-opacity));
 }
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;

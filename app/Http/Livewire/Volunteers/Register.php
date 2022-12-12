@@ -8,7 +8,14 @@ use Illuminate\Support\Str;
 
 class Register extends Component
 {
-    public $name, $email, $phone, $address, $location, $postcode, $motivation;
+    public $name; 
+    public $email; 
+    public $phone;
+    public $address; 
+    public $location; 
+    public $postcode; 
+    public $motivation; 
+    public $openModal = false;
   
     protected $rules = [
 
@@ -24,6 +31,13 @@ class Register extends Component
     public function updated($proprietyName)
     {
         $this->validateOnly($proprietyName);
+    }
+
+    public function openModalToRegisterVolunteer()
+    {
+        $this->resetErrorBag();
+        $this->openModal = true;
+        // dd($this->openModal);
     }
    
     public function register()

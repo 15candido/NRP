@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Volunteer;
 use App\Http\Controllers\ContabilityController;
 use App\Http\Controllers\UserController;
 use App\Models\Hero;
@@ -75,8 +76,6 @@ Route::post('/newsletter', function (Request $request) {
     return redirect('/');
 });
 
-
-
 Route::get('/projetos', function () {
     $projects = Project::all();
     $areas = Area::all();
@@ -151,9 +150,10 @@ Route::get('/apoio_saude', function () {
 });
 //end projects root
 
-Route::get('/voluntariado', function () {
-    return view('become_volunteers');
-});
+// Route::get('/voluntariado', function () {
+//     return view('become_volunteers');
+// });
+Route::get('voluntarios', Volunteer::class)->name('voluntarios');
 
 Route::get('/ser_firquidja', function () {
     return view('firquidja');
