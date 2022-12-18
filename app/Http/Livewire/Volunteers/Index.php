@@ -9,6 +9,7 @@ use Livewire\WithPagination;
 class Index extends Component
 {
     use WithPagination;
+    
     public $perpage = 10; 
     public $search = '';
     public $orderBy = 'id';
@@ -16,10 +17,13 @@ class Index extends Component
 
     public function render()
     {
-        return view('livewire.volunteers.index', [
-            'voluntarios' => Volunteer::search($this->search)
-                ->orderBy($this->orderBy, $this->orderAsc ? true : false)
-                -> paginte($this->perpage)
-        ]);
+        return view('livewire.volunteers.index'
+        , 
+         [
+             'voluntarios' => Volunteer::search($this->search)
+                 ->orderBy($this->orderBy, $this->orderAsc ? true : false)
+                 -> paginte($this->perpage)
+         ]
+    );
     }
 }

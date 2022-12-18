@@ -18,7 +18,7 @@
         <x-partials.footer />
 
         {{-- Scripts section --}}
-        <livewire:scripts />
+        @livewireScripts
         @stack('scripts')
     </body>
 </html>

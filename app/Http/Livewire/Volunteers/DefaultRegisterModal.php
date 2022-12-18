@@ -6,8 +6,9 @@ use App\Models\Volunteer;
 use Livewire\Component;
 use Illuminate\Support\Str;
 
-class Register extends Component
+class DefaultRegisterModal extends Component
 {
+    
     public $name; 
     public $email; 
     public $phone;
@@ -16,12 +17,13 @@ class Register extends Component
     public $postcode; 
     public $motivation; 
     public $openModal = false;
-  
+    
+    
     protected $rules = [
 
         'name'          => ['required', 'unique:volunteers,name', 'min:5', 'max:150'],
         'phone'         => ['required', 'unique:volunteers,phone', 'min:9', 'max:13'],
-        'email'         => ['required', 'regex:/(.+)@(.+)\.(.+)/i', 'unique:newsletters,email'],
+        'email'         => ['required', 'regex:/(.+)@(.+)\.(.+)/i', 'unique:volunteers,email'],
         'address'       => ['required', 'min:5', 'max:255'],
         'location'      => ['required', 'min:5', 'max:50'],
         'postcode'      => ['required', 'min:7', 'max:15'],
@@ -60,8 +62,9 @@ class Register extends Component
         $this->reset();
     }
 
+    
     public function render()
     {
-        return view('livewire.volunteers.register');
+        return view('livewire.volunteers.default-register-modal');
     }
 }

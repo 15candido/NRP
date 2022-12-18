@@ -93,7 +93,7 @@
                         <ul class="sub-menu">
                             <li class="menu-item"><a href="faca_donativo" class="">Donativos</a></li>
                             <li class="menu-item"><a href="ser_firquidja" class="">Ser Firquidja</a></li>
-                            <li class="menu-item"><a href="voluntarios" class="">Ser Voluntário</a></li>
+                            <li class="menu-item"><a href="voluntariado" class="">Ser Voluntário</a></li>
                             <li class="menu-item"><a href="#" class="">Divulgar</a></li>
                         </ul>
                     </li>

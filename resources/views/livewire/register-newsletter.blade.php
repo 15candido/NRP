@@ -12,9 +12,9 @@
             type="email" placeholder="newsletter@gmail.com" />
 
             {{-- Submit Button --}}
-            <x-buttons.primary wire:target='register' wire:loading.attr='disabled' type="submit" :disabled="$disabled">
+            <x-buttons.btn-primary wire:target='register' wire:loading.attr='disabled' type="submit" :disabled="$disabled">
                 {{ ('Subscrever') }}
-            </x-buttons.primary>
+            </x-buttons.btn-primary>
         </div>
 
         {{-- Display warning error --}}

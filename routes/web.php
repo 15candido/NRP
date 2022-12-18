@@ -150,10 +150,15 @@ Route::get('/apoio_saude', function () {
 });
 //end projects root
 
-// Route::get('/voluntariado', function () {
-//     return view('become_volunteers');
-// });
-Route::get('voluntarios', Volunteer::class)->name('voluntarios');
+Route::get('/voluntariado', function () {
+    return view('become_volunteers');
+ });
+
+
+Route::group(['middleware' => ['auth', 'verified']], function()
+{
+    Route::get('/voluntarios', Volunteer::class)->name('voluntarios');
+});
 
 Route::get('/ser_firquidja', function () {
     return view('firquidja');

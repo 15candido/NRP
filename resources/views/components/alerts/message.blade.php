@@ -1,5 +1,5 @@
 @if (session()->has('success'))
-<div class="flex items-center p-2 mb-4 space-x-2 text-white bg-[#5ba057]" x-data="{open: true}" 
+<div class="flex items-center p-2 space-x-2 text-white bg-[#5ba057]" x-data="{open: true}" 
 x-init="setTimeout(() => {open = false}, 2000)" x-show="open" x-transition:enter="transition duration-500 
 transform ease-out" x-transition:enter-start="opacity-1" x-transition:leave="transition duration-500 
 transform ease-in" x-transition:leave-end="opacity-0">

@@ -11,10 +11,9 @@
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
 <title>
-    {{ isset($title) ? config('app.name') . ' | ' . $title : ''}}
+    {{ isset($title) ? config('app.name', 'Na Rota dos Povos') . ' | ' . $title : ''}}
 </title>
 
 <!-- scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
-
-<livewire:styles />
+@livewireStyles
