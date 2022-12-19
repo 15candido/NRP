@@ -22,7 +22,9 @@
 
     {{--Toggle Modal--}}
     <div 
-        x-show="open" x-transition.duration.500ms    
+        x-show="open" 
+        x-transition:enter.duration.500ms
+        x-transition:leave.duration.400ms
         class="fixed top-0 left-0 right-0 z-50 w-full p-4 md:inset-0 md:h-full">
         
         {{-- Modal Background --}}

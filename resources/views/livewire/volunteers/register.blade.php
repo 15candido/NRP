@@ -8,7 +8,7 @@
         
         {{--Call Jetstream Button --}}
         <x-jet-button class="bg-[#6cbf67] hover:bg-[#5ba057]" wire:click="openModalToRegisterVolunteer" wire:loading.attr="disabled">
-            {{ __('Adicionar Voluntário') }}
+            {{ __('Adicionar Novo') }}
         </x-jet-button>
 
         {{-- Alerts Message Component --}}
@@ -23,7 +23,7 @@
                     <section class="w-full  mx-auto space-y-4"> {{-- rounded-xl shadow-lg hover:shadow-xl --}}
                         {{-- Title --}}
                         <x-slot name="title">
-                            {{ __('Adicionar Voluntário') }}
+                            {{ __('Ficha de Inscrição') }}
                         </x-slot>
 
                         {{-- Form --}}
