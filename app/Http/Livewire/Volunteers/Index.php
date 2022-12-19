@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Volunteers;
 
-use App\Models\Vulunteer;
+use App\Models\Volunteer;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -17,13 +17,13 @@ class Index extends Component
 
     public function render()
     {
-        return view('livewire.volunteers.index'
-        , 
+        $volunteers = Volunteer::search($this->search)
+                 ->orderBy($this->orderBy, $this->orderAsc ? 'asc' : 'desc')
+                 ->paginate($this->perpage); 
+
+        return view('livewire.volunteers.index', 
          [
-             'voluntarios' => Volunteer::search($this->search)
-                 ->orderBy($this->orderBy, $this->orderAsc ? true : false)
-                 -> paginte($this->perpage)
-         ]
-    );
+             'voluntarios' => $volunteers
+         ]);
     }
 }
