@@ -10,20 +10,24 @@ class Index extends Component
 {
     use WithPagination;
     
-    public $perpage = 10; 
+    public $perPage = 5; 
     public $search = '';
     public $orderBy = 'id';
     public $orderAsc = true; 
 
+    protected $listeners = [
+        'saved' => '$refresh'
+    ];
+
     public function render()
     {
         $volunteers = Volunteer::search($this->search)
-                 ->orderBy($this->orderBy, $this->orderAsc ? 'asc' : 'desc')
-                 ->paginate($this->perpage); 
+            ->orderBy($this->orderBy, $this->orderAsc ? 'asc' : 'desc')
+            ->paginate($this->perPage); 
 
         return view('livewire.volunteers.index', 
          [
-             'voluntarios' => $volunteers
+             'volunteers' => $volunteers
          ]);
     }
 }

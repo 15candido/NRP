@@ -176,6 +176,124 @@ class VolunteerSeeder extends Seeder
                 'updated_at'     => now(),
             ],
 
+            [
+                'name'          => 'Anibal Francisco',
+                'slug'          => 'anibalfrancisco',
+                'email'         => 'francisco@hotmail.com',
+                'phone'         => '(+351) 913 546 395',
+                'address'       => 'Rua de Monserrate',
+                'location'      => 'Viana de Castelo',
+                'postcode'      => '4904-860',
+                'motivation'    => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem 
+                    quibusdam temporibus asperiores dolorem consectetur dignissimos ad odio 
+                    quaerat nam repellendus reiciendis laboriosam quam, dicta corrupti. Inventore 
+                    aliquam quae quod hic.',
+                'created_at'     => now(),
+                'updated_at'     => now(),
+            ],
+
+            [
+                'name'          => 'Braima Suncar Dabo',
+                'slug'          => 'braimasuncardabo',
+                'email'         => 'dabo@hotmail.com',
+                'phone'         => '(+351) 914 546 395',
+                'address'       => 'Rua de Monserrate',
+                'location'      => 'Viana de Castelo',
+                'postcode'      => '4904-860',
+                'motivation'    => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem 
+                    quibusdam temporibus asperiores dolorem consectetur dignissimos ad odio 
+                    quaerat nam repellendus reiciendis laboriosam quam, dicta corrupti. Inventore 
+                    aliquam quae quod hic.',
+                'created_at'     => now(),
+                'updated_at'     => now(),
+            ],
+
+            [
+                'name'          => 'Alfa Umaro Sani',
+                'slug'          => 'alfaumarosane',
+                'email'         => 'alfa@hotmail.com',
+                'phone'         => '(+351) 919 546 395',
+                'address'       => 'Rua de Monserrate',
+                'location'      => 'Viana de Castelo',
+                'postcode'      => '4904-860',
+                'motivation'    => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem 
+                    quibusdam temporibus asperiores dolorem consectetur dignissimos ad odio 
+                    quaerat nam repellendus reiciendis laboriosam quam, dicta corrupti. Inventore 
+                    aliquam quae quod hic.',
+                'created_at'     => now(),
+                'updated_at'     => now(),
+            ],
+
+            [
+                'name'          => 'Fatumata Baldé',
+                'slug'          => 'fatumatabalde',
+                'email'         => 'balde@hotmail.com',
+                'phone'         => '(+351) 915 546 395',
+                'address'       => 'Rua de Monserrate',
+                'location'      => 'Viana de Castelo',
+                'postcode'      => '4904-860',
+                'motivation'    => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem 
+                    quibusdam temporibus asperiores dolorem consectetur dignissimos ad odio 
+                    quaerat nam repellendus reiciendis laboriosam quam, dicta corrupti. Inventore 
+                    aliquam quae quod hic.',
+                'created_at'     => now(),
+                'updated_at'     => now(),
+            ],
+
+            [
+                'name'          => 'Eulália Sanca Djono',
+                'slug'          => 'eulaliasancadjono',
+                'email'         => 'elia@hotmail.com',
+                'phone'         => '(+351) 916 546 395',
+                'address'       => 'Rua de Monserrate',
+                'location'      => 'Viana de Castelo',
+                'postcode'      => '4904-860',
+                'motivation'    => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem 
+                    quibusdam temporibus asperiores dolorem consectetur dignissimos ad odio 
+                    quaerat nam repellendus reiciendis laboriosam quam, dicta corrupti. Inventore 
+                    aliquam quae quod hic.',
+                'created_at'     => now(),
+                'updated_at'     => now(),
+            ],
+            
+            [
+                'name'          => 'Musa Djamba',
+                'slug'          => 'musadjamba',
+                'email'         => 'musa@hotmail.com',
+                'phone'         => '(+351) 917 546 395',
+                'address'       => 'Rua de Monserrate',
+                'location'      => 'Viana de Castelo',
+                'postcode'      => '4904-860',
+                'motivation'    => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem 
+                    quibusdam temporibus asperiores dolorem consectetur dignissimos ad odio 
+                    quaerat nam repellendus reiciendis laboriosam quam, dicta corrupti. Inventore 
+                    aliquam quae quod hic.',
+                'created_at'     => now(),
+                'updated_at'     => now(),
+            ],
+
+            
+            [
+                'name'          => 'Maimuna Camará',
+                'slug'          => 'maimunacamara',
+                'email'         => 'mia@hotmail.com',
+                'phone'         => '(+351) 918 546 395',
+                'address'       => 'Rua de Monserrate',
+                'location'      => 'Viana de Castelo',
+                'postcode'      => '4904-860',
+                'motivation'    => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem 
+                    quibusdam temporibus asperiores dolorem consectetur dignissimos ad odio 
+                    quaerat nam repellendus reiciendis laboriosam quam, dicta corrupti. Inventore 
+                    aliquam quae quod hic.',
+                'created_at'     => now(),
+                'updated_at'     => now(),
+            ],
+
+
+
+
+                        
+
         ]);
     }
 }

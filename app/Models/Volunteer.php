@@ -25,6 +25,11 @@ class Volunteer extends Model
         'motivation'
     ];
 
+    public function createdAt(): string
+    {
+        return $this->created_at->format('m-d-y');
+    }
+
     public static function search($search)
     {
         return empty($search)
