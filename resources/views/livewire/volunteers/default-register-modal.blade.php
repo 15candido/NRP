@@ -6,12 +6,6 @@
     @endphp
 
     <div class="flex flex-wrap justify-end">
-
-        {{-- Alert Message--}}
-        <div class="w-9/12 mr-3">
-            <x-alerts.message /> 
-        </div> 
-
         {{-- Taggle Button --}}
         <button  
             x-on:click=" open = !open"
@@ -134,6 +128,23 @@
     </div>
 </div>
 
+@push('scripts')
+    <script>
 
+        // Emit Browser Event
+        Livewire.on('created', function(e){
+            Swal.fire({
+                title: e.title
+                , icon: e.icon
+                , iconColor: e.iconColor
+                , timer: 3000
+                , toast: true
+                , position: 'top-right'
+                , timerProgressBar: true
+                , showConfirmButton: false
+            });
+        });
+    </script>
+@endpush
 
 

@@ -1,5 +1,5 @@
 {{-- Hand Section --}}
-<div class="flex w-full h-auto justify-end md:justify-between bg-white px-6 py-4">
+<div class="relative flex w-full h-auto justify-end md:justify-between bg-white px-6 py-4">
     <form class="hidden w-1/2 md:inline-block">   
         <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
         <div class="relative">

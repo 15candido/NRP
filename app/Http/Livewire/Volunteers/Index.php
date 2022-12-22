@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Volunteers;
 
 use App\Models\Volunteer;
+use Faker\Provider\Lorem;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -12,7 +13,7 @@ class Index extends Component
     
     public $perPage = 5; 
     public $search = '';
-    public $orderBy = 'id';
+    public $orderBy = 'name';
     public $orderAsc = true; 
 
     protected $listeners = [

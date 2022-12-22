@@ -1,23 +1,17 @@
-<div class="p-4">
+<div>
     @php 
         $disabled = $errors->any() || empty($this->name) || empty($this->phone) || empty($this->email)
         || empty($this->address) || empty($this->location) || empty($this->postcode) || empty($this->motivation) ? true : false;
     @endphp
 
-    <div class="flex gap-4">
+    <div class="flex">
         
         {{--Call Jetstream Button --}}
-        <x-jet-button class="bg-[#6cbf67] hover:bg-[#5ba057]" wire:click="openModalToRegisterVolunteer" 
+        <x-jet-button class="px-6 py-3 bg-[#6cbf67] hover:bg-[#5ba057]" wire:click="openModalToRegisterVolunteer" 
         wire:loading.attr="disabled">
 
-            {{ __('Adicionar Novo') }}
-            
+            {{ __('Novo') }}
         </x-jet-button>
-
-        {{-- Alerts Message Component --}}
-        <div class="w-10/12">
-            <x-alerts.message /> 
-        </div>
 
         @if($openModal)
             <x-jet-dialog-modal wire:model="openModal">
@@ -103,7 +97,8 @@
                     </x-buttons.btn-secondary>
 
                     {{-- Submit Button --}}
-                    <x-buttons.btn-primary wire:target='register' wire:loading.attr='disabled' type="submit" :disabled="$disabled" form="RegisterForm" >
+                    <x-buttons.btn-primary wire:target='register' wire:loading.attr='disabled' type="submit" 
+                    :disabled="$disabled" form="RegisterForm" >
                         {{ __('Adicionar') }}
                     </x-buttons.btn-primary>
                 </x-slot>
@@ -112,4 +107,22 @@
     </div>
 </div>
 
+@push('scripts')
+    <script>
+
+        // Emit Browser Event
+        Livewire.on('created', function(e){
+            Swal.fire({
+                title: e.title
+                , icon: e.icon
+                , iconColor: e.iconColor
+                , timer: 3000
+                , toast: true
+                , position: 'top-right'
+                , timerProgressBar: true
+                , showConfirmButton: false
+            });
+        });
+    </script>
+@endpush
 

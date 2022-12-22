@@ -18,12 +18,6 @@ class Delete extends Component
 
         $this->volunteer->delete();
 
-        // $this->dispatchBrowserEvent('volunteerDeleted', [
-        //     'title'         => $this->volunteer->name . ',' . ' foi removido da lista dos voluntários',
-        //     'icon'          => 'warning', 
-        //     'iconColor'     => 'red',
-        // ]);
-
         $this->emit('volunteerDeleted', [
             'title'         => $this->volunteer->name . ',' . ' foi removido da lista dos voluntários',
             'icon'          => 'warning',

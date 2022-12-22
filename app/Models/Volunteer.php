@@ -34,7 +34,8 @@ class Volunteer extends Model
     {
         return empty($search)
         ? static::query()
-        : static::query()->where('id', 'like', '%' . $search . '%')
-            ->orWhere('name', 'like', '%' . $search . '%');
+        : static::query()->where('name', 'like', '%' . $search . '%')
+            ->orWhere('phone', 'like', '%' . $search . '%')
+            ->orWhere('location', 'like', '%' . $search . '%');
     }
 }

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('email')->unique();
             $table->string('phone')->unique();
+            $table->boolean('status')->default(false);
             $table->text('address');
             $table->string('location');
             $table->string('postcode');

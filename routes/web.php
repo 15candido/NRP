@@ -114,7 +114,7 @@ Route::get('/equipa_gestão', function () {
 Route::get('/a_nossa_comunidade', function () {
     $profiles = Person::where('profile', 'leader')->get();
 
-    return view('community',[
+    return view('people',[
         'profiles' => $profiles
     ]);
 });
@@ -155,11 +155,6 @@ Route::get('/voluntariado', function () {
  });
 
 
-Route::group(['middleware' => ['auth', 'verified']], function()
-{
-    Route::get('/voluntarios', Volunteer::class)->name('voluntarios');
-});
-
 Route::get('/ser_firquidja', function () {
     return view('firquidja');
 });
@@ -178,6 +173,8 @@ Route::get('/teste', function () {
 
 Route::get('/users', [UserController::class, 'index'])->middleware('auth');
 
+// Admin Panel/Dashboard Start
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -188,6 +185,52 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/necessidades', function () {
+    return view('needs');
+});
+
+Route::get('/campanhas', function () {
+    return view('campaigns');
+});
+
+Route::get('/projetos', function () {
+    return view('projects-admin');
+});
+
+Route::get('/formas-de-apoiar', function () {
+    return view('ways-to-support-admin');
+});
+
+Route::get('/comunidade', function () {
+    return view('community-admin');
+});
+
+Route::get('/historia', function () {
+    return view('story-admin');
+});
+
+Route::get('/documentos', function () {
+    return view('documents-admin');
+});
+
+Route::get('/newsletters', function () {
+    return view('newsletters-admin');
+});
+
+Route::get('/contactos', function () {
+    return view('contacts-admin');
+});
+
+
+
+
+Route::group(['middleware' => ['auth', 'verified']], function()
+{
+    Route::get('/voluntarios', Volunteer::class)->name('voluntarios');
+});
+// Admin Panel/Dashboard End
+
 
 Route::get('/contas', [ContabilityController::class, 'index'])->middleware('auth');
 Route::get('/contas/create', [ContabilityController::class, 'create'])->middleware('auth');

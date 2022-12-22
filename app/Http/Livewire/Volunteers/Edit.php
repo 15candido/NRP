@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class Edit extends Component
 {
-    public $volunteer, $openModal, $formId; 
+    public $volunteer, $openModal=false, $formId; 
 
     public function mount($volunteer)
     {
@@ -16,7 +16,7 @@ class Edit extends Component
     protected $rules = [
 
         'volunteer.name'          => ['required', 'unique:volunteers,name', 'min:5', 'max:150'],
-        'volunteer.phone'         => ['required', 'unique:volunteers,phone', 'min:9', 'max:13'],
+        'volunteer.phone'         => ['required', 'unique:volunteers,phone', 'min:9', 'max:18'],
         'volunteer.email'         => ['required', 'regex:/(.+)@(.+)\.(.+)/i', 'unique:volunteers,email', 'min:10', 'max:255'],
         'volunteer.address'       => ['required', 'min:5', 'max:255'],
         'volunteer.location'      => ['required', 'min:5', 'max:15'],

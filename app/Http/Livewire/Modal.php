@@ -20,7 +20,7 @@ class Modal extends Component
     protected $rules = [
 
         'name'          => ['required', 'unique:volunteers,name', 'min:5', 'max:150'],
-        'phone'         => ['required', 'unique:volunteers,phone', 'min:9', 'max:13'],
+        'phone'         => ['required', 'unique:volunteers,phone', 'min:9', 'max:15'],
         'email'         => ['required', 'regex:/(.+)@(.+)\.(.+)/i', 'unique:volunteers,email', 'min:10', 'max:255'],
         'address'       => ['required', 'min:5', 'max:255'],
         'location'      => ['required', 'min:5', 'max:15'],
@@ -55,8 +55,13 @@ class Modal extends Component
            
         ]);
 
-        session()->flash('success', 'O registo foi um sucesso!');
+        $this->emit('created', [
+            'title'         => 'O registo foi um sucesso!',
+            'icon'          => 'success',
+            'iconColor'     => 'green'
+        ]);
 
+        $this->emit('saved');
         $this->reset();
     }
     
