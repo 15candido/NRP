@@ -306,11 +306,6 @@ class VolunteerSeeder extends Seeder
                 'updated_at'     => now(),
             ],
 
-
-
-
-                        
-
         ]);
     }
 }

@@ -6,13 +6,13 @@
     {{-- Main Section --}}
     <div class="py-12">
         <div class="max-w-full mx-auto">
-            <div class="flex flex-col gap-12 overflow-hidden">
-               <h2>Necessidades</h2>
-               <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum eveniet perferendis, 
-                    natus expedita sunt quasi consequuntur blanditiis quidem. Debitis optio quod consequatur 
-                    molestiae maiores laboriosam obcaecati fuga, illo ex laudantium!
-               </p>
+            <div class="flex flex-col space-y-6 justify-center items-center overflow-hidden">
+
+            <div class="w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12">
+                <h2>Necessidades</h2>
+            </div>
+               
+                <livewire:needs.register-needs />
             </div>
         </div>
     </div>   

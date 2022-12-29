@@ -3,7 +3,6 @@
 namespace App\Http\Livewire\Volunteers;
 
 use App\Models\Volunteer;
-use Faker\Provider\Lorem;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -32,3 +31,4 @@ class Index extends Component
          ]);
     }
 }
+
