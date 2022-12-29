@@ -9,7 +9,10 @@ class Project extends Model
 {
     use HasFactory;
 
-    public function need(){
-        return $this->hasMany(Need::class);
+    public function needs(){
+
+        // Get The Items of The Needs - Relationship
+        return $this->belongsToMany(Need::class);
     }
+
 }

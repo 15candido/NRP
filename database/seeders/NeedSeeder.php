@@ -16,19 +16,40 @@ class NeedSeeder extends Seeder
     public function run()
     {
         DB::table('needs')->insert([
-
-            [
-                'project_id'    => '1',
-                'title'         => 'Material Escolar',
-                'context'       => 'Seguimos na nossa missão de apoiar as escolas de Catió com material escolar: cadernos, livros, lápis, 
-                                    canetas, borachas... entre outras materias essencias para garantir que todos os alunos das escolas 
-                                    apioadas...',
-                'total'         => '5',
-                'deadline'      => now(),
-                'created_at'    => now(),
-                'updated_at'    => now(),
-            ],
-            
+            'name' => 'Lápis'
         ]);
+
+        DB::table('need_project')->insert([            
+            'need_id' => 1,
+            'project_id' => 1,
+            'quantity' => 20,
+        ]);
+
+        DB::table('needs')->insert([
+            'name' => 'Caneta'
+        ]);
+
+        DB::table('needs')->insert([
+            'name' => 'Aguça'
+        ]);
+
+        $id = DB::table('needs')->insertGetId([
+            'name' => 'Borracha'
+        ]);
+
+        DB::table('need_project')->insert([            
+            'need_id' => $id,
+            'project_id' => 1,
+            'quantity' => 30,
+        ]);
+
+        DB::table('need_project')->insert([            
+            'need_id' => $id,
+            'project_id' => 2,
+            'quantity' => 20,
+        ]);
+
+        
+
     }
 }

@@ -27,8 +27,7 @@ class DatabaseSeeder extends Seeder
             AreaSeeder::class,
             ChildrenSeeder::class,
             VolunteerSeeder::class,
-            NeedSeeder::class,
-            ItemsOfNeedsSeeder::class,
+            NeedSeeder::class,            
         ]);
         \App\Models\User::factory(100)->create();
         \App\Models\Story::factory(20)->create();

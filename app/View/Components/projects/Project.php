@@ -21,4 +21,6 @@ class Project extends Component
     {
         return view('components.project.project');
     }
+
+    
 }

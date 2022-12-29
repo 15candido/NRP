@@ -14,13 +14,23 @@ return new class extends Migration
     public function up()
     {
         Schema::create('needs', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('project_id');
-            $table->string('title');
-            $table->text('context');
-            $table->integer('total');
-            $table->date('deadline');
+            $table->id();            
+            $table->string('name');            
             $table->timestamps();
+        });
+        
+        Schema::create('need_project', function (Blueprint $table) {
+            $table->unsignedBigInteger('project_id');
+            $table->unsignedBigInteger('need_id');
+            $table->decimal('quantity');
+            $table->string('description')->nullable();
+            $table->text('notes')->nullable();
+            $table->timestamps();
+
+            $table->foreign('project_id')->references('id')->on('projects');
+            $table->foreign('need_id')->references('id')->on('needs');
+
+            $table->primary(['project_id', 'need_id']);
         });
     }
 

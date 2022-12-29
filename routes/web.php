@@ -234,3 +234,9 @@ Route::group(['middleware' => ['auth', 'verified']], function()
 
 Route::get('/contas', [ContabilityController::class, 'index'])->middleware('auth');
 Route::get('/contas/create', [ContabilityController::class, 'create'])->middleware('auth');
+
+
+Route::get('/np', function () {
+    $projects = Project::with('needs')->get();    
+    return view('np', compact('projects'));
+});
