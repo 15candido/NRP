@@ -6,10 +6,11 @@ use Illuminate\View\Component;
 
 class Ongoing extends Component
 {
-   public $ongoingProjects;
-    public function __construct($ongoingProjects)
+    public $projects;
+
+    public function __construct($projects)
     {
-        $this->ongoingProjects = $ongoingProjects;
+        $this->projects = $projects;
     }
 
     /**

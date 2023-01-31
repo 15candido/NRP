@@ -29,32 +29,26 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Auth::loginUsingId(1);
 
 Route::get('/', function () {
-    $stories = Story::all();
-    $heroes = Hero::all();
-    $abouts = About::all();
-    $projects = Project::where('visible', true)->get(); 
-    $impacts = Impact::where('visible', true)->get();
-    $howToHelp = HowToHelp::where('first_option', true)->get();
-    $partners = Partner::all();
-   
+
     return view('welcome', [
-        'stories' => $stories,
-        'heroes' => $heroes,
-        'abouts' => $abouts,
-        'projects' => $projects,
-        'impacts' => $impacts,
-        'howToHelp' => $howToHelp,
-        'partners' => $partners
-    ]); 
+        'stories'   => Story::all(),
+        'heroes'    => Hero::all(),
+        'abouts'    => About::all(),
+        'projects'  => Project::where('visible', true)->get(),
+        'impacts'   => Impact::where('visible', true)->get(),
+        'howToHelp' => HowToHelp::where('first_option', true)->get(),
+        'partners'  => Partner::all()
+    ]);
 });
 
 Route::get('/quem_somos', function () {
     $impacts = Impact::all();
     $partners = Partner::all();
-    
+
     return view('about', [
         'impacts' => $impacts,
         'partners' => $partners
@@ -72,7 +66,7 @@ Route::get('/children', function () {
 
 Route::post('/newsletter', function (Request $request) {
     echo "O email " . $request['email'] . " foi registado na nossa bd";
-    Newsletter::create(['email' => $request['email'], 'name' => $request['name']]);    
+    Newsletter::create(['email' => $request['email'], 'name' => $request['name']]);
     return redirect('/');
 });
 
@@ -80,23 +74,29 @@ Route::get('/projetos', function () {
     $projects = Project::all();
     $areas = Area::all();
 
-    return view('projects',[
+    return view('projects', [
         'projects' => $projects,
         'areas' => $areas
     ]);
 });
 
+// Route::get('projetos/{project:slug}', function (Project $project) {
+//     return view('project', [
+//         'project' => $project,
+//     ]);
+// });
+
 Route::get('/como_ajudar', function () {
     $help = HowToHelp::all();
-     
-    return view('help',[
+
+    return view('help', [
         'help' => $help
     ]);
 });
 
 Route::get('/orgaos_sociais', function () {
     $profiles = Person::where('profile', 'leader')->get();
-    return view('governing_bodies',[
+    return view('governing_bodies', [
 
         'profiles' => $profiles
     ]);
@@ -104,9 +104,9 @@ Route::get('/orgaos_sociais', function () {
 
 Route::get('/equipa_gestão', function () {
     $profiles = Person::where('profile', 'Team Managment')->get();
-    
-    return view('team_managment',[
-        
+
+    return view('team_managment', [
+
         'profiles' => $profiles
     ]);
 });
@@ -114,7 +114,7 @@ Route::get('/equipa_gestão', function () {
 Route::get('/a_nossa_comunidade', function () {
     $profiles = Person::where('profile', 'leader')->get();
 
-    return view('people',[
+    return view('people', [
         'profiles' => $profiles
     ]);
 });
@@ -152,7 +152,7 @@ Route::get('/apoio_saude', function () {
 
 Route::get('/voluntariado', function () {
     return view('become_volunteers');
- });
+});
 
 
 Route::get('/ser_firquidja', function () {
@@ -179,7 +179,7 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
-    
+
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
@@ -194,7 +194,7 @@ Route::get('/campanhas', function () {
     return view('campaigns');
 });
 
-Route::get('/projetos', function () {
+Route::get('/projetos-admin', function () {
     return view('projects-admin');
 });
 
@@ -225,8 +225,7 @@ Route::get('/contactos', function () {
 
 
 
-Route::group(['middleware' => ['auth', 'verified']], function()
-{
+Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/voluntarios', Volunteer::class)->name('voluntarios');
 });
 // Admin Panel/Dashboard End
@@ -237,6 +236,6 @@ Route::get('/contas/create', [ContabilityController::class, 'create'])->middlewa
 
 
 Route::get('/np', function () {
-    $projects = Project::with('needs')->get();    
+    $projects = Project::with('needs')->get();
     return view('np', compact('projects'));
 });

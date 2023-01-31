@@ -15,18 +15,15 @@ return new class extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->nullable()->constrained();
             $table->string('name');
-            $table->string('role')->nullable();
-            $table->text('abstract')->nullable();
+            $table->string('username')->unique();
+            $table->string('email')->unique();
             $table->text('description')->nullable();
+            $table->string('profile')->nullable();
             $table->string('position')->nullable();
-            $table->string('profile');
-            $table->string('project')->nullable();
-            $table->string('imageProfile')->nullable();
-            $table->string('slug')->nullable();
-            $table->string('email')->nullable();
-            $table->string('facebook')->nullable();
-            $table->string('instagram')->nullable();
+            $table->string('role')->nullable();
+            $table->string('picture')->nullable();
             $table->timestamps();
         });
     }

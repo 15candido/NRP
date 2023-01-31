@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
 
 return new class extends Migration
 {
@@ -16,11 +17,22 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('abstract');
-            $table->string('url')->nullable();
-            $table->string('image');
-            $table->string('alt');
-            $table->boolean('visible')->default(true);
+            $table->string('slug')->unique();
+            $table->string('short_description');
+            $table->text('description');
+            $table->boolean('visible')->default(false);
+            $table->string('image')->nullable();
+            $table->date('start')->nullable();
+            $table->date('end')->nullable();
+            $table->timestamps();
+        });
+
+        Schema::create('person_project', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('person_id')->nullable()->constrained();
+            $table->foreignId('project_id')->nullable()->constrained();
+            $table->date('start')->nullable();
+            $table->date('end')->nullable();
             $table->timestamps();
         });
     }

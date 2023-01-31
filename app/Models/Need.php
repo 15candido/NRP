@@ -9,23 +9,20 @@ class Need extends Model
 {
     use HasFactory;
 
-    const TABLE = 'needs';
-
-    protected $table = self::TABLE;
-
     protected $fillable = [
-
-        'project_id',
-        'title', 
-        'context',
-        'total',
-        'deadline',
+        'name',
+        'description',
+        'start',
+        'end',
     ];
 
-    public function projects(){
-
-        // Get The Items of The Needs - Relationship
-        return $this->belongsToMany(Project::class);
+    public function projects()
+    {
+        return $this->belongsToMany(Project::class)->withPivot('quantity', 'note');
     }
 
+    public function items()
+    {
+        return $this->belongsToMany(Item::class)->withPivot('quantity', 'note');
+    }
 }

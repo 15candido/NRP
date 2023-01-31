@@ -5,14 +5,34 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Project extends Model
 {
     use HasFactory;
 
-    public function needs(){
+    protected $fillable = [
+        'name',
+        'slug',
+        'short_description',
+        'description',
+        'visible',
+        'image',
+        'start',
+        'end'
+    ];
 
-        // Get The Items of The Needs - Relationship
-        return $this->belongsToMany(Need::class);
+    public function collaborator()
+    {
+        return $this->belongsToMany(
+            Person::class,
+            'person_project',
+            'person_id',
+            'project_id'
+        );
     }
 
+    public function needs()
+    {
+        return $this->belongsToMany(Need::class)->withPivot('quantity', 'note');
+    }
 }

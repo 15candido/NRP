@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Project>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Item>
  */
-class ProjectFactory extends Factory
+class ItemFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -20,9 +20,7 @@ class ProjectFactory extends Factory
         return [
             'name' => $name = $this->faker->sentence(6),
             'slug' => Str::slug($name),
-            'short_description' => $this->faker->text(125),
-            'description' => $this->faker->text(716),
-            'image' => 'img/project/ceet_center.jpg'
+            'description' => fake()->text(500),
         ];
     }
 }

@@ -5,7 +5,7 @@
         </x-slot>
         <div class="flex flex-col min-h-screen items-center">
             <x-page-header 
-                src="img/ProjectImg/carouselVolunteers.jpg"
+                src="img/project/carouselVolunteers.jpg"
                 title="Ser voluntário da Na Rota dos Povos" fromPage="Como Ajudar" toPage="Seja voluntário"
                 alt="Voluntários da Na Rota dos Povos"
             /> <!--about us hero image -->

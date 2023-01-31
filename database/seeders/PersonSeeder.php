@@ -6,6 +6,7 @@ use Faker\Provider\Lorem;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class PersonSeeder extends Seeder
 {
@@ -16,936 +17,358 @@ class PersonSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('people')->insert([    
-            'name' => 'David',
-            'profile' => 'user',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'davidfreitas',
-            'email' => 'dvdfreitas@gmail.com',
-            'facebook' => 'http://www.facebook.com/dvdfreitas',
-            'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, ea. Laborum deserunt ut error odit sequi nam, quo aut soluta impedit doloremque sed distinctio reprehenderit animi ullam dolor excepturi unde.'
-        ]);
 
+        DB::table('people')->insert([
 
-        DB::table('people')->insert([    
-            'name' => 'Cândido',
-            'profile' => 'user',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'candidosilva',
-            'email' => 'candido@gmail.com',
-            'instagram' => 'http://instagram.com',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi placeat numquam vero?'
-        ]);
-
-        DB::table('people')->insert([    
-            'name' => 'Teresa Pinheiro',
+            'name' => $name =  'Teresa Pinheiro',
+            'username' => Str::slug($name),
+            'email' => 'teresa@narotadospovos.or',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'General assembly table',
             'role' => 'Presidente',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'General assembly table',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'teresapinheiro',
-            'email' => 'teresa@narotadospovos.og'
-        ]); 
+            'picture' => 'img/user/womanprofile.jpg',
+        ]);
 
-        DB::table('people')->insert([    
-            'name' => 'Cristina Leite',
-            'role' => 'Vice-presidente',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'General assembly table',
+        DB::table('people')->insert([
+
+            'name' => $name =  'Cristina Leite',
+            'username' => Str::slug($name),
+            'email' => 'cristina@narotadospovos.or',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'cristinaleite',
-            'email' => 'cristina@narotadospovos.og'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Ruben Almeida',
+            'position' => 'General assembly table',
             'role' => 'Vice-Presidente',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'General assembly table',
+            'picture' => 'img/user/womanprofile.jpg',
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Rubem Almeida',
+            'username' => Str::slug($name),
+            'email' => 'ruben@narotadospovos.or',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'leader',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'rubenalmeida',
-            'email' => 'ruben@narotadospovos.og'
-        ]); 
-   
-        DB::table('people')->insert([    
-            'name' => 'Sónia Almeida',
+            'position' => 'General assembly table',
+            'role' => 'Vice-Presidente',
+            'picture' => 'img/user/menprofile.jpg',
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Sónia Almeida',
+            'username' => Str::slug($name),
+            'email' => 'sonia@narotadospovos.or',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'General assembly table',
             'role' => 'Secretária',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'General assembly table',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'soniaalmeida',
-            'email' => 'sonia@narotadospovos.og'
-        ]); 
+            'picture' => 'img/user/womanprofile.jpg',
+        ]);
 
-        DB::table('people')->insert([    
-            'name' => 'Susana Antunes',
+        DB::table('people')->insert([
+
+            'name' => $name =  'Susana Antunes',
+            'username' => Str::slug($name),
+            'email' => 'susanaatunes@narotadospovos.or',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'CEO',
             'role' => 'Presidente',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'CEO',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'susanaantunes',
-            'email' => 'susanaatunes@narotadospovos.og'
-        ]);
-        
-        DB::table('people')->insert([    
-            'name' => 'Fernando Pinheiro',
-            'role' => 'Vice-Presidente',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'CEO',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'fernandopinheiro',
-            'email' => 'fenando@narotadospovos.og'
+            'picture' => 'img/user/womanprofile.jpg',
         ]);
 
-        DB::table('people')->insert([    
-            'name' => 'Octávio Coelho',
-            'role' => 'Vice-Presidente',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'CEO',
+        DB::table('people')->insert([
+
+            'name' => $name =  'Fernando Pinheiro',
+            'username' => Str::slug($name),
+            'email' => 'fernando@narotadospovos.or',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'leader',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'octáviocoelho',
-            'email' => 'octavio@narotadospovos.og'
-        ]);    
-        
-        DB::table('people')->insert([    
-            'name' => 'Ivone Vasco',
+            'position' => 'CEO',
+            'role' => 'Vice-Presidente',
+            'picture' => 'img/user/menprofile.jpg',
+        ]);
+
+        DB::table('people')->insert([
+            'name' => $name =  'Octávio Colhe',
+            'username' => Str::slug($name),
+            'email' => 'octavio@narotadospovos.or',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'CEO',
+            'role' => 'Vice-Presidente',
+            'picture' => 'img/user/menprofile.jpg',
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Ivone Vasco',
+            'username' => Str::slug($name),
+            'email' => 'ivonevasco@narotadospovos.or',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'CEO',
             'role' => 'Tesoureira',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'CEO',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'ivonevasco',
-            'email' => 'vasco@narotadospovos.og'
+            'picture' => 'img/user/womanprofile.jpg',
         ]);
-        
-        DB::table('people')->insert([    
-            'name' => 'Paulo Lopes',
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Paulo Lopes',
+            'username' => Str::slug($name),
+            'email' => 'lopes@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'CEO',
             'role' => 'Secretário',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'CEO',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'lopespaulo',
-            'email' => 'lopes@narotadospovos.og'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Alcina Almeida',
-            'role' => 'Vogal',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'CEO',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'almeidalcina',
-            'email' => 'cino@narotadospovos.og'
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Anabela Bandeira',
-            'role' => 'Vogal',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'CEO',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'anabelabandeira',
-            'email' => 'anabela@narotadospovos.og'
-        ]);     
-        
-        DB::table('people')->insert([    
-            'name' => 'David Freitas',
-            'role' => 'Vogal',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'CEO',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'freitasdavid',
-            'email' => 'david@narotadospovos.og'
+            'picture' => 'img/user/menprofile.jpg'
         ]);
-        
-        DB::table('people')->insert([    
-            'name' => 'Rui Silva',
+
+        DB::table('people')->insert([
+
+
+            'name' => $name =  'Alcina Almeida',
+            'username' => Str::slug($name),
+            'email' => 'alcina@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'CEO',
             'role' => 'Vogal',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'CEO',
+            'picture' => 'img/user/womanprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+
+            'name' => $name =  'Anabela Bandeira',
+            'username' => Str::slug($name),
+            'email' => 'anabela@narotadospovos.or',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'leader',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'silvarui',
-            'email' => 'rui@narotadospovos.og'
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Sandra Batista',
-            'role' => 'Suplente',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
             'position' => 'CEO',
+            'role' => 'Vogal',
+            'picture' => 'img/user/womanprofile.jpg',
+        ]);
+
+        DB::table('people')->insert([
+
+
+            'name' => $name =  'David Freitas',
+            'username' => Str::slug($name),
+            'email' => 'dvdfreitas@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'sandrabatista',
-            'email' => 'batista@narotadospovos.og'
-        ]);      
-  
-        DB::table('people')->insert([    
-            'name' => 'Luís Monteiro',
+            'position' => 'CEO',
+            'role' => 'Vogal',
+            'picture' => 'img/user/menprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Rui Silva',
+            'username' => Str::slug($name),
+            'email' => 'rui@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'CEO',
+            'role' => 'Vogal',
+            'picture' => 'img/user/menprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Sandra Batista',
+            'username' => Str::slug($name),
+            'email' => 'sandra@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'CEO',
+            'role' => 'Suplete',
+            'picture' => 'img/user/womanprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Luís Monteiro',
+            'username' => Str::slug($name),
+            'email' => 'lmonteiro@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'Supervisory board',
             'role' => 'Presidente',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'Supervisory board',
+            'picture' => 'img/user/menprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Paula Veira',
+            'username' => Str::slug($name),
+            'email' => 'veira@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'leader',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'luismonteiro',
-            'email' => 'luis@narotadospovos.og'
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Paula Veira',
+            'position' => 'Supervisory board',
             'role' => 'Vice-Presidente',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'Supervisory board',
+            'picture' => 'img/user/womanprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Inês Lopes',
+            'username' => Str::slug($name),
+            'email' => 'ineslopes@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'veirapaula',
-            'email' => 'veira@narotadospovos.og'
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Inês Lobo',
+            'position' => 'Supervisory board',
             'role' => 'Vogal',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'Supervisory board',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'inêslobo',
-            'email' => 'ineslobo@narotadospovos.og'
+            'picture' => 'img/user/womanprofile.jpg'
         ]);
-        
-        DB::table('people')->insert([    
-            'name' => 'Miguel Seabra',
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Migue Seabra',
+            'username' => Str::slug($name),
+            'email' => 'mseabra@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'Supervisory board',
             'role' => 'Vogal',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'Supervisory board',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'slug' => 'migeulseabra',
-            'email' => 'luseabrais@narotadospovos.og'
+            'picture' => 'img/user/menprofile.jpg'
         ]);
-        
-        DB::table('people')->insert([    
-            'name' => 'Susana Andrade',
+
+        DB::table('people')->insert([
+
+
+            'name' => $name =  'Susana Andrade',
+            'username' => Str::slug($name),
+            'email' => 'andrade@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'leader',
+            'position' => 'Supervisory board',
             'role' => 'Vogal',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'position' => 'Supervisory board',
-            'profile' => 'leader',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'slug' => 'susanaandrade',
-            'email' => 'andrade@narotadospovos.og'
-        ]);
-        
-        //////////////////////////////////////////////////////////////////////////////////////
-        // managment
-        // A Educação é o Único Caminho
-        DB::table('people')->insert([    
-            'name' => 'Alcina Almeida',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Educação',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'David Freitas',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Educação',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Ivone Vasco',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Educação',
-            'imageProfile' => 'img/user/womanprofile.jpg',
+            'picture' => 'img/user/womanprofile.jpg'
         ]);
 
-        
-        DB::table('people')->insert([    
-            'name' => 'Inês Lopes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Educação',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'ineslopes@narotadospovos.og'
-        ]);    
-        
-        DB::table('people')->insert([    
-            'name' => 'Tito Baião',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Educação',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'email' => 'titobaiao@narotadospovos.og'
-        ]);    
-        
-         // Casa da Mamé
-         DB::table('people')->insert([    
-            'name' => 'Susana Antunes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Casa',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Anabela Bandeira',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Casa',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Fernando Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Casa',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]);
-        
-        DB::table('people')->insert([    
-            'name' => 'Manuela Fidalgo',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Casa',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'manuela@narotadospovos.og'
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Alcina Almeida',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Casa',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Teresa Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Casa',
-            'imageProfile' => 'img/user/womanprofile.jpg'
-        ]);    
-        
-         // Centro de Educação Especial e Terapeútica
-         DB::table('people')->insert([    
-            'name' => 'Susana Antunes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'CEET',
-            'imageProfile' => 'img/user/womanprofile.jpg'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Alexandra Fernandes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'CEET',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'alexandra@narotadospovos.og'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Fernando Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'CEET',
-            'imageProfile' => 'img/user/menprofile.jpg',
+        DB::table('people')->insert([
+
+            'name' => $name =  'Tito Baião',
+            'username' => Str::slug($name),
+            'email' => 'titobaiao@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/menprofile.jpg'
         ]);
 
-        DB::table('people')->insert([    
-            'name' => 'Carolina Lopes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'CEET',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'manucarolinaela@narotadospovos.og'
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Rubén Almeida',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'CEET',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-        ]); 
+        DB::table('people')->insert([
 
-         // ComunicaçÃO E Imagem
-         DB::table('people')->insert([    
-            'name' => 'Susana Antunes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Comunicação',
-            'imageProfile' => 'img/user/womanprofile.jpg'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Cândido da Silva',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Comunicação',
-            'imageProfile' => 'img/user/mEnprofile.jpg',
-            'email' => 'candido@narotadospovos.og'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Fernando Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Comunicação',
-            'imageProfile' => 'img/user/menprofile.jpg',
+
+            'name' => $name =  'Manuela Fidalgo',
+            'username' => Str::slug($name),
+            'email' => 'manuela@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/womanprofile.jpg'
         ]);
-        
-        DB::table('people')->insert([    
-            'name' => 'Joana Carvalho',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Comunicação',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'joana@narotadospovos.og'
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'David Freitas',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Comunicação',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]); 
 
-        DB::table('people')->insert([    
-            'name' => 'Vitor Carvalho',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Comunicação',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'email' => 'vitor@narotadospovos.og'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Rui Silva',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Comunicação',
-            'imageProfile' => 'img/user/menprofile.jpg',
-            'email' => 'ruisilvaa@narotadospovos.og'
-        ]); 
+        DB::table('people')->insert([
 
-        // Angariação | Eventos | Campanhas | Logistica 
-        DB::table('people')->insert([    
-            'name' => 'Teresa Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/womanprofile.jpg'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Anabela Bandeira',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Susana Antunes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/womanprofile.jpg',
+            'name' => $name =  'Alexandra Fernandes',
+            'username' => Str::slug($name),
+            'email' => 'alexandra@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/womanprofile.jpg'
         ]);
-        
-        DB::table('people')->insert([    
-            'name' => 'Anna Oliveira',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'anna@narotadospovos.og'
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Fernado Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/menprofile.jpg'
-        ]); 
 
-        DB::table('people')->insert([    
-            'name' => 'Isabel Abreu',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'isabelabreu@narotadospovos.og'
-        ]); 
+        DB::table('people')->insert([
 
-        DB::table('people')->insert([    
-            'name' => 'Octávio Coelho',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Isabel Lopes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'isabelopes@narotadospovos.og'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Paulo Lopes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]); 
+            'name' => $name =  'Carolina Lopes',
+            'username' => Str::slug($name),
+            'email' => 'carolina@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/womanprofile.jpg'
 
-        DB::table('people')->insert([    
-            'name' => 'Vitor Carvalho',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]); 
-
-        DB::table('people')->insert([    
-            'name' => 'Maria João Flores',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Logistica',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]);       
-        
-        // Saúde e Nutrição
-        DB::table('people')->insert([    
-            'name' => 'Fernando Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Saúde',
-            'imageProfile' => 'img/user/menprofile.jpg'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Catarina Neves',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Saúde',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'neves@ongnarotadospovos.org'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Teresa Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Saúde',
-            'imageProfile' => 'img/user/womanprofile.jpg',
         ]);
-        
-        DB::table('people')->insert([    
-            'name' => 'Sofia Silva',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Saúde',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'sofiasilva@narotadospovos.og'
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Carolina Lopes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Saúde',
-            'imageProfile' => 'img/user/womanprofile.jpg'
-        ]); 
 
-        DB::table('people')->insert([    
-            'name' => 'Sónia Almeida',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Saúde',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-            'email' => 'soniaalmeida@narotadospovos.og'
-        ]); 
+        DB::table('people')->insert([
 
-        // Gestão de voluntários| Voluntariado
-        DB::table('people')->insert([    
-            'name' => 'Teresa Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Voluntários',
-            'imageProfile' => 'img/user/womanprofile.jpg'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Vitor Carvalho',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Voluntários',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Octávio Coelho',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Voluntários',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Paulo Lopes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Voluntários',
-            'imageProfile' => 'img/user/menprofile.jpg'
-        ]); 
+            'name' => $name =  'Cândido da Silva',
+            'username' => Str::slug($name),
+            'email' => 'candido@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/menprofile.jpg'
+        ]);
 
-        DB::table('people')->insert([    
-            'name' => 'Inês Lopes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Voluntários',
-            'imageProfile' => 'img/user/womanprofile.jpg',
-        ]); 
+        DB::table('people')->insert([
 
-        // Empreendedorísmo
-        DB::table('people')->insert([    
-            'name' => 'Paulo Lopes',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Empreendedorísmo',
-            'imageProfile' => 'img/user/menprofile.jpg'
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'Vitor Carvalho',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Empreendedorísmo',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]); 
-        
-        DB::table('people')->insert([    
-            'name' => 'David Freitas',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Empreendedorísmo',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]);  
-        
-        DB::table('people')->insert([    
-            'name' => 'Octávio Coelh',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Empreendedorísmo',
-            'imageProfile' => 'img/user/menprofile.jpg'
-        ]); 
+            'name' => $name =  'Joana Carvalho',
+            'username' => Str::slug($name),
+            'email' => 'joana@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/womanprofile.jpg'
+        ]);
 
-        DB::table('people')->insert([    
-            'name' => 'Fernando Pinheiro',
-            'abstract' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus aspernatur quas tempora magnam excepturi sunt laboriosam consectetur, 
-                adipisci architecto ipsa earum qui obcaecati sapiente, fugit laborum commodi 
-                placeat numquam vero?',
-            'profile' => 'Team Managment',
-            'project' => 'Empreendedorísmo',
-            'imageProfile' => 'img/user/menprofile.jpg',
-        ]); 
+        DB::table('people')->insert([
+
+            'name' => $name =  'Victor Carvalho',
+            'username' => Str::slug($name),
+            'email' => 'victor@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/menprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Anna Oliveira',
+            'username' => Str::slug($name),
+            'email' => 'anna@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/womanprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Isabel Abreu',
+            'username' => Str::slug($name),
+            'email' => 'isabelabreu@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/womanprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Maria JoÕ Flores',
+            'username' => Str::slug($name),
+            'email' => 'mariaflores@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/womanprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Catarina Neves',
+            'username' => Str::slug($name),
+            'email' => 'neves@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/womanprofile.jpg'
+        ]);
+
+        DB::table('people')->insert([
+
+            'name' => $name =  'Sofia Silva',
+            'username' => Str::slug($name),
+            'email' => 'sofia@narotadospovos.org',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            'profile' => 'volunteer',
+            'picture' => 'img/user/womanprofile.jpg'
+        ]);
     }
 }
