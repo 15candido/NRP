@@ -33,15 +33,22 @@ use Illuminate\Support\Facades\Route;
 Auth::loginUsingId(1);
 
 Route::get('/', function () {
+    $stories = Story::all();
+    $heroes = Hero::all();
+    $abouts = About::all();
+    $projects = Project::where('visible', true)->get();
+    $impacts = Impact::where('visible', true)->get();
+    $howToHelp = HowToHelp::where('first_option', true)->get();
+    $partners = Partner::all();
 
     return view('welcome', [
-        'stories'   => Story::all(),
-        'heroes'    => Hero::all(),
-        'abouts'    => About::all(),
-        'projects'  => Project::where('visible', true)->get(),
-        'impacts'   => Impact::where('visible', true)->get(),
-        'howToHelp' => HowToHelp::where('first_option', true)->get(),
-        'partners'  => Partner::all()
+        'stories' => $stories,
+        'heroes' => $heroes,
+        'abouts' => $abouts,
+        'projects' => $projects,
+        'impacts' => $impacts,
+        'howToHelp' => $howToHelp,
+        'partners' => $partners
     ]);
 });
 
@@ -80,12 +87,6 @@ Route::get('/projetos', function () {
     ]);
 });
 
-// Route::get('projetos/{project:slug}', function (Project $project) {
-//     return view('project', [
-//         'project' => $project,
-//     ]);
-// });
-
 Route::get('/como_ajudar', function () {
     $help = HowToHelp::all();
 
@@ -95,19 +96,16 @@ Route::get('/como_ajudar', function () {
 });
 
 Route::get('/orgaos_sociais', function () {
-    $profiles = Person::where('profile', 'leader')->get();
-    return view('governing_bodies', [
 
-        'profiles' => $profiles
+    return view('governing_bodies', [
+        'profiles' => Person::where('profile', 'leader')->get()
     ]);
 });
 
-Route::get('/equipa_gestão', function () {
-    $profiles = Person::where('profile', 'Team Managment')->get();
+Route::get('/equipa_guine_bissau', function () {
 
     return view('team_managment', [
-
-        'profiles' => $profiles
+        'profiles' => Person::where('profile', 'leader')->get()
     ]);
 });
 
@@ -194,7 +192,7 @@ Route::get('/campanhas', function () {
     return view('campaigns');
 });
 
-Route::get('/projetos-admin', function () {
+Route::get('/projetos-ad', function () {
     return view('projects-admin');
 });
 
@@ -221,9 +219,6 @@ Route::get('/newsletters', function () {
 Route::get('/contactos', function () {
     return view('contacts-admin');
 });
-
-
-
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/voluntarios', Volunteer::class)->name('voluntarios');

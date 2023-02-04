@@ -4,7 +4,10 @@
         {{ ('Como Ajudar') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-center items-center">
-        <x-page-header src="img/project/carouselHelp.jpg" title="Como Ajudar" fromPage="Home" toPage="Como Ajudar" alt="Imagem de crianças" /><!--projects hero-->
+        <!-- projects hero -->
+        <!-- <x-page-header src="img/ProjectImg/carouselHelp.jpg" title="Como Ajudar" 
+        fromPage="Home" toPage="Como Ajudar" alt="Imagem de crianças" /> -->
+
         <x-cards.structureWhitOutBg>
             <div class="flex flex-col py-20 gap-12">
                 <div class="flex flex-col gap-6"> <!--area of activity -->
@@ -19,7 +22,7 @@
                     <x-cards.info-default-card title="De que outra forma posso contribuir?" description="Também pode contribuir através de consignação de IRS, com mobiliário e material 
                         escolar para as escolas de Catió, bicicletas, leite infantil e outros bens essenciais, 
                         participando nos nossos eventos solidários" />
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 justify-items-center"> <!--all projects of the Rota-->
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center"> <!--all projects of the Rota-->
                         <x-help.help :help="$help" />
                     </div>
                 </div>

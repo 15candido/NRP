@@ -21,7 +21,7 @@ class HowToHelpSeeder extends Seeder
             Saiba como fazer donativo para apoiar as nossas causas. ',
             'url' => 'faca_donativo',
             'first_option' => true,
-            'image' => 'img/ProjectImg/donor.jpg',
+            'image' => 'img/project/donor.jpg',
             'icon' => null,
             'alt' => null
         ]);
@@ -32,7 +32,7 @@ class HowToHelpSeeder extends Seeder
             comida, acesso à educação e um abraço de amor.',
             'url' => 'ser_firquidja',
             'first_option' => true,
-            'image' => 'img/ProjectImg/firquidja.jpg',
+            'image' => 'img/project/firquidja.jpg',
             'icon' => null,
             'alt' => null
         ]);
@@ -43,7 +43,7 @@ class HowToHelpSeeder extends Seeder
             concretização das nossas missões em Catió.',
             'url' => 'voluntariado',
             'first_option' => true,
-            'image' => 'img/ProjectImg/volunteers.jpg',
+            'image' => 'img/project/volunteers.jpg',
             'icon' => null,
             'alt' => null
         ]);
@@ -54,7 +54,7 @@ class HowToHelpSeeder extends Seeder
             divulgue as nossas ações junto da sua comunidade.',
             'url' => '',
             'first_option' => true,
-            'image' => 'img/ProjectImg/ambassadors.jpg',
+            'image' => 'img/project/ambassadors.jpg',
             'icon' => null,
             'alt' => null
         ]);
@@ -67,13 +67,13 @@ class HowToHelpSeeder extends Seeder
             'alt' => 'Icon IRS'
         ]);
 
-        DB::table('how_to_helps')->insert([
-            'name' => 'Mobiliário escolar',
-            'description' => null,
-            'first_option' => false,
-            'icon' => 'img/help/school_equipment.png',
-            'alt' => 'Icon mobiliário escolar'
-        ]);
+        // DB::table('how_to_helps')->insert([
+        //     'name' => 'Mobiliário escolar',
+        //     'description' => null,
+        //     'first_option' => false,
+        //     'icon' => 'img/help/school_equipment.png',
+        //     'alt' => 'Icon mobiliário escolar'
+        // ]);
 
         DB::table('how_to_helps')->insert([
             'name' => 'Material escolar',
@@ -92,20 +92,20 @@ class HowToHelpSeeder extends Seeder
         ]);
 
         DB::table('how_to_helps')->insert([
-            'name' => 'Leite infantil e outros bens essenciais',
+            'name' => 'Leite infantil e bens alimentar',
             'description' => null,
             'first_option' => false,
             'icon' => 'img/help/essencial_goods.png',
             'alt' => 'Icon bens essenciais'
         ]);
 
-        DB::table('how_to_helps')->insert([
-            'name' => 'Participar nos eventos solidários',
-            'description' => null,
-            'first_option' => false,
-            'icon' => 'img/help/events.png',
-            'alt' => 'Icon calendário de eventos'
-        ]);
+        // DB::table('how_to_helps')->insert([
+        //     'name' => 'Participar nos eventos solidários',
+        //     'description' => null,
+        //     'first_option' => false,
+        //     'icon' => 'img/help/events.png',
+        //     'alt' => 'Icon calendário de eventos'
+        // ]);
 
         // DB::table('how_to_helps')->insert([
         //     'name' => 'Tornar útil com coisas simples',

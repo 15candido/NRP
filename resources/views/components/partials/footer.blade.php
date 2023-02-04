@@ -2,21 +2,21 @@
     <div class="footer-container">
         <ul class="footer-nav">
             <li class="footer-links logo">
-               <div class="logo">
-                    <img src="img/logo_rota.png" alt="Logótipo do Na Rota dos Povos"> 
+                <div class="logo">
+                    <img src="img/logo_rota.png" alt="Logótipo do Na Rota dos Povos">
                     <span>Na Rota dos <br> Povos</span>
-                    <p>A Educação é o <br> Único Caminho</p>
-               </div>
+                    <p class="leading-3">A Educação é o <br> Único Caminho</p>
+                </div>
             </li>
             <li class="footer-links">
                 <h1>Quem Somos</h1>
                 <ul class="links-items">
                     <li><a href="quem_somos">Sobre Nós</a></li>
-                    <li><a href="a_nossa_historia">A Nossa História</a></li>
                     <li><a href="orgaos_sociais">Orgão Sociais</a></li>
-                    <li><a href="equipa_gestão">Equipa de Gestão</a></li>
-                    <li><a href="a_nossa_comunidade">Voluntários</a></li>
+                    <li><a href="equipa_gestão">Equipa Guiné-Bissau</a></li>
                     <li><a href="#">Documentos</a></li>
+                    <li><a href="a_nossa_historia">A Nossa História</a></li>
+                    <!-- <li><a href="a_nossa_comunidade">Voluntários</a></li> -->
                 </ul>
             </li>
             <li class="footer-links">
@@ -30,17 +30,17 @@
             </li>
             <li class="footer-links lg:col-span-2">
                 <h1>Newsletter</h1>
-                <x-form.newsletter/>
+                <x-form.newsletter />
             </li>
         </ul>
     </div>
     <div class="social-media">
-       <div class="social-media-container">
+        <div class="social-media-container">
             <div class="copyright">
                 <p>&copy; 2022 - Todos os direitos reservados. Política de Privacidade</p>
             </div>
             <ul class="social-media-icon">
-                <li>    
+                <li>
                     <a href="https://www.facebook.com/NaRotaDosPovos/">
                         <img src="img/media/facebook.png" alt="Facebok de Na Rota dos Povos">
                     </a>
@@ -59,8 +59,8 @@
                     <a href="#">
                         <img src="img/media/twitter.png" alt="Twitter de Na Rota dos Povos">
                     </a>
-                </li>   
+                </li>
             </ul>
-       </div>
+        </div>
     </div>
 </div>

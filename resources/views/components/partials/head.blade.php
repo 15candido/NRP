@@ -3,12 +3,17 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Roboto:wght@100&display=swap" rel="stylesheet">
+ -->
+
 
 <!-- Styles -->
 @stack('stylesheet')
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 
 <title>
     {{ isset($title) ? config('app.name', 'Na Rota dos Povos') . ' | ' . $title : ''}}

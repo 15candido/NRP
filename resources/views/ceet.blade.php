@@ -39,7 +39,7 @@
                 </div>
             </div>
         </x-cards.structureWithBg>
-        <x-cards.structureWhitOutBg>
+        <!-- <x-cards.structureWhitOutBg>
             <div class="py-20">
                 <div class="space-y-8">
                     <h3>Testemunho</h3>
@@ -52,6 +52,6 @@
                     </div>
                 </div>
             </div>
-        </x-cards.structureWhitOutBg>
+        </x-cards.structureWhitOutBg> -->
     </div>
 </x-guestLayout>
