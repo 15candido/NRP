@@ -10,7 +10,7 @@
     <x-partials.nav />
 
     {{-- Body section --}}
-    <main class="block w-full min-h-full">
+    <main class="min-h-screen antialiased">
         {{$slot}}
     </main>
 
@@ -18,8 +18,8 @@
     <x-partials.footer />
 
     {{-- Scripts section --}}
-    @livewireScripts
-    @stack('scripts')
+    <livewire:scripts>
+        @stack('scripts')
 </body>
 
 </html>
