@@ -370,5 +370,310 @@ class PersonSeeder extends Seeder
             'profile' => 'volunteer',
             'picture' => 'img/user/womanprofile.jpg'
         ]);
+
+
+        // Team GB
+
+
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Mohamed Sani',
+                'username' => Str::slug($name),
+                'email' => 'mohamed@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Diretor Geral',
+                'picture' => 'img/team/mohamed.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Alfa Sané',
+                'username' => Str::slug($name),
+                'email' => 'alfa@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Gestor de Projetos',
+                'picture' => 'img/team/alfa.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Mussa Mané',
+                'username' => Str::slug($name),
+                'email' => 'mussa@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Projetos',
+                'picture' => 'img/team/dida.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Issa dos Reis',
+                'username' => Str::slug($name),
+                'email' => 'issa@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Projetos',
+                'picture' => 'img/team/manha.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Vitorino Na Tache',
+                'username' => Str::slug($name),
+                'email' => 'vitorino@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Projetos',
+                'picture' => 'img/team/vitorino.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Fatumata Baldé',
+                'username' => Str::slug($name),
+                'email' => 'fatumata@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Coordenadora Educação',
+                'picture' => 'img/team/fatu.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Binamblo Na Nham-Ma',
+                'username' => Str::slug($name),
+                'email' => 'binamblo@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Educação',
+                'picture' => 'img/team/binamblo.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'João Carlos Tavares',
+                'username' => Str::slug($name),
+                'email' => 'joao@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Educação',
+                'picture' => 'img/team/joao.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Suleimane Baldé',
+                'username' => Str::slug($name),
+                'email' => 'suleimane@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Educação',
+                'picture' => 'img/team/suleimane.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "N'Simble Na Mam",
+                'username' => Str::slug($name),
+                'email' => 'nsimble@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Coordenadora da Casa da Mamé',
+                'picture' => 'img/team/insimble.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Aramatulai Candé',
+                'username' => Str::slug($name),
+                'email' => 'tulay@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/tulay.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Luisa Correia",
+                'username' => Str::slug($name),
+                'email' => 'lcorreia@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/luisa.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Brinsam Na N'Guessa",
+                'username' => Str::slug($name),
+                'email' => 'brinsam@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/user/womanprofile.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Verónica Na Tumna",
+                'username' => Str::slug($name),
+                'email' => 'veronica@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/veronica.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Samira Correia",
+                'username' => Str::slug($name),
+                'email' => 'samira@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/samira.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Zinha dos Reis",
+                'username' => Str::slug($name),
+                'email' => 'zinha@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/zinha.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Sábado Fogna Inquitcha",
+                'username' => Str::slug($name),
+                'email' => 'fognainquitcha@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/sabado.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Aramata Cassama',
+                'username' => Str::slug($name),
+                'email' => 'aramata@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/cassama.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Bidé Pan',
+                'username' => Str::slug($name),
+                'email' => 'bide@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/bide.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Zinaida Tamba",
+                'username' => Str::slug($name),
+                'email' => 'zinaida@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/zinaida.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Rosa Na Lambé",
+                'username' => Str::slug($name),
+                'email' => 'rosanalambe@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/team/rosa.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  'Alfredo Cá',
+                'username' => Str::slug($name),
+                'email' => 'alfredo@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/user/menprofile.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Odete Sanha",
+                'username' => Str::slug($name),
+                'email' => 'odete@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Casa da Mamé',
+                'picture' => 'img/user/womanprofile.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Ussumane Só",
+                'username' => Str::slug($name),
+                'email' => 'ussumane@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Coordenador Saúde',
+                'picture' => 'img/team/rolas.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Maria Bamba",
+                'username' => Str::slug($name),
+                'email' => 'mbamba@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Assesssora',
+                'picture' => 'img/team/maria.jpg',
+            ]
+        );
     }
 }
