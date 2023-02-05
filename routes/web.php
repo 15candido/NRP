@@ -52,7 +52,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/quem_somos', function () {
+Route::get('quem_somos', function () {
     $impacts = Impact::all();
     $partners = Partner::all();
 
@@ -62,32 +62,38 @@ Route::get('/quem_somos', function () {
     ]);
 });
 
-Route::get('/a_nossa_historia', function () {
+Route::get('a_nossa_historia', function () {
     return view('our_history');
 });
 
-Route::get('/children', function () {
+Route::get('children', function () {
     $children = Children::paginate(10);
     return view('children', ['children' => $children]);
 });
 
-Route::post('/newsletter', function (Request $request) {
+Route::post('newsletter', function (Request $request) {
     echo "O email " . $request['email'] . " foi registado na nossa bd";
     Newsletter::create(['email' => $request['email'], 'name' => $request['name']]);
     return redirect('/');
 });
 
-Route::get('/projetos', function () {
-    $projects = Project::all();
-    $areas = Area::all();
+Route::get('projetos', function () {
 
     return view('projects', [
-        'projects' => $projects,
-        'areas' => $areas
+        'projects' => Project::all(),
+        'areas' => Area::all()
     ]);
 });
 
-Route::get('/como_ajudar', function () {
+// Route::get('projetos/{project:slug}', function (Project $project) {
+//     // Give me the Project where ID Matches this ID and  his collaborators 
+//     dd($project);
+//     return view('project', [
+//         'project' => $project
+//     ]);
+// });
+
+Route::get('como_ajudar', function () {
     $help = HowToHelp::all();
 
     return view('help', [
@@ -95,32 +101,25 @@ Route::get('/como_ajudar', function () {
     ]);
 });
 
-Route::get('/orgaos_sociais', function () {
+Route::get('orgaos_sociais', function () {
 
     return view('governing_bodies', [
         'profiles' => Person::where('profile', 'leader')->get()
     ]);
 });
 
-Route::get('/equipa_guine_bissau', function () {
+Route::get('equipa_guine_bissau', function () {
 
     return view('team_managment', [
-        'profiles' => Person::where('profile', 'leader')->get()
+        'profiles' => Person::where('profile', 'team_gb')->get()
     ]);
 });
 
-Route::get('/a_nossa_comunidade', function () {
-
-    return view('people', [
-        'profiles' => Person::where('profile', 'leader')->get()
-    ]);
-});
-
-Route::get('/relatorios', function () {
+Route::get('relatorios', function () {
     return view('reports');
 });
 
-Route::get('/relatorio', function () {
+Route::get('relatorio', function () {
     return view('report');
 });
 
