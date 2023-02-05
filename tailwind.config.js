@@ -9,11 +9,30 @@ module.exports = {
     ],
 
     theme: {
+
         extend: {
             fontFamily: {
                 header: ['Oswald', ...defaultTheme.fontFamily.sans],
-                body: ['Nunito', ...defaultTheme.fontFamily.serif],
-                
+                body: ['Open Sans', ...defaultTheme.fontFamily.serif],
+
+            },
+            screens: {
+                'xs': '375px',
+                // => @media (min-width: 375px) { ... }
+                'sm': '640px',
+                // => @media (min-width: 640px) { ... }
+
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+
+                'lg': '1024px',
+                // => @media (min-width: 1024px) { ... }
+
+                'xl': '1280px',
+                // => @media (min-width: 1280px) { ... }
+
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
             },
             spacing: {
                 '1/2': '50%',
@@ -42,7 +61,7 @@ module.exports = {
                 '9/12': '75%',
                 '10/12': '83.333333%',
                 '11/12': '91.666667%',
-              },
+            },
         },
     },
 
