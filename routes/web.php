@@ -110,10 +110,9 @@ Route::get('/equipa_guine_bissau', function () {
 });
 
 Route::get('/a_nossa_comunidade', function () {
-    $profiles = Person::where('profile', 'leader')->get();
 
     return view('people', [
-        'profiles' => $profiles
+        'profiles' => Person::where('profile', 'leader')->get()
     ]);
 });
 
