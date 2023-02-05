@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    
-    <head>
-        <x-partials.head :title="$title ?? ' ' "/>
-    </head>
-    <body class="font-body">
-       
-        {{-- Navigation section --}}
-        <x-partials.nav />
 
-        {{-- Body section --}}
-        <main class="block w-full min-h-full">
-            {{$slot}}
-        </main>
+<head>
+    <x-partials.head :title="$title ?? ' ' " />
+</head>
 
-        {{-- Footer section --}}
-        <x-partials.footer />
+<body>
+    {{-- Navigation section --}}
+    <x-partials.nav />
 
-        {{-- Scripts section --}}
-        @livewireScripts
-        @stack('scripts')
-    </body>
+    {{-- Body section --}}
+    <main class="block w-full min-h-full">
+        {{$slot}}
+    </main>
+
+    {{-- Footer section --}}
+    <x-partials.footer />
+
+    {{-- Scripts section --}}
+    @livewireScripts
+    @stack('scripts')
+</body>
+
 </html>
