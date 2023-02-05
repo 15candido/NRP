@@ -4,7 +4,7 @@
         {{ ('Equipa Guiné-Bissau') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-center items-center">
-        <x-page-header src="img/project/carouselSocial.jpg" title="Equipa Guiné-Bissau" fromPage="quem somos" toPage="Equipa Guiné-Bissau" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
+        <x-page-header src="img/project/carouselteamgb.jpg" title="Equipa Guiné-Bissau" fromPage="quem somos" toPage="Equipa Guiné-Bissau" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="flex flex-col py-20 gap-6">
                 <div>
