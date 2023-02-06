@@ -4,7 +4,7 @@
         {{ ('Projeto - Saúde') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-page-header src="img/project/carouselHealth.jpg" title="Apoio à Saúde" fromPage="Projetos" toPage="Apoio à saúde" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
+        <x-page-header src="img/project/carouselhealth.jpg" title="Apoio à Saúde" fromPage="Projetos" toPage="Apoio à saúde" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
                 <x-cards.menu />

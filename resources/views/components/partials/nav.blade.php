@@ -7,17 +7,17 @@
                     <a href="#"><img src="icons/search.png" alt="Barra de pesquisa"></a>
                 </li>
                 <li class="icons">
-                    <a href="https://www.facebook.com/NaRotaDosPovos/">
+                    <a href="https://www.facebook.com/NaRotaDosPovos/" target="_blank">
                         <img src="img/media/facebook_head.png" alt="Icon de Instagram">
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="https://www.instagram.com/accounts/login/?next=%2Fnarotadospovos%2F&source=omni_redirect">
+                    <a href="https://www.instagram.com/accounts/login/?next=%2Fnarotadospovos%2F&source=omni_redirect" target="_blank">
                         <img src="img/media/instagram_head.png" alt="Icon de Instagram">
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="https://www.youtube.com/narotadospovos">
+                    <a href="https://www.youtube.com/narotadospovos" target="_blank">
                         <img src="img/media/youtube_head.png" alt="Icon de Instagram">
                     </a>
                 </li>

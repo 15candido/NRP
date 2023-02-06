@@ -41,17 +41,17 @@
             </div>
             <ul class="social-media-icon">
                 <li>
-                    <a href="https://www.facebook.com/NaRotaDosPovos/">
+                    <a href="https://www.facebook.com/NaRotaDosPovos/" target="_blank">
                         <img src="img/media/facebook.png" alt="Facebok de Na Rota dos Povos">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/accounts/login/?next=%2Fnarotadospovos%2F&source=omni_redirect">
+                    <a href="https://www.instagram.com/accounts/login/?next=%2Fnarotadospovos%2F&source=omni_redirect" target="_blank">
                         <img src="img/media/instagram.png" alt="Instagram de Na Rota dos Povos">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/narotadospovos">
+                    <a href="https://www.youtube.com/narotadospovos" target="_blank">
                         <img src="img/media/youtube.png" alt="Canal de youtube de Na Rota dos Povos">
                     </a>
                 </li>
