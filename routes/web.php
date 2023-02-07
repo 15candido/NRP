@@ -124,7 +124,7 @@ Route::get('relatorio', function () {
 });
 
 Route::get('/estatutos', function () {
-    return view('statutes');
+    return redirect('/');
 });
 
 
