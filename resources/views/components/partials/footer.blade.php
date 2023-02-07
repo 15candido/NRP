@@ -3,7 +3,7 @@
         <ul class="footer-nav">
             <li class="footer-links logo">
                 <div class="logo">
-                    <img src="img/logo_rota.png" alt="Logótipo do Na Rota dos Povos">
+                    <img src="img/logo.png" alt="Logótipo do Na Rota dos Povos">
                     <span>Na Rota dos <br> Povos</span>
                     <p class="leading-3">A Educação é o <br> Único Caminho</p>
                 </div>
@@ -13,10 +13,9 @@
                 <ul class="links-items">
                     <li><a href="quem_somos">Sobre Nós</a></li>
                     <li><a href="orgaos_sociais">Orgão Sociais</a></li>
-                    <li><a href="equipa_gestão">Equipa Guiné-Bissau</a></li>
-                    <li><a href="#">Documentos</a></li>
+                    <li><a href="equipa_guine_bissau">Equipa Guiné-Bissau</a></li>
+                    <li><a href="relatorios">Relatórios</a></li>
                     <li><a href="a_nossa_historia">A Nossa História</a></li>
-                    <!-- <li><a href="a_nossa_comunidade">Voluntários</a></li> -->
                 </ul>
             </li>
             <li class="footer-links">
@@ -53,11 +52,6 @@
                 <li>
                     <a href="https://www.youtube.com/narotadospovos" target="_blank">
                         <img src="img/media/youtube.png" alt="Canal de youtube de Na Rota dos Povos">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/media/twitter.png" alt="Twitter de Na Rota dos Povos">
                     </a>
                 </li>
             </ul>

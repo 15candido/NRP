@@ -35,7 +35,7 @@
                         <x-cards.outline title="Colaboradores" src="img/outline/team.jpg" alt="Colaboradores" abstract="Empregamos e remuneramos 15 funcionários em Catió na Casa da Mamé, designadamente 
                             amas, ..." />
                         <x-cards.outline title="Parque infantil" src="img/outline/park.jpg" alt="Parque de infantil" abstract="Criamos um parque infantil, um espaço ao ar livre onde as nossas crianças pudessem brincar." />
-                        <x-cards.outline title="Sala de estudo" src="img/outline/studyHall.jpg" alt="Sala de estudo" abstract="Temos uma sala de estudo onde as nossas crianças pudessem realizar as atividades lúdicas, 
+                        <x-cards.outline title="Sala de estudo" src="img/outline/studyhall.jpg" alt="Sala de estudo" abstract="Temos uma sala de estudo onde as nossas crianças pudessem realizar as atividades lúdicas, 
                             pedagógicas..." />
                     </div>
                 </div>
