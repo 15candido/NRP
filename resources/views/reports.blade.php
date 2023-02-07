@@ -4,7 +4,7 @@
         {{ ('Relatórios') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-page-header src="img/project/carouselReport.jpg" title="Relatórios de Atividades" fromPage="Quem somos" toPage="Documentos" childPage="Relatórios" alt="Criança está a praticar a leitura" /> <!--about us hero image -->
+        <x-page-header src="img/project/carouselreport2.jpg" title="Relatórios de Atividades" fromPage="Quem somos" toPage="Documentos" childPage="Relatórios" alt="Criança está a praticar a leitura" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
                 <h2>CONSULTE OS NOSSOS RELATÓRIOS DE ATIVIDADES</h2>

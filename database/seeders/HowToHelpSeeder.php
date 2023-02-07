@@ -32,7 +32,7 @@ class HowToHelpSeeder extends Seeder
             comida, acesso à educação e um abraço de amor.',
             'url' => 'ser_firquidja',
             'first_option' => true,
-            'image' => 'img/project/firquidja.jpg',
+            'image' => 'img/project/firquidja2.jpg',
             'icon' => null,
             'alt' => null
         ]);

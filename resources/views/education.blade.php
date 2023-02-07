@@ -31,10 +31,10 @@
                 <div class="space-y-4">
                     <h3>O que foi feito</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        <x-cards.outline title="Angariação" src="img/outline/container.jpg" alt="Descarga do contentor" abstract="Angariamos e distribuímos o conteúdo de 31 contentores de 76,4m3 de capacidade." />
-                        <x-cards.outline title="Salas de aula" src="img/outline/classRoom.jpg" alt="sala de aula" abstract="Equipamos 210 salas de aula com quadros de giz, mesas, cadeiras, armários e portas." />
+                        <x-cards.outline title="Angariação" src="img/outline/container2.jpg" alt="Descarga do contentor" abstract="Angariamos e distribuímos o conteúdo de 31 contentores de 76,4m3 de capacidade." />
+                        <x-cards.outline title="Salas de aula" src="img/outline/classroom.jpg" alt="sala de aula" abstract="Equipamos 210 salas de aula com quadros de giz, mesas, cadeiras, armários e portas." />
                         <x-cards.outline title="Escolas" src="img/outline/school.jpg" alt="Escolas apoiadas" abstract="Apoiamos 50 escolas com tintas, material escolar, brinquedos, livros, onde estudam cerca de 10.000 alunos." />
-                        <x-cards.outline title="Reabilitação" src="img/outline/paint.jpg" alt="Pinturas das escolas" abstract="Pintamos e colocamos placas transparentes para melhor a claridade em quase todas as escolas apoiadas." />
+                        <x-cards.outline title="Reabilitação" src="img/outline/paint2.jpg" alt="Pinturas das escolas" abstract="Pintamos e colocamos placas transparentes para melhor a claridade em quase todas as escolas apoiadas." />
                         <x-cards.outline title="Bibliotecas" src="img/outline/libary.jpg" alt="Biblioteca infantil" abstract="Criamos e montamos 5 bibliotecas com cerca de 10.000 livros, com o apoio da ONGD Portuguesa TABANCA." />
                     </div>
                 </div>
