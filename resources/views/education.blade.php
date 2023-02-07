@@ -4,7 +4,7 @@
         {{ ('Projeto - Educação') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-page-header src="img/project/carouseleducation.jpg" title="A Educação é o único Caminho" fromPage="Projetos" toPage="A Educação é o Único Caminho" alt="Criança está a praticar a leitura" /> <!--about us hero image -->
+        <x-page-header src="img/project/carouseleducation2.jpg" title="A Educação é o único Caminho" fromPage="Projetos" toPage="A Educação é o Único Caminho" alt="Criança está a praticar a leitura" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
                 <x-cards.menu />
