@@ -1,3 +1,4 @@
+<!-- Children -->
 <x-guestLayout>
     {{--Page title--}}
     <x-slot name="title">
