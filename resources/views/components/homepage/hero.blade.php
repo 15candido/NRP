@@ -9,12 +9,12 @@
   </div>
   <div class="hero_track_container">
     <ul class="hero_track">
-      <li class="hero_slides current_slide"><img src="img/heroes/education_1.jpg" alt=""></li>
-      <li class="hero_slides"><img src="img/heroes/education_2.jpg" alt="" class=""></li>
-      <li class="hero_slides"><img src="img/heroes/education_3.jpg" alt="" class=""></li>
-      <li class="hero_slides"><img src="img/heroes/ceet.jpg" alt="" class=""></li>
-      <li class="hero_slides"><img src="img/heroes/hospital.jpg" alt="" class=""></li>
-      <li class="hero_slides"><img src="img/heroes/tabanca.jpg" alt="" class=""></li>
+      <li class="hero_slides current_slide"><img src="img/heroes/1.jpg" alt=""></li>
+      <li class="hero_slides"><img src="img/heroes/2.jpg" alt="" class=""></li>
+      <li class="hero_slides"><img src="img/heroes/3.jpg" alt="" class=""></li>
+      <li class="hero_slides"><img src="img/heroes/4.jpg" alt="" class=""></li>
+      <li class="hero_slides"><img src="img/heroes/5.jpg" alt="" class=""></li>
+      <li class="hero_slides"><img src="img/heroes/6.jpg" alt="" class=""></li>
     </ul>
   </div>
   <div class="hero_dots_nav">
