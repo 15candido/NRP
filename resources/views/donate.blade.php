@@ -4,7 +4,7 @@
         {{ ('Doar') }}
     </x-slot>
     <div class="flex flex-col min-h-screen items-center">
-        <x-page-header src="img/project/carouselDonate.jpg" title="Faça a sua doação" fromPage="Como Ajudar" toPage="Donativos" alt="Voluntários da Na Rota dos Povos" /> <!--about us hero image -->
+        <x-page-header src="images/project/carouselDonate.jpg" title="Faça a sua doação" fromPage="Como Ajudar" toPage="Donativos" alt="Voluntários da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="flex flex-col lg:flex-row justify-start items-start py-20 gap-10">
                 <div class="w-full flex flex-col gap-4">
@@ -26,7 +26,7 @@
                     </ul>
                 </div>
                 <div class="relative w-full h-full">
-                    <x-cards.imagecard src="img/project/donate.jpg" alt="Ser solidário" />
+                    <x-cards.imagecard src="images/project/donate.jpg" alt="Ser solidário" />
                 </div>
             </div>
         </x-cards.structureWhitOutBg>

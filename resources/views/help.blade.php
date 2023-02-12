@@ -4,10 +4,6 @@
         {{ ('Como Ajudar') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-center items-center">
-        <!-- projects hero -->
-        <!-- <x-page-header src="img/ProjectImg/carouselHelp.jpg" title="Como Ajudar" 
-        fromPage="Home" toPage="Como Ajudar" alt="Imagem de crianças" /> -->
-
         <x-cards.structureWhitOutBg>
             <div class="flex flex-col py-20 gap-12">
                 <div class="flex flex-col gap-6"> <!--area of activity -->

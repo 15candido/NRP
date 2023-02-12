@@ -1,116 +1,50 @@
-<div class="hero">
-  <div class="button_container">
-    <button class="hero_btn btn_left">
-      <img src="icons/btn-left.png" alt="Botão de navegação esquerda">
-    </button>
-    <button class="hero_btn btn_right hidden_arrow">
-      <img src="icons/btn-right.png" alt="Botão de navegação direita">
-    </button>
+<div id="indicators-carousel" class="relative" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <!-- Item 1 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+      <img src="images/carousel/1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <!-- Item 2 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="images/carousel/2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <!-- Item 3 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="images/carousel/3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <!-- Item 4 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="images/carousel/4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <!-- Item 5 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="images/carousel/5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
   </div>
-  <div class="hero_track_container">
-    <ul class="hero_track">
-      <li class="hero_slides current_slide"><img src="img/heroes/1.jpg" alt=""></li>
-      <li class="hero_slides"><img src="img/heroes/2.jpg" alt="" class=""></li>
-      <li class="hero_slides"><img src="img/heroes/3.jpg" alt="" class=""></li>
-      <li class="hero_slides"><img src="img/heroes/4.jpg" alt="" class=""></li>
-      <li class="hero_slides"><img src="img/heroes/5.jpg" alt="" class=""></li>
-      <li class="hero_slides"><img src="img/heroes/6.jpg" alt="" class=""></li>
-    </ul>
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
   </div>
-  <div class="hero_dots_nav">
-    <button class="hero_indicator current_slide"></button>
-    <button class="hero_indicator"></button>
-    <button class="hero_indicator"></button>
-    <button class="hero_indicator"></button>
-    <button class="hero_indicator"></button>
-    <button class="hero_indicator"></button>
-  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      <span class="sr-only">Previous</span>
+    </span>
+  </button>
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+      <span class="sr-only">Next</span>
+    </span>
+  </button>
 </div>
-
-
-@push('scripts')
-<script>
-  // Fucntional hero images 
-  const heroTrack = document.querySelector('.hero_track'),
-    slides = Array.from(heroTrack.children),
-    nextButton = document.querySelector('.btn_left'),
-    prevButton = document.querySelector('.btn_right'),
-    heroDotsNav = document.querySelector('.hero_dots_nav'),
-    dots = Array.from(heroDotsNav.children),
-    slideWidth = slides[0].getBoundingClientRect().width;
-
-  //arrange the slides next to each other
-  const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-  }
-  // loop the hero image
-  slides.forEach(setSlidePosition);
-
-  // to hide arrow navigation, whem slide was the last slideshow
-  const hideShowArrow = (slides, prevButton, nextButton, targetIndex) => {
-    if (targetIndex === 0) {
-      prevButton.classList.add('hidden_arrow');
-      nextButton.classList.remove('hidden_arrow');
-    } else if (targetIndex === slides.length - 1) {
-      prevButton.classList.remove('hidden_arrow');
-      nextButton.classList.add('hidden_arrow');
-    } else {
-      prevButton.classList.remove('hidden_arrow');
-      nextButton.classList.remove('hidden_arrow');
-    }
-  }
-  // move hero image to the next slide - reusable function
-  const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-    currentSlide.classList.remove('current_slide');
-    targetSlide.classList.add('current_slide');
-  }
-
-  // remove the current slide class indicator and add it in to next target indicator 
-  const updateDot = (currentDot, targetDot) => {
-    currentDot.classList.remove('current_slide');
-    targetDot.classList.add('current_slide');
-  }
-
-  // when user click in left arrow, move to the left side
-  nextButton.addEventListener('click', event => {
-    const currentSlide = heroTrack.querySelector('.current_slide'),
-      nextSlide = currentSlide.nextElementSibling,
-      currentDot = heroDotsNav.querySelector('.current_slide'),
-      nextDot = currentDot.nextElementSibling,
-      nextIndex = slides.findIndex(slide => slide === nextSlide);
-    // move to next Slide
-    moveToSlide(heroTrack, currentSlide, nextSlide);
-    updateDot(currentDot, nextDot);
-    hideShowArrow(slides, prevButton, nextButton, nextIndex);
-  });
-
-  // when user click in right arrow, move to the right side
-  prevButton.addEventListener('click', event => {
-    const currentSlide = heroTrack.querySelector('.current_slide'),
-      prevSlide = currentSlide.previousElementSibling,
-      currentDot = heroDotsNav.querySelector('.current_slide'),
-      prevtDot = currentDot.previousElementSibling,
-      prevIndex = slides.findIndex(slide => slide === prevSlide);
-
-    // move to previous slide
-    moveToSlide(heroTrack, currentSlide, prevSlide);
-    updateDot(currentDot, prevtDot);
-    hideShowArrow(slides, prevButton, nextButton, prevIndex);
-  });
-
-  // move navigation dot, whem user clik on it or in arrow navigation 
-  heroDotsNav.addEventListener('click', e => {
-    // what indicator was click on?
-    const targetDot = e.target.closest('button');
-    const currentSilde = heroTrack.querySelector('.current_slide'),
-      currentDot = heroDotsNav.querySelector('.current_slide'),
-      targetIndex = dots.findIndex(dot => dot === targetDot),
-      targetSlide = slides[targetIndex];
-
-    moveToSlide(heroTrack, currentSilde, targetSlide);
-    updateDot(currentDot, targetDot);
-    hideShowArrow(slides, prevButton, nextButton, targetIndex);
-  });
-</script>
-@endpush

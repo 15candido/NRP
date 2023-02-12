@@ -5,7 +5,7 @@
         {{ ('Estatutos') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-page-header src="img/project/carouselstatutes.jpg" title="Estatutos" fromPage="Quem somos" toPage="Documentos" childPage="Estatutos" alt="Estatutos" /> <!--about us hero image -->
+        <x-page-header src="images/project/carouselstatutes.jpg" title="Estatutos" fromPage="Quem somos" toPage="Documentos" childPage="Estatutos" alt="Estatutos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="flex flex-col lg:flex-row justify-start items-start py-20 gap-10">
                 <div class="flex flex-col w-full h-auto gap-4">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="w-[700px] h-full">
-                    <x-cards.imagecard src="img/project/reporting.jpg" alt="Relatório do projeto 10.000 estojos para Catió" />
+                    <x-cards.imagecard src="images/project/reporting.jpg" alt="Relatório do projeto 10.000 estojos para Catió" />
                 </div>
             </div>
         </x-cards.structureWhitOutBg>

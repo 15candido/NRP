@@ -4,7 +4,7 @@
         {{ ('Projeto - Educação') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-page-header src="img/project/carouseleducation2.jpg" title="A Educação é o único Caminho" fromPage="Projetos" toPage="A Educação é o Único Caminho" alt="Criança está a praticar a leitura" /> <!--about us hero image -->
+        <x-page-header src="images/project/carouseleducation2.jpg" title="A Educação é o único Caminho" fromPage="Projetos" toPage="A Educação é o Único Caminho" alt="Criança está a praticar a leitura" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
                 <x-cards.menu />
@@ -22,7 +22,7 @@
                             Dadas as condições do território envolvente, é difícil manter as salas com aspecto 
                             limpo, asseado e atraente para as crianças e professores." />
                     </div>
-                    <x-cards.imagecard src="img/project/education.jpg" alt="Imagem da escola" />
+                    <x-cards.imagecard src="images/project/education.jpg" alt="Imagem da escola" />
                 </div>
             </div>
         </x-cards.structureWhitOutBg>
@@ -31,28 +31,14 @@
                 <div class="space-y-4">
                     <h3>O que foi feito</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        <x-cards.outline title="Angariação" src="img/outline/container2.jpg" alt="Descarga do contentor" abstract="Angariamos e distribuímos o conteúdo de 31 contentores de 76,4m3 de capacidade." />
-                        <x-cards.outline title="Salas de aula" src="img/outline/classroom.jpg" alt="sala de aula" abstract="Equipamos 210 salas de aula com quadros de giz, mesas, cadeiras, armários e portas." />
-                        <x-cards.outline title="Escolas" src="img/outline/school.jpg" alt="Escolas apoiadas" abstract="Apoiamos 50 escolas com tintas, material escolar, brinquedos, livros, onde estudam cerca de 10.000 alunos." />
-                        <x-cards.outline title="Reabilitação" src="img/outline/paint2.jpg" alt="Pinturas das escolas" abstract="Pintamos e colocamos placas transparentes para melhor a claridade em quase todas as escolas apoiadas." />
-                        <x-cards.outline title="Bibliotecas" src="img/outline/libary.jpg" alt="Biblioteca infantil" abstract="Criamos e montamos 5 bibliotecas com cerca de 10.000 livros, com o apoio da ONGD Portuguesa TABANCA." />
+                        <x-cards.outline title="Angariação" src="images/outline/container2.jpg" alt="Descarga do contentor" abstract="Angariamos e distribuímos o conteúdo de 31 contentores de 76,4m3 de capacidade." />
+                        <x-cards.outline title="Salas de aula" src="images/outline/classroom.jpg" alt="sala de aula" abstract="Equipamos 210 salas de aula com quadros de giz, mesas, cadeiras, armários e portas." />
+                        <x-cards.outline title="Escolas" src="images/outline/school.jpg" alt="Escolas apoiadas" abstract="Apoiamos 50 escolas com tintas, material escolar, brinquedos, livros, onde estudam cerca de 10.000 alunos." />
+                        <x-cards.outline title="Reabilitação" src="images/outline/paint2.jpg" alt="Pinturas das escolas" abstract="Pintamos e colocamos placas transparentes para melhor a claridade em quase todas as escolas apoiadas." />
+                        <x-cards.outline title="Bibliotecas" src="images/outline/libary.jpg" alt="Biblioteca infantil" abstract="Criamos e montamos 5 bibliotecas com cerca de 10.000 livros, com o apoio da ONGD Portuguesa TABANCA." />
                     </div>
                 </div>
             </div>
         </x-cards.structureWithBg>
-        <!-- <x-cards.structureWhitOutBg>
-            <div class="py-20">
-                <div class="space-y-4">
-                    <h3>Testemunho</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        <x-cards.witness name="Biamsum Siga" role="Diretor" school="Gansola Porto" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/menprofile.jpg" alt="Foto de perfil" />
-                        <x-cards.witness name="Biamsum Siga" role="Professor" school="Gansola Porto" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/menprofile.jpg" alt="Foto de perfil" />
-                        <x-cards.witness name="Biamsum Siga" role="Diretor" school="Gansola Porto" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/menprofile.jpg" alt="Foto de perfil" />
-                        <x-cards.witness name="Biamsum Siga" role="Professor" school="Gansola Porto" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/menprofile.jpg" alt="Foto de perfil" />
-                        <x-cards.witness name="Biamsum Siga" role="Diretor" school="Gansola Porto" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/menprofile.jpg" alt="Foto de perfil" />
-                    </div>
-                </div>
-            </div>
-        </x-cards.structureWhitOutBg> -->
     </div>
 </x-guestLayout>

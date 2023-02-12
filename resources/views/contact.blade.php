@@ -4,7 +4,7 @@
     <x-slot name="title">
         {{ ('Contacto') }}
     </x-slot>
-    <x-page-header src="img/project/carouselcontact.jpg" title="Contacto" fromPage="Home" toPage="Contacte-nos" alt="Centro de Educação Especial e Terapêutico" /> <!--about us hero image -->
+    <x-page-header src="images/project/carouselcontact.jpg" title="Contacto" fromPage="Home" toPage="Contacte-nos" alt="Centro de Educação Especial e Terapêutico" /> <!--about us hero image -->
     <div class="flex min-h-screen justify-center items-center py-20  lg:gap-20">
         <div class="flex flex-col md:flex-row w-full max-w-7xl px-5 py-6 space-y-20 md:space-x-20 md:space-y-0 lg:px-10
             text-gray-600 rounded-lg overflow-hidden">

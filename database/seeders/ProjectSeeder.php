@@ -33,7 +33,7 @@ class ProjectSeeder extends Seeder
                 das salas de aulas é a sua fraca luminosidade. Dadas as condições do território envolvente, é difícil 
                 manter as salas com aspecto limpo, asseado e atraente para as crianças e professores.',
             'visible' => true,
-            'image' => 'img/project/education.jpg'
+            'image' => 'images/project/education.jpg'
 
         ]);
 
@@ -51,7 +51,7 @@ class ProjectSeeder extends Seeder
                 As paredes são muito vulneráveis à chuva e também aos insetos rastejantes. Um dos grandes problemas 
                 das salas de aulas é a sua fraca luminosidade. Dadas as condições do território envolvente, é difícil 
                 manter as salas com aspecto limpo, asseado e atraente para as crianças e professores.',
-            'image' => 'img/project/tranning.jpg',
+            'image' => 'images/project/tranning.jpg',
             'visible' => false
         ]);
 
@@ -70,7 +70,7 @@ class ProjectSeeder extends Seeder
                 máxima, em todas as dimensões de sua vida (proteção, assistência, educação, etc.). Empregamos e remuneramos 12 
                 pessoas de Catió na Casa da Mamé, designadamente amas, cozinheira, lavadeira, responsável e jardineiro.',
             'visible' => true,
-            'image' => 'img/project/mame.jpg'
+            'image' => 'images/project/mame.jpg'
 
         ]);
 
@@ -89,7 +89,7 @@ class ProjectSeeder extends Seeder
                 Guiné-Bissau, um espaço funcional que permite a realização de consultas e o acompanhamento online das crianças e 
                 dos terapeutas por médicos e outros técnicos de saúde a partir de Portugal.',
             'visible' => true,
-            'image' => 'img/project/ceet.jpg'
+            'image' => 'images/project/ceet.jpg'
 
         ]);
 
@@ -109,7 +109,7 @@ class ProjectSeeder extends Seeder
                 das salas de aulas é a sua fraca luminosidade. Dadas as condições do território envolvente, é difícil 
                 manter as salas com aspecto limpo, asseado e atraente para as crianças e professores.',
             'visible' => false,
-            'image' => 'img/project/health.jpg'
+            'image' => 'images/project/health.jpg'
 
         ]);
 
@@ -129,7 +129,7 @@ class ProjectSeeder extends Seeder
                 das salas de aulas é a sua fraca luminosidade. Dadas as condições do território envolvente, é difícil 
                 manter as salas com aspecto limpo, asseado e atraente para as crianças e professores.',
             'visible' => false,
-            'image' => 'img/project/foster_house.jpg'
+            'image' => 'images/project/foster_house.jpg'
 
         ]);
 
@@ -147,7 +147,7 @@ class ProjectSeeder extends Seeder
                 de viver nas instalações do hospital para poderem assim apoiar o seu familiar doente. A imagiologia não funciona, 
                 a estomatologia também não, e o laboratório é muito rudimentar.',
             'visible' => true,
-            'image' => 'img/project/health.jpg'
+            'image' => 'images/project/health.jpg'
 
         ]);
 
@@ -166,7 +166,7 @@ class ProjectSeeder extends Seeder
                 das salas de aulas é a sua fraca luminosidade. Dadas as condições do território envolvente, é difícil 
                 manter as salas com aspecto limpo, asseado e atraente para as crianças e professores.',
             'visible' => false,
-            'image' => 'img/project/e-learning.jpg',
+            'image' => 'images/project/e-learning.jpg',
 
         ]);
     }

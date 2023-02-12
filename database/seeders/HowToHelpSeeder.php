@@ -21,7 +21,7 @@ class HowToHelpSeeder extends Seeder
             Saiba como fazer donativo para apoiar as nossas causas. ',
             'url' => 'faca_donativo',
             'first_option' => true,
-            'image' => 'img/project/donor.jpg',
+            'image' => 'images/project/donor.jpg',
             'icon' => null,
             'alt' => null
         ]);
@@ -32,7 +32,7 @@ class HowToHelpSeeder extends Seeder
             comida, acesso à educação e um abraço de amor.',
             'url' => 'ser_firquidja',
             'first_option' => true,
-            'image' => 'img/project/firquidja.jpg',
+            'image' => 'images/project/firquidja.jpg',
             'icon' => null,
             'alt' => null
         ]);
@@ -43,7 +43,7 @@ class HowToHelpSeeder extends Seeder
             concretização das nossas missões em Catió.',
             'url' => 'voluntariado',
             'first_option' => true,
-            'image' => 'img/project/volunteers.jpg',
+            'image' => 'images/project/volunteers.jpg',
             'icon' => null,
             'alt' => null
         ]);
@@ -54,7 +54,7 @@ class HowToHelpSeeder extends Seeder
             divulgue as nossas ações junto da sua comunidade.',
             'url' => '',
             'first_option' => true,
-            'image' => 'img/project/ambassadors.jpg',
+            'image' => 'images/project/ambassadors.jpg',
             'icon' => null,
             'alt' => null
         ]);
@@ -63,7 +63,7 @@ class HowToHelpSeeder extends Seeder
             'name' => 'Consignação de IRS NIF 510 878 989',
             'description' => null,
             'first_option' => false,
-            'icon' => 'img/help/irs.png',
+            'icon' => 'images/help/irs.png',
             'alt' => 'Icon IRS'
         ]);
 
@@ -71,7 +71,7 @@ class HowToHelpSeeder extends Seeder
         //     'name' => 'Mobiliário escolar',
         //     'description' => null,
         //     'first_option' => false,
-        //     'icon' => 'img/help/school_equipment.png',
+        //     'icon' => 'images/help/school_equipment.png',
         //     'alt' => 'Icon mobiliário escolar'
         // ]);
 
@@ -79,7 +79,7 @@ class HowToHelpSeeder extends Seeder
             'name' => 'Material escolar',
             'description' => null,
             'first_option' => false,
-            'icon' => 'img/help/school.png',
+            'icon' => 'images/help/school.png',
             'alt' => 'Icon mobiliário escolar'
         ]);
 
@@ -87,7 +87,7 @@ class HowToHelpSeeder extends Seeder
             'name' => 'Bicicletas',
             'description' => null,
             'first_option' => false,
-            'icon' => 'img/help/bicycle.png',
+            'icon' => 'images/help/bicycle.png',
             'alt' => 'Icon bicicleta'
         ]);
 
@@ -95,7 +95,7 @@ class HowToHelpSeeder extends Seeder
             'name' => 'Leite infantil e bens alimentar',
             'description' => null,
             'first_option' => false,
-            'icon' => 'img/help/essencial_goods.png',
+            'icon' => 'images/help/essencial_goods.png',
             'alt' => 'Icon bens essenciais'
         ]);
 
@@ -103,7 +103,7 @@ class HowToHelpSeeder extends Seeder
         //     'name' => 'Participar nos eventos solidários',
         //     'description' => null,
         //     'first_option' => false,
-        //     'icon' => 'img/help/events.png',
+        //     'icon' => 'images/help/events.png',
         //     'alt' => 'Icon calendário de eventos'
         // ]);
 
@@ -111,7 +111,7 @@ class HowToHelpSeeder extends Seeder
         //     'name' => 'Tornar útil com coisas simples',
         //     'description' => null,
         //     'first_option' => false,
-        //     'icon' => 'img/help/giving_away.png',
+        //     'icon' => 'images/help/giving_away.png',
         //     'alt' => 'Icon hand giving away'
         // ]);
     }

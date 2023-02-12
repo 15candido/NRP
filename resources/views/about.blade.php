@@ -4,7 +4,7 @@
         {{ ('Sobre Nós') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-page-header src="img/project/carouselus2.jpg" title="Quem Somos" fromPage="Home" toPage="Quem somos" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
+        <x-page-header src="images/project/carouselus2.jpg" title="Quem Somos" fromPage="Home" toPage="Quem somos" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
                 <x-cards.menu />
@@ -19,7 +19,7 @@
                             a educação, o apoio social e a saúde.
                             " />
                     </div>
-                    <x-cards.imagecard src="img/team/team.jpg" alt="Imagem dos voluntários em ação" />
+                    <x-cards.imagecard src="images/team/team.jpg" alt="Imagem dos voluntários em ação" />
                 </div>
             </div>
         </x-cards.structureWhitOutBg>
@@ -37,7 +37,7 @@
         </x-cards.structureWithBg>
         <x-cards.structureWhitOutBg>
             <div class="grid grid-cols-1 lg:grid-cols-2 py-20 gap-6">
-                <x-cards.mapcard src="img/maps/guinebissau.png" alt="Mapa da Guiné-Bissau" />
+                <x-cards.mapcard src="images/maps/guinebissau.png" alt="Mapa da Guiné-Bissau" />
                 <div class="flex flex-col w-full h-full gap-4">
                     <x-cards.info-default-card subtitle="Guiné-Bissau" abstract="Desde 2011 que focamos a nossa actividade na região mais carenciada da Guiné Bissau, a região de
                                 Tombali, e temos a nossa sede da Delegação local na cidade de Catió, que dista cerca de 300 km da

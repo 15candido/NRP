@@ -4,7 +4,7 @@
         {{ ('Projeto - Saúde') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-page-header src="img/project/carouselhealth.jpg" title="Apoio à Saúde" fromPage="Projetos" toPage="Apoio à saúde" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
+        <x-page-header src="images/project/carouselhealth.jpg" title="Apoio à Saúde" fromPage="Projetos" toPage="Apoio à saúde" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
                 <x-cards.menu />
@@ -19,7 +19,7 @@
                             que têm habitualmente de viver nas instalações do hospital para poderem assim apoiar o seu familiar 
                             doente. A imagiologia não funciona, a estomatologia também não, e o laboratório é muito rudimentar." />
                     </div>
-                    <x-cards.imagecard src="img/project/hospital.jpg" alt="Hospital Musna Sambú" />
+                    <x-cards.imagecard src="images/project/hospital.jpg" alt="Hospital Musna Sambú" />
                 </div>
             </div>
         </x-cards.structureWhitOutBg>
@@ -28,15 +28,15 @@
                 <div class="space-y-8">
                     <h3>O que foi feito</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        <x-cards.outline title="Medicamentos" src="img/outline/medication.jpg" alt="porte de medicamentos" abstract="O nosso apoio traduz-se no aporte de vários medicamentos para uso interno, material médico 
+                        <x-cards.outline title="Medicamentos" src="images/outline/medication.jpg" alt="porte de medicamentos" abstract="O nosso apoio traduz-se no aporte de vários medicamentos para uso interno, material médico 
                             e muitos consumíveis ..." />
-                        <x-cards.outline title="Monitor" src="img/outline/monitor.jpg" alt="Monitor de Sinais Vitais" abstract="Entregamos, na ala de enfermagem do Hospital Musna Sambú, o monitor de sinais vitais. O 
+                        <x-cards.outline title="Monitor" src="images/outline/monitor.jpg" alt="Monitor de Sinais Vitais" abstract="Entregamos, na ala de enfermagem do Hospital Musna Sambú, o monitor de sinais vitais. O 
                             equipamento vai ..." />
-                        <x-cards.outline title="Incubadora" src="img/outline/incubator.jpg" alt="Incubadora" abstract="Instalamos uma estação de reanimação neo-natal, colocamos ao serviço do hospital e da 
+                        <x-cards.outline title="Incubadora" src="images/outline/incubator.jpg" alt="Incubadora" abstract="Instalamos uma estação de reanimação neo-natal, colocamos ao serviço do hospital e da 
                             comunidade uma incubadora ..." />
-                        <x-cards.outline title="Camas" src="img/outline/hospital_beds.jpg" alt="Camas hospitalares" abstract="Entregamos camas hospitalares com objetivo de melhor as condições e garantir o conforto 
+                        <x-cards.outline title="Camas" src="images/outline/hospital_beds.jpg" alt="Camas hospitalares" abstract="Entregamos camas hospitalares com objetivo de melhor as condições e garantir o conforto 
                             dos doentes ..." />
-                        <x-cards.outline title="Cisterna" src="img/outline/cistern.jpg" alt="Recuperamos a cisterna de água e o poço" abstract="Recuperamos a cisterna de água e o poço, e instalamos 4 pontos de acesso a água, só 
+                        <x-cards.outline title="Cisterna" src="images/outline/cistern.jpg" alt="Recuperamos a cisterna de água e o poço" abstract="Recuperamos a cisterna de água e o poço, e instalamos 4 pontos de acesso a água, só 
                             existia um em todo o edifício .." />
                     </div>
                 </div>

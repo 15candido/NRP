@@ -27,7 +27,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'General assembly table',
             'role' => 'Presidente',
-            'picture' => 'img/user/womanprofile.jpg',
+            'picture' => 'images/user/womanprofile.jpg',
         ]);
 
         DB::table('people')->insert([
@@ -39,7 +39,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'General assembly table',
             'role' => 'Vice-Presidente',
-            'picture' => 'img/user/womanprofile.jpg',
+            'picture' => 'images/user/womanprofile.jpg',
         ]);
 
         DB::table('people')->insert([
@@ -51,7 +51,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'General assembly table',
             'role' => 'Vice-Presidente',
-            'picture' => 'img/user/menprofile.jpg',
+            'picture' => 'images/user/menprofile.jpg',
         ]);
 
         DB::table('people')->insert([
@@ -63,7 +63,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'General assembly table',
             'role' => 'Secretária',
-            'picture' => 'img/user/womanprofile.jpg',
+            'picture' => 'images/user/womanprofile.jpg',
         ]);
 
         DB::table('people')->insert([
@@ -75,7 +75,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Presidente',
-            'picture' => 'img/user/womanprofile.jpg',
+            'picture' => 'images/user/womanprofile.jpg',
         ]);
 
         DB::table('people')->insert([
@@ -87,7 +87,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Vice-Presidente',
-            'picture' => 'img/user/menprofile.jpg',
+            'picture' => 'images/user/menprofile.jpg',
         ]);
 
         DB::table('people')->insert([
@@ -98,7 +98,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Vice-Presidente',
-            'picture' => 'img/user/menprofile.jpg',
+            'picture' => 'images/user/menprofile.jpg',
         ]);
 
         DB::table('people')->insert([
@@ -110,7 +110,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Tesoureira',
-            'picture' => 'img/user/womanprofile.jpg',
+            'picture' => 'images/user/womanprofile.jpg',
         ]);
 
         DB::table('people')->insert([
@@ -122,7 +122,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Secretário',
-            'picture' => 'img/user/menprofile.jpg'
+            'picture' => 'images/user/menprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -135,7 +135,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Vogal',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -148,7 +148,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Vogal',
-            'picture' => 'img/user/womanprofile.jpg',
+            'picture' => 'images/user/womanprofile.jpg',
         ]);
 
         DB::table('people')->insert([
@@ -161,7 +161,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Vogal',
-            'picture' => 'img/user/menprofile.jpg'
+            'picture' => 'images/user/menprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -173,7 +173,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Vogal',
-            'picture' => 'img/user/menprofile.jpg'
+            'picture' => 'images/user/menprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -185,7 +185,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Suplete',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -197,7 +197,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'Supervisory board',
             'role' => 'Presidente',
-            'picture' => 'img/user/menprofile.jpg'
+            'picture' => 'images/user/menprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -209,7 +209,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'Supervisory board',
             'role' => 'Vice-Presidente',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -221,7 +221,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'Supervisory board',
             'role' => 'Vogal',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -233,7 +233,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'Supervisory board',
             'role' => 'Vogal',
-            'picture' => 'img/user/menprofile.jpg'
+            'picture' => 'images/user/menprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -246,7 +246,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'Supervisory board',
             'role' => 'Vogal',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -256,7 +256,7 @@ class PersonSeeder extends Seeder
             'email' => 'titobaiao@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/menprofile.jpg'
+            'picture' => 'images/user/menprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -267,7 +267,7 @@ class PersonSeeder extends Seeder
             'email' => 'manuela@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -277,7 +277,7 @@ class PersonSeeder extends Seeder
             'email' => 'alexandra@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -287,7 +287,7 @@ class PersonSeeder extends Seeder
             'email' => 'carolina@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
 
         ]);
 
@@ -298,7 +298,7 @@ class PersonSeeder extends Seeder
             'email' => 'candido@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/menprofile.jpg'
+            'picture' => 'images/user/menprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -308,7 +308,7 @@ class PersonSeeder extends Seeder
             'email' => 'joana@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -318,7 +318,7 @@ class PersonSeeder extends Seeder
             'email' => 'victor@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/menprofile.jpg'
+            'picture' => 'images/user/menprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -328,7 +328,7 @@ class PersonSeeder extends Seeder
             'email' => 'anna@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -338,7 +338,7 @@ class PersonSeeder extends Seeder
             'email' => 'isabelabreu@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -348,7 +348,7 @@ class PersonSeeder extends Seeder
             'email' => 'mariaflores@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -358,7 +358,7 @@ class PersonSeeder extends Seeder
             'email' => 'neves@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
         DB::table('people')->insert([
@@ -368,7 +368,7 @@ class PersonSeeder extends Seeder
             'email' => 'sofia@narotadospovos.org',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'volunteer',
-            'picture' => 'img/user/womanprofile.jpg'
+            'picture' => 'images/user/womanprofile.jpg'
         ]);
 
 
@@ -384,7 +384,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Diretor Geral',
-                'picture' => 'img/team/mohamed.jpg',
+                'picture' => 'images/team/mohamed.jpg',
             ]
         );
 
@@ -396,7 +396,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Gestor de Projetos',
-                'picture' => 'img/team/alfa.jpg',
+                'picture' => 'images/team/alfa.jpg',
             ]
         );
 
@@ -408,7 +408,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Projetos',
-                'picture' => 'img/team/dida.jpg',
+                'picture' => 'images/team/dida.jpg',
             ]
         );
 
@@ -420,7 +420,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Projetos',
-                'picture' => 'img/team/manha.jpg',
+                'picture' => 'images/team/manha.jpg',
             ]
         );
 
@@ -432,7 +432,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Projetos',
-                'picture' => 'img/team/vitorino.jpg',
+                'picture' => 'images/team/vitorino.jpg',
             ]
         );
 
@@ -444,7 +444,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Coordenadora Educação',
-                'picture' => 'img/team/fatu.jpg',
+                'picture' => 'images/team/fatu.jpg',
             ]
         );
 
@@ -456,7 +456,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Educação',
-                'picture' => 'img/team/binamblo.jpg',
+                'picture' => 'images/team/binamblo.jpg',
             ]
         );
 
@@ -468,7 +468,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Educação',
-                'picture' => 'img/team/joao.jpg',
+                'picture' => 'images/team/joao.jpg',
             ]
         );
 
@@ -480,7 +480,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Educação',
-                'picture' => 'img/team/suleimane.jpg',
+                'picture' => 'images/team/suleimane.jpg',
             ]
         );
 
@@ -492,7 +492,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Coordenadora da Casa da Mamé',
-                'picture' => 'img/team/insimble.jpg',
+                'picture' => 'images/team/insimble.jpg',
             ]
         );
 
@@ -504,7 +504,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/tulay.jpg',
+                'picture' => 'images/team/tulay.jpg',
             ]
         );
 
@@ -516,7 +516,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/luisa.jpg',
+                'picture' => 'images/team/luisa.jpg',
             ]
         );
 
@@ -528,7 +528,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/user/womanprofile.jpg',
+                'picture' => 'images/user/womanprofile.jpg',
             ]
         );
 
@@ -540,7 +540,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/veronica.jpg',
+                'picture' => 'images/team/veronica.jpg',
             ]
         );
 
@@ -552,7 +552,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/samira.jpg',
+                'picture' => 'images/team/samira.jpg',
             ]
         );
 
@@ -564,7 +564,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/zinha.jpg',
+                'picture' => 'images/team/zinha.jpg',
             ]
         );
 
@@ -576,7 +576,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/sabado.jpg',
+                'picture' => 'images/team/sabado.jpg',
             ]
         );
 
@@ -588,7 +588,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/cassama.jpg',
+                'picture' => 'images/team/cassama.jpg',
             ]
         );
 
@@ -600,7 +600,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/bide.jpg',
+                'picture' => 'images/team/bide.jpg',
             ]
         );
 
@@ -612,7 +612,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/zinaida.jpg',
+                'picture' => 'images/team/zinaida.jpg',
             ]
         );
 
@@ -624,7 +624,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/team/rosa.jpg',
+                'picture' => 'images/team/rosa.jpg',
             ]
         );
 
@@ -636,7 +636,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/user/menprofile.jpg',
+                'picture' => 'images/user/menprofile.jpg',
             ]
         );
 
@@ -648,7 +648,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'img/user/womanprofile.jpg',
+                'picture' => 'images/user/womanprofile.jpg',
             ]
         );
 
@@ -660,7 +660,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Coordenador Saúde',
-                'picture' => 'img/team/rolas.jpg',
+                'picture' => 'images/team/rolas.jpg',
             ]
         );
 
@@ -672,7 +672,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Assesssora',
-                'picture' => 'img/team/maria.jpg',
+                'picture' => 'images/team/maria.jpg',
             ]
         );
     }

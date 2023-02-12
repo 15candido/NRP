@@ -4,7 +4,7 @@
         {{ ('Orgãos Sociais') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-center items-center">
-        <x-page-header src="img/project/carouselsocial2.jpg" title="Orgãos sociais" fromPage="quem somos" toPage="Orgãos sociais" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
+        <x-page-header src="images/project/carouselsocial2.jpg" title="Orgãos sociais" fromPage="quem somos" toPage="Orgãos sociais" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="flex flex-col py-20 gap-6">
                 <div>

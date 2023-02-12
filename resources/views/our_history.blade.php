@@ -4,7 +4,7 @@
         {{ ('História') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-page-header src="img/project/carouselhistory.jpg" title="A Nossa História" fromPage="Quem somos" toPage="A nossa história" alt="Viagens" /> <!--about us hero image -->
+        <x-page-header src="images/project/carouselhistory.jpg" title="A Nossa História" fromPage="Quem somos" toPage="A nossa história" alt="Viagens" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
                 <x-cards.menu />
@@ -19,7 +19,7 @@
                             Há-de ser para o sul que o novo milénio viajará. À procura de convívio, da amizade, do amor, da 
                             tolerância, da solidariedade, do lazer, da criatividade, da justiça, da inclusão, da harmonia." />
                     </div>
-                    <x-cards.imagecard src="img/project/history.jpg" alt="Corredor - Centro de Educação Especial e Terapêutica" />
+                    <x-cards.imagecard src="images/project/history.jpg" alt="Corredor - Centro de Educação Especial e Terapêutica" />
                 </div>
             </div>
         </x-cards.structureWhitOutBg>
@@ -28,15 +28,15 @@
                 <div class="space-y-8">
                     <h3>Linha de tempo</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        <x-cards.outline title="1997" src="img/outline/1997.jpg" alt="Instalação do Centro de Educação Especial e Terapêutica" abstract="Em ruas portuguesas, do tempo das conquistas Terra, no passado, de vários reinos(...) que
+                        <x-cards.outline title="1997" src="images/outline/1997.jpg" alt="Instalação do Centro de Educação Especial e Terapêutica" abstract="Em ruas portuguesas, do tempo das conquistas Terra, no passado, de vários reinos(...) que
                             com El Ksar ... " />
-                        <x-cards.outline title="1998" src="img/outline/1998.jpg" alt="Colaboradores" abstract="As almas daqueles que conheceram Deus pedem às pradarias verdejantes, às belas paisagens, à 
+                        <x-cards.outline title="1998" src="images/outline/1998.jpg" alt="Colaboradores" abstract="As almas daqueles que conheceram Deus pedem às pradarias verdejantes, às belas paisagens, à 
                             frescura ..." />
-                        <x-cards.outline title="1999" src="img/outline/1999.jpg" alt="Equipamentos" abstract="…tudo nesta terra é simultaneamente natural e mágico, concreto e abstrato, imóvel e 
+                        <x-cards.outline title="1999" src="images/outline/1999.jpg" alt="Equipamentos" abstract="…tudo nesta terra é simultaneamente natural e mágico, concreto e abstrato, imóvel e 
                             fugidio. Miragem tangível, ..." />
-                        <x-cards.outline title="2000" src="img/outline/2000.jpg" alt="Profissionais do centro" abstract="(…) subi a uma alta montanha para além da qual, para norte, se via um fiorde cheio de 
+                        <x-cards.outline title="2000" src="images/outline/2000.jpg" alt="Profissionais do centro" abstract="(…) subi a uma alta montanha para além da qual, para norte, se via um fiorde cheio de 
                             gelo à deriva ..." />
-                        <x-cards.outline title="2001" src="img/outline/2001.jpg" alt="Serviços Prestados" abstract="(...) meu grito de revolta ecoou pelos vales mais longínquos da Terra, atravessou os mares
+                        <x-cards.outline title="2001" src="images/outline/2001.jpg" alt="Serviços Prestados" abstract="(...) meu grito de revolta ecoou pelos vales mais longínquos da Terra, atravessou os mares
                             e os oceanos ..." />
                     </div>
                 </div>
@@ -47,11 +47,11 @@
                 <div class="space-y-8">
                     <h3>Sócios fundadores</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        <x-cards.witness name="Tito Baião" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/staff/tito.jpg" alt="Foto de perfil" />
-                        <x-cards.witness name="João Pedro Pereira" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/staff/pedro.jpg" alt="Foto de perfil" />
-                        <x-cards.witness name="Vitor Manuel Lima" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/staff/vitor.jpg" alt="Foto de perfil" />
-                        <x-cards.witness name="Catarina Almeida" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/staff/catarina.jpg" alt="Foto de perfil" />
-                        <x-cards.witness name="Isabel Pires Dias" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="img/user/staff/isabel.jpg" alt="Foto de perfil" />
+                        <x-cards.witness name="Tito Baião" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="images/user/staff/tito.jpg" alt="Foto de perfil" />
+                        <x-cards.witness name="João Pedro Pereira" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="images/user/staff/pedro.jpg" alt="Foto de perfil" />
+                        <x-cards.witness name="Vitor Manuel Lima" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="images/user/staff/vitor.jpg" alt="Foto de perfil" />
+                        <x-cards.witness name="Catarina Almeida" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="images/user/staff/catarina.jpg" alt="Foto de perfil" />
+                        <x-cards.witness name="Isabel Pires Dias" witness="Lorem ipsum dolor sit amet consectetur, adipisicing elit." src="images/user/staff/isabel.jpg" alt="Foto de perfil" />
                     </div>
                 </div>
             </div>

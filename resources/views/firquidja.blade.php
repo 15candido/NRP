@@ -4,7 +4,7 @@
         {{ ('Firquidja') }}
     </x-slot>
     <div class="flex flex-col min-h-screen items-center">
-        <x-page-header src="img/project/carouselFirquidjas.jpg" title="Ser Firquidja da Na Rota dos Povos" fromPage="Como ajudar" toPage="Ser firquidja" alt="Firquidjas da Na Rota dos Povos" /> <!--about us hero image -->
+        <x-page-header src="images/project/carouselFirquidjas.jpg" title="Ser Firquidja da Na Rota dos Povos" fromPage="Como ajudar" toPage="Ser firquidja" alt="Firquidjas da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="flex flex-col lg:flex-row justify-start items-start py-20 gap-10">
                 <div class="w-full flex flex-col gap-8">
