@@ -30,7 +30,7 @@
             </ul>
         </div>
         <div class="primary-menu">
-            <div class="flex items-center">
+            <div class="logo flex items-center">
                 <div class="flex flex-row gap-4 justify-center items-center py-4">
                     <a href="/" class="">
                         <img src="images/logo.png" class="max-h-16 p-1 object-cover object-center 

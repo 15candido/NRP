@@ -109,7 +109,7 @@
         =====================================*/
 
     .secondary-menu {
-        @apply w-full h-auto hidden flex-row px-5 mb-2 justify-center items-center border-b-2 border-gray-50;
+        @apply w-full h-auto hidden flex-row px-5 mt-6 mb-2 justify-center items-center border-b-2 border-gray-50;
     }
 
     .header .menu-icons {

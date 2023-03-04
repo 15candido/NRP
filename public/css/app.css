@@ -766,6 +766,7 @@ select {
         =====================================*/
 
     .secondary-menu {
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   display: none;
   height: auto;
