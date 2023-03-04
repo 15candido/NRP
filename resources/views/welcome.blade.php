@@ -3,23 +3,23 @@
     <div class="w-full">
         <x-homepage.hero :heroes="$heroes" />
     </div>
-    <div class="w-full">
+    <div class="w-full ">
         {{--Page title--}}
         <x-slot name="title">
             {{ ('Home') }}
         </x-slot>
         <!-- Main container -->
-        <div class="main-content-container">
+        <div class="relative flex flex-col mx-auto justify-center items-center">
             <!-- Slogan -->
-            <div class="flex flex-row w-full max-w-7xl px-5 lg:px-10">
-                <div class="flex flex-wrap w-full pt-3 justify-center items-center">
+            <section class="flex flex-row max-w-7xl px-5 lg:px-10 data-block">
+                <div class="flex flex-wrap justify-center items-center">
                     <h1>A Educação é o Único Caminho</h1>
                 </div>
-            </div>
+            </section>
             <!-- About Us  -->
-            <div class="grid md:grid-cols-2 max-w-7xl justify-center gap-24 px-5 lg:px-10">
+            <section class="grid md:grid-cols-2 max-w-7xl justify-center gap-12 px-5 lg:px-10 data-block">
                 <x-about.about :about="$abouts" />
-            </div>
+            </section>
             <!-- Ongoing project -->
             <x-cards.structureWithBg>
                 <x-cards.info-default-card title="Projetos em curso" description="Continuamos a trabalhar para fornecer 
@@ -46,15 +46,15 @@
                 melhor, todos contam. A iniciativa que tomar pode nos deixar mais perto do objetivo. Junte-se a nós, 
                 escolha como deseja contribuir na missão da “Na Rota dos Povos”." />
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-40 justify-center items-center">
-                    <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="flex flex-col items-center text-center">
                         <p>Apoie as nossas crianças tornando-se num firquidja da Casa da Mamé!</p>
                         <x-buttons.button string="SER FIRQUIDJA" url="ser_firquidja" />
                     </div>
-                    <div class="flex flex-col h-full items-center space-y-4 text-center">
+                    <div class="flex flex-col items-center text-center">
                         <p>Faça um donativo e seja a mudança que quer ver no mundo!</p>
                         <x-buttons.button string="DOAR" url="faca_donativo" />
                     </div>
-                    <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="flex flex-col items-center text-center">
                         <p>Tem algumas horas livres que gostava de dedicar à "Na Rota dos Povos"?</p>
                         <x-buttons.button string="VOLUNTARIADO" url="voluntariado" />
                     </div>

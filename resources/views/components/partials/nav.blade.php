@@ -34,19 +34,18 @@
                 <div class="flex flex-row gap-4 justify-center items-center py-4">
                     <a href="/" class="">
                         <img src="images/logo.png" class="max-h-16 p-1 object-cover object-center 
-                        rounded-full md:max-h-24 lg:max-h-28 transition-all duration-500 ease-in-out" alt="Na Rota dos Povos">
+                        rounded-full md:max-h-24 lg:max-h-28" alt="Na Rota dos Povos">
                     </a>
-                    <div class="relative hidden xs:flex xs:flex-wrap transition duration-500 ease-in-out">
+                    <div class="relative hidden xs:flex xs:flex-wrap">
                         <a href="/" class="relative uppercase">
-                            <span class="relative flex flex-shrink font-black text-lg md:text-3xl lg:text-4xl text-right transition-all 
-                            duration-500 ease-in-out">
+                            <h3 class="relative flex flex-shrink mb-0 font-black text-lg md:text-3xl lg:text-4xl text-right">
                                 Na Rota dos<br>Povos
-                                <p class="absolute bottom-1 text-left text-[6px] leading-normal lg:bottom-0
-                                md:text-xs lg:text-sm transition-all duration-500 ease-in-out">
+                                <em class="absolute bottom-1 text-left text-[6.9px] lg:bottom-0
+                                md:text-xs lg:text-sm leading-normal">
                                     <!-- text-[#4ca747] -->
                                     A Educação é o <br> Único Caminho
-                                </p>
-                            </span>
+                                </em>
+                            </h3>
                         </a>
                     </div>
                 </div>

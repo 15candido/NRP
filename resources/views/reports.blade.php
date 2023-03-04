@@ -6,8 +6,8 @@
     <div class="flex flex-col min-h-screen justify-start items-center">
         <x-page-header src="images/project/carouselreport2.jpg" title="Relatórios de Atividades" fromPage="Quem somos" toPage="Documentos" childPage="Relatórios" alt="Criança está a praticar a leitura" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
-            <div class="grid grid-flow-row py-20 gap-6 lg:gap-20">
-                <h2>CONSULTE OS NOSSOS RELATÓRIOS DE ATIVIDADES</h2>
+            <div class="grid grid-flow-row gap-6 ">
+                <h3>CONSULTE OS NOSSOS RELATÓRIOS DE ATIVIDADES</h3>
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
                     <x-reports.report title="Um Quadro para Catió" year="2022" category="Evento" image="images/project/art_board.jpg" alt="Imagem da escola" />
                     <x-reports.report title="Todos Os Rostos Escondem Histórias" year="2022" category="Publicação" image="images/project/report.jpg" alt="Imagem da escola" />

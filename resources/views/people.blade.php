@@ -6,7 +6,7 @@
     <div class="flex flex-col min-h-screen justify-center items-center">
         <x-page-header src="images/project/carouselcommunity.jpg" title="A nossa comunidade" fromPage="quem somos" toPage="A nossa comunidade" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
-            <div class="flex flex-col py-20 gap-6">
+            <div class="flex flex-col gap-6">
                 <div>
                     <x-cards.info-default-card title="Comunidade Na Rota dos Povos" description="Contamos com colaboradores que disponibilizam os seus tempos livres para colocar 
                         os seus talentos em benefício da comunidade a qual apoiamos. Graças ao trabalho árduo deste 

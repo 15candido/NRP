@@ -1,4 +1,4 @@
-<div id="indicators-carousel" class="relative w-full h-[383px] sm:h-[433px] xl:h-[497px] 2xl:h-[583px]">
+<div id="indicators-carousel" class="relative w-full h-[383px] sm:h-[433px] xl:h-[497px] 2xl:h-[583px] data-block">
     <!-- Carousel wrapper -->
     <ul class="relative w-full h-full p-0 m-0 overflow-hidden list-none transition-all duration-700 ease-in-out">
         <li class="duration-700 ease-in-out" data-carousel-item="active">

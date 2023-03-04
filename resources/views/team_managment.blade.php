@@ -6,7 +6,7 @@
     <div class="flex flex-col min-h-screen justify-center items-center">
         <x-page-header src="images/project/carouselteamgb.jpg" title="Equipa Guiné-Bissau" fromPage="quem somos" toPage="Equipa Guiné-Bissau" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
-            <div class="flex flex-col py-20 gap-6">
+            <div class="flex flex-col gap-6">
                 <div>
                     <x-cards.info-default-card title="Direção Guiné-Bissau" description="Lorem, ipsum dolor sit amet consectetur 
                         adipisicing elit. Dolore tempore nemo expedita nisi neque, facilis aperiam quod? Ipsa ipsum 

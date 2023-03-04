@@ -2,18 +2,18 @@
     <a href="#" class="pointer-events-none">
         <img class="pointer-events-auto hover:opacity-75" src="{{$profile->picture}}" alt="">
     </a>
-    <div class="flex flex-col w-full items-center p-4 space-y-2 hover:bg-gray-100">
-        <h4 class="w-auto">
-            <a href="#" class="border-b-[1px] border-[#0082b3] border-opacity-75 hover:border-b-4 
+    <div class="flex flex-col w-full items-center p-4 hover:bg-gray-100">
+
+        <a href="#" class="uppercase border-b-[1px] border-solid border-[#0082b3] border-opacity-75 hover:border-b-4 
             hover:border-opacity-100 transition-all duration-300 ease-in-out">
-                {{$profile->name}}
-            </a>
-        </h4>
+            {{$profile->name}}
+        </a>
+
         <div>
             @if($profile->role)
-            <p class="font-black">{{$profile->role}}</p>
+            <em class="font-bold">{{$profile->role}}</em>
             @endif
-            <p class="text-base text-gray-600">{{$profile->abstract}}</p>
+            <p>{{$profile->abstract}}</p>
         </div>
     </div>
 </div>

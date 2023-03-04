@@ -6,19 +6,16 @@
         <div class="flex flex-col min-h-screen items-center">
             <x-page-header src="images/project/carouselVolunteers.jpg" title="Ser voluntário da Na Rota dos Povos" fromPage="Como Ajudar" toPage="Seja voluntário" alt="Voluntários da Na Rota dos Povos" /> <!--about us hero image -->
             <x-cards.structureWhitOutBg>
-                <div class="grid grid-cols-1 lg:grid-cols-2 justify-start items-start py-20 space-y-6 md:gap-16 md:space-y-0">
+                <div class="grid grid-cols-1 lg:grid-cols-2 justify-start items-start space-y-6 md:gap-16 md:space-y-0">
                     <div class="flex flex-col gap-2">
-
                         {{--Title--}}
-                        <h4 class="font-bold text-base text-[#5ba057] uppercase">Seja Voluntário da ONGD "Na Rota dos Povos"</h4>
+                        <em class="title text-[#5ba057]">Seja Voluntário da ONGD "Na Rota dos Povos"</em>
 
                         {{-- Body --}}
                         <div class="space-y-4">
-                            <span class="text-2xl md:text-3xl font-black text-gray-600">
-                                O Voluntariado assenta numa relação de
-                            </span>
+                            <h4>O Voluntariado assenta numa relação</h4>
                             <p>
-                                solidariedade, mas é mais do que ter “boa vontade” e
+                                de solidariedade, mas é mais do que ter “boa vontade” e
                                 “querer ajudar o outro”. É uma forma de cidadania ativa, mas que exige responsabilidade, compromisso e
                                 respeito pela missão, cultura, e valores da entidade acolhedora.
                             </p>
@@ -35,10 +32,10 @@
                         </a>
                     </div>
 
-                    <div class="flex flex-col space-y-4">
-
+                    <div class="flex flex-col space-y-4 lg:rounded-lg lg:shadow lg:pb-4 lg:px-4">
                         {{-- Conditions --}}
                         <x-conditions />
+                        {{-- Register form --}}
                         <livewire:volunteers.default-register-modal />
                     </div>
                 </div>

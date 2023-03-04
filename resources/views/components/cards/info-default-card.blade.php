@@ -1,11 +1,11 @@
 @props(['title'=>null, 'subtitle' => null, 'abstract'=>null,'description', 'ratio' => null])
-<div class="flex flex-col w-full h-full gap-4">
+<div class="flex flex-col">
     @if($title)
-    <h2>{{$title}}</h2>
+    <h3>{{$title}}</h3>
     @else
-    <h3>{{$subtitle}}</h3>
+    <strong class="title">{{$subtitle}}</strong>
     @endif
-    <span class="flex flex-col space-y-4 break-words">
+    <span class="flex flex-col break-words">
         <p class="font-bold">{{$abstract}}</p>
         <p>{{$description}}</p>
         <p>{{$ratio}}</p>
