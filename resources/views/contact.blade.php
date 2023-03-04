@@ -6,7 +6,7 @@
     </x-slot>
     <x-page-header src="images/project/carouselcontact.jpg" title="Contacto" fromPage="Home" toPage="Contacte-nos" alt="Centro de Educação Especial e Terapêutico" /> <!--about us hero image -->
     <div class="flex justify-center items-center">
-        <div class="flex flex-col lg:flex-row max-w-7xl px-5 py-6 md:space-x-20 md:space-y-0 lg:px-10 lg:rounded-lg overflow-hidden">
+        <div class="fixed-width data-block flex flex-col lg:flex-row md:space-x-12 md:space-y-0 lg:rounded-lg overflow-hidden">
             <section class="space-y-6">
                 <div class="flex flex-col gap-4 justify-center">
                     <h3>Contacte-nos</h3>

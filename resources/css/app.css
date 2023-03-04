@@ -63,7 +63,7 @@
     }
 
     .fixed-width {
-        @apply w-[940px] mx-auto my-0;
+        @apply w-full max-w-7xl m-auto float-none px-5 lg:px-10;
     }
 
     .data-block {
@@ -108,7 +108,7 @@
                     Secundary menu
         =====================================*/
 
-    .header-secundary {
+    .secondary-menu {
         @apply w-full h-auto hidden flex-row px-5 mb-2 justify-center items-center border-b-2 border-gray-50;
     }
 
@@ -140,13 +140,13 @@
                     Primary menu
         =====================================*/
 
-    .header-main {
-        @apply flex flex-row w-full h-auto max-w-7xl mx-auto justify-between items-center;
+    .primary-menu {
+        @apply flex flex-row w-full justify-between items-center;
     }
 
     /* =========================
-                    Logo
-            ========================= */
+            Logo
+    ========================= */
 
     .header .logo {
         @apply pl-0;
@@ -166,8 +166,8 @@
     }
 
     /* =========================
-                    Navigation menu
-            ========================= */
+            Navigation menu
+    ========================= */
 
     .header .nav-menu {
         @apply p-0;
@@ -206,15 +206,15 @@
     @media(min-width: 1024px) {
 
         /* ====================
-                        display secundary menu
-                         ===================== */
-        .header-secundary {
+            display secundary menu
+        ===================== */
+        .secondary-menu {
             @apply flex;
         }
 
         /* ====================
-                            Chance color
-                         ===================== */
+            Chance color
+        ===================== */
         .header .menu>.menu-item>.sub-menu>.menu-dropdown-children>.sub-menu-children>.sub-menu-item-children>a:hover,
         .header .menu>.menu-item>.sub-menu>.menu-item>a:hover,
         .header .menu>.menu-item:hover>a {
@@ -227,7 +227,7 @@
     }
 
     /* ================================
-    Dropdown level 1 and level 2
+        Dropdown level 1 and level 2
      ================================== */
 
     .header .menu>.menu-item>.sub-menu>.menu-item {
@@ -293,7 +293,8 @@
     .header .menu>.menu-item>.sub-menu>.menu-item>a .plus::after {
         content: '';
         box-sizing: border-box;
-        @apply absolute w-full h-0.5 left-1/2 top-1/2 bg-gray-600 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-in-out;
+        @apply absolute w-full h-0.5 left-1/2 top-1/2 bg-gray-600 -translate-x-1/2 -translate-y-1/2 transition-all 
+        duration-300 ease-in-out;
     }
 
     .header .menu>.menu-item>.sub-menu>.menu-item>a .plus::after {

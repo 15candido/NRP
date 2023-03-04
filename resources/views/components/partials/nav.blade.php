@@ -1,7 +1,7 @@
 <!-- header component -->
 <header class="header">
-    <div class="container-header">
-        <div class="header-secundary">
+    <div class="fixed-width">
+        <div class="secondary-menu">
             <ul class="menu-icons">
                 <li class="icons">
                     <a href="#"><img src="icons/search.png" alt="Barra de pesquisa"></a>
@@ -29,8 +29,8 @@
                 </li>
             </ul>
         </div>
-        <div class="header-main">
-            <div class="flex flex-shrink items-center">
+        <div class="primary-menu">
+            <div class="flex items-center">
                 <div class="flex flex-row gap-4 justify-center items-center py-4">
                     <a href="/" class="">
                         <img src="images/logo.png" class="max-h-16 p-1 object-cover object-center 
@@ -42,14 +42,12 @@
                                 Na Rota dos<br>Povos
                                 <em class="absolute bottom-1 text-left text-[6.9px] lg:bottom-0
                                 md:text-xs lg:text-sm leading-normal">
-                                    <!-- text-[#4ca747] -->
                                     A Educação é o <br> Único Caminho
                                 </em>
                             </h3>
                         </a>
                     </div>
                 </div>
-
             </div>
             <div class="open-nav-menu"><span></span></div>
             <div class="menu-overley"></div>
@@ -68,10 +66,8 @@
                         </a>
                         <ul class="sub-menu">
                             <li class="menu-item"><a href="quem_somos" class="">Sobre nós</a></li>
-                            <!-- <li class="menu-item"><a href="a_nossa_historia" class="">A nossa história</a></li> -->
                             <li class="menu-item"><a href="orgaos_sociais" class="">Órgãos sociais</a></li>
                             <li class="menu-item"><a href="equipa_guine_bissau" class="">Equipa Guiné-Bissau</a></li>
-                            <!-- <li class="menu-item"><a href="a_nossa_comunidade" class="">A nossa comunidade</a></li> -->
                             <li class="menu-item menu-dropdown-children">
                                 <a href="#" data-toggle="sub-menu"> Documentos <i class="plus"></i></a>
                                 <ul class="sub-menu-children ">
@@ -98,20 +94,11 @@
                     <li class="menu-item menu-dropdown">
                         <a href="como_ajudar" data-toggle="sub-menu">
                             Como Ajudar
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="arrow-chevron-icon">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> -->
                         </a>
-                        <!-- <ul class="sub-menu">
-                            <li class="menu-item"><a href="faca_donativo" class="">Donativos</a></li>
-                            <li class="menu-item"><a href="ser_firquidja" class="">Ser Firquidja</a></li>
-                            <li class="menu-item"><a href="voluntariado" class="">Ser Voluntário</a></li>
-                            <li class="menu-item"><a href="#" class="">Divulgar</a></li>
-                        </ul> -->
+
                     </li>
                 </ul>
             </nav>
-            <!-- menu navigation end  -->
         </div>
     </div>
 </header>

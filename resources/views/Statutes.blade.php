@@ -7,7 +7,7 @@
     <div class="flex flex-col min-h-screen justify-start items-center">
         <x-page-header src="images/project/carouselstatutes.jpg" title="Estatutos" fromPage="Quem somos" toPage="Documentos" childPage="Estatutos" alt="Estatutos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
-            <div class="flex flex-col lg:flex-row justify-start items-start py-20 gap-10">
+            <div class="flex flex-col lg:flex-row justify-start items-start py-12 gap-10">
                 <div class="flex flex-col w-full h-auto gap-4">
                     <h4 class="font-black text-sm text-gray-400 uppercase">Estatutos</h4>
                     <x-cards.info-default-card title="Estatutos da Na Rota dos Povos" description="
