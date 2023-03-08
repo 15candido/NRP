@@ -1,8 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
 
@@ -66,10 +64,20 @@
         @apply w-full max-w-7xl m-auto float-none px-5 lg:px-10;
     }
 
+    .clearfix::before, .clearrfix::after{
+        content: " ";
+        display: table;
+    }
+
+    .clearfix{
+        clear: both;
+    }
+
     .data-block {
         @apply mb-12;
     }
 
+    
     /* ==================================================== 
         Generic components
      ==================================================== */
@@ -105,8 +113,8 @@
     }
 
     /*=====================================
-                    Secundary menu
-        =====================================*/
+                Secundary menu
+    =====================================*/
 
     .secondary-menu {
         @apply w-full h-auto hidden flex-row px-5 mt-6 mb-2 justify-center items-center border-b-2 border-gray-50;
@@ -137,8 +145,8 @@
     }
 
     /*=====================================
-                    Primary menu
-        =====================================*/
+                Primary menu
+    =====================================*/
 
     .primary-menu {
         @apply flex flex-row w-full justify-between items-center;
