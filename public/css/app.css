@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+! tailwindcss v0.0.0-insiders.c33c523 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -19,6 +19,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */html {
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -27,6 +28,7 @@
      tab-size: 4; /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
 }/*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
@@ -426,7 +428,6 @@ video {
   list-style-type: none;
   padding: 0px;
 }.fixed-width {
-  float: none;
   margin: auto;
   width: 100%;
   max-width: 80rem;
@@ -500,11 +501,7 @@ video {
     ===========================*//* ==================================================== 
         Header
     ==================================================== */.header {
-  left: 0px;
-  top: 0px;
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }.container-header {
@@ -890,134 +887,69 @@ video {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }/* ================================
-            Hero section 
-    ================================== */.hero {
+            Carousel section 
+    ================================== */.carousel {
+  margin-bottom: 3rem;
   position: relative;
-  display: flex;
   height: 383px;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}@media (min-width: 640px) {.hero {
+  overflow: hidden;
+}@media (min-width: 640px) {.carousel {
     height: 433px;
   }
-}@media (min-width: 1280px) {.hero {
+}@media (min-width: 1280px) {.carousel {
     height: 497px;
   }
-}@media (min-width: 1536px) {.hero {
-    height: 583px;
+}@media (min-width: 1536px) {.carousel {
+    height: 520px;
   }
-}/* ================================
-            Button slides navigation 
-    ================================== */.hero .button_container {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  height: auto;
-  width: 100%;
-  max-width: 80rem;
-  flex-grow: 1;
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}@media (min-width: 1024px) {.hero .button_container {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}.hero .button_container>.hero_btn {
-  pointer-events: auto;
-  position: relative;
-  display: flex;
-  height: 3rem;
-  width: 3rem;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  border-width: 0px;
-  background-color: rgb(255 255 255 / 0.5);
-}.hero .button_container>.hero_btn>img {
-  width: 1.5rem;
-}/* ================================
-            Images slides  
-        ================================== */.hero .hero_track_container {
+}.carousel_track-container {
   position: relative;
   height: 100%;
-  width: 100%;
-  overflow: hidden;
-}.hero .hero_track_container>.hero_track {
+}.carousel_track {
   position: relative;
   margin: 0px;
   height: 100%;
-  width: 100%;
   list-style-type: none;
   padding: 0px;
   transition-property: all;
-  transition-duration: 700ms;
+  transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}.hero .hero_track_container>.hero_track>.hero_slides {
+}.carousel_slide {
   position: absolute;
   top: 0px;
   bottom: 0px;
   height: 100%;
   width: 100%;
-}.hero .hero_track_container>.hero_track>.hero_slides>img {
+}.carousel_image {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}/* ================================
-            Dot slides navigation  
-        ================================== */.hero .hero_dots_nav {
-  pointer-events: none;
-  position: absolute;
-  bottom: 0px;
-  z-index: 10;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  height: auto;
-  width: auto;
-  max-width: 80rem;
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}.hero .hero_dots_nav>.hero_indicator {
-  pointer-events: auto;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  height: 1rem;
-  width: 1rem;
-  cursor: pointer;
-  border-radius: 9999px;
-  border-width: 0px;
-  background-color: rgb(255 255 255 / 0.5);
-  transition-property: all;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}.hero .hero_dots_nav>.hero_indicator.current_slide {
+}.carousel_nav .current_slide {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}.hidden_arrow {
-  visibility: hidden;
-}/* ================================
+}.enabled_btn {
+  pointer-events: auto;
+}/* .carousel_button{
+            @apply absolute flex items-center justify-center top-1/2 -translate-y-1/2 cursor-pointer;
+        }
+
+        .carousel_button .button{
+            @apply inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30
+            hover:bg-white/50 focus:ring-4 focus:ring-white focus:outline-none;
+        }
+
+        .btn_left{
+            @apply left-0  px-5 lg:left-40 lg:px-0;
+        }
+
+        .btn_right{
+            @apply right-0 px-5 lg:right-40 lg:px-0;
+        }
+
+        .carousel_button .button svg{
+            @apply  w-5 h-5 text-white sm:w-6 sm:h-60 fill-none stroke-current;
+        } *//* ================================
                 Pages 
     ================================== *//* ================================
         Responsivity
@@ -1821,10 +1753,7 @@ video {
 }.relative {
   position: relative;
 }.inset-0 {
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  inset: 0px;
 }.inset-y-0 {
   top: 0px;
   bottom: 0px;
@@ -1882,8 +1811,6 @@ video {
   grid-column: span 2 / span 2;
 }.col-span-6 {
   grid-column: span 6 / span 6;
-}.m-0 {
-  margin: 0px;
 }.m-auto {
   margin: auto;
 }.mx-0 {
@@ -1999,6 +1926,8 @@ video {
   height: 7rem;
 }.h-3 {
   height: 0.75rem;
+}.h-3\.5 {
+  height: 0.875rem;
 }.h-4 {
   height: 1rem;
 }.h-40 {
@@ -2015,8 +1944,6 @@ video {
   height: 2.25rem;
 }.h-96 {
   height: 24rem;
-}.h-\[383px\] {
-  height: 383px;
 }.h-\[56px\] {
   height: 56px;
 }.h-auto {
@@ -2053,6 +1980,8 @@ video {
   width: 7rem;
 }.w-3 {
   width: 0.75rem;
+}.w-3\.5 {
+  width: 0.875rem;
 }.w-3\/4 {
   width: 75%;
 }.w-4 {
@@ -2211,6 +2140,8 @@ video {
   gap: 1.75rem;
 }.gap-8 {
   gap: 2rem;
+}.gap-24 {
+  gap: 6rem;
 }.-space-x-px > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(-1px * var(--tw-space-x-reverse));
@@ -2223,10 +2154,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}.space-x-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }.space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -2474,12 +2401,24 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }.bg-white\/30 {
   background-color: rgb(255 255 255 / 0.3);
+}.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
 }.bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }.bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}.bg-white\/75 {
+  background-color: rgb(255 255 255 / 0.75);
+}.bg-blue-400\/30 {
+  background-color: rgb(96 165 250 / 0.3);
+}.bg-\[\#0083B3\]\/30 {
+  background-color: rgb(0 131 179 / 0.3);
+}.bg-\[\#05668d\]\/30 {
+  background-color: rgb(5 102 141 / 0.3);
+}.bg-white\/40 {
+  background-color: rgb(255 255 255 / 0.4);
 }.bg-opacity-25 {
   --tw-bg-opacity: 0.25;
 }.bg-opacity-50 {
@@ -2851,6 +2790,10 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }.outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2902,8 +2845,6 @@ video {
   transition-duration: 300ms;
 }.duration-500 {
   transition-duration: 500ms;
-}.duration-700 {
-  transition-duration: 700ms;
 }.duration-75 {
   transition-duration: 75ms;
 }.ease-in {
@@ -3176,6 +3117,21 @@ video {
   opacity: 0.5;
 }.group:hover .group-hover\:bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}.group:hover .group-hover\:bg-white\/90 {
+  background-color: rgb(255 255 255 / 0.9);
+}.group:hover .group-hover\:bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}.group:hover .group-hover\:bg-blue-500\/50 {
+  background-color: rgb(59 130 246 / 0.5);
+}.group:hover .group-hover\:bg-\[\#0083B3\]\/50 {
+  background-color: rgb(0 131 179 / 0.5);
+}.group:hover .group-hover\:bg-\[\#05668d\]\/50 {
+  background-color: rgb(5 102 141 / 0.5);
+}.group:hover .group-hover\:bg-white\/70 {
+  background-color: rgb(255 255 255 / 0.7);
+}.group:hover .group-hover\:bg-white\/60 {
+  background-color: rgb(255 255 255 / 0.6);
 }.group:focus .group-focus\:outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -3198,17 +3154,12 @@ video {
   }.dark\:bg-gray-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-  }.dark\:bg-gray-800\/30 {
-    background-color: rgb(31 41 55 / 0.3);
   }.dark\:bg-gray-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   }.dark\:text-gray-400 {
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity));
-  }.dark\:text-gray-800 {
-    --tw-text-opacity: 1;
-    color: rgb(31 41 55 / var(--tw-text-opacity));
   }.dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3233,10 +3184,6 @@ video {
   }.dark\:focus\:ring-blue-500:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
-  }.group:hover .dark\:group-hover\:bg-gray-800\/60 {
-    background-color: rgb(31 41 55 / 0.6);
-  }.group:focus .dark\:group-focus\:ring-gray-800\/70 {
-    --tw-ring-color: rgb(31 41 55 / 0.7);
   }
 }@media (min-width: 375px) {.xs\:flex {
     display: flex;
@@ -3276,16 +3223,10 @@ video {
     display: none;
   }.sm\:h-10 {
     height: 2.5rem;
-  }.sm\:h-6 {
-    height: 1.5rem;
-  }.sm\:h-\[433px\] {
-    height: 433px;
   }.sm\:w-10 {
     width: 2.5rem;
   }.sm\:w-11\/12 {
     width: 91.666667%;
-  }.sm\:w-6 {
-    width: 1.5rem;
   }.sm\:w-full {
     width: 100%;
   }.sm\:max-w-2xl {
@@ -3374,10 +3315,7 @@ video {
     color: rgb(75 85 99 / var(--tw-text-opacity));
   }
 }@media (min-width: 768px) {.md\:inset-0 {
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    inset: 0px;
   }.md\:-bottom-32 {
     bottom: -8rem;
   }.md\:-left-32 {
@@ -3505,6 +3443,10 @@ video {
   }
 }@media (min-width: 1024px) {.lg\:bottom-0 {
     bottom: 0px;
+  }.lg\:left-40 {
+    left: 10rem;
+  }.lg\:right-40 {
+    right: 10rem;
   }.lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }.lg\:col-span-4 {
@@ -3541,6 +3483,9 @@ video {
     border-radius: 0.75rem;
   }.lg\:p-4 {
     padding: 1rem;
+  }.lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }.lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -3579,17 +3524,13 @@ video {
     --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
-}@media (min-width: 1280px) {.xl\:h-\[497px\] {
-    height: 497px;
-  }.xl\:w-8\/12 {
+}@media (min-width: 1280px) {.xl\:w-8\/12 {
     width: 66.666667%;
   }.xl\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }@media (min-width: 1536px) {.\32xl\:col-span-2 {
     grid-column: span 2 / span 2;
-  }.\32xl\:h-\[583px\] {
-    height: 583px;
   }.\32xl\:h-full {
     height: 100%;
   }.\32xl\:grid-cols-3 {
