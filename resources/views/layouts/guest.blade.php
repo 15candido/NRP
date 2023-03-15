@@ -15,12 +15,12 @@
     </main>
 
     {{-- Footer section --}}
-
+    <x-partials.footer />
 
     {{-- Scripts section --}}
 
-    @stack('scripts')
-    <script src="{{ asset('js/app.js') }}"></script>
+    <livewire:scripts />
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 
 </html>

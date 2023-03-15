@@ -2140,8 +2140,6 @@ video {
   gap: 1.75rem;
 }.gap-8 {
   gap: 2rem;
-}.gap-24 {
-  gap: 6rem;
 }.-space-x-px > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(-1px * var(--tw-space-x-reverse));
@@ -2409,16 +2407,6 @@ video {
 }.bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}.bg-white\/75 {
-  background-color: rgb(255 255 255 / 0.75);
-}.bg-blue-400\/30 {
-  background-color: rgb(96 165 250 / 0.3);
-}.bg-\[\#0083B3\]\/30 {
-  background-color: rgb(0 131 179 / 0.3);
-}.bg-\[\#05668d\]\/30 {
-  background-color: rgb(5 102 141 / 0.3);
-}.bg-white\/40 {
-  background-color: rgb(255 255 255 / 0.4);
 }.bg-opacity-25 {
   --tw-bg-opacity: 0.25;
 }.bg-opacity-50 {
@@ -2790,10 +2778,6 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }.outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -3117,21 +3101,6 @@ video {
   opacity: 0.5;
 }.group:hover .group-hover\:bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}.group:hover .group-hover\:bg-white\/90 {
-  background-color: rgb(255 255 255 / 0.9);
-}.group:hover .group-hover\:bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}.group:hover .group-hover\:bg-blue-500\/50 {
-  background-color: rgb(59 130 246 / 0.5);
-}.group:hover .group-hover\:bg-\[\#0083B3\]\/50 {
-  background-color: rgb(0 131 179 / 0.5);
-}.group:hover .group-hover\:bg-\[\#05668d\]\/50 {
-  background-color: rgb(5 102 141 / 0.5);
-}.group:hover .group-hover\:bg-white\/70 {
-  background-color: rgb(255 255 255 / 0.7);
-}.group:hover .group-hover\:bg-white\/60 {
-  background-color: rgb(255 255 255 / 0.6);
 }.group:focus .group-focus\:outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
