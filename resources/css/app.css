@@ -343,11 +343,11 @@
     }
 
         .carousel_track-container{
-            @apply relative h-full
+            @apply relative h-full; 
         }
 
         .carousel_track{
-            @apply relative h-full m-0 p-0 list-none transition-all duration-200 ease-in-out; 
+            @apply relative h-full m-0 p-0 list-none transition-all duration-1000 ease-in-out; 
         }
             .carousel_slide{
                 @apply absolute w-full h-full top-0 bottom-0;

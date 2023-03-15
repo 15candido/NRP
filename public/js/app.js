@@ -5348,6 +5348,9 @@ var moveSlide = function moveSlide(track, curretSlide, targetSlide) {
   track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
   curretSlide.classList.remove('current_slide');
   targetSlide.classList.add('current_slide');
+  var index = slides.findIndex(function (slide) {
+    return slide === curretSlide;
+  });
 };
 
 // Update dots 
@@ -5384,7 +5387,6 @@ prevButton.addEventListener('click', function (event) {
   moveSlide(track, curretSlide, prevSlide);
   updateDots(currentDot, nextDot);
   enableDesableArrow(slides, nextButton, prevButton, prevIndex);
-  console.log(prevButton);
 });
 
 // Move to left side, when click right button
@@ -5396,18 +5398,23 @@ nextButton.addEventListener('click', function (event) {
   var nextIndex = slides.findIndex(function (slide) {
     return slide === nextSlide;
   });
+  var index = slides.findIndex(function (slide) {
+    return slide === curretSlide;
+  });
 
   // Move to next slide 
   moveSlide(track, curretSlide, nextSlide);
   updateDots(currentDot, nextDot);
   enableDesableArrow(slides, nextButton, prevButton, nextIndex);
-  console.log(nextButton);
 });
 
 // Move to current slide, when click to nav indicator
 dotsNav.addEventListener('click', function (event) {
   var targetDot = event.target.closest('button');
+  // End event 
   if (!targetDot) return;
+
+  // Event forward 
   var curretSlide = track.querySelector('.current_slide');
   var currentDot = dotsNav.querySelector('.current_slide');
   var targetIndex = dots.findIndex(function (dot) {
@@ -5418,6 +5425,17 @@ dotsNav.addEventListener('click', function (event) {
   updateDots(currentDot, targetDot);
   enableDesableArrow(slides, nextButton, prevButton, targetIndex);
 });
+
+// Dynamic carousel -> with slider images 
+
+var counter = 0;
+setInterval(function () {
+  document.querySelector('.current_slide');
+  counter++;
+  if (counter > 5) {
+    counter = 1;
+  }
+}, 5000);
 
 /***/ }),
 
