@@ -12,109 +12,94 @@ window.Swal = Swal;
                 Carousel Js
    ============================================= */
 
-// Get all carousel images
-const track = document.querySelector('.carousel_track');
-const slides = Array.from(track.children);
-const dotsNav = document.querySelector('.carousel_nav');
-const dots = Array.from(dotsNav.children);
-const prevButton = document.querySelector('button .btn_left');
-const nextButton = document.querySelector('button .btn_right');
 
-// Arrange slides to next each other
-const slideWidth = slides[0].getBoundingClientRect().width;
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + 'px';
-};
-slides.forEach(setSlidePosition);
+const carousel = document.querySelector('section > .carousel');
+const slideItems = carousel.querySelector('.slides-wrapper');
+const slides = Array.from(slideItems.children);
+const indicators = carousel.querySelector('.slide-indicators');
+const prevButton = carousel.querySelector('button > .prev-button');
+const nextButton = carousel.querySelector('button > .next-button');
+let currentSlideIndex = 0;
 
-// Move target slide 
-const moveSlide = (track, curretSlide, targetSlide) => {
+const fill = 'forwards';
+const duration = 950;
+const easing = 'ease-in-out';
+const autoSlideShow = 4000;
+let animating = false;
+let timer = null;
 
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-    curretSlide.classList.remove('current_slide');
-    targetSlide.classList.add('current_slide');
-    const index = slides.findIndex(slide => slide === curretSlide);
-}
 
-// Update dots 
-const updateDots = (currentDot, targetDot) => {
-    currentDot.classList.remove('current_slide');
-    targetDot.classList.add('current_slide');
+// Callback animate function 
+function animateAsync(elemen, keyframes, options) {
+    return new Promise(res => {
+        elemen.animate(keyframes, options);
+        setTimeout(res, options.duration || 0);
+    });
 }
 
 // Enable and desabled navigation button 
-const enableDesableArrow = (slides, nextButton, prevButton, targetIndex) => {
-    if (targetIndex === 0) {
-        prevButton.classList.remove('enabled_btn');
-        nextButton.classList.add('enabled_btn');
-    } else if (targetIndex === slides.length - 1) {
-        prevButton.classList.add('enabled_btn');
-        nextButton.classList.remove('enabled_btn');
+const enableDesableArrow = (slides, nextButton, prevButton, slideIndex) => {
+    if (slideIndex === 0) {
+        prevButton.classList.remove('enabled-button');
+        nextButton.classList.add('enabled-button');
+    } else if (slideIndex === slides.length - 1) {
+        prevButton.classList.add('enabled-button');
+        nextButton.classList.remove('enabled-button');
     } else {
-        prevButton.classList.add('enabled_btn');
-        nextButton.classList.add('enabled_btn');
+        prevButton.classList.add('enabled-button');
+        nextButton.classList.add('enabled-button');
     }
 }
 
-// Move to right side, when click left button
-prevButton.addEventListener('click', event => {
-    const curretSlide = document.querySelector('.current_slide');
-    const prevSlide = curretSlide.previousElementSibling;
-    const currentDot = dotsNav.querySelector('.current_slide');
-    const nextDot = currentDot.previousElementSibling;
-    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+const moveTo = (slideIndex) => {
 
-    // Move to previous slide 
-    moveSlide(track, curretSlide, prevSlide);
-    updateDots(currentDot, nextDot);
-    enableDesableArrow(slides, nextButton, prevButton, prevIndex);
-});
-
-// Move to left side, when click right button
-nextButton.addEventListener('click', event => {
-
-    const curretSlide = document.querySelector('.current_slide');
-    const nextSlide = curretSlide.nextElementSibling;
-    const currentDot = dotsNav.querySelector('.current_slide');
-    const nextDot = currentDot.nextElementSibling;
-    const nextIndex = slides.findIndex(slide => slide === nextSlide);
-    const index = slides.findIndex(slide => slide === curretSlide);
-
-    // Move to next slide 
-    moveSlide(track, curretSlide, nextSlide);
-    updateDots(currentDot, nextDot);
-    enableDesableArrow(slides, nextButton, prevButton, nextIndex);
-});
-
-// Move to current slide, when click to nav indicator
-dotsNav.addEventListener('click', event => {
-
-    const targetDot = event.target.closest('button');
-    // End event 
-    if (!targetDot) return;
-
-    // Event forward 
-    const curretSlide = track.querySelector('.current_slide');
-    const currentDot = dotsNav.querySelector('.current_slide');
-    const targetIndex = dots.findIndex(dot => dot === targetDot);
-    const targetSlide = slides[targetIndex];
-
-    moveSlide(track, curretSlide, targetSlide);
-    updateDots(currentDot, targetDot);
-    enableDesableArrow(slides, nextButton, prevButton, targetIndex);
-});
-
-// Dynamic carousel -> with slider images 
-
-let counter = 0;
-
-setInterval(function () {
-
-    document.querySelector('.current_slide');
-    counter++;
-
-    if (counter > 5) {
-
-        counter = 1;
+    // Check the currentSlideIndex
+    if (slideIndex === currentSlideIndex || animating) {
+        return;
     }
-}, 5000);
+
+    animating = true;  // Change animating status 
+    clearTimeout(timer); // Cancel auto slide 
+
+    // Get the current slide and move to next sibling slide 
+    const currentSlide = slides[currentSlideIndex];
+    const nextSlide = slides[slideIndex];
+
+    indicators.children[currentSlideIndex].classList.remove('active');
+    indicators.children[slideIndex].classList.add('active');
+    const slideDirection = slideIndex > currentSlideIndex ? '-100%' : '100%';
+
+    //Slide animation 
+    Promise.all([
+
+        animateAsync(nextSlide, [
+            { transform: `translate(${parseInt(slideDirection, 10) * -1}%, 0)` },
+            { transform: 'translate(0, 0)' }
+        ], { duration, fill, easing }),
+
+        animateAsync(currentSlide, [
+            { transform: 'translate(0, 0)' },
+            { transform: `translate(${slideDirection}, 0)` }
+        ], { duration, fill, easing })
+    ]).then(() => {
+
+        currentSlideIndex = slideIndex;
+        currentSlide.classList.remove('active');
+        nextSlide.classList.add('active');
+        animating = false;
+        timer = setTimeout(
+            () => moveTo(slideIndex === slides.length - 1 ? 0 : slideIndex + 1),
+            autoSlideShow);
+    });
+
+    //Active or deactive button navigation 
+    enableDesableArrow(slides, nextButton, prevButton, slideIndex);
+
+};
+
+nextButton.addEventListener('click', () =>
+    moveTo(Math.min(currentSlideIndex + 1, slides.length - 1))
+); // Incremented currentSlideIndex
+prevButton.addEventListener('click', () =>
+    moveTo(Math.max(0, currentSlideIndex - 1)));//Never decrement the currentSlideIndex below zero
+

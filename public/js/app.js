@@ -5328,114 +5328,92 @@ window.Swal = (sweetalert2__WEBPACK_IMPORTED_MODULE_2___default());
                 Carousel Js
    ============================================= */
 
-// Get all carousel images
-var track = document.querySelector('.carousel_track');
-var slides = Array.from(track.children);
-var dotsNav = document.querySelector('.carousel_nav');
-var dots = Array.from(dotsNav.children);
-var prevButton = document.querySelector('button .btn_left');
-var nextButton = document.querySelector('button .btn_right');
+var carousel = document.querySelector('section > .carousel');
+var slideItems = carousel.querySelector('.slides-wrapper');
+var slides = Array.from(slideItems.children);
+var indicators = carousel.querySelector('.slide-indicators');
+var prevButton = carousel.querySelector('button > .prev-button');
+var nextButton = carousel.querySelector('button > .next-button');
+var currentSlideIndex = 0;
+var fill = 'forwards';
+var duration = 950;
+var easing = 'ease-in-out';
+var autoSlideShow = 4000;
+var animating = false;
+var timer = null;
 
-// Arrange slides to next each other
-var slideWidth = slides[0].getBoundingClientRect().width;
-var setSlidePosition = function setSlidePosition(slide, index) {
-  slide.style.left = slideWidth * index + 'px';
-};
-slides.forEach(setSlidePosition);
-
-// Move target slide 
-var moveSlide = function moveSlide(track, curretSlide, targetSlide) {
-  track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-  curretSlide.classList.remove('current_slide');
-  targetSlide.classList.add('current_slide');
-  var index = slides.findIndex(function (slide) {
-    return slide === curretSlide;
+// Callback animate function 
+function animateAsync(elemen, keyframes, options) {
+  return new Promise(function (res) {
+    elemen.animate(keyframes, options);
+    setTimeout(res, options.duration || 0);
   });
-};
-
-// Update dots 
-var updateDots = function updateDots(currentDot, targetDot) {
-  currentDot.classList.remove('current_slide');
-  targetDot.classList.add('current_slide');
-};
+}
 
 // Enable and desabled navigation button 
-var enableDesableArrow = function enableDesableArrow(slides, nextButton, prevButton, targetIndex) {
-  if (targetIndex === 0) {
-    prevButton.classList.remove('enabled_btn');
-    nextButton.classList.add('enabled_btn');
-  } else if (targetIndex === slides.length - 1) {
-    prevButton.classList.add('enabled_btn');
-    nextButton.classList.remove('enabled_btn');
+var enableDesableArrow = function enableDesableArrow(slides, nextButton, prevButton, slideIndex) {
+  if (slideIndex === 0) {
+    prevButton.classList.remove('enabled-button');
+    nextButton.classList.add('enabled-button');
+  } else if (slideIndex === slides.length - 1) {
+    prevButton.classList.add('enabled-button');
+    nextButton.classList.remove('enabled-button');
   } else {
-    prevButton.classList.add('enabled_btn');
-    nextButton.classList.add('enabled_btn');
+    prevButton.classList.add('enabled-button');
+    nextButton.classList.add('enabled-button');
   }
 };
-
-// Move to right side, when click left button
-prevButton.addEventListener('click', function (event) {
-  var curretSlide = document.querySelector('.current_slide');
-  var prevSlide = curretSlide.previousElementSibling;
-  var currentDot = dotsNav.querySelector('.current_slide');
-  var nextDot = currentDot.previousElementSibling;
-  var prevIndex = slides.findIndex(function (slide) {
-    return slide === prevSlide;
-  });
-
-  // Move to previous slide 
-  moveSlide(track, curretSlide, prevSlide);
-  updateDots(currentDot, nextDot);
-  enableDesableArrow(slides, nextButton, prevButton, prevIndex);
-});
-
-// Move to left side, when click right button
-nextButton.addEventListener('click', function (event) {
-  var curretSlide = document.querySelector('.current_slide');
-  var nextSlide = curretSlide.nextElementSibling;
-  var currentDot = dotsNav.querySelector('.current_slide');
-  var nextDot = currentDot.nextElementSibling;
-  var nextIndex = slides.findIndex(function (slide) {
-    return slide === nextSlide;
-  });
-  var index = slides.findIndex(function (slide) {
-    return slide === curretSlide;
-  });
-
-  // Move to next slide 
-  moveSlide(track, curretSlide, nextSlide);
-  updateDots(currentDot, nextDot);
-  enableDesableArrow(slides, nextButton, prevButton, nextIndex);
-});
-
-// Move to current slide, when click to nav indicator
-dotsNav.addEventListener('click', function (event) {
-  var targetDot = event.target.closest('button');
-  // End event 
-  if (!targetDot) return;
-
-  // Event forward 
-  var curretSlide = track.querySelector('.current_slide');
-  var currentDot = dotsNav.querySelector('.current_slide');
-  var targetIndex = dots.findIndex(function (dot) {
-    return dot === targetDot;
-  });
-  var targetSlide = slides[targetIndex];
-  moveSlide(track, curretSlide, targetSlide);
-  updateDots(currentDot, targetDot);
-  enableDesableArrow(slides, nextButton, prevButton, targetIndex);
-});
-
-// Dynamic carousel -> with slider images 
-
-var counter = 0;
-setInterval(function () {
-  document.querySelector('.current_slide');
-  counter++;
-  if (counter > 5) {
-    counter = 1;
+var moveTo = function moveTo(slideIndex) {
+  // Check the currentSlideIndex
+  if (slideIndex === currentSlideIndex || animating) {
+    return;
   }
-}, 5000);
+  animating = true; // Change animating status 
+  clearTimeout(timer); // Cancel auto slide 
+
+  // Get the current slide and move to next sibling slide 
+  var currentSlide = slides[currentSlideIndex];
+  var nextSlide = slides[slideIndex];
+  indicators.children[currentSlideIndex].classList.remove('active');
+  indicators.children[slideIndex].classList.add('active');
+  var slideDirection = slideIndex > currentSlideIndex ? '-100%' : '100%';
+
+  //Slide animation 
+  Promise.all([animateAsync(nextSlide, [{
+    transform: "translate(".concat(parseInt(slideDirection, 10) * -1, "%, 0)")
+  }, {
+    transform: 'translate(0, 0)'
+  }], {
+    duration: duration,
+    fill: fill,
+    easing: easing
+  }), animateAsync(currentSlide, [{
+    transform: 'translate(0, 0)'
+  }, {
+    transform: "translate(".concat(slideDirection, ", 0)")
+  }], {
+    duration: duration,
+    fill: fill,
+    easing: easing
+  })]).then(function () {
+    currentSlideIndex = slideIndex;
+    currentSlide.classList.remove('active');
+    nextSlide.classList.add('active');
+    animating = false;
+    timer = setTimeout(function () {
+      return moveTo(slideIndex === slides.length - 1 ? 0 : slideIndex + 1);
+    }, autoSlideShow);
+  });
+
+  //Active or deactive button navigation 
+  enableDesableArrow(slides, nextButton, prevButton, slideIndex);
+};
+nextButton.addEventListener('click', function () {
+  return moveTo(Math.min(currentSlideIndex + 1, slides.length - 1));
+}); // Incremented currentSlideIndex
+prevButton.addEventListener('click', function () {
+  return moveTo(Math.max(0, currentSlideIndex - 1));
+}); //Never decrement the currentSlideIndex below zero
 
 /***/ }),
 
