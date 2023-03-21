@@ -3,6 +3,7 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- Styles -->
+@livewireStyles
 @stack('stylesheet')
 <link rel="stylesheet" href=" http://meyerweb.com/eric/tools/css/reset/reset.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,3 +14,5 @@
 <title>
     {{ isset($title) ? config('app.name', 'Na Rota dos Povos') . ' | ' . $title : ''}}
 </title>
+
+<!-- scripts -->
