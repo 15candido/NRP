@@ -286,11 +286,11 @@
     ================================== */
 
     .carousel{
-        @apply relative data-block h-[383px] sm:h-[433px] xl:h-[497px] 2xl:h-[520px] bg-green-300;
+        @apply relative data-block h-[383px] sm:h-[433px] xl:h-[497px] 2xl:h-[520px];
     }
 
     .slides-wrapper{
-        @apply relative w-full h-full overflow-hidden bg-[#222];
+        @apply relative w-full h-full overflow-hidden;
     }
 
     .slide {

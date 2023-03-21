@@ -2,14 +2,14 @@
     <div class="carousel">
         <!-- Slide images  -->
         <ul class="slides-wrapper">
-            <li class="slide active bg-yellow-400"><img src="images/heroes/1.jpg"></li>
-            <li class="slide bg-orange-400">
+            <li class="slide active"><img src="images/heroes/1.jpg"></li>
+            <li class="slide">
                 <img src="images/heroes/2.jpg">
             </li>
-            <li class="slide bg-purple-400"><img src="images/heroes/3.jpg"></li>
-            <li class="slide bg-amber-700"><img src="images/heroes/4.jpg"></li>
-            <li class="slide bg-red-600"><img src="images/heroes/5.jpg"></li>
-            <li class="slide bg-red-600"><img src="images/heroes/6.jpg"></li>
+            <li class="slide"><img src="images/heroes/3.jpg"></li>
+            <li class="slide"><img src="images/heroes/4.jpg"></li>
+            <li class="slide"><img src="images/heroes/5.jpg"></li>
+            <li class="slide"><img src="images/heroes/6.jpg"></li>
         </ul>
 
         <!-- Slide indicators  -->

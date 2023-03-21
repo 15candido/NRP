@@ -6,7 +6,7 @@
                 <img src="images/logo.png" class="max-h-16 p-1 object-cover
                 rounded-full lg:max-h-28 transition duration-300 ease-in-out" alt="Logotipo">
             </a>
-            <a href="" class="relative hidden xs:flex xs:flex-wrap">
+            <a href="/" class="relative hidden xs:flex xs:flex-wrap">
                 <h3 class="relative flex  mb-0 font-black text-lg md:text-3xl lg:text-4xl text-right">
                     Na Rota dos<br>Povos
                     <em class="absolute bottom-1 text-left text-[6.9px] lg:bottom-0
