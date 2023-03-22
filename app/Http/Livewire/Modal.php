@@ -8,14 +8,15 @@ use Illuminate\Support\Str;
 
 class Modal extends Component
 {
-    public $name; 
-    public $email; 
+    public $name;
+    public $email;
     public $phone;
-    public $address; 
-    public $location; 
-    public $postcode; 
-    public $motivation; 
+    public $address;
+    public $location;
+    public $postcode;
+    public $motivation;
     public $openModal = false;
+
 
     protected $rules = [
 
@@ -28,6 +29,7 @@ class Modal extends Component
         'motivation'    => ['required', 'min:80', 'max:450'],
     ];
 
+    // Real time validation. Rules validation
     public function updated($proprietyName)
     {
         $this->validateOnly($proprietyName);
@@ -37,12 +39,10 @@ class Modal extends Component
     {
         $this->resetErrorBag();
         $this->openModal = true;
-       
     }
-           
+
     public function register()
     {
-
         Volunteer::create([
             'name'  => $this->name,
             'slug'  => Str::slug($this->name),
@@ -52,7 +52,6 @@ class Modal extends Component
             'location' => $this->location,
             'postcode' => $this->postcode,
             'motivation' => $this->motivation,
-           
         ]);
 
         $this->emit('created', [
@@ -64,5 +63,4 @@ class Modal extends Component
         $this->emit('saved');
         $this->reset();
     }
-    
 }
