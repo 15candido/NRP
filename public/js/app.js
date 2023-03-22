@@ -5323,6 +5323,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
 window.Swal = (sweetalert2__WEBPACK_IMPORTED_MODULE_2___default());
+alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
 
 /* ===============================================
                 Carousel Js
