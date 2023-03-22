@@ -471,7 +471,7 @@
     }
 
     .footer .footer-nav>.footer-links>.logo p {
-        @apply absolute flex justify-items-center left-20 top-8 text-[7px] font-bold text-justify bg-transparent;
+        @apply absolute flex justify-items-center left-20 top-6 text-[7px] font-bold text-justify bg-transparent;
     }
 
     .footer .footer-nav>.footer-links>.links-items li a:hover {
