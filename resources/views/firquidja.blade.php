@@ -25,7 +25,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="w-full flex flex-col gap-6 lg:rounded-xl lg:shadow-lg lg:px-4 lg:hover:shadow-xl">
+                <div class="w-full flex flex-col gap-6 lg:h-2/3 lg:rounded-xl lg:shadow-lg lg:px-4 lg:hover:shadow-xl">
                     <div class="flex flex-col w-full h-auto">
                         <h3>Junte-se a nós</h3>
                         <p>
@@ -33,7 +33,7 @@
                             Firquidja, doando a um valor periódico fixo, sem valor mínimo, por débito em conta.
                         </p>
                     </div>
-                    <x-firquidjas.form />
+                    <livewire:firquidjas.default-subscription-modal />
                 </div>
             </div>
         </x-cards.structureWhitOutBg>
