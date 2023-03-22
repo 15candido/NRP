@@ -3,7 +3,7 @@
     <x-slot name="title">
         {{ ('Voluntariado') }}
     </x-slot>
-    <div class="flex flex-col min-h-screen items-center bg-red-400">
+    <div class="flex flex-col min-h-screen items-center">
         <x-page-header src="images/project/carouselVolunteers.jpg" title="Ser voluntário da Na Rota dos Povos" fromPage="Como Ajudar" toPage="Seja voluntário" alt="Voluntários da Na Rota dos Povos" /> <!--about us hero image -->
         <x-cards.structureWhitOutBg>
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-start items-start space-y-6 md:gap-16 md:space-y-0">
