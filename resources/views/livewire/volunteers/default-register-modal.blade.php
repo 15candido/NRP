@@ -1,22 +1,25 @@
-{{-- Default Modal to Register Volunteers --}}
+{{-- Standart register modal form volunteers --}}
 <div x-data="{ open: false }">
+
+    {{-- Enabling and disabling the button --}}
     @php
     $disabled = $errors->any() || empty($this->name) || empty($this->phone) || empty($this->email) || empty($this->address)
     || empty($this->location) || empty($this->postcode) || empty($this->motivation) ? true : false;
     @endphp
 
+    {{-- Taggle button --}}
     <div class="flex flex-wrap">
-        {{-- Taggle Button --}}
-        <button x-on:click=" open = !open" class="inline-block p-3 font-bold text-white bg-[#5ba057]
-         hover:bg-[#4ca747] rounded-lg shadow-md">
-            {{ __('Inscrever-me') }}
-            <button>
+        <button x-on:click="open = !open" class="inline-block p-3 font-bold text-white bg-[#5ba057]
+        hover:bg-[#4ca747] rounded-lg shadow-md">
+            {{ __('Inscrever-me')}}
+        </button>
     </div>
 
-    {{--Toggle Modal--}}
-    <div x-show="open" x-transition:enter.duration.500ms x-transition:leave.duration.400ms class="fixed top-0 left-0 right-0 z-50 w-full p-4 md:inset-0 md:h-full">
+    {{--Toggle modal--}}
+    <div x-show="open" x-transition:enter.duration.500ms x-transition:leave.duration.400ms class="fixed z-50 w-full h-full 
+    inset-0 p-4">
 
-        {{-- Modal Background --}}
+        {{-- Modal background --}}
         <div class="fixed inset-0  transform">
             <div class="absolute inset-0 bg-[#264653] bg-opacity-50"></div>
         </div>
@@ -25,6 +28,7 @@
         <div x-on:click.away="open = false" class="relative w-full h-full max-w-2xl md:top-1/2 md:left-1/2 
             md:-translate-y-1/2 md:-translate-x-1/2 md:h-auto">
             <x-modal>
+
                 {{-- Title --}}
                 <x-slot name="title">
                     {{ __('Ficha de Inscrição') }}
@@ -32,10 +36,10 @@
 
                 {{-- Content --}}
                 <x-slot name="content">
-                    <section class="w-full  mx-auto space-y-4">
+                    <section class="w-full mx-auto space-y-4">
                         {{-- Form --}}
                         <form wire:submit.prevent='register' class="space-y-4" id="RegisterForm">
-                            <div class="flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0">
+                            <div class="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
 
                                 {{-- Name --}}
                                 <div class="flex flex-col w-full space-y-2 ">
@@ -68,15 +72,16 @@
                             <div class="flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0">
                                 {{-- Location --}}
                                 <div class="flex flex-col w-full space-y-2 ">
-                                    <input wire:model.debounce.500ms="location" class="block w-full border-gray-300 placeholder-gray-400 rounded-md focus:ring-4
-                                    focus:ring-blue-300 focus:ring-opacity-25 focus:border-blue-300 focus:border-opacity-75" name="location" id="location" type="text" placeholder="Localidade">
+                                    <input wire:model.debounce.500ms="location" class="block w-full border-gray-300 placeholder-gray-400 
+                                    rounded-md focus:ring-4 focus:ring-blue-300 focus:ring-opacity-25 focus:border-blue-300 
+                                    focus:border-opacity-75" name="location" id="location" type="text" placeholder="Localidade">
                                     @error('location') <span class="text-orange-500">{{ $message }}</span> @enderror
                                 </div>
 
                                 {{-- Post Code --}}
                                 <div class="flex flex-col w-full space-y-2 ">
-                                    <input wire:model.debounce.500ms="postcode" class="block w-full border-gray-300 placeholder-gray-400 rounded-md focus:ring-4
-                                    focus:ring-blue-300 focus:ring-opacity-25 focus:border-blue-300 focus:border-opacity-75" name="postcode" id="postcode" type="text" placeholder="Código Postal">
+                                    <input wire:model.debounce.500ms="postcode" class="block w-full border-gray-300 placeholder-gray-400 
+                                    rounded-md focus:ring-4 focus:ring-blue-300 focus:ring-opacity-25 focus:border-blue-300 focus:border-opacity-75" name="postcode" id="postcode" type="text" placeholder="Código Postal">
                                     @error('postcode') <span class="text-orange-500">{{ $message }}</span> @enderror
                                 </div>
                             </div>
@@ -94,27 +99,27 @@
 
                 {{-- Footer --}}
                 <x-slot name="footer">
-
                     <div class="flex flex-col gap-4 justify-end">
-
                         <div class="flex gap-2 justify-end">
-                            {{-- Cancel Button --}}
+                            {{-- Cancel button --}}
                             <x-buttons.btn-secondary x-on:click="open = false">
                                 {{ __('Cancelar') }}
                             </x-buttons.btn-secondary>
 
-                            {{-- Submit Button --}}
+                            {{-- Submit button --}}
                             <x-buttons.btn-primary wire:target='register' wire:loading.attr='disabled' type="submit" :disabled="$disabled" form="RegisterForm" x-on:click=" open = false">
                                 {{ __('Register') }}
                             </x-buttons.btn-primary>
                         </div>
                     </div>
                 </x-slot>
+
             </x-modal>
         </div>
     </div>
 </div>
 
+{{-- Script --}}
 @push('scripts')
 <script>
     // Emit Browser Event
