@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Firquidjas;
 use App\Http\Livewire\Volunteer;
 use App\Http\Controllers\ContabilityController;
 use App\Http\Controllers\UserController;
