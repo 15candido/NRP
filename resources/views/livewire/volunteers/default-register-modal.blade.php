@@ -5,9 +5,10 @@
     || empty($this->location) || empty($this->postcode) || empty($this->motivation) ? true : false;
     @endphp
 
-    <div class="flex flex-wrap lg:justify-end">
+    <div class="flex flex-wrap">
         {{-- Taggle Button --}}
-        <button x-on:click=" open = !open" class="inline-block p-3 font-bold text-white bg-[#5ba057] hover:bg-[#4ca747] rounded-lg shadow-md">
+        <button x-on:click=" open = !open" class="inline-block p-3 font-bold text-white bg-[#5ba057]
+         hover:bg-[#4ca747] rounded-lg shadow-md">
             {{ __('Inscrever-me') }}
             <button>
     </div>
