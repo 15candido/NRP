@@ -6,14 +6,10 @@ use Illuminate\View\Component;
 
 class Imagecard extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
+    // public $image;
     public function __construct()
     {
-        //
+        // $this->image = $image;
     }
 
     /**

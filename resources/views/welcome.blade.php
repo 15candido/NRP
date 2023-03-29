@@ -10,20 +10,21 @@
     <!-- Main container -->
     <div class="relative flex flex-col mx-auto justify-center items-center">
         <!-- Slogan -->
-        <section class="data-block w-full flex flex-row">
-            <div class="fixed-width flex justify-center">
-                <h1 class="mb-0">A Educação é o Único Caminho</h1>
-            </div>
-        </section>
+        <x-sections.sloganSection slogan="A Educação é o Único Caminho" />
         <!-- About Us  -->
         <section class="fixed-width grid md:grid-cols-2 gap-12 px-5 lg:px-10 data-block">
-            <x-about.about :about="$abouts" />
+            @foreach($abouts as $about)
+            <x-cards.about-small-briefing :content="$about" />
+            @endforeach
+            @foreach($motivations as $motivation)
+            <x-cards.about-card-title :content="$motivation" />
+            @endforeach
         </section>
         <!-- Ongoing project -->
         <x-cards.structureWithBg>
-            <x-cards.info-default-card title="Projetos em curso" description="Continuamos a trabalhar para fornecer 
-                material e mobiliários escolar às escolas de Catió, cuidado e alimentação às crianças da Casa da Mamé, 
-                apoio ao hospital Musna Sambú e cuidado às crianças com deficiência." />
+            <x-sections.sections-description title="Projetos em curso" paragraph="Continuamos a trabalhar para fornecer material e 
+                mobiliários escolar às escolas de Catió, cuidado e alimentação às crianças da Casa da Mamé, apoio ao hospital Musna Sambú 
+                e cuidado às crianças com deficiência." />
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
                 <x-projects.ongoing :projects="$projects" />
             </div>
@@ -31,9 +32,9 @@
 
         <!-- Impacts/achivement -->
         <x-cards.structureWhitOutBg>
-            <x-cards.info-default-card title="O que já alcançamos" description="Começou por ser “formação aos 
-                professores”, tornou-se numa missão de criar condições dignas de estudo para cerca de 10.000 alunos, 
-                bolsas de estudo, casa de acolhimento para as crianças órfãs, bibliotecas e salas de informática." />
+            <x-sections.sections-description title="O que já alcançamos" paragraph=" Começou por ser “formação aos professores”, 
+                tornou-se numa missão de criar condições dignas de estudo para cerca de 10.000 alunos, bolsas de estudo, casa de 
+                acolhimento para as crianças órfãs, bibliotecas e salas de informática." />
             <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
                 <x-cards.impact :impacts="$impacts" />
             </div>
@@ -41,8 +42,8 @@
 
         <!-- How to help -->
         <x-cards.structureWithBg>
-            <x-cards.info-default-card title="Como ajudar?" description="Neste processo, de fazer o mundo num lugar 
-                melhor, todos contam. A iniciativa que tomar pode nos deixar mais perto do objetivo. Junte-se a nós, 
+            <x-sections.sections-description title="Como ajudar?" paragraph=" Neste processo, de fazer o mundo num lugar
+                melhor, todos contam. A iniciativa que tomar pode nos deixar mais perto do objetivo. Junte-se a nós,
                 escolha como deseja contribuir na missão da “Na Rota dos Povos”." />
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-40 justify-center items-center">
                 <div class="flex flex-col items-center text-center">
@@ -62,10 +63,9 @@
 
         <!-- Partners -->
         <x-cards.structureWhitOutBg>
-            <x-cards.info-default-card title="Parceiros" description="Não estamos sozinhos, nesta busca por um 
-                mundo melhor, mais justo e inclusivo, onde o ser humano e o meio ambiente são centro das atenções. 
-                Temos vários parceiros que colaboram connosco, contribuindo de forma direta e direta no desenvolvimento 
-                da na missão." />
+            <x-sections.sections-description title="Parceiros" paragraph="Não estamos sozinhos, nesta busca por um mundo melhor, 
+                mais justo e inclusivo, onde o ser humano e o meio ambiente são centro das atenções. Temos vários parceiros que 
+                colaboram connosco, contribuindo de forma direta e direta no desenvolvimento da na missão." />
             <div class="grid grid-cols-4 gap-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 
                 justify-center items-center">
                 <x-cards.partner :partners="$partners" />

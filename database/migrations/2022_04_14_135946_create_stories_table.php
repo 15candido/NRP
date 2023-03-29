@@ -15,8 +15,16 @@ return new class extends Migration
     {
         Schema::create('stories', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('name');
             $table->text('description');
+            $table->string('image');
+            $table->timestamps();
+        });
+
+        Schema::create('story_time_lines', function (Blueprint $table) {
+            $table->id();
+            $table->string('year');
+            $table->text('note');
             $table->string('image');
             $table->timestamps();
         });

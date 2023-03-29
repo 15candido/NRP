@@ -3,7 +3,8 @@
         {{-- Logo --}}
         <div class="absolute flex flex-row gap-4 items-center top-1/2 -translate-y-1/2">
             <a href="/">
-                <img src="images/logo.png" class="max-h-16 p-1 object-cover
+
+                <img src="/images/logo.png" class="max-h-16 p-1 object-cover
                 rounded-full lg:max-h-28 transition duration-300 ease-in-out" alt="Logotipo">
             </a>
             <a href="/" class="relative hidden xs:flex xs:flex-wrap">
@@ -21,27 +22,27 @@
             <ul class="flex flex-row gap-4  border-b-2 border-solid border-gray-100">
                 <li class="flex justify-center items-center p-0 m-0">
                     <a href="" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full">
-                        <img src="icons/search.png" alt="Barra de pesquisa">
+                        <img src="/icons/search.png" alt="Barra de pesquisa">
                     </a>
                 </li>
                 <li class="flex justify-center items-center p-0 m-0">
                     <a href="https://www.facebook.com/NaRotaDosPovos/" target="_blank" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full">
-                        <img src="images/media/facebook_head.png" alt="Icon de Instagram">
+                        <img src="/images/media/facebook_head.png" alt="Icon de Instagram">
                     </a>
                 </li>
                 <li class="flex justify-center items-center p-0 m-0">
                     <a href="https://www.instagram.com/accounts/login/?next=%2Fnarotadospovos%2F&source=omni_redirect" target="_blank">
-                        <img src="images/media/instagram_head.png" alt="Icon de Instagram" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full">
+                        <img src="/images/media/instagram_head.png" alt="Icon de Instagram" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full">
                     </a>
                 </li>
                 <li class="flex justify-center items-center p-0 m-0">
                     <a href="https://www.youtube.com/narotadospovos" target="_blank" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full">
-                        <img src="images/media/youtube_head.png" alt="Icon de Instagram">
+                        <img src="/images/media/youtube_head.png" alt="Icon de Instagram">
                     </a>
                 </li>
                 <li class="flex justify-center items-center p-0 m-0">
                     <a href="contacto" class="flex flex-row gap-2 justify-between items-center opacity-50 hover:opacity-100">
-                        <img src="icons/phoneCall.png" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full" alt="Telefone">
+                        <img src="/icons/phoneCall.png" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full" alt="Telefone">
                         <span class="text-xs font-bold text-gray-600 uppercase">Contacto</span>
                     </a>
                 </li>
@@ -58,7 +59,7 @@
             {{-- Navigation menu --}}
             <nav class="nav-menu p-0">
                 <div class="close-nav-menu">
-                    <img src="icons/close-nav-menu.png" alt="Cross, delete, remove Icon">
+                    <img src="/icons/close-nav-menu.png" alt="Cross, delete, remove Icon">
                 </div>
                 <ul class="menu">
                     <li class="menu-item menu-dropdown">
@@ -89,10 +90,9 @@
                             </svg>
                         </a>
                         <ul class="sub-menu">
-                            <li class="menu-item"><a href="educacao">A Educação é o Único Caminho</a></li>
-                            <li class="menu-item"><a href="casa_da_mame">Casa da Mamé</a></li>
-                            <li class="menu-item"><a href="center_especial_educacional">Tabanca dos Pequenitos</a></li>
-                            <li class="menu-item"><a href="apoio_saude">Apoio à Saúde</a></li>
+                            @foreach($projects as $project)
+                            <li class="menu-item"><a href="/projetos/{{$project->slug}}">{{$project->name}}</a></li>
+                            @endforeach
                         </ul>
                     </li>
                     <li class="menu-item">

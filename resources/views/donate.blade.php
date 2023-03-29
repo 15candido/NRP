@@ -26,7 +26,7 @@
                     </ul>
                 </div>
                 <div class="relative w-full h-full">
-                    <x-cards.imagecard src="images/project/donate.jpg" alt="Ser solidário" />
+                    <x-cards.imagecard image="/images/project/donate.jpg" alt="Ser solidário" />
                 </div>
             </div>
         </x-cards.structureWhitOutBg>

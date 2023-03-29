@@ -9,13 +9,18 @@ use App\Models\About;
 use App\Models\Project;
 use App\Models\Area;
 use App\Models\Children;
+use App\Models\Company;
 use App\Models\Impact;
 use App\Models\HowToHelp;
+use App\Models\Mission;
 use App\Models\Newsletter;
 use App\Models\Partner;
 use App\Models\Story;
 use App\Models\User;
 use App\Models\Person;
+use App\Models\StoryTimeLine;
+use App\Models\Valeu;
+use App\Models\Vision;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -36,11 +41,12 @@ Auth::loginUsingId(1);
 Route::get('/', function () {
     $stories = Story::all();
     $heroes = Hero::all();
-    $abouts = About::all();
+    $abouts = Company::all();
     $projects = Project::where('visible', true)->get();
     $impacts = Impact::where('visible', true)->get();
     $howToHelp = HowToHelp::where('first_option', true)->get();
     $partners = Partner::all();
+
 
     return view('welcome', [
         'stories' => $stories,
@@ -54,17 +60,13 @@ Route::get('/', function () {
 });
 
 Route::get('quem_somos', function () {
-    $impacts = Impact::all();
-    $partners = Partner::all();
-
-    return view('about', [
-        'impacts' => $impacts,
-        'partners' => $partners
-    ]);
+    return view('about');
 });
 
 Route::get('a_nossa_historia', function () {
-    return view('our_history');
+    return view('stories', [
+        'stories' =>  Story::all()
+    ]);
 });
 
 Route::get('children', function () {
@@ -86,13 +88,13 @@ Route::get('projetos', function () {
     ]);
 });
 
-// Route::get('projetos/{project:slug}', function (Project $project) {
-//     // Give me the Project where ID Matches this ID and  his collaborators 
-//     dd($project);
-//     return view('project', [
-//         'project' => $project
-//     ]);
-// });
+Route::get('/projetos/{project:slug}', function (Project $project) {
+    // Give me the Project where ID Matches this ID and  his collaborators 
+    // dd($project->slug);
+    return view('project', [
+        'project' => $project
+    ]);
+})->name('projct');
 
 Route::get('como_ajudar', function () {
     $help = HowToHelp::all();
@@ -127,25 +129,6 @@ Route::get('relatorio', function () {
 Route::get('/estatutos', function () {
     return redirect('/');
 });
-
-
-// projtecs root start
-Route::get('/educacao', function () {
-    return view('education');
-});
-
-Route::get('/casa_da_mame', function () {
-    return view('foster-house');
-});
-
-Route::get('/center_especial_educacional', function () {
-    return view('ceet');
-});
-
-Route::get('/apoio_saude', function () {
-    return view('healthcare_support');
-});
-//end projects root
 
 Route::get('/voluntariado', function () {
     return view('become_volunteers');

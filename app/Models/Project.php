@@ -17,9 +17,15 @@ class Project extends Model
         'description',
         'visible',
         'image',
+        'hero_image',
         'start',
         'end'
     ];
+
+    public function completedTasks()
+    {
+        return $this->hasMany(projectCompletedTask::class, 'project_id');
+    }
 
     public function collaborator()
     {

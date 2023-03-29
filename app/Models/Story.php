@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Story extends Model
 {
     use HasFactory;
+
+    public $fillable = [
+        'name',
+        'description',
+        'image'
+    ];
 }

@@ -6,9 +6,9 @@ use Illuminate\View\Component;
 
 class PageHeader extends Component
 {
-//    public $pageHeader;
+    //    public $pageHeader;
     public function __construct()
-    {      
+    {
         // $this-> pageHeader = $pageHeader;  
     }
 

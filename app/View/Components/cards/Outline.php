@@ -6,10 +6,10 @@ use Illuminate\View\Component;
 
 class Outline extends Component
 {
-    // public $outline;
-    public function __construct()
+    public $outline;
+    public function __construct($outline)
     {
-        // $this-> outline = $outline;
+        $this->outline = $outline;
     }
 
     /**

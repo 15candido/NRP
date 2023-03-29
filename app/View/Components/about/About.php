@@ -14,7 +14,7 @@ class About extends Component
     public $about;
     public function __construct($about)
     {
-       $this->about = $about;
+        $this->about = $about;
     }
 
     /**

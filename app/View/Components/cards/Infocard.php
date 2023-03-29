@@ -9,7 +9,7 @@ class Infocard extends Component
     // public $infocard;
     public function __construct()
     {
-        // $this-> infocard = $infocard;
+        // $this->infocard = $infocard;
     }
 
     /**

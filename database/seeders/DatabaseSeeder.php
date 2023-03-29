@@ -9,6 +9,7 @@ use App\Models\Person;
 use App\Models\Project;
 use App\Models\Need;
 use App\Models\Item;
+use App\Models\Story;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -28,14 +29,23 @@ class DatabaseSeeder extends Seeder
             ImpactSeeder::class,
             PartnerSeeder::class,
             AboutSeeder::class,
+            CompanySeeder::class,
+            MissionSeeder::class,
+            VisionSeeder::class,
+            ValeuSeeder::class,
+            MotivationSeeder::class,
+            StorySeeder::class,
+            StoryTimeLineSeeder::class,
+            FoundersSeeder::class,
             ProjectSeeder::class,
             HowToHelpSeeder::class,
             PersonSeeder::class,
             AreaSeeder::class,
             VolunteerSeeder::class,
+            ProjectCompletedTaskSeeder::class
         ]);
-        
-        
+
+
         $users      = User::factory(15)->create();
         $people     = Person::factory(10)->create();
         $projects   = Project::factory(10)->create();
