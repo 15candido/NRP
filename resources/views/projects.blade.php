@@ -6,7 +6,7 @@
     <div class="flex flex-col min-h-screen justify-center items-center">
         <x-page-header src="/images/project/carouselproject.jpg" title="Projetos" fromPage="Home" toPage="Projetos" alt="Imagem de crianças" /><!--projects hero-->
         <x-cards.structureWhitOutBg>
-            <div class="flex flex-col py-20 gap-12">
+            <div class="flex flex-col gap-12">
                 <div class="flex flex-col gap-6"> <!--area of activity -->
                     <x-cards.info-default-card title="Áreas de intervenção" description="Agimos sob o lema “A Educação é o Único Caminho”, procurando dar respostas em vários 
                         setores da sociedade, em que a falta de condições é um obstáculo para o bem-estar da população 
