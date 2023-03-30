@@ -70,14 +70,14 @@
                             </svg>
                         </a>
                         <ul class="sub-menu">
-                            <li class="menu-item"><a href="quem_somos">Sobre nós</a></li>
-                            <li class="menu-item"><a href="orgaos_sociais">Orgão Sociais</a></li>
-                            <li class="menu-item"><a href="equipa_guine_bissau">Equipa Guiné-Bissau</a></li>
+                            <li class="menu-item"><a href="/quem_somos">Sobre nós</a></li>
+                            <li class="menu-item"><a href="/orgaos_sociais">Orgão Sociais</a></li>
+                            <li class="menu-item"><a href="/equipa_guine_bissau">Equipa Guiné-Bissau</a></li>
                             <li class="menu-item menu-dropdown-children">
                                 <a href="" data-toggle="sub-menu">Documentos<i class="plus"></i></a>
                                 <ul class="sub-menu-children">
-                                    <li class="sub-menu-item-children"><a href="relatorios">Relatórios</a></li>
-                                    <li class="sub-menu-item-children"><a href="estatutos">Estatutos</a></li>
+                                    <li class="sub-menu-item-children"><a href="/relatorios">Relatórios</a></li>
+                                    <li class="sub-menu-item-children"><a href="/estatutos">Estatutos</a></li>
                                 </ul>
                             </li>
                         </ul>
