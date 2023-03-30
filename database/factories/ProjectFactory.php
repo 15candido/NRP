@@ -22,7 +22,7 @@ class ProjectFactory extends Factory
             'slug' => Str::slug($name),
             'short_description' => $this->faker->text(125),
             'description' => $this->faker->text(716),
-            'image' => 'img/project/ceet_center.jpg'
+            'image' => 'images/project/ceet_center.jpg'
         ];
     }
 }

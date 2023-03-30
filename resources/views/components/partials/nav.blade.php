@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li class="flex justify-center items-center p-0 m-0">
-                    <a href="contacto" class="flex flex-row gap-2 justify-between items-center opacity-50 hover:opacity-100">
+                    <a href="/contacto" class="flex flex-row gap-2 justify-between items-center opacity-50 hover:opacity-100">
                         <img src="/icons/phoneCall.png" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full" alt="Telefone">
                         <span class="text-xs font-bold text-gray-600 uppercase">Contacto</span>
                     </a>
@@ -83,7 +83,7 @@
                         </ul>
                     </li>
                     <li class="menu-item menu-dropdown">
-                        <a href="" data-toggle="sub-menu">
+                        <a href="/projetos" data-toggle="sub-menu">
                             Projetos
                             <svg xmlns="http://www.w3.org/2000/svg" class="arrow-chevron-icon">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -96,7 +96,7 @@
                         </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="como_ajudar" data-toggle="sub-menu">como Ajudar</a>
+                        <a href="/como_ajudar" data-toggle="sub-menu">como Ajudar</a>
                     </li>
                 </ul>
             </nav>

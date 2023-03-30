@@ -6,10 +6,10 @@ use Illuminate\View\Component;
 
 class InfoDefaultCard extends Component
 {
-    public $info;
-    public function __construct($info)
+    // public $info;
+    public function __construct()
     {
-        $this->info = $info;
+        // $this->info = $info;
     }
 
     /**

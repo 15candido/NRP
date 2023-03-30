@@ -9,7 +9,7 @@ class RegisterNewsletter extends Component
 {
     public $email;
 
-    protected $rules = [        
+    protected $rules = [
         'email' => ['required', 'regex:/(.+)@(.+)\.(.+)/i', 'unique:newsletters,email'],
     ];
 
@@ -24,13 +24,14 @@ class RegisterNewsletter extends Component
             'email' => $this->email,
         ]);
 
-        $this->dispatchBrowserEvent('create',[
+        $this->emit('created', [
             'title'         => 'A inscrição foi um sucesso!',
             'icon'          => 'success',
-            'iconColor'     => 'green', 
+            'iconColor'     => 'green'
         ]);
 
-        $this->email = "";
+        $this->emit('saved');
+        $this->reset();
     }
 
     public function render()

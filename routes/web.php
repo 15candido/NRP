@@ -47,7 +47,6 @@ Route::get('/', function () {
     $howToHelp = HowToHelp::where('first_option', true)->get();
     $partners = Partner::all();
 
-
     return view('welcome', [
         'stories' => $stories,
         'heroes' => $heroes,
@@ -74,11 +73,11 @@ Route::get('children', function () {
     return view('children', ['children' => $children]);
 });
 
-Route::post('newsletter', function (Request $request) {
-    echo "O email " . $request['email'] . " foi registado na nossa bd";
-    Newsletter::create(['email' => $request['email'], 'name' => $request['name']]);
-    return redirect('/');
-});
+// Route::post('newsletter', function (Request $request) {
+//     echo "O email " . $request['email'] . " foi registado na nossa bd";
+//     Newsletter::create(['email' => $request['email'], 'name' => $request['name']]);
+//     return redirect('/');
+// });
 
 Route::get('projetos', function () {
 
