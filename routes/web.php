@@ -31,7 +31,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Auth::loginUsingId(1);
+Auth::loginUsingId(1);
 
 Route::get('/', function () {
     $heroes = Hero::all();
