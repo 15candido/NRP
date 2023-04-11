@@ -22,11 +22,6 @@ class Project extends Model
         'end'
     ];
 
-    public function completedTasks()
-    {
-        return $this->hasMany(projectCompletedTask::class, 'project_id');
-    }
-
     public function collaborator()
     {
         return $this->belongsToMany(

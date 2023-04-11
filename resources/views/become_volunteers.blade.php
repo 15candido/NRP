@@ -32,7 +32,7 @@
                     </a>
                 </div>
 
-                <div class="flex flex-col space-y-4 lg:rounded-lg lg:shadow lg:pb-4 lg:px-4">
+                <div class="flex flex-col space-y-4 lg:rounded-lg lg:shadow lg:pb-4 lg:px-4 lg:hover:shadow-xl">
                     {{-- Conditions --}}
                     <x-conditions />
                     {{-- Register form --}}

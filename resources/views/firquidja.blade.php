@@ -25,7 +25,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="w-full flex flex-col gap-6 lg:h-2/3 lg:rounded-xl lg:shadow-lg lg:px-4 lg:hover:shadow-xl">
+                <div class="w-full flex flex-col gap-6 lg:h-2/3 lg:rounded-lg lg:shadow lg:px-4 lg:hover:shadow-xl">
                     <div class="flex flex-col w-full h-auto">
                         <h3>Junte-se a nós</h3>
                         <p>

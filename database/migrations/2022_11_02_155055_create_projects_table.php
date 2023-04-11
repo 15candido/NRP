@@ -28,16 +28,6 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Schema::create('project_completed_tasks', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('project_id')->nullable()->constrained();
-            $table->string('name')->nullable();
-            $table->string('note')->nullable();
-            $table->string('image')->nullable();
-            $table->date('end')->nullable();
-            $table->timestamps();
-        });
-
         Schema::create('person_project', function (Blueprint $table) {
             $table->id();
             $table->foreignId('person_id')->nullable()->constrained();

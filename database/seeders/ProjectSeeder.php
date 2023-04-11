@@ -93,7 +93,6 @@ class ProjectSeeder extends Seeder
             'visible' => true,
             'image' => 'images/project/ceet.jpg',
             'hero_image' => '/images/project/carouselceet.jpg'
-
         ]);
 
         DB::table('projects')->insert([

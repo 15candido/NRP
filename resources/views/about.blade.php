@@ -1,39 +1,49 @@
 <x-guestLayout>
     {{--Page title--}}
     <x-slot name="title">
-        {{ ('Sobre Nós') }}
+        {{ ('Quem Somos') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-page-header src="images/project/carouselus2.jpg" title="Quem Somos" fromPage="Home" toPage="Quem somos" alt="Imagem da Na Rota dos Povos" /> <!--about us hero image -->
+        <x-cards.page_hero pageName="Quem Somos" image="/images/project/carouselus2.jpg" />
         <x-cards.structureWhitOutBg>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {{-- Short description --}}
-                @foreach($company as $company)
-                <x-cards.about-briefing :content="$company" />
-                @endforeach
+                <x-cards.page_card_overview title="A Na Rota dos Povos" description="É uma ONGD – Organização 
+                Não Governamental para o Desenvolvimento, criada em 2001, com sede em Matosinhos. Toda a sua 
+                atividade é assegurada por voluntários. Atua há mais de 10 anos no Sul da Guiné-Bissau, sob o 
+                lema A Educação é o Único Caminho, contribuindo em vários setores da sociedade e dando apoio à 
+                comunidade, com participação ativa na identificação de problemas e na sua resolução, mantendo
+                como principais áreas de intervenção a educação, o apoio social e a saúde." />
 
                 {{-- Image --}}
-                <x-cards.page-card-image :image="$company->image" />
+                <x-cards.image_card image="images/team/team.jpg" />
             </div>
         </x-cards.structureWhitOutBg>
         <x-cards.structureWithBg>
             {{-- Mission, vision and value section  --}}
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 overflow-hidden">
-                @foreach($mission as $mission)
-                <x-cards.about-card-subtitle :content="$mission" />
-                @endforeach
-                @foreach($vision as $vision)
-                <x-cards.about-card-subtitle :content="$vision" />
-                @endforeach
-                @foreach($valeus as $valeu)
-                <x-cards.about-card-subtitle :content="$valeu" />
-                @endforeach
+
+                {{-- Mission --}}
+                <x-cards.page_card_title title="Missão" description="A nossa missão é apoiar o desenvolvimento 
+                dos países PALOP, fora dos grandes centros populacionais, em zonas carenciadas ao nível da educação, 
+                formação cultural, saúde, proteção infantil e do ambiente." />
+
+                {{-- Vision --}}
+                <x-cards.page_card_title title="Visão" description="Temos como objetivo apoiar e desenvolver 
+                ações para a defesa, elevação e manutenção da qualidade de vida do ser humano e do meio ambiente,
+                através do desenvolvimento de atividades de caráter educativo, social, cultural, ambiental e 
+                desportivo." />
+
+                {{-- Valeus --}}
+                <x-cards.page_card_title title="Valores" description='Temos presente que só a educação pode 
+                melhorar o desenvolvimento dos povos, daí o nosso lema “A Educação é o Único Caminho"' />
+
             </div>
         </x-cards.structureWithBg>
         <x-cards.structureWhitOutBg>
             {{-- Where we are --}}
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <x-cards.mapcard src="/images/maps/guinebissau.png" alt="Mapa da Guiné-Bissau" />
+                <x-cards.map_card image="/images/maps/guinebissau.png" alt="Mapa da Guiné-Bissau" />
                 <div class="flex flex-col">
                     <h3>Guiné-Bissau</h3>
                     <span class="flex flex-col break-words">

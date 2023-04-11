@@ -5,22 +5,17 @@ use App\Http\Livewire\Volunteer;
 use App\Http\Controllers\ContabilityController;
 use App\Http\Controllers\UserController;
 use App\Models\Hero;
-use App\Models\About;
 use App\Models\Project;
 use App\Models\Area;
 use App\Models\Children;
-use App\Models\Company;
 use App\Models\Impact;
 use App\Models\HowToHelp;
-use App\Models\Mission;
 use App\Models\Newsletter;
 use App\Models\Partner;
 use App\Models\Story;
 use App\Models\User;
 use App\Models\Person;
 use App\Models\StoryTimeLine;
-use App\Models\Valeu;
-use App\Models\Vision;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -36,21 +31,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::loginUsingId(1);
+// Auth::loginUsingId(1);
 
 Route::get('/', function () {
-    $stories = Story::all();
     $heroes = Hero::all();
-    $abouts = Company::all();
     $projects = Project::where('visible', true)->get();
     $impacts = Impact::where('visible', true)->get();
     $howToHelp = HowToHelp::where('first_option', true)->get();
     $partners = Partner::all();
 
     return view('welcome', [
-        'stories' => $stories,
         'heroes' => $heroes,
-        'abouts' => $abouts,
         'projects' => $projects,
         'impacts' => $impacts,
         'howToHelp' => $howToHelp,
@@ -62,23 +53,7 @@ Route::get('quem_somos', function () {
     return view('about');
 });
 
-Route::get('a_nossa_historia', function () {
-    return view('stories', [
-        'stories' =>  Story::all()
-    ]);
-});
-
-Route::get('children', function () {
-    $children = Children::paginate(10);
-    return view('children', ['children' => $children]);
-});
-
-// Route::post('newsletter', function (Request $request) {
-//     echo "O email " . $request['email'] . " foi registado na nossa bd";
-//     Newsletter::create(['email' => $request['email'], 'name' => $request['name']]);
-//     return redirect('/');
-// });
-
+// Project routes 
 Route::get('projetos', function () {
 
     return view('projects', [
@@ -87,13 +62,34 @@ Route::get('projetos', function () {
     ]);
 });
 
+Route::get('projeto.a-educacao-e-o-unico-caminho', function () {
+    return view('project_education');
+});
+
+Route::get('projeto.casa-da-mame', function () {
+    return view('project_foster_house');
+});
+
+Route::get('projeto.center-de-educacao-especial-e-terapeutica', function () {
+    return view('project_ceet');
+});
+
+Route::get('projeto.apoio-saude', function () {
+    return view('project_health_support');
+});
+
+// Our story 
+Route::get('a_nossa_historia', function () {
+    return view('stories');
+});
+
 Route::get('/projetos/{project:slug}', function (Project $project) {
     // Give me the Project where ID Matches this ID and  his collaborators 
     // dd($project->slug);
     return view('project', [
         'project' => $project
     ]);
-})->name('projct');
+});
 
 Route::get('como_ajudar', function () {
     $help = HowToHelp::all();

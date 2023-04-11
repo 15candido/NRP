@@ -32,21 +32,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $projects = Project::where('visible', 1)->get();
-        $company = Company::all();
-        $motivations = Motivation::all();
-        $mission = Mission::all();
-        $vision = Vision::all();
-        $valeus = Valeu::all();
-        $founders = Founders::all();
-        $storytimelines = StoryTimeLine::all();
-        view()->share('projects', $projects);
-        view()->share('company', $company);
-        view()->share('motivations', $motivations);
-        view()->share('mission', $mission);
-        view()->share('vision', $vision);
-        view()->share('valeus', $valeus);
-        view()->share('storytimelines', $storytimelines);
-        view()->share('founders', $founders);
+        //
     }
 }

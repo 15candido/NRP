@@ -1,6 +1,7 @@
+@props(['title', 'description'])
 <article class="flex flex-col overflow-hidden">
-    <h2>{{$content->name}}</h2>
+    <h4>{{$title}}</h4>
     <div class="flex flex-wrap">
-        <p>{{ $content->abstract }}</p>
+        <p>{{ $description }}</p>
     </div>
 </article>

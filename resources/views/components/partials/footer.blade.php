@@ -21,10 +21,10 @@
             <li class="footer-links">
                 <h1>Projetos</h1>
                 <ul class="links-items">
-                    <li><a href="educacao">A Educação é o Único Caminho</a></li>
-                    <li><a href="casa_da_mame">Casa da Mamé</a></li>
-                    <li><a href="center_especial_educacional">Tabanca dos Pequenitos</a></li>
-                    <li><a href="apoio_saude">Apoio à Saúde</a></li>
+                    <li><a href="projeto.a-educacao-e-o-unico-caminho">A Educação é o Único Caminho</a></li>
+                    <li><a href="projeto.casa-da-mame">Casa da Mamé</a></li>
+                    <li><a href="projeto.center-de-educacao-especial-e-terapeutica">Tabanca dos Pequenitos</a></li>
+                    <li><a href="projeto.apoio-saude">Apoio à Saúde</a></li>
                 </ul>
             </li>
             <li class="footer-links lg:col-span-2">

@@ -48,14 +48,11 @@
                 </li>
             </ul>
         </div>
-
         {{-- Premary menu --}}
         <div class="primary-menu">
-
             {{-- Toggle menu --}}
             <div class="open-nav-menu"><span></span></div>
             <div class="menu-overley"></div>
-
             {{-- Navigation menu --}}
             <nav class="nav-menu p-0">
                 <div class="close-nav-menu">
@@ -90,9 +87,25 @@
                             </svg>
                         </a>
                         <ul class="sub-menu">
-                            @foreach($projects as $project)
-                            <li class="menu-item"><a href="/projetos/{{$project->slug}}">{{$project->name}}</a></li>
-                            @endforeach
+                            <li class="menu-item">
+                                <a href="/projeto.a-educacao-e-o-unico-caminho">
+                                    A Educação é o Único Caminho
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/projeto.casa-da-mame">
+                                    Casa da Mamé
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/projeto.center-de-educacao-especial-e-terapeutica">
+                                    Tabanca dos Pequenitos</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/projeto.apoio-saude">
+                                    Apoio à Saúde
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="menu-item">
