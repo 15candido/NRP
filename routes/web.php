@@ -4,7 +4,6 @@ use App\Http\Livewire\Firquidjas;
 use App\Http\Livewire\Volunteer;
 use App\Http\Controllers\ContabilityController;
 use App\Http\Controllers\UserController;
-use App\Models\Hero;
 use App\Models\Project;
 use App\Models\Area;
 use App\Models\Children;
