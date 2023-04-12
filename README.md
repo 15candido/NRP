@@ -1,3 +1,22 @@
+# Melhorias
+
+- Logotipos
+- Hero (Bullet points)
+- Espaço em cima e em baixo do hero
+- Título dos projetos deve estar visível
+- Tirar o dashboard
+- Lupa (retirar)
+- Alinhamento do símbolo
+- Acrescentar equipa de desenvolvimento 
+- Simplificar o efeito do hover
+- Colocar fotos 
+- Retirar textos "Lorem"
+- Retirar os relatórios (ou colocar os que são necessários)
+- Colocar Estatutos
+- Projetos / imagens
+- Apoio à saúde (tem que estar relacionado)
+
+
 # To do list 
 
 - Convenção para nomeação de componentes e modelos
@@ -6,3 +25,4 @@
 - Layout da página das campanhas e onde ficar na home page 
 - Página estatuto o que fazer? 
 - Definir o que deve ser exibido no dashboard!!
+
