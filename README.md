@@ -1,4 +1,4 @@
-# Melhorias
+# Prioritário
 
 - Logotipos
 - Hero (Bullet points)
@@ -16,9 +16,9 @@
 - Projetos / imagens
 - Apoio à saúde (tem que estar relacionado)
 
-
 # To do list 
 
+- Programar o hero para qualquer pessoa autorizada poder alterar a imagem (e o texto)
 - Convenção para nomeação de componentes e modelos
 - Modelação de base dados => Terminar de normalizar toda a informação que devem constar na base de dados  
 - Route Group => Como separar as rotas de acesso padrão e acesso de administrador/especial
