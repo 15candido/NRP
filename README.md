@@ -1,20 +1,20 @@
 # Prioritário
 
-- Logotipos
-- Hero (Bullet points)
-- Espaço em cima e em baixo do hero
-- Título dos projetos deve estar visível
 - Tirar o dashboard
-- Lupa (retirar)
-- Alinhamento do símbolo
+- Hero (Bullet points)
+- Alinhamento do símbolo, hero navigation button 
 - Acrescentar equipa de desenvolvimento 
-- Simplificar o efeito do hover
 - Colocar fotos 
-- Retirar textos "Lorem"
-- Retirar os relatórios (ou colocar os que são necessários)
-- Colocar Estatutos
-- Projetos / imagens
-- Apoio à saúde (tem que estar relacionado)
+- Projetos / imagens 
+- Colocar Estatutos - It has been removed for now! 
+- Logotipos - Done
+- Espaço em cima e em baixo do hero - Done 
+- Título dos projetos deve estar visível - Done
+- Lupa (retirar) - Done
+- Simplificar o efeito do hover - Done 
+- Retirar textos "Lorem" - Done 
+- Retirar os relatórios (ou colocar os que são necessários) - Done 
+- Apoio à saúde (tem que estar relacionado) - Done 
 
 # To do list 
 
