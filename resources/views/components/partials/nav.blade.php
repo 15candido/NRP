@@ -3,7 +3,6 @@
         {{-- Logo --}}
         <div class="absolute flex flex-row gap-4 items-center top-1/2 -translate-y-1/2">
             <a href="/">
-
                 <img src="/images/logo.png" class="max-h-16 p-1 object-cover
                 rounded-full lg:max-h-28 transition duration-300 ease-in-out" alt="Logotipo">
             </a>
@@ -20,11 +19,6 @@
         {{-- Secondary menu --}}
         <div class="w-full hidden lg:flex lg:flex-wrap justify-end">
             <ul class="flex flex-row gap-4  border-b-2 border-solid border-gray-100">
-                <!-- <li class="flex justify-center items-center p-0 m-0">
-                    <a href="" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full">
-                        <img src="/icons/search.png" alt="Barra de pesquisa">
-                    </a>
-                </li> -->
                 <li class="flex justify-center items-center p-0 m-0">
                     <a href="https://www.facebook.com/NaRotaDosPovos/" target="_blank" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full">
                         <img src="/images/media/facebook_head.png" alt="Icon de Instagram">
@@ -70,13 +64,6 @@
                             <li class="menu-item"><a href="/quem_somos">Sobre nós</a></li>
                             <li class="menu-item"><a href="/orgaos_sociais">Orgão Sociais</a></li>
                             <li class="menu-item"><a href="/equipa_guine_bissau">Equipa Guiné-Bissau</a></li>
-                            <li class="menu-item menu-dropdown-children">
-                                <a href="" data-toggle="sub-menu">Documentos<i class="plus"></i></a>
-                                <ul class="sub-menu-children">
-                                    <li class="sub-menu-item-children"><a href="/relatorios">Relatórios</a></li>
-                                    <li class="sub-menu-item-children"><a href="/estatutos">Estatutos</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </li>
                     <li class="menu-item menu-dropdown">
