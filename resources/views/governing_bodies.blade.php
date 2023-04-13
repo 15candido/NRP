@@ -21,7 +21,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     @foreach($profiles as $profile)
                     @if($profile->position == 'General assembly table')
-                    <x-users.profile :profile="$profile" />
+                    <x-cards.members-card-profile :content="$profile" />
                     @endif
                     @endforeach
                 </div>
@@ -29,7 +29,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                     @foreach($profiles as $profile)
                     @if($profile->position == 'CEO')
-                    <x-users.profile :profile="$profile" />
+                    <x-cards.members-card-profile :content="$profile" />
                     @endif
                     @endforeach
                 </div>
@@ -37,7 +37,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                     @foreach($profiles as $profile)
                     @if($profile->position == 'Supervisory board')
-                    <x-users.profile :profile="$profile" />
+                    <x-cards.members-card-profile :content="$profile" />
                     @endif
                     @endforeach
                 </div>
