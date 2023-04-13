@@ -14,7 +14,6 @@
                     <li><a href="quem_somos">Sobre Nós</a></li>
                     <li><a href="orgaos_sociais">Orgão Sociais</a></li>
                     <li><a href="equipa_guine_bissau">Equipa Guiné-Bissau</a></li>
-                    <li><a href="relatorios">Relatórios</a></li>
                     <li><a href="a_nossa_historia">A Nossa História</a></li>
                 </ul>
             </li>
