@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
 
         $users      = User::factory(15)->create();
         $people     = Person::factory(10)->create();
-        $projects   = Project::factory(10)->create();
+        // $projects   = Project::factory(10)->create();
         $needs      = Need::factory(10)->create();
         $items      = Item::factory(10)->create();
 
@@ -62,16 +62,16 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-        // Add project needs
-        foreach ($projects as $project) {
-            $project->needs()->attach(
-                Need::inRandomOrder()->take(rand(1, 9))->pluck('id'),
-                [
-                    'quantity' => fake()->numberBetween(85, 25),
-                    'note' => fake()->text(150)
-                ]
-            );
-        }
+        // // Add project needs
+        // foreach ($projects as $project) {
+        //     $project->needs()->attach(
+        //         Need::inRandomOrder()->take(rand(1, 9))->pluck('id'),
+        //         [
+        //             'quantity' => fake()->numberBetween(85, 25),
+        //             'note' => fake()->text(150)
+        //         ]
+        //     );
+        // }
 
         // Adding needed items
         foreach ($needs as $need) {
