@@ -10,12 +10,11 @@
                 <div class="flex flex-col">
                     <h3>Direção Guiné-Bissau</h3>
                     <p class="flex flex-col break-words">
-                        Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Dolore tempore nemo expedita nisi neque, facilis aperiam quod? Ipsa ipsum
-                        voluptatibus officiis cum minima ipsam maiores, tempora nostrum facere reprehenderit facilis.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore nemo expedita nisi neque,
-                        facilis aperiam quod? Ipsa ipsum voluptatibus officiis cum minima ipsam
-                        maiores, tempora nostrum facere reprehenderit facilis.
+                        A ONG “Na Rota dos Povos” é constituída por um grupo de amigos, voluntários e parceiros que se
+                        dedicam a apoiar as causas sociais, contribuindo com as suas competências e experiências
+                        profissionais para a concretização da missão da organização.
+                        O nosso trabalho é suportado na íntegra pelos nossos voluntários, desde a angariação, a
+                        gestão do dia-adia, a organização de missões, a comunicação, etc.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
