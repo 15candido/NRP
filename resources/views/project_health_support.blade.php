@@ -7,15 +7,14 @@
         <x-cards.page_hero pageName="Apoio à saúde" image="/images/project/carouselhealth.jpg" />
         <x-cards.structureWhitOutBg>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <x-cards.page_card_overview title="Centro de Educação  Especial e Terapêutica" description="O Centro de Educação 
-                Especial e Terapêutico é um centro totalmente equipado, dedicado ao diagnóstico, tratamento e incremento da 
-                qualidade de vida das crianças com deficiência, que complementa a sua ação disponibilizando educação escolar
-                 básica e alimentação. Numa primeira fase, iremos atender 40 crianças com deficiência física e/ou 
-                 desenvolvimento cognitivo prejudicado. A surdez e a cegueira são outras áreas de atuação esperadas. 
-                 Esperamos fornecer a estas crianças terapias adequadas, educação especial, cuidados de saúde específicos e 
-                 alimentação diária. O espaço está dotado de equipamento diversificado, sem qualquer paralelo na 
-                 Guiné-Bissau, um espaço funcional que permite a realização de consultas e o acompanhamento online das 
-                 crianças e dos terapeutas por médicos e outros técnicos de saúde a partir de Portugal." />
+                <x-cards.page_card_overview title="Apoio à Saúde" description="O Hospital Musna Sambú, em Catió, sofre de 
+                inúmeras e graves carências, que só não têm consequências mais gravosas graças à dedicação dos seus poucos 
+                médicos, enfermeiros e demais pessoal. O Hospital ainda não tem acesso a água potável nem energia elétrica, 
+                exceto no bloco operatório (que tem graves carências), onde tem um gerador de apoio, e no serviço de sangue 
+                e laboratório, onde tem energia fornecida por painéis solares. Os doentes internados têm de comprar os seus 
+                próprios medicamentos e providenciar a alimentação. Isto obriga a um enorme esforço das famílias dos doentes,
+                que têm habitualmente de viver nas instalações do hospital para poderem assim apoiar o seu familiar doente. 
+                A imagiologia não funciona, a estomatologia também não, e o laboratório é muito rudimentar." />
                 <x-cards.image_card image="/images/project/health.jpg" />
             </div>
         </x-cards.structureWhitOutBg>
