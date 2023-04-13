@@ -1,11 +1,10 @@
 <div class="flex flex-col rounded-lg shadow-md items-center md:max-w-md">
     <a href="#" class="pointer-events-none">
-        <img class="pointer-events-auto hover:opacity-75" src="{{$profile->picture}}" alt="">
+        <img class="hover:opacity-75" src="{{$profile->picture}}" alt="">
     </a>
-    <div class="flex flex-col w-full items-center p-4 hover:bg-gray-100">
+    <div class="flex flex-col w-full items-center p-4 pointer-events-none hover:bg-gray-100">
 
-        <a href="#" class="uppercase border-b-[1px] border-solid border-[#0082b3] border-opacity-75 hover:border-b-4 
-            hover:border-opacity-100 transition-all duration-300 ease-in-out">
+        <a href="#" class="uppercase border-b-[1px] border-solid border-[#0082b3] border-opacity-75">
             {{$profile->name}}
         </a>
 
