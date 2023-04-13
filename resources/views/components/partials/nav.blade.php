@@ -20,11 +20,11 @@
         {{-- Secondary menu --}}
         <div class="w-full hidden lg:flex lg:flex-wrap justify-end">
             <ul class="flex flex-row gap-4  border-b-2 border-solid border-gray-100">
-                <li class="flex justify-center items-center p-0 m-0">
+                <!-- <li class="flex justify-center items-center p-0 m-0">
                     <a href="" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full">
                         <img src="/icons/search.png" alt="Barra de pesquisa">
                     </a>
-                </li>
+                </li> -->
                 <li class="flex justify-center items-center p-0 m-0">
                     <a href="https://www.facebook.com/NaRotaDosPovos/" target="_blank" class="w-8 h-8 p-1.5 opacity-50 hover:opacity-100 rounded-full">
                         <img src="/images/media/facebook_head.png" alt="Icon de Instagram">
