@@ -1,6 +1,5 @@
 # Prioritário
 
-- Tirar o dashboard
 - Hero (Bullet points)
 - Alinhamento do símbolo, hero navigation button 
 - Acrescentar equipa de desenvolvimento 

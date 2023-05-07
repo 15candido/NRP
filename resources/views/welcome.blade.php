@@ -2,6 +2,7 @@
 <x-guestLayout>
     <div class="w-full">
         <x-homepage.hero />
+        <x-homepage.hero2 />
     </div>
     {{--Page title--}}
     <x-slot name="title">
