@@ -1,4 +1,11 @@
 <header class="flex flex-wrap justify-center items-center">
+    @if (Auth::user())
+        <form method="POST" action="/logout">
+            @csrf
+            <div>Olá {{ Auth::user()->name }}</div>
+            <button class="bg-red-400 text-white px-2 py-1">Logout</button>
+        </form>
+    @endif
     <div class="relative fixed-width mt-8 pb-5">
         {{-- Logo --}}
         <div class="absolute flex flex-row gap-4 items-center top-1/2 -translate-y-1/2">

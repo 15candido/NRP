@@ -24,4 +24,6 @@
 - Layout da página das campanhas e onde ficar na home page 
 - Página estatuto o que fazer? 
 - Definir o que deve ser exibido no dashboard!!
+- Resultados da Academia
+
 

@@ -30,7 +30,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::loginUsingId(1);
+//Auth::loginUsingId(1);
 
 Route::get('/', function () {
 
@@ -124,7 +124,7 @@ Route::get('/estatutos', function () {
 });
 
 Route::get('/voluntariado', function () {
-    return view('become_volunteers');
+    return view('volunteers');
 });
 
 
@@ -148,16 +148,16 @@ Route::get('/users', [UserController::class, 'index'])->middleware('auth');
 
 // Admin Panel/Dashboard Start
 
-// Route::middleware([
-//     'auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified'
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
 
-// ])->group(function () {
-//     Route::get('/dashboard', function () {
-//         return view('dashboard');
-//     })->name('dashboard');
-// });
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
 
 Route::get('/necessidades', function () {
     return view('needs');

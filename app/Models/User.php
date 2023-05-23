@@ -64,4 +64,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Person::class, 'people', 'person_id');
     }
+
+    public function tasks()
+    {
+        return $this->belongsToMany(Task::class);
+    }
 }
