@@ -1,8 +1,8 @@
 <!-- Homapage/landing -->
 <x-guestLayout>
     <div class="w-full">
+        {{-- Just to test hero --}}
         <x-homepage.hero />
-        <x-homepage.hero2 />
     </div>
     {{--Page title--}}
     <x-slot name="title">
