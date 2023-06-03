@@ -1,37 +1,37 @@
 <!-- Homapage/landing -->
 <x-guestLayout>
-    <div class="w-full my-6">
+    <div class="w-full">
         {{-- Just to test hero --}}
         <x-homepage.hero />
     </div>
         
     <x-motto/>
 
-    <x-paragraph title="{{ __('information.welcome.who_we_are_title') }}">        
-        <div>{!! __('information.welcome.who_we_are_text') !!}</div>
-    </x-paragraph>
+    <x-section>
+        <x-paragraph title="{{ __('information.welcome.who_we_are_title') }}">        
+            {!! __('information.welcome.who_we_are_text') !!}
+        </x-paragraph>
 
-    <x-paragraph title="{{ __('information.welcome.motivation_title') }}">        
-        <div>{!! __('information.welcome.motivation_text') !!}</div>
-    </x-paragraph>
+        <x-paragraph title="{{ __('information.welcome.motivation_title') }}">        
+            {!! __('information.welcome.motivation_text') !!}
+        </x-paragraph>
+        
+        <x-paragraph title="{{ __('information.welcome.motivation_title') }}">        
+            {!! __('information.welcome.motivation_text') !!}
+        </x-paragraph>
+    </x-section>
+
+    <x-projects class="my-8"/>
     
-
-
-    <hr class="my-16 "/>
-
     <div class="relative flex flex-col mx-auto justify-center items-center">
         
-
         <section class="fixed-width grid md:grid-cols-2 gap-12 px-5 lg:px-10 data-block">        
             
             
         </section>
         <!-- Ongoing project -->
         <x-cards.structureWithBg>
-            <div>
-                <div class="font-bold">{{ __('information.welcome.projects_title') }}</div>
-                <div>{{ __('information.welcome.projects_text') }}</div>
-            </div>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
                 <x-projects.ongoing :projects="$projects" />
             </div>

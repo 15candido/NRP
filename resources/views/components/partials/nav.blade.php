@@ -1,4 +1,4 @@
-<header class="flex flex-wrap justify-center items-center">
+<header class="flex flex-wrap justify-center items-center mb-6">
     @if (Auth::user())
         <form method="POST" action="/logout">
             @csrf

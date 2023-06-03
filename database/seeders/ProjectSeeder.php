@@ -17,12 +17,32 @@ class ProjectSeeder extends Seeder
     public function run()
     {
 
+        // DB::table('projects')->insert([
+        //     'name' => $name = 'A Educação é o Único Caminho',
+        //     'slug' => Str::slug($name),
+        //     'short_description' => 'A educação é um fator essencial para o desenvolvimento dos povos e a 
+        //         Guiné-Bissau é um caso grave. Faltam salas de aula, quadros, carteiras e cadeiras. 
+        //         As crianças, que são…',
+        //     'description' => 'A educação é um fator essencial para o desenvolvimento dos povos e a Guiné-Bissau 
+        //         é um caso grave neste campo. Faltam salas de aula, quadros, carteiras e cadeiras. As crianças, que 
+        //         são muitas, estavam na maioria das vezes sentadas em tijolos ou pedras, com um tronco a fazer de 
+        //         mesa e, claro, sem livros nem cadernos. Faltam professores, e estes fazem greves infindáveis. 
+        //         As paredes são de blocos de terra escura, secos ao sol, e os telhados são feitos de zinco ou palha. 
+        //         A fragilidade deste tipo de construção não permite ter janelas com dimensões minimamente razoáveis. 
+        //         As paredes são muito vulneráveis à chuva e também aos insetos rastejantes. Um dos grandes problemas 
+        //         das salas de aulas é a sua fraca luminosidade. Dadas as condições do território envolvente, é difícil 
+        //         manter as salas com aspecto limpo, asseado e atraente para as crianças e professores.',
+        //     'visible' => true,
+        //     'image' => 'images/project/education.jpg',
+        //     'hero_image' => '/images/project/carouseleducation2.jpg'
+
+        // ]);
+
+
         DB::table('projects')->insert([
-            'name' => $name = 'A Educação é o Único Caminho',
+            'name' => $name = 'Apoio à Educação',
             'slug' => Str::slug($name),
-            'short_description' => 'A educação é um fator essencial para o desenvolvimento dos povos e a 
-                Guiné-Bissau é um caso grave. Faltam salas de aula, quadros, carteiras e cadeiras. 
-                As crianças, que são…',
+            'short_description' => 'Temos dado apoio a equipar 220 salas de aulas em 49 escolas e fornecemos material escolar aos 10 000 alunos das escolas de Catió. Montámos 5 bibliotecas e criamos uma biblioteca itinerante.',
             'description' => 'A educação é um fator essencial para o desenvolvimento dos povos e a Guiné-Bissau 
                 é um caso grave neste campo. Faltam salas de aula, quadros, carteiras e cadeiras. As crianças, que 
                 são muitas, estavam na maioria das vezes sentadas em tijolos ou pedras, com um tronco a fazer de 
@@ -37,6 +57,7 @@ class ProjectSeeder extends Seeder
             'hero_image' => '/images/project/carouseleducation2.jpg'
 
         ]);
+        
 
         DB::table('projects')->insert([
             'name' => $name = 'Formação – Construir o Futuro',

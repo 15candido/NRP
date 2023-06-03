@@ -11,7 +11,7 @@
     }
 
     p {
-        @apply leading-relaxed;
+        @apply leading-relaxed text-xl text-gray-700;        
     }
 
     /* ==================================================== 
@@ -33,23 +33,7 @@
          @apply text-4xl md:text-5xl lg:text-5xl;
      }
 
-    body,
-    *,
-    *::before,
-    *::after {
-        @apply box-border m-0;
-    }
-
-    body.hidden-scrolling {
-        @apply overflow-y-hidden;
-    }
-
-    html,
-    body {
-        font-family: 'Open Sans', Nunito, sans-serif;
-        @apply text-base text-gray-600;
-    }
-
+     
     h2 {
         @apply text-3xl;
     }
@@ -72,9 +56,7 @@
         @apply text-inherit no-underline;
     }
 
-    p {
-        @apply font-light my-2 mx-0 leading-6;
-    }
+    
 
     ul {
         @apply list-none m-0 p-0;
