@@ -11,9 +11,8 @@
             {{-- Slides indicators --}}
             <div class="absolute inline-block space-x-2 gap-3 bottom-8 left-1/2 -translate-x-1/2">
                 <template x-for="(image, index) in images">
-                    <button @click="visible = index" class="w-4 h-4 p-0 border-none rounded-full cursor-pointer outline-none
-                     bg-white/80 hover:bg-white shadow-sm shadow-gray-600"></button>
-                    <!-- <p @click="visible = index" class="rounded-full bg-white p-4"></p> -->
+                    <button @click="visible = index" class="w-4 h-4 p-0 border-none rounded-full cursor-pointer outline-none bg-white/80
+                    shadow-sm shadow-gray-600 hover:bg-white active:ring-4 ring-white/70 checked:bg-red-500"></button>
                 </template>
             </div>
 
