@@ -1370,9 +1370,6 @@ video {
   --tw-backdrop-sepia:  ;
 }.container {
   width: 100%;
-}@media (min-width: 375px) {.container {
-    max-width: 375px;
-  }
 }@media (min-width: 640px) {.container {
     max-width: 640px;
   }
@@ -3025,11 +3022,6 @@ video {
   }.dark\:focus\:ring-blue-500:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
-  }
-}@media (min-width: 375px) {.xs\:flex {
-    display: flex;
-  }.xs\:flex-wrap {
-    flex-wrap: wrap;
   }
 }@media (min-width: 640px) {.sm\:col-span-4 {
     grid-column: span 4 / span 4;

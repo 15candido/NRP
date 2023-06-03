@@ -7,7 +7,7 @@
         </a>
         <div>{!! $slot !!}</div>        
     </div>
-    <div class="border h-16 w-16 px-4">
-        A
+    <div class="solid border h-16 w-16 px-4">
+        
     </div>
 </article>
