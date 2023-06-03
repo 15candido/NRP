@@ -17,11 +17,18 @@ return [
         'projects_text' => '<p></p>',
         'education_support' => 'Apoio à Educação',
         'education_support_text' => '<p>Temos dado apoio a equipar 220 salas de aulas em 49 escolas e fornecemos material escolar aos 10 000 alunos das escolas de Catió. Montamos 5 bibliotecas e criamos uma biblioteca itinerante.</p>',
+        'casa_mame' => 'Casa da Mamé',
+        'casa_mame_text' => '<p>A Casa da Mamé é uma casa coração que acolhe crianças cuja mãe morreu durante o parto.</p>',
+        'ceet' => 'Centro de Educação Especial e Terapêutica (CEET)',
+        'ceet_text' => '<p>O CEET funciona na Tabanca dos Pequeninos. É um centro clínico dedicado ao diagnóstico, tratamento e melhoria da qualidade de vida de crianças com deficiência.</p>',
+        'hospital_support' => 'Apoio à Saúde',
+        'hospital_support_text' => '<p>Ajudamos o Hospital de Catió e Centros de Saúde com apoio médico, equipamento e material hospitalar, medicamentos e, na melhoria das condições de funcionamento.</p>',
         'achievements_title' => 'O que já alcançamos',
-        'achievements_text' => 'Começou por ser “formação aos professores”, tornou-se numa missão de criar condições dignas de estudo para cerca de 10.000 alunos, bolsas de estudo, casa de acolhimento para as crianças órfãs, bibliotecas e salas de informática.',
+        'achievements_text' => '<p>Começou por ser “formação aos professores”, tornou-se numa missão de criar condições dignas de estudo para cerca de 10.000 alunos, bolsas de estudo, casa de acolhimento para as crianças órfãs, bibliotecas e salas de informática.</p>',
         'how_to_help_title' => 'Como ajudar?',
         'how_to_help_text' => 'Neste processo, de fazer o mundo num lugar melhor, todos contam. A iniciativa que tomar pode nos deixar mais perto do objetivo. Junte-se a nós, escolha como deseja contribuir na missão da "Na Rota dos Povos"',
         'partners_title' => 'Parceiros',
         'partners_text' => 'Não estamos sozinhos, nesta busca por um mundo melhor, mais justo e inclusivo, onde o ser humano e o meio ambiente são centro das atenções. Temos vários parceiros que colaboram connosco, contribuindo de forma direta e direta no desenvolvimento da na missão.'
+
     ]
 ];

@@ -1,4 +1,4 @@
-<div class="my-16">
+<div class="bg-gray-100 my-16 pt-8 pb-16">
     <x-section size="full">
         <x-paragraph title="{{ __('information.welcome.projects_title') }}">
             {!! __('information.welcome.projects_text') !!}
@@ -11,21 +11,21 @@
             </x-project>
 
             <x-project 
-                name="{!! __('information.welcome.education_support') !!}"
+                name="{!! __('information.welcome.casa_mame') !!}"
                 image="/images/project/mame.jpg">
-                {!! __('information.welcome.education_support_text') !!}
+                {!! __('information.welcome.casa_mame_text') !!}
             </x-project>
 
             <x-project 
-                name="{!! __('information.welcome.education_support') !!}"
+                name="{!! __('information.welcome.ceet') !!}"
                 image="/images/project/ceet.jpg">
-                {!! __('information.welcome.education_support_text') !!}
+                {!! __('information.welcome.ceet_text') !!}
             </x-project>
 
             <x-project 
-                name="{!! __('information.welcome.education_support') !!}"
+                name="{!! __('information.welcome.hospital_support') !!}"
                 image="/images/project/health.jpg">
-                {!! __('information.welcome.education_support_text') !!}
+                {!! __('information.welcome.hospital_support_text') !!}
             </x-project>
         </div>
     </x-section>

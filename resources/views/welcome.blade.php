@@ -21,29 +21,18 @@
         </x-paragraph>
     </x-section>
 
-    <x-projects class="my-8"/>
+    <x-projects/>
     
+    <x-section>
+        <x-paragraph title="{{ __('information.welcome.achievements_title') }}">        
+            {!! __('information.welcome.achievements_text') !!}
+        </x-paragraph>
+    </x-section>
+
     <div class="relative flex flex-col mx-auto justify-center items-center">
         
-        <section class="fixed-width grid md:grid-cols-2 gap-12 px-5 lg:px-10 data-block">        
-            
-            
-        </section>
-        <!-- Ongoing project -->
-        <x-cards.structureWithBg>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
-                <x-projects.ongoing :projects="$projects" />
-            </div>
-        </x-cards.structureWithBg>
-
         <!-- Impacts/achivement -->
         <x-cards.structureWhitOutBg>
-            
-            <div>
-                <div class="font-bold">{{ __('information.welcome.achievements_title') }}</div>
-                <div>{{ __('information.welcome.achievements_text') }}</div>
-            </div>
             
             <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
                 <x-cards.impact :impacts="$impacts" />

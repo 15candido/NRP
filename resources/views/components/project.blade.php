@@ -1,13 +1,10 @@
 @props(['image' => null, 'name' => null])
-<article class="shadow-xl bg-blue-100 rounded-xl">
-    <img src="{{ $image }}" class="hover:opacity-75">
-    <div class="p-4 rounded-lg">
-        <a href="#">
-            <h4>{{ $name }}</h4>
-        </a>
-        <div>{!! $slot !!}</div>        
-    </div>
-    <div class="solid border h-16 w-16 px-4">
-        
-    </div>
-</article>
+<a href="#" class="hover:scale-[1.01]">
+    <article class="bg-white border-solid shadow-lg border-gray-300 border-2 overflow-hidden rounded-xl ">
+        <img src="{{ $image }}">
+        <div class="px-4 py-2 rounded-lg">        
+            <p class="font-bold">{{ $name }}</p>
+            <div>{!! $slot !!}</div>
+        </div>
+    </article>
+</a>

@@ -1,6 +1,6 @@
 <div class="w-full mb-12">
     <div class="relative h-[383px] sm:h-[433px] xl:h-[497px] 2xl:h-[520px] overflow-hidden">
-        <div x-data="{ visible: 0, images: ['/images/heroes/2.jpg', '/images/heroes/3.jpg', '/images/heroes/4.jpg' , '/images/heroes/5.jpg', '/images/heroes/6.jpg']}">
+        <div x-data="{ visible: 0, images: ['/images/heroes/hero1.jpg', '/images/heroes/hero2.jpg', '/images/heroes/hero3.jpg' , '/images/heroes/hero4.jpg', '/images/heroes/hero5.jpg', '/images/heroes/hero6.jpg', '/images/heroes/hero7.jpg', '/images/heroes/hero8.jpg', '/images/heroes/hero9.jpg', '/images/heroes/hero10.jpg']}">
             {{-- Slides images --}}
             <template x-for="(image, index) in images">
                 <div class="absolute w-full h-full">

@@ -46,9 +46,6 @@
         @apply text-lg;
     }
 
-    a {
-        @apply text-inherit font-bold no-underline;
-    }
 
     a:hover,
     a:visited,
