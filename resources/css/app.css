@@ -11,9 +11,8 @@
     }
 
     p {
-        @apply leading-relaxed
+        @apply leading-relaxed;
     }
-
 
     /* ==================================================== 
         Generic styles

@@ -5,7 +5,7 @@ return [
     'welcome' => [
         'who_we_are_title' => 'Quem somos',
         'who_we_are_text' => 
-            '<p>A “Na Rota dos Povos” é uma Organização não Governamental para o Desenvolvimento (ONGD) com foco de atuação na educação e saúde na região de Tombali, na Guiné-Bissau.</p>
+            '<p>A “Na Rota dos Povos” é uma Organização não Governamental para o Desenvolvimento (ONGD) com foco de atuação na educação, solidariedade social e saúde na região de Tombali, na Guiné-Bissau.</p>
             <p>A sede da ONGD é em Matosinhos e, todas as tarefas, tais como angariações, gestão de recursos, comunicação, e organização de missões, são realizadas por voluntários.</p>
             <p>Temos sede de delegação local na cidade de Catió, a cerca de 300 km da capital Bissau, onde damos emprego a 35 habitantes que colaboram nos diferentes projetos. A integração da ONGD na comunidade Cationense gera também uma onda de participação num país em que a solidariedade é característica deste povo sempre pronto a ajudar o vizinho.</p>',
         'motivation_title' => 'A nossa motivação',
