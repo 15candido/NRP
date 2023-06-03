@@ -27,3 +27,13 @@
 - Resultados da Academia
 
 
+# Fotografias
+
+## Armazém Catió
+https://photos.google.com/share/AF1QipP0-Dk6HUz7W5JcGI3STDTxgk0Vujbk6Lym46d3U12BFXD-EI8U8rUq418bFNqxWg?key=Slc1cjM5OFlzemRpVGtvVzNhZGtsNTBZN0NnSkh3
+
+## CEET
+https://photos.google.com/share/AF1QipO3fuh64PAPMtpkS2gnra7P-gzUp-dDYKAnNaDnOu38ykCBZrA5h2VYwJUssaA0fg?key=dmdLM2Fvbkl6ZGZZV0NDVzJHWXdhclRmOXV1RVV3
+
+## Casa da Mamé
+https://photos.google.com/share/AF1QipN_q69rYPCxLLAiOtiRFa1Lg6LHloExlRc_thX5wPfZe0-1xF_zBYL_ZjtQ9wQVQg?key=UjRWVnhPREtGbHFUdXVKNS1tN0E4NXFSOG5qUHhR

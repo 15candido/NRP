@@ -1,30 +1,37 @@
 <!-- Homapage/landing -->
 <x-guestLayout>
-    <div class="w-full">
+    <div class="w-full my-6">
         {{-- Just to test hero --}}
         <x-homepage.hero />
     </div>
-    {{--Page title--}}
-    <x-slot name="title">
-        {{ ('Home') }}
-    </x-slot>
-    <!-- Main container -->
+        
+    <x-motto/>
+
+    <x-paragraph title="{{ __('information.welcome.who_we_are_title') }}">        
+        <div>{!! __('information.welcome.who_we_are_text') !!}</div>
+    </x-paragraph>
+
+    <x-paragraph title="{{ __('information.welcome.motivation_title') }}">        
+        <div>{!! __('information.welcome.motivation_text') !!}</div>
+    </x-paragraph>
+    
+
+
+    <hr class="my-16 "/>
+
     <div class="relative flex flex-col mx-auto justify-center items-center">
-        <!-- Slogan -->
-        <x-sections.slogan_section slogan="A Educação é o Único Caminho" />
-        <!-- About Us  -->
-        <section class="fixed-width grid md:grid-cols-2 gap-12 px-5 lg:px-10 data-block">
-            <x-cards.card_overview title="A Na Rota dos Povos" description="É uma ONG para o desenvolvimento, 
-            integralmente constituída por voluntários e sustentada em donativos de amigos e algumas empresas." />
-            <x-cards.card_overview title="A Nossa Motivação" description="É a melhoria das condições de vida 
-            na região de Tombali, no sul da Guiné-Bissau e porque acreditamos que a “A Educação é o Único 
-            Caminho” desde 2010 que apoiamos as escolas e as crianças na região de Tombali." />
+        
+
+        <section class="fixed-width grid md:grid-cols-2 gap-12 px-5 lg:px-10 data-block">        
+            
+            
         </section>
         <!-- Ongoing project -->
         <x-cards.structureWithBg>
-            <x-sections.text_section_block title="Projetos em curso" paragraph="Continuamos a trabalhar para fornecer material e 
-                mobiliários escolar às escolas de Catió, cuidado e alimentação às crianças da Casa da Mamé, apoio ao hospital Musna Sambú 
-                e cuidado às crianças com deficiência." />
+            <div>
+                <div class="font-bold">{{ __('information.welcome.projects_title') }}</div>
+                <div>{{ __('information.welcome.projects_text') }}</div>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
                 <x-projects.ongoing :projects="$projects" />
             </div>
@@ -32,9 +39,12 @@
 
         <!-- Impacts/achivement -->
         <x-cards.structureWhitOutBg>
-            <x-sections.text_section_block title="O que já alcançamos" paragraph=" Começou por ser “formação aos professores”, 
-                tornou-se numa missão de criar condições dignas de estudo para cerca de 10.000 alunos, bolsas de estudo, casa de 
-                acolhimento para as crianças órfãs, bibliotecas e salas de informática." />
+            
+            <div>
+                <div class="font-bold">{{ __('information.welcome.achievements_title') }}</div>
+                <div>{{ __('information.welcome.achievements_text') }}</div>
+            </div>
+            
             <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
                 <x-cards.impact :impacts="$impacts" />
             </div>
@@ -42,9 +52,11 @@
 
         <!-- How to help -->
         <x-cards.structureWithBg>
-            <x-sections.text_section_block title="Como ajudar?" paragraph=" Neste processo, de fazer o mundo num lugar
-                melhor, todos contam. A iniciativa que tomar pode nos deixar mais perto do objetivo. Junte-se a nós,
-                escolha como deseja contribuir na missão da “Na Rota dos Povos”." />
+            <div>
+                <div class="font-bold">{{ __('information.welcome.how_to_help_title') }}</div>
+                <div>{{ __('information.welcome.how_to_help_text') }}</div>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-40 justify-center items-center">
                 <div class="flex flex-col items-center text-center">
                     <p>Apoie as nossas crianças tornando-se num firquidja da Casa da Mamé!</p>
@@ -63,9 +75,10 @@
 
         <!-- Partners -->
         <x-cards.structureWhitOutBg>
-            <x-sections.text_section_block title="Parceiros" paragraph="Não estamos sozinhos, nesta busca por um mundo melhor, 
-                mais justo e inclusivo, onde o ser humano e o meio ambiente são centro das atenções. Temos vários parceiros que 
-                colaboram connosco, contribuindo de forma direta e direta no desenvolvimento da na missão." />
+            <div>
+                <div class="font-bold">{{ __('information.welcome.partners_title') }}</div>
+                <div>{{ __('information.welcome.partners_text') }}</div>
+            </div>
             <div class="grid grid-cols-4 gap-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 
                 justify-center items-center">
                 <x-cards.partner :partners="$partners" />

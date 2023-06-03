@@ -6,9 +6,33 @@
 
 @layer base {
 
+    h1 {
+        @apply text-4xl md:text-5xl lg:text-6xl;
+    }
+
+    p {
+        @apply leading-relaxed
+    }
+
+
     /* ==================================================== 
         Generic styles
      ==================================================== */
+
+     h1,
+     h2,
+     h3,
+     h4,
+     h5,
+     h6,
+     .title {
+         font-family: 'Open Sans', sans-serif;
+         @apply font-bold uppercase mt-0 mr-0 mb-4 ml-0;
+     }
+ 
+     h1 {
+         @apply text-4xl md:text-5xl lg:text-5xl;
+     }
 
     body,
     *,
@@ -25,21 +49,6 @@
     body {
         font-family: 'Open Sans', Nunito, sans-serif;
         @apply text-base text-gray-600;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .title {
-        font-family: 'Open Sans', sans-serif;
-        @apply font-bold uppercase mt-0 mr-0 mb-4 ml-0;
-    }
-
-    h1 {
-        @apply text-4xl md:text-5xl lg:text-5xl;
     }
 
     h2 {
