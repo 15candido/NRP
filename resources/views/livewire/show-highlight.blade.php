@@ -1,19 +1,20 @@
-<div class="bg-nrp-blue my-16 h-1/2" wire:click="refresh" >
+<div class="relative bg-nrp-blue my-16 h-1/2" wire:click="refresh">
     @php
-        $rotation = collect(['-rotate-1', 'rotate-0', 'rotate-1']);        
+    $rotation = collect(['-rotate-1', 'rotate-0', 'rotate-1']);
     @endphp
     <div class="max-w-full m-auto">
-        <div class="flex">
-            <div class="w-1/2 p-8">
-                <img src="images/highlights/{{ $highlight->image }}" class="border-white border-solid border-8 {{ $rotation->random() }} rounded">
+        <div class="grid grid-cols-2 gap-6">
+            <div class="p-8">
+                <img src="images/highlights/{{ $highlight->image }}" class="w-[893px] h-96 object-cover border-white border-solid border-8 
+                {{ $rotation->random() }} rounded">
             </div>
-            <div class="w-1/2 self-center mx-16 ">
+            <div class="self-center mx-16 ">
                 @if ($highlight->title)
                     <p class="text-center font-bold bg-white py-2 {{ $rotation->random() }} text-black text-3xl mb-2">{{ $highlight->title }}</p>
                 @endif
-                <p class="text-center text-white text-2xl">{{ $highlight->description }}</p>    
+                <p class="text-center text-white text-2xl">{{ $highlight->description }}</p>
             </div>
         </div>
     </div>
-    <img class="h-12" src="images/icons/refresh.svg" wire:click="refresh"/>
+    <img class="absolute z-10 left-14 bottom-10 h-12" src="images/icons/refresh.svg" wire:click="refresh"/> 
 </div>
