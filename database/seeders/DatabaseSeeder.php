@@ -33,6 +33,7 @@ class DatabaseSeeder extends Seeder
             AreaSeeder::class,
             VolunteerSeeder::class,
             TaskSeeder::class,
+            HighlightSeeder::class,
         ]);
 
 

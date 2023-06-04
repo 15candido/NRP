@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
     content: [
@@ -16,7 +17,11 @@ module.exports = {
                 header: ['Oswald', ...defaultTheme.fontFamily.sans],
                 body: ['Open Sans', ...defaultTheme.fontFamily.serif],
             },
+            colors: {
+                'nrp-blue': '#0083b3',
+            },
         },
+                
     },
 
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]

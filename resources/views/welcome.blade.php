@@ -15,53 +15,19 @@
         <x-paragraph title="{{ __('information.welcome.motivation_title') }}">        
             {!! __('information.welcome.motivation_text') !!}
         </x-paragraph>
-        
-        <x-paragraph title="{{ __('information.welcome.motivation_title') }}">        
-            {!! __('information.welcome.motivation_text') !!}
-        </x-paragraph>
+                
     </x-section>
 
     <x-projects/>
+
+    <x-welcome.achievements/>
     
-    <x-section>
-        <x-paragraph title="{{ __('information.welcome.achievements_title') }}">        
-            {!! __('information.welcome.achievements_text') !!}
-        </x-paragraph>
-    </x-section>
+    <livewire:show-highlight/>
 
+    <x-welcome.how_to_help/>
+    
     <div class="relative flex flex-col mx-auto justify-center items-center">
-        
-        <!-- Impacts/achivement -->
-        <x-cards.structureWhitOutBg>
-            
-            <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
-                <x-cards.impact :impacts="$impacts" />
-            </div>
-        </x-cards.structureWhitOutBg>
-
-        <!-- How to help -->
-        <x-cards.structureWithBg>
-            <div>
-                <div class="font-bold">{{ __('information.welcome.how_to_help_title') }}</div>
-                <div>{{ __('information.welcome.how_to_help_text') }}</div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-40 justify-center items-center">
-                <div class="flex flex-col items-center text-center">
-                    <p>Apoie as nossas crianças tornando-se num firquidja da Casa da Mamé!</p>
-                    <x-buttons.button string="SER FIRQUIDJA" url="ser_firquidja" />
-                </div>
-                <div class="flex flex-col items-center text-center">
-                    <p>Faça um donativo e seja a mudança que quer ver no mundo!</p>
-                    <x-buttons.button string="DOAR" url="faca_donativo" />
-                </div>
-                <div class="flex flex-col items-center text-center">
-                    <p>Tem algumas horas livres que gostava de dedicar à "Na Rota dos Povos"?</p>
-                    <x-buttons.button string="VOLUNTARIADO" url="voluntariado" />
-                </div>
-            </div>
-        </x-cards.structureWithBg>
-
+                    
         <!-- Partners -->
         <x-cards.structureWhitOutBg>
             <div>

@@ -1,6 +1,6 @@
-<div class="bg-gray-100 my-16 pt-8 pb-16">
+<div class="bg-nrp-blue my-16 pt-8 pb-16">
     <x-section size="full">
-        <x-paragraph title="{{ __('information.welcome.projects_title') }}">
+        <x-paragraph bg="true" title="{{ __('information.welcome.projects_title') }}">
             {!! __('information.welcome.projects_text') !!}
         </x-paragraph>
         <div class="grid grid-cols-4 gap-8 mt-8">
@@ -18,7 +18,7 @@
 
             <x-project 
                 name="{!! __('information.welcome.ceet') !!}"
-                image="/images/project/ceet.jpg">
+                image="/images/project/ceet2.jpg">
                 {!! __('information.welcome.ceet_text') !!}
             </x-project>
 
