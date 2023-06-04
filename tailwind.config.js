@@ -19,6 +19,7 @@ module.exports = {
             },
             colors: {
                 'nrp-blue': '#0083b3',
+                'nrp-green': '#91be4a',
             },
         },
                 

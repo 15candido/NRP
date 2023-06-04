@@ -46,9 +46,9 @@ return [
             'jobs_text' => 'Postos de trabalho',
         ],
         'how_to_help_title' => 'Como ajudar?',
-        'how_to_help_text' => '<p>Neste processo, de fazer o mundo num lugar melhor, todos contam. A iniciativa que tomar pode nos deixar mais perto do objetivo. Junte-se a nós, escolha como deseja contribuir na missão da "Na Rota dos Povos".</p>',
+        'how_to_help_text' => '<p>Se der um pouco vai falta menos. Neste processo de fazer do mundo um lugar melhor, todos contam.</p><p>Junte-se nós! Escolha como quer contribuir.</p>',
         'partners_title' => 'Parceiros',
-        'partners_text' => 'Não estamos sozinhos, nesta busca por um mundo melhor, mais justo e inclusivo, onde o ser humano e o meio ambiente são centro das atenções. Temos vários parceiros que colaboram connosco, contribuindo de forma direta e direta no desenvolvimento da na missão.'
+        'partners_text' => '<p>Não estamos sozinhos, nesta busca por um mundo melhor, mais justo e inclusivo, onde o ser humano e o meio ambiente são centro das atenções. Temos vários parceiros que colaboram connosco, contribuindo de forma direta e direta no desenvolvimento da na missão.</p>'
 
     ]
 ];

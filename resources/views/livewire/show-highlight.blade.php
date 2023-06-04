@@ -9,7 +9,7 @@
             </div>
             <div class="w-1/2 self-center mx-16 ">
                 @if ($highlight->title)
-                    <p class="text-center font-bold bg-white {{ $rotation->random() }} text-black text-3xl mb-2">{{ $highlight->title }}</p>
+                    <p class="text-center font-bold bg-white py-2 {{ $rotation->random() }} text-black text-3xl mb-2">{{ $highlight->title }}</p>
                 @endif
                 <p class="text-center text-white text-2xl">{{ $highlight->description }}</p>    
             </div>

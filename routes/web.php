@@ -33,18 +33,7 @@ use Illuminate\Support\Facades\Route;
 //Auth::loginUsingId(1);
 
 Route::get('/', function () {
-
-    $projects = Project::where('visible', true)->get();
-    $impacts = Impact::where('visible', true)->get();
-    $howToHelp = HowToHelp::where('first_option', true)->get();
-    $partners = Partner::all();
-
-    return view('welcome', [
-        'projects' => $projects,
-        'impacts' => $impacts,
-        'howToHelp' => $howToHelp,
-        'partners' => $partners
-    ]);
+    return view('welcome');
 });
 
 Route::get('quem_somos', function () {

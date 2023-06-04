@@ -33,7 +33,7 @@ class HighlightSeeder extends Seeder
         ]);
 
         DB::table('highlights')->insert([
-            'title' => 'Contentores',
+            'title' => 'Apoio às escolas',
             'description' => 'Foi enviado equipamento escolar (mesas, cadeiras, quadros e armários) para equipar 220 salas de aulas em 49 escolas dos sectores de Catió e Komo.',
             'image' => 'highlight3.jpg',
             'category' => 'help',
