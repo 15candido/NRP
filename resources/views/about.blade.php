@@ -5,62 +5,32 @@
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
         <x-cards.page_hero pageName="Quem Somos" image="/images/project/carouselus2.jpg" />
-        <x-cards.structureWhitOutBg>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {{-- Short description --}}
-                <x-cards.page_card_overview title="A Na Rota dos Povos" description="É uma ONGD – Organização 
-                Não Governamental para o Desenvolvimento, criada em 2001, com sede em Matosinhos. Toda a sua 
-                atividade é assegurada por voluntários. Atua há mais de 10 anos no Sul da Guiné-Bissau, sob o 
-                lema A Educação é o Único Caminho, contribuindo em vários setores da sociedade e dando apoio à 
-                comunidade, com participação ativa na identificação de problemas e na sua resolução, mantendo
-                como principais áreas de intervenção a educação, o apoio social e a saúde." />
 
-                {{-- Image --}}
-                <x-cards.image_card image="images/team/team.jpg" />
-            </div>
-        </x-cards.structureWhitOutBg>
-        <x-cards.structureWithBg>
-            {{-- Mission, vision and value section  --}}
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 overflow-hidden">
+        <x-section>
+            <x-paragraph title="Sobre nós">
+                <p>A “Na Rota dos Povos” é uma Organização Não Governamental para o Desenvolvimento (ONGD), criada em 2001, com sede em Matosinhos, Portugal. Toda a nossa atividade é assegurada por voluntários. Atuamos, há mais de 10 anos, no Sul da Guiné-Bissau, sob o lema <b class="text-nrp-blue">“A Educação é o Único Caminho”</b>, com o objetivo de melhorar o desenvolvimento dos povos em zonas mais carenciadas, fora dos grandes centros populacionais.  </p>
+                <p>A nossa <b class="text-nrp-blue">missão</b> é apoiar e desenvolver ações para a defesa, elevação e manutenção da qualidade de vida do ser humano e do meio ambiente, através do desenvolvimento de atividades de carácter educativo, social, cultural, ambiental e desportivo.</p>
+                <p><b class="text-nrp-blue">Valorizamos</b> a cooperação, o diálogo intercultural e o apoio direto e efetivo a projetos de organizações congéneres nacionais ou internacionais, nomeadamente através da conceção, execução, facilitação e realização de programas em áreas privilegiadas como a educação, o apoio social e a saúde.</p>
+            </x-paragraph>
 
-                {{-- Mission --}}
-                <x-cards.page_card_title title="Missão" description="A nossa missão é apoiar o desenvolvimento 
-                dos países PALOP, fora dos grandes centros populacionais, em zonas carenciadas ao nível da educação, 
-                formação cultural, saúde, proteção infantil e do ambiente." />
+        </x-section>
 
-                {{-- Vision --}}
-                <x-cards.page_card_title title="Visão" description="Temos como objetivo apoiar e desenvolver 
-                ações para a defesa, elevação e manutenção da qualidade de vida do ser humano e do meio ambiente,
-                através do desenvolvimento de atividades de caráter educativo, social, cultural, ambiental e 
-                desportivo." />
+        <x-section_with_image src="/images/maps/guinebissau.png">
+            <x-paragraph title="Sobre a Guiné-Bissau">
+                <p>A Guiné-Bissau é um pequeno país da África ocidental constituído por uma parte continental e outra insular que engloba o arquipélago dos Bijagós. A sua superfície é de 36 125 km2 (cerca de 1/3 da área de Portugal) e tem aproximadamente 2 milhões de habitantes (cerca de 1/5 da população portuguesa). 55% dos habitantes são jovens até aos 19 anos (de acordo com dados do Instituto Nacional de Estatística da Guiné- Bissau de 2017). É, portanto, um país com extrema predominância de crianças e jovens, faixas etárias mais frágeis, mas, por outro lado, aquelas em que melhorias na educação e na saúde são mais promissoras.</p>
+                <p>O crioulo é considerado a língua nacional e é o meio de comunicação entre os diferentes grupos étnicos. O português, declarada língua oficial, é pouco falado e o seu uso limita-se aos meios oficiais e a um pequeno número de guineenses.</p>
+                <p>Cerca de metade da população adulta não sabe ler nem escrever.</p>
+                <p>Aproximadamente 66,6% da população vivia abaixo do limiar da pobreza em 2020 (ou seja, com menos de dois dólares norte-americanos por dia).</p>
+            </x-paragraph>
+        </x-section_with_image>
 
-                {{-- Valeus --}}
-                <x-cards.page_card_title title="Valores" description='Temos presente que só a educação pode 
-                melhorar o desenvolvimento dos povos, daí o nosso lema “A Educação é o Único Caminho"' />
+        <x-section>
+            <x-paragraph>
+                <p>Desde 2011 que focamos a nossa actividade na região de Tombali, uma das regiões mais carenciadas da Guiné-Bissau. Criámos a nossa sede da delegação local na cidade de Catió, que dista cerca de 300 km da capital Bissau.</p>
+            </x-paragraph>
+        </x-section>
 
-            </div>
-        </x-cards.structureWithBg>
-        <x-cards.structureWhitOutBg>
-            {{-- Where we are --}}
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <x-cards.map_card image="/images/maps/guinebissau.png" alt="Mapa da Guiné-Bissau" />
-                <div class="flex flex-col">
-                    <h3>Guiné-Bissau</h3>
-                    <span class="flex flex-col break-words">
-                        <p class="font-bold">Desde 2011 que focamos a nossa actividade na região mais
-                            carenciada da Guiné Bissau, a região de Tombali, e temos a nossa sede da Delegação local na cidade de Catió, que dista
-                            cerca de 300 km da capital Bissau.
-                        </p>
-                        <p>A Guiné-Bissau é um pequeno país da África ocidental constituído por uma
-                            parte continental e outra insular que engloba o arquipélago dos Bijagós. A sua superfície é de 36.125 km e tem 1.565,000
-                            habitantes. Cerca de 850.000 -55 % são jovens até aos 19 anos (estim. 2017 dados INE Guin- Bissau). É portanto um país com
-                            extrema predominância de crianças e jovens, faixas etárias mais frágeis, mas, ao mesmo tempo, aquelas em que melhorias na
-                            educação e na saúde se podem revelar mais compensadoras.
-                        </p>
-                        <p>O rácio de alunos por sala de aula é de 101 alunos/sala.</p>
-                    </span>
-                </div>
-            </div>
-        </x-cards.structureWhitOutBg>
+        <div class="my-8"></div>
+
     </div>
 </x-guestLayout>

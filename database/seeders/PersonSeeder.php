@@ -408,7 +408,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Projetos',
-                'picture' => 'images/team/dida.jpg',
+                'picture' => 'images/team/dida2.jpg',
             ]
         );
 

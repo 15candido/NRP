@@ -12,7 +12,7 @@
 
             <x-project 
                 name="{!! __('information.welcome.casa_mame') !!}"
-                image="/images/project/mame.jpg">
+                image="/images/project/mame2.jpg">
                 {!! __('information.welcome.casa_mame_text') !!}
             </x-project>
 
