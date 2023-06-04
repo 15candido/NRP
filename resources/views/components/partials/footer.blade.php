@@ -1,4 +1,4 @@
-<div class="footer">
+<div class="footer bg-nrp-blue">
     <div class="footer-container">
         <ul class="footer-nav">
             <li class="footer-links logo">
@@ -35,7 +35,7 @@
     <div class="social-media">
         <div class="social-media-container">
             <div class="copyright">
-                <p>&copy; 2022 - Todos os direitos reservados. Política de Privacidade</p>
+                <p>&copy; 2023 - Todos os direitos reservados. Política de Privacidade</p>
             </div>
             <ul class="social-media-icon">
                 <li>

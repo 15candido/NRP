@@ -1,4 +1,4 @@
-<div class="grid grid-cols-4 gap-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 
-            justify-center items-center my-12">
+<div class="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 
+            justify-center items-center my-12 gap-8">
     <x-cards.partner :partners="$partners" />
 </div>

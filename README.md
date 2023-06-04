@@ -1,8 +1,5 @@
 # Prioritário
 
-- Hero (Bullet points)
-- Alinhamento do símbolo, hero navigation button 
-- Acrescentar equipa de desenvolvimento 
 - Colocar fotos 
 - Projetos / imagens 
 - Colocar Estatutos - It has been removed for now! 
@@ -25,7 +22,12 @@
 - Página estatuto o que fazer? 
 - Definir o que deve ser exibido no dashboard!!
 - Resultados da Academia
+- Consultar se as cotas estão atualizadas
 
+## Carousel / Hero
+
+- Ir buscar imagens à base de dados
+- Se o utilizador clicar, parar o temporizador
 
 # Fotografias
 

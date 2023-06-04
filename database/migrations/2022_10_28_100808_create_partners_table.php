@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('partners', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('alt');
             $table->string('logo');
             $table->boolean('visible')->default(true);
+            $table->string('website')->nullable();
             $table->timestamps();
         });
     }

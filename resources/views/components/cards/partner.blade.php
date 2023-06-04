@@ -1,8 +1,5 @@
 @foreach($partners as $partner)
-<div class="col-span-1 p-1 rounded-lg shadow-md">
-    <a href="#">
-        <img src="/images/partner/{{ $partner->logo }}" alt="{{ $partner->alt }}" class="object-contain object-center
-            w-[100px] h-[56px]" />
-    </a>
-</div>
+<a href="{{ $partner->website }}">
+    <img class="max-h-24" src="/images/partner/{{ $partner->logo }}" alt="{{ $partner->name }}"  />
+</a>
 @endforeach
