@@ -209,3 +209,7 @@ Route::get('/np', function () {
     $projects = Project::with('needs')->get();
     return view('np', compact('projects'));
 });
+
+Route::get('/desenvolvidores', function () {
+    return view('webmaster');
+});
