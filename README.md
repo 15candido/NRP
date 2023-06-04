@@ -27,7 +27,7 @@
 ## Carousel / Hero
 
 - Ir buscar imagens à base de dados
-- Se o utilizador clicar, parar o temporizador
+- Se o utilizador clicar no carousel, parar o temporizador
 
 # Fotografias
 
