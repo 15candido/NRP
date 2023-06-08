@@ -528,7 +528,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'images/user/womanprofile.jpg',
+                'picture' => 'images/team/brinsam.jpg',
             ]
         );
 
@@ -636,7 +636,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'images/user/menprofile.jpg',
+                'picture' => 'images/team/alfredo.jpg',
             ]
         );
 
@@ -648,7 +648,7 @@ class PersonSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 'profile' => 'team_gb',
                 'role' => 'Casa da Mamé',
-                'picture' => 'images/user/womanprofile.jpg',
+                'picture' => 'images/team/odete.jpg',
             ]
         );
 
@@ -673,6 +673,18 @@ class PersonSeeder extends Seeder
                 'profile' => 'team_gb',
                 'role' => 'Assesssora',
                 'picture' => 'images/team/maria.jpg',
+            ]
+        );
+
+        DB::table('people')->insert(
+            [
+                'name' => $name =  "Lulu da Silva Té",
+                'username' => Str::slug($name),
+                'email' => 'lulu@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Fisioterapeuta',
+                'picture' => 'images/team/lulu.jpg',
             ]
         );
     }
