@@ -2,8 +2,21 @@
     {{--Page title--}}
     <x-slot name="title">
         {{ ('Projeto - Casa da Mamé') }}
-    </x-slot>
-    <div class="flex flex-col min-h-screen justify-start items-center">
+    </x-slot>    
+
+    <x-cards.page_hero pageName="A Educação é o único Caminho" image="/images/selected/casa_mame.jpg" />
+    
+    <x-section>        
+        <x-paragraph title="Casa da Mamé">
+            <p>Perante a necessidade urgente de apoio às crianças cuja mãe morre durante o parto, a Na Rota dos Povos decidiu, em 2017, criar uma casa de acolhimento - a Casa da Mamé, que funciona na cidade de Catió. A Casa da Mamé é uma casa coração que acarinha estas crianças, permitindo-lhes ter alimentação, acesso à educação, possibilidade de brincar e ter um abraço de amor…é um verdadeiro lar. É gerida diariamente a partir de Portugal, e inteiramente financiada por donativos de Firquidjas (particulares e empresas).</p>
+            <p>Um Firquidja é, em crioulo guineense, um membro da família que garante que tudo corre bem. Assim são também considerados todos que, generosamente, contribuem para que tudo corra bem a esta grande família na Casa Mamé.</p>
+            <p>À data de Junho de 2023, a casa acolhe e tutela 19 crianças de ambos os sexos e diferentes idades. A ONGD dá emprego a 15 pessoas de Catió para garantir o correto funcionamento da casa, designadamente amas, cozinheira, lavadeira, coordenador e jardineiro, contribuindo para a sustentabilidade e desenvolvimento económico da região. </p>
+        </x-paragraph>
+    </x-section>
+
+
+
+    {{--<div class="flex flex-col min-h-screen justify-start items-center">
         <x-cards.page_hero pageName="Casa de acolhimento - Orfanato" image="/images/project/carouselhouse.jpg" />
         <x-cards.structureWhitOutBg>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -28,5 +41,5 @@
                 <x-cards.project_card_completed_tasks title="Sala de estudo" note="Temos uma sala de estudo onde as nossas crianças pudessem realizar as atividades lúdicas, pedagógicas..." image="/images/outline/studyhall.jpg" />
             </div>
         </x-cards.structureWithBg>
-    </div>
+    </div>--}}
 </x-guestLayout>

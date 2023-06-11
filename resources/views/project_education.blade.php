@@ -3,24 +3,22 @@
     <x-slot name="title">
         {{ ('Projeto - A Educação é o Único Caminho') }}
     </x-slot>
-    <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-cards.page_hero pageName="A Educação é o único Caminho" image="/images/project/carouseleducation2.jpg" />
-        <x-cards.structureWhitOutBg>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <x-cards.page_card_overview title="A Educação é o Único Caminho" description="A educação é um fator 
-                essencial para o desenvolvimento dos povos e a Guiné-Bissau é um caso grave neste campo. Faltam 
-                salas de aula, quadros, carteiras e cadeiras. As crianças, que são muitas, estavam na maioria 
-                das vezes sentadas em tijolos ou pedras, com um tronco a fazer de mesa e, claro, sem livros nem 
-                cadernos. Faltam professores, e estes fazem greves infindáveis. As paredes são de blocos de 
-                terra escura, secos ao sol, e os telhados são feitos de zinco ou palha. A fragilidade deste 
-                tipo de construção não permite ter janelas com dimensões minimamente razoáveis. As paredes são 
-                muito vulneráveis à chuva e também aos insetos rastejantes. Um dos grandes problemas das salas 
-                de aulas é a sua fraca luminosidade. Dadas as condições do território envolvente, é difícil 
-                manter as salas com aspecto limpo, asseado e atraente para as crianças e professores." />
-                <x-cards.image_card image="/images/project/education.jpg" />
-            </div>
-        </x-cards.structureWhitOutBg>
-        <x-cards.structureWithBg>
+    
+    <x-cards.page_hero pageName="A Educação é o único Caminho" image="/images/project/carouseleducation2.jpg" />
+    
+    <x-section>
+        
+        <x-paragraph title="Apoio às Escolas">
+            <p>De acordo com dados da <a class="text-nrp-blue" href="https://data.unicef.org/wp-content/uploads/2021/12/Guinea-Bissau-Education-Fact-Sheet-2018.pdf">UNICEF</a>, de 2021, estima-se que 160 mil crianças estejam fora da escola na Guiné-Bissau, metade das quais deveriam estar a frequentar o ensino básico. Aproximadamente 85% das crianças na Guiné-Bissau não têm um livro em casa.</p>
+            <p>As taxas de conclusão diminuem a cada nível educativo na Guiné-Bissau. Em média 27% das crianças concluem os primeiros ciclos do ensino básico (1º e 2º), 17 % o 3º ciclo e apenas 11% o nível secundário. Para além das baixas taxas de conclusão, há fortes desigualdades no país, sobretudo ligadas ao nível de riqueza dos agregados familiares, local de residência, género e etnia das crianças. Aliado a graves problemas como o trabalho infantil e o casamento precoce, as condições e acesso às escolas são muito precários. Faltam professores, livros, manuais escolares, salas de aula, carteiras, cadeiras. As paredes das salas são em blocos de terra escura secos ao sol e os telhados de zinco ou palha. A fragilidade deste tipo de construção não permite ter janelas com dimensões razoáveis, havendo muito pouca luminosidade. As paredes são muito vulneráveis à chuva, e é difícil manter as salas com aspeto limpo.</p>
+            <p>A “Na Rota dos Povos” trabalha em parceria com algumas escolas portuguesas, seguindo sempre o lema de que “A Educação é o Único Caminho”.</p>
+            <p>Equipámos 220 salas de aulas em 49 escolas dos setores de Catió e Komo e fornecemos, anualmente, material escolar aos 10 000 alunos das escolas de Catió. Montámos 5 bibliotecas fixas (duas em Catió, uma das quais infantil; Quebo, Bedanda e Cacine). Criámos também um conceito desconhecido em Tombali, uma biblioteca itinerante, que consiste numa moto que transporta livros pelas diferentes aldeias.</p>
+            <p>Criámos 2 sala de informática com cerca de 30 computadores cada sala, e contribuímos para a formação de professores.</p>
+        </x-paragraph>
+
+    
+        {{--        
+            <x-cards.structureWithBg>
             <h3>O que foi feito</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                 <x-cards.project_card_completed_tasks title="Angariação" note="Angariamos e distribuímos o conteúdo de 31 contentores de 76,4m3 de capacidade." image="/images/outline/container2.jpg" />
@@ -30,5 +28,6 @@
                 <x-cards.project_card_completed_tasks title="Bibliotecas" note="Criamos e montamos 5 bibliotecas com cerca de 10.000 livros, com o apoio da ONGD Portuguesa TABANCA." image="/images/outline/libary.jpg" />
             </div>
         </x-cards.structureWithBg>
-    </div>
+        --}}
+</x-section>
 </x-guestLayout>

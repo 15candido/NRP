@@ -3,6 +3,28 @@
     <x-slot name="title">
         {{ ('Como Ajudar') }}
     </x-slot>
+
+
+    
+    <x-section>        
+        <x-paragraph title="Como ajudar?">
+            <p>Se der um pouco vai falta menos.</p>
+            <p>Neste processo de fazer do mundo um lugar melhor, todos contam.</p>
+            <p>Junte-se nós! Escolha como quer contribuir.</p>
+        </x-paragraph>
+
+        Apoie as nossas crianças tornando-se num firquidja da Casa da Mamé!
+        SER FIRQUIDJA
+        Faça um donativo e seja a mudança que quer ver no mundo!
+        DOAR
+        Tem algumas horas livres que gostava de dedicar à "Na Rota dos Povos"?
+        VOLUNTARIADO
+
+    </x-section>
+
+
+    {{--
+
     <div class="flex flex-col min-h-screen justify-center items-center">
         <x-cards.structureWhitOutBg>
             <div class="flex flex-col gap-12 mt-12">
@@ -27,4 +49,5 @@
             </div>
         </x-cards.structureWhitOutBg>
     </div>
+    --}}
 </x-guestLayout>

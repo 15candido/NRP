@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Person;
 use Faker\Provider\Lorem;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -16,7 +17,7 @@ class PersonSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
+    {        
 
         DB::table('people')->insert([
 
@@ -44,7 +45,7 @@ class PersonSeeder extends Seeder
 
         DB::table('people')->insert([
 
-            'name' => $name =  'Rubem Almeida',
+            'name' => $name =  'Rúben Almeida',
             'username' => Str::slug($name),
             'email' => 'ruben@narotadospovos.or',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -91,7 +92,7 @@ class PersonSeeder extends Seeder
         ]);
 
         DB::table('people')->insert([
-            'name' => $name =  'Octávio Colhe',
+            'name' => $name =  'Octávio Coelho',
             'username' => Str::slug($name),
             'email' => 'octavio@narotadospovos.or',
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -390,6 +391,19 @@ class PersonSeeder extends Seeder
 
         DB::table('people')->insert(
             [
+                'name' => $name =  'Fatumata Baldé',
+                'username' => Str::slug($name),
+                'email' => 'fatumata@narotadospovos.org',
+                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                'profile' => 'team_gb',
+                'role' => 'Coordenadora Educação',
+                'picture' => 'images/team/fatu.jpg',
+            ]
+        );
+
+
+        DB::table('people')->insert(
+            [
                 'name' => $name =  'Alfa Sané',
                 'username' => Str::slug($name),
                 'email' => 'alfa@narotadospovos.org',
@@ -436,17 +450,6 @@ class PersonSeeder extends Seeder
             ]
         );
 
-        DB::table('people')->insert(
-            [
-                'name' => $name =  'Fatumata Baldé',
-                'username' => Str::slug($name),
-                'email' => 'fatumata@narotadospovos.org',
-                'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                'profile' => 'team_gb',
-                'role' => 'Coordenadora Educação',
-                'picture' => 'images/team/fatu.jpg',
-            ]
-        );
 
         DB::table('people')->insert(
             [

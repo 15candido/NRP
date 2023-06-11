@@ -18,7 +18,7 @@
     </main>
 
     {{-- Footer section --}}
-    <x-partials.footer />
+    <div class="mt-12"><x-partials.footer/></div>
 
     {{-- Scripts section --}}
 

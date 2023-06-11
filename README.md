@@ -1,16 +1,7 @@
 # Prioritário
 
-- Colocar fotos 
-- Projetos / imagens 
 - Colocar Estatutos - It has been removed for now! 
-- Logotipos - Done
-- Espaço em cima e em baixo do hero - Done 
-- Título dos projetos deve estar visível - Done
-- Lupa (retirar) - Done
-- Simplificar o efeito do hover - Done 
-- Retirar textos "Lorem" - Done 
-- Retirar os relatórios (ou colocar os que são necessários) - Done 
-- Apoio à saúde (tem que estar relacionado) - Done 
+- Retirar o Login
 
 # To do list 
 
@@ -23,6 +14,10 @@
 - Definir o que deve ser exibido no dashboard!!
 - Resultados da Academia
 - Consultar se as cotas estão atualizadas
+- Pensar uma forma de gerir as imagens
+    - Colocar forma de alterar facilmente as imagens do carousel (administração)
+    - Idem para as imagens principais das páginas
+- Remover as imagens da pasta "selected"
 
 ## Carousel / Hero
 

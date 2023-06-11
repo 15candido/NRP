@@ -3,7 +3,20 @@
     <x-slot name="title">
         {{ ('Projeto - Apoio à saúde') }}
     </x-slot>
-    <div class="flex flex-col min-h-screen justify-start items-center">
+
+    <x-cards.page_hero pageName="Apoio à saúde" image="/images/project/carouselhealth.jpg" />
+    
+    <x-section>        
+        <x-paragraph title="Apoio à Saúde">
+            <p>O Hospital Musna Sambú, em Catió, sofre de inúmeras e graves carências que, só não têm consequências mais gravosas graças à dedicação dos seus poucos médicos, enfermeiros, farmacêuticos e outros profissionais. O Hospital ainda não tem acesso a água potável nem energia elétrica, exceto no bloco operatório, onde tem um gerador de apoio, e no serviço de sangue e laboratório, onde têm energia fornecida por painéis solares.</p>
+            <p>Os doentes internados têm de comprar os seus próprios medicamentos e providenciar a sua alimentação. Isto obriga a um enorme esforço das famílias dos doentes, que habitualmente ficam a viver nas instalações do hospital para poderem, assim, apoiar o seu familiar doente e cozinhar as suas refeições. A imagiologia e a estomatologia não funcionam e o laboratório é muito rudimentar.</p>
+            <p>O nosso apoio traduz-se no aporte de vários medicamentos para uso interno, material médico e muitos consumíveis.</p>
+            <p>Entregámos, na ala de enfermagem do hospital, um monitor de sinais vitais. Instalámos uma estação de reanimação neonatal. Colocámos ao serviço do hospital e da comunidade uma incubadora. Entregámos camas hospitalares com objetivo de melhor as condições e garantir o conforto dos doentes. Recuperamos a cisterna de água e o poço, e instalamos 4 pontos de acesso à água, uma vez que só existia um em todo o edifício.</p>
+        </x-paragraph>
+    </x-section>
+
+
+    {{--<div class="flex flex-col min-h-screen justify-start items-center">
         <x-cards.page_hero pageName="Apoio à saúde" image="/images/project/carouselhealth.jpg" />
         <x-cards.structureWhitOutBg>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -29,4 +42,5 @@
             </div>
         </x-cards.structureWithBg>
     </div>
+    --}}
 </x-guestLayout>

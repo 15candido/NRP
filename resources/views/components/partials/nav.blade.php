@@ -57,6 +57,7 @@
                     </form>
                 </li>
                 @else
+                {{--
                 <a href="#" class="flex flex-row justify-between items-center opacity-50 hover:opacity-100 ">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 h-8 fill-none stroke-[2px] 
                     stroke-current p-1.5 opacity-50 hover:opacity-100 rounded-full">
@@ -65,6 +66,7 @@
                     </svg>
                     <span class="text-xs font-bold text-gray-600 uppercase">Login</span>
                 </a>
+                --}}
                 @endif
             </ul>
         </div>
@@ -102,7 +104,7 @@
                         <ul class="sub-menu">
                             <li class="menu-item">
                                 <a href="/projeto.a-educacao-e-o-unico-caminho">
-                                    A Educação é o Único Caminho
+                                    Apoio às escolas
                                 </a>
                             </li>
                             <li class="menu-item">

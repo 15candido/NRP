@@ -4,7 +4,7 @@
         {{ ('Quem Somos') }}
     </x-slot>
     <div class="flex flex-col min-h-screen justify-start items-center">
-        <x-cards.page_hero pageName="Quem Somos" image="/images/project/carouselus2.jpg" />
+        <x-cards.page_hero pageName="Quem Somos" image="/images/selected/who_we_are.jpg" />
 
         <x-section>
             <x-paragraph title="Sobre nós">
