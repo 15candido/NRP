@@ -4,6 +4,8 @@
         {{ ('Projeto - Centro de Educação  Especial e Terapêutica') }}
     </x-slot>
 
+    <x-cards.page_hero pageName="CEET" image="/images/selected/ceet.jpg" />
+    
     <x-section>        
         <x-paragraph title="Centro de Educação Especial e Terapêutica" subtitle="Tabanca dos Pequenitos">
             <p>O Centro de Educação Especial e Terapêutica foi inaugurado em fevereiro de 2023. É um centro totalmente equipado, dedicado ao diagnóstico, tratamento e melhoria da qualidade de vida de crianças com deficiência. Complementa a sua ação disponibilizando educação escolar básica e alimentação. Numa primeira fase, está a acolher 12 crianças com deficiência física e/ou desenvolvimento cognitivo prejudicado. São fornecidas a estas crianças terapias adequadas, educação especial, cuidados de saúde específicos e alimentação diária.</p>
@@ -13,7 +15,6 @@
     </x-section>
 
     {{--<div class="flex flex-col min-h-screen justify-start items-center">
-        <x-cards.page_hero pageName="CEET" image="/images/project/carouselceet.jpg" />
         <x-cards.structureWhitOutBg>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <x-cards.page_card_overview title="Centro de Educação  Especial e Terapêutica" description="O Centro de Educação 

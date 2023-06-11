@@ -109,7 +109,7 @@ Route::get('relatorio', function () {
 });
 
 Route::get('/estatutos', function () {
-    return redirect('/');
+    return view('/estatutos');
 });
 
 Route::get('/voluntariado', function () {

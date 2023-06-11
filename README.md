@@ -1,7 +1,7 @@
 # Prioritário
 
-- Colocar Estatutos - It has been removed for now! 
-- Retirar o Login
+- Acrescentar o linkedIn
+- Melhorar o menu de navegação
 
 # To do list 
 
