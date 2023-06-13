@@ -3,7 +3,8 @@
         <x-paragraph bg="true" title="{{ __('information.welcome.projects_title') }}">
             {!! __('information.welcome.projects_text') !!}
         </x-paragraph>
-        <div class="grid grid-cols-4 gap-8 mt-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-8">
             <x-project 
                 name="{!! __('information.welcome.education_support') !!}"
                 image="images/project/education.jpg">

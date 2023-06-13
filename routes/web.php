@@ -117,6 +117,11 @@ Route::get('/voluntariado', function () {
 });
 
 
+Route::get('/academia', function () {
+    return view('academia');
+});
+
+
 Route::get('/ser_firquidja', function () {
     return view('firquidja');
 });

@@ -2,6 +2,7 @@
 
 - Acrescentar o linkedIn
 - Melhorar o menu de navegação
+- A caixa de newsletter fica muito pequena nalgumas resoluções
 
 # To do list 
 

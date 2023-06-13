@@ -88,7 +88,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Vice-Presidente',
-            'picture' => 'images/user/menprofile.jpg',
+            'picture' => 'images/user/fernando_pinheiro.jpeg',
         ]);
 
         DB::table('people')->insert([
@@ -162,7 +162,7 @@ class PersonSeeder extends Seeder
             'profile' => 'leader',
             'position' => 'CEO',
             'role' => 'Vogal',
-            'picture' => 'images/user/menprofile.jpg'
+            'picture' => 'images/user/david_freitas.jpg'
         ]);
 
         DB::table('people')->insert([

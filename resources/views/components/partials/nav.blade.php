@@ -106,7 +106,7 @@
                         <ul class="sub-menu">
                             <li class="menu-item">
                                 <a href="/projeto.a-educacao-e-o-unico-caminho">
-                                    Apoio às escolas
+                                    Apoio à educação
                                 </a>
                             </li>
                             <li class="menu-item">
@@ -123,6 +123,11 @@
                                     Apoio à Saúde
                                 </a>
                             </li>
+                            <li class="menu-item">
+                                <a href="/academia">
+                                    Academia Desportiva
+                                </a>
+                            </li>                            
                         </ul>
                     </li>
                     <li class="menu-item">

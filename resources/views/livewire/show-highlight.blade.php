@@ -3,7 +3,7 @@
     $rotation = collect(['-rotate-1', 'rotate-0', 'rotate-1']);
     @endphp
     <div class="max-w-full m-auto">
-        <div class="grid grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div class="p-8">
                 <img src="images/highlights/{{ $highlight->image }}" class="w-[893px] h-96 object-cover border-white border-solid border-8 
                 {{ $rotation->random() }} rounded">

@@ -3,7 +3,7 @@
         {!! __('information.welcome.achievements_text') !!}
     </x-paragraph>
         
-    <div class="grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4 gap-y-6 my-6">
+    <div class="grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4 gap-y-6 my-6 mx-3">
         <x-cards.data number="{{ __('information.welcome.data.containers_number') }}">
             {{ __('information.welcome.data.containers_text') }}
         </x-cards.data>
