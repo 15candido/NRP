@@ -19,17 +19,17 @@ class PersonSeeder extends Seeder
     public function run()
     {        
 
-        DB::table('people')->insert([
+        // DB::table('people')->insert([
 
-            'name' => $name =  'Teresa Pinheiro',
-            'username' => Str::slug($name),
-            'email' => 'teresa@narotadospovos.or',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'profile' => 'leader',
-            'position' => 'General assembly table',
-            'role' => 'Presidente',
-            'picture' => 'images/user/womanprofile.jpg',
-        ]);
+        //     'name' => $name =  'Teresa Pinheiro',
+        //     'username' => Str::slug($name),
+        //     'email' => 'teresa@narotadospovos.or',
+        //     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        //     'profile' => 'leader',
+        //     'position' => 'General assembly table',
+        //     'role' => 'Presidente',
+        //     'picture' => 'images/user/womanprofile.jpg',
+        // ]);
 
         DB::table('people')->insert([
 
@@ -39,21 +39,21 @@ class PersonSeeder extends Seeder
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             'profile' => 'leader',
             'position' => 'General assembly table',
-            'role' => 'Vice-Presidente',
+            'role' => 'Presidente',
             'picture' => 'images/user/womanprofile.jpg',
         ]);
 
-        DB::table('people')->insert([
+        // DB::table('people')->insert([
 
-            'name' => $name =  'Rúben Almeida',
-            'username' => Str::slug($name),
-            'email' => 'ruben@narotadospovos.or',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            'profile' => 'leader',
-            'position' => 'General assembly table',
-            'role' => 'Vice-Presidente',
-            'picture' => 'images/user/menprofile.jpg',
-        ]);
+        //     'name' => $name =  'Rúben Almeida',
+        //     'username' => Str::slug($name),
+        //     'email' => 'ruben@narotadospovos.or',
+        //     'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        //     'profile' => 'leader',
+        //     'position' => 'General assembly table',
+        //     'role' => 'Vice-Presidente',
+        //     'picture' => 'images/user/menprofile.jpg',
+        // ]);
 
         DB::table('people')->insert([
 

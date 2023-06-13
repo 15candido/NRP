@@ -13,7 +13,7 @@
                 <h1 class="text-sm font-black text-white/70 hover:text-white uppercase">Quem Somos</h1>
                 <ul>
                     <li><a href="quem_somos" class="text-sm hover:text-white">Sobre Nós</a></li>
-                    <li><a href="orgaos_sociais" class="text-sm hover:text-white">Orgão Sociais</a></li>
+                    <li><a href="orgaos_sociais" class="text-sm hover:text-white">Órgãos Sociais</a></li>
                     <li><a href="equipa_guine_bissau" class="text-sm hover:text-white">Equipa Guiné-Bissau</a></li>
                     <li><a href="a_nossa_historia" class="text-sm hover:text-white">A Nossa História</a></li>
                 </ul>

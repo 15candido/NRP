@@ -6,7 +6,7 @@
     
     
     <x-section>        
-        <x-paragraph title="Relatórios" subtitle='Reports de contas da ONGD "Na Rota dos Povos"'>
+        <x-paragraph title="Relatórios" subtitle='Relatórios de contas da ONGD "Na Rota dos Povos"'>
 
         @php
             $years = [2021, 2020, 2019, 2018, 2017, 2016];

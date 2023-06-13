@@ -11,7 +11,7 @@
                 <!-- <h2>Comunidade Na Rota dos Povos</h2> -->
                 <div class="flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0">
                     <x-buttons.btn-secondary class="bg-gray-200 text-gray-400 py-4">
-                        <a href="">Orgão Social</a>
+                        <a href="">Órgãos Sociais</a>
                     </x-buttons.btn-secondary>
                     <x-buttons.btn-secondary class="bg-gray-200 text-gray-400 py-4">
                         <a href="">Equipa de Gestão</a>
