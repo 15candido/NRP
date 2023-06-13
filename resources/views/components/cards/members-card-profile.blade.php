@@ -1,6 +1,6 @@
 <article class="flex flex-col rounded-lg items-center md:max-w-md">
     <header>
-        <img src="{{asset($content->picture)}}" class="rounded h-56 object-cover w-56">
+        {{--<img src="{{asset($content->picture)}}" class="rounded h-56 object-cover w-56">--}}
     </header>
     <div class="flex flex-col w-full items-center px py-1 -4 hover:bg-gray-100">
         <p>{{$content->name}}</p>
