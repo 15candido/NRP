@@ -24,12 +24,29 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),   
         ]);
 
-        // DB::table('users')->insert([    
-        //     'name' => 'Cândido Silva',  
-        //     'email' => 'candido.da.silva.ca@gmail.com',
-        //     'email_verified_at' => now(),
-        //     'password' => Hash::make('password'),   
-        // ]);
+        DB::table('users')->insert([    
+            'name' => 'Cândido Silva',
+            'username' => 'candido_silva',  
+            'email' => 'candido.da.silva.ca@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password'),   
+        ]);
+
+        DB::table('users')->insert([    
+            'name' => 'Alcina',
+            'username' => 'cino',  
+            'email' => 'alcina@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password'),   
+        ]);
+
+        DB::table('users')->insert([    
+            'name' => 'Anna Betty',
+            'username' => 'anna_betty',  
+            'email' => 'anna@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password'),   
+        ]);
 
     }
 }

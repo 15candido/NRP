@@ -69,4 +69,15 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Task::class);
     }
+
+    public function role()
+    {
+        return $this->belongsTo(Role::class, 'role_id', 'user_id', 'role_user');
+    }
+
+    public function abilities()
+    {
+        return $this->roles->map->abilities->flatten()->pluck('name')->unique();
+    }
+    
 }

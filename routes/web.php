@@ -30,7 +30,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Auth::loginUsingId(1);
+Auth::loginUsingId(1);
 
 Route::get('/', function () {
     return view('welcome');
@@ -99,6 +99,11 @@ Route::get('equipa_guine_bissau', function () {
         'profiles' => Person::where('profile', 'team_gb')->get()
     ]);
 });
+
+Route::get('/warehouse', function () {
+    return view('warehouse');
+})->middleware('can:manager');
+
 
 Route::get('relatorios', function () {
     return view('reports');
@@ -207,3 +212,9 @@ Route::get('/np', function () {
 Route::get('/desenvolvidores', function () {
     return view('webmaster');
 });
+
+
+Route::get('/acessibilidade', function () {
+    return view('');
+});
+

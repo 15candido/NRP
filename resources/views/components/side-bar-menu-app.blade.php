@@ -3,7 +3,7 @@
         {{--Logo Section and Toggle Button--}}
         <div class="w-full gap-7 " :class="open ? 'flex' : 'hidden' ">
             <div class="shrink-0 flex items-center">
-                <a href="{{ route('dashboard') }}">
+                <a href="/">
                     <img src="images/logo.png" class="block max-h-9 w-auto" alt="Logótipo da 
                     Na Rota dos Povos">
                 </a>
@@ -26,6 +26,7 @@
     </div>
 
     {{-- Menu Sidebar--}}
+    
     <ul class="flex flex-col side-bar-menu ml-3 ">
         <li class="px-4 py-2 {{ Request::is('dashboard') ? 'active' : ''  }}" id="Dashbaord">
             <a href="{{ route('dashboard') }}" class="inline-flex gap-7 text-sm text-gray-500 uppercase">
@@ -49,7 +50,8 @@
                 </svg>
                 Necessidade
             </a>
-        </li>
+        </li> 
+        {{--
         <li class="px-4 py-2 {{ Request::is('campanhas') ? 'active' : ''  }}" id="Campain">
             <a href="/campanhas" class="inline-flex gap-7 text-sm text-gray-500 uppercase">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="w-5 h-5">
@@ -137,5 +139,6 @@
                 Contactos
             </a>
         </li>
+        --}}
     </ul>
 </div>

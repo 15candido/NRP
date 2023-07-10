@@ -1,8 +1,22 @@
 # Prioritário
 
+## Em trabalho
+
+### Permissões de utilizadores
+
+https://laravel.com/docs/10.x/authorization
+
+- Lista de necessidades
+    - Só algumas podem atualizar
+    - Ficar automaticamente atualiza a lista online
+    - Uma pessoa registada pudesse contribuir (por MBWay)
+
+## Próximas coisas a fazer 
+
 - Acrescentar o linkedIn
 - Melhorar o menu de navegação
 - A caixa de newsletter fica muito pequena nalgumas resoluções
+
 
 # To do list 
 

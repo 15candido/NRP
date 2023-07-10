@@ -9,6 +9,7 @@ use App\Models\Person;
 use App\Models\Project;
 use App\Models\Need;
 use App\Models\Item;
+use App\Models\Role;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -24,15 +25,17 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UserSeeder::class,
-            HeroSeeder::class,
-            ImpactSeeder::class,
-            PartnerSeeder::class,
-            ProjectSeeder::class,
-            HowToHelpSeeder::class,
-            PersonSeeder::class,
-            AreaSeeder::class,
-            VolunteerSeeder::class,
-            TaskSeeder::class,
+            RoleSeeder::class,
+            AbilitySeeder::class,
+            // HeroSeeder::class,
+            // ImpactSeeder::class,
+            // PartnerSeeder::class,
+            // ProjectSeeder::class,
+            // HowToHelpSeeder::class,
+            // PersonSeeder::class,
+            // AreaSeeder::class,
+            // VolunteerSeeder::class,
+            // TaskSeeder::class,
             HighlightSeeder::class,
         ]);
 
