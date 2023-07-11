@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -70,13 +69,12 @@ class User extends Authenticatable
         return $this->belongsToMany(Task::class);
     }
 
-    public function role()
+    public function roles()
     {
-        return $this->belongsTo(Role::class, 'role_id', 'user_id', 'role_user');
+        return $this->belongsToMany(Role::class);
     }
 
-    public function abilities()
-    {
+    function abilities() {
         return $this->roles->map->abilities->flatten()->pluck('name')->unique();
     }
     
